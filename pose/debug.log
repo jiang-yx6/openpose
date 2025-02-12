@@ -2428,3 +2428,545 @@ Traceback (most recent call last):
   File "D:\Anaconda3\envs\django\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
     return super().execute(query, params)
 django.db.utils.OperationalError: table evalpose_evalsession has no column named updated_at
+INFO 2025-02-12 17:44:36,064 views 29564 27936 收到请求: http://localhost:3000
+INFO 2025-02-12 17:44:36,065 views 29564 27936 请求方法: POST
+INFO 2025-02-12 17:44:36,066 views 29564 27936 请求头: {'Content-Length': '48199506', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundary9X5fSddLdbo35MgQ', 'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-12 17:44:36,223 serializers 29564 27936 开始验证视频文件
+DEBUG 2025-02-12 17:44:36,223 serializers 29564 27936 验证 standardVideo: 大小=24099588, 类型=video/mp4
+DEBUG 2025-02-12 17:44:36,223 serializers 29564 27936 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-12 17:44:36,223 serializers 29564 27936 视频文件验证通过
+ERROR 2025-02-12 17:44:36,226 views 29564 27936 创建会话失败: table evalpose_evalsession has no column named updated_at
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: table evalpose_evalsession has no column named updated_at
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\views.py", line 28, in post
+    session = EvalSession.objects.create(status='pending')
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\models\query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Anaconda3\envs\django\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: table evalpose_evalsession has no column named updated_at
+INFO 2025-02-12 17:48:17,722 views 16240 14176 收到请求: http://localhost:3000
+INFO 2025-02-12 17:48:17,722 views 16240 14176 请求方法: POST
+INFO 2025-02-12 17:48:17,722 views 16240 14176 请求头: {'Content-Length': '48199506', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundarya1ql4ErUPT67AsfY', 'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-12 17:48:17,892 serializers 16240 14176 开始验证视频文件
+DEBUG 2025-02-12 17:48:17,892 serializers 16240 14176 验证 standardVideo: 大小=24099588, 类型=video/mp4
+DEBUG 2025-02-12 17:48:17,892 serializers 16240 14176 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-12 17:48:17,893 serializers 16240 14176 视频文件验证通过
+INFO 2025-02-12 17:48:17,899 views 16240 14176 创建会话成功: d80a8226-4bc1-4866-80ed-47783e2614dd
+INFO 2025-02-12 17:56:38,340 views 28592 29088 收到请求: http://localhost:3000
+INFO 2025-02-12 17:56:38,341 views 28592 29088 请求方法: POST
+INFO 2025-02-12 17:56:38,342 views 28592 29088 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryZMthAU7AZ1SKbBL2', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '48199506', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-12 17:56:38,410 serializers 28592 29088 开始验证视频文件
+DEBUG 2025-02-12 17:56:38,411 serializers 28592 29088 验证 standardVideo: 大小=24099588, 类型=video/mp4
+DEBUG 2025-02-12 17:56:38,412 serializers 28592 29088 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-12 17:56:38,412 serializers 28592 29088 视频文件验证通过
+INFO 2025-02-12 17:56:38,423 views 28592 29088 创建会话成功: d052194b-d9c5-4982-ad6f-12814d174e24
+INFO 2025-02-12 17:57:20,036 views 20220 28356 收到请求: http://localhost:3000
+INFO 2025-02-12 17:57:20,037 views 20220 28356 请求方法: POST
+INFO 2025-02-12 17:57:20,037 views 20220 28356 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryy3Zagvf0onWQ9cEw', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '48199506', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-12 17:57:20,095 serializers 20220 28356 开始验证视频文件
+DEBUG 2025-02-12 17:57:20,096 serializers 20220 28356 验证 standardVideo: 大小=24099588, 类型=video/mp4
+DEBUG 2025-02-12 17:57:20,096 serializers 20220 28356 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-12 17:57:20,097 serializers 20220 28356 视频文件验证通过
+INFO 2025-02-12 17:57:20,106 views 20220 28356 创建会话成功: e1b9c5ab-298a-44d3-b8fc-694068e66de9
+INFO 2025-02-12 18:43:25,515 views 16092 26804 收到请求: http://localhost:3000
+INFO 2025-02-12 18:43:25,515 views 16092 26804 请求方法: POST
+INFO 2025-02-12 18:43:25,516 views 16092 26804 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryXVx5EZQBFZb8HdbR', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-12 18:43:25,577 serializers 16092 26804 开始验证视频文件
+DEBUG 2025-02-12 18:43:25,577 serializers 16092 26804 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-12 18:43:25,577 serializers 16092 26804 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-12 18:43:25,577 serializers 16092 26804 视频文件验证通过
+INFO 2025-02-12 18:43:25,584 views 16092 26804 创建会话成功: d7927331-835c-457f-ab7c-1f333be645b3
+INFO 2025-02-12 18:43:25,747 services 16092 27720 初始化视频处理服务
+ERROR 2025-02-12 18:43:25,748 consumers 16092 27720 WebSocket连接建立失败: 'NoneType' object has no attribute 'group_add'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 29, in connect
+    await self.channel_layer.group_add(
+AttributeError: 'NoneType' object has no attribute 'group_add'
+INFO 2025-02-12 18:43:25,783 services 16092 27720 初始化视频处理服务
+ERROR 2025-02-12 18:43:25,784 consumers 16092 27720 WebSocket连接建立失败: 'NoneType' object has no attribute 'group_add'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 29, in connect
+    await self.channel_layer.group_add(
+AttributeError: 'NoneType' object has no attribute 'group_add'
+INFO 2025-02-12 18:43:26,571 services 16092 27720 初始化视频处理服务
+ERROR 2025-02-12 18:43:26,571 consumers 16092 27720 WebSocket连接建立失败: 'NoneType' object has no attribute 'group_add'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 29, in connect
+    await self.channel_layer.group_add(
+AttributeError: 'NoneType' object has no attribute 'group_add'
+INFO 2025-02-12 18:44:16,236 views 27760 30532 收到请求: http://localhost:3000
+INFO 2025-02-12 18:44:16,236 views 27760 30532 请求方法: POST
+INFO 2025-02-12 18:44:16,236 views 27760 30532 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundary2wvXnXmlLQoTZKIW', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-12 18:44:16,276 serializers 27760 30532 开始验证视频文件
+DEBUG 2025-02-12 18:44:16,276 serializers 27760 30532 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-12 18:44:16,276 serializers 27760 30532 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-12 18:44:16,276 serializers 27760 30532 视频文件验证通过
+INFO 2025-02-12 18:44:16,283 views 27760 30532 创建会话成功: 0e3a84a5-43c5-4361-af0e-22543dc2f8e3
+INFO 2025-02-12 18:44:16,416 services 27760 2344 初始化视频处理服务
+ERROR 2025-02-12 18:44:16,416 consumers 27760 2344 WebSocket连接建立失败: 'NoneType' object has no attribute 'group_add'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 29, in connect
+    await self.channel_layer.group_add(
+AttributeError: 'NoneType' object has no attribute 'group_add'
+INFO 2025-02-12 18:44:17,288 services 27760 2344 初始化视频处理服务
+ERROR 2025-02-12 18:44:17,288 consumers 27760 2344 WebSocket连接建立失败: 'NoneType' object has no attribute 'group_add'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 29, in connect
+    await self.channel_layer.group_add(
+AttributeError: 'NoneType' object has no attribute 'group_add'
+INFO 2025-02-12 18:46:06,181 views 25276 29876 收到请求: http://localhost:3000
+INFO 2025-02-12 18:46:06,181 views 25276 29876 请求方法: POST
+INFO 2025-02-12 18:46:06,181 views 25276 29876 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundary7Uf981AvBEe0n0VR', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '48199506', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-12 18:46:06,226 serializers 25276 29876 开始验证视频文件
+DEBUG 2025-02-12 18:46:06,226 serializers 25276 29876 验证 standardVideo: 大小=24099588, 类型=video/mp4
+DEBUG 2025-02-12 18:46:06,226 serializers 25276 29876 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-12 18:46:06,226 serializers 25276 29876 视频文件验证通过
+INFO 2025-02-12 18:46:06,235 views 25276 29876 创建会话成功: e03cfab2-4d57-4259-89fd-6db6de3281b1
+INFO 2025-02-12 18:46:06,382 services 25276 1808 初始化视频处理服务
+ERROR 2025-02-12 18:46:06,383 consumers 25276 1808 WebSocket连接建立失败: 'NoneType' object has no attribute 'group_add'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 29, in connect
+    await self.channel_layer.group_add(
+AttributeError: 'NoneType' object has no attribute 'group_add'
+INFO 2025-02-12 18:46:06,413 services 25276 1808 初始化视频处理服务
+ERROR 2025-02-12 18:46:06,414 consumers 25276 1808 WebSocket连接建立失败: 'NoneType' object has no attribute 'group_add'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 29, in connect
+    await self.channel_layer.group_add(
+AttributeError: 'NoneType' object has no attribute 'group_add'
+INFO 2025-02-12 18:46:06,893 services 25276 1808 初始化视频处理服务
+ERROR 2025-02-12 18:46:06,893 consumers 25276 1808 WebSocket连接建立失败: 'NoneType' object has no attribute 'group_add'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 29, in connect
+    await self.channel_layer.group_add(
+AttributeError: 'NoneType' object has no attribute 'group_add'
+INFO 2025-02-12 18:53:21,178 views 27960 25044 收到请求: http://localhost:3000
+INFO 2025-02-12 18:53:21,181 views 27960 25044 请求方法: POST
+INFO 2025-02-12 18:53:21,181 views 27960 25044 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryweDUaydcAP6pv4nJ', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '48199506', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-12 18:53:21,285 serializers 27960 25044 开始验证视频文件
+DEBUG 2025-02-12 18:53:21,285 serializers 27960 25044 验证 standardVideo: 大小=24099588, 类型=video/mp4
+DEBUG 2025-02-12 18:53:21,285 serializers 27960 25044 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-12 18:53:21,286 serializers 27960 25044 视频文件验证通过
+INFO 2025-02-12 18:53:21,312 views 27960 25044 创建会话成功: 44e904ff-361f-46f1-baa3-04450c79fb27
+INFO 2025-02-12 18:53:21,474 services 27960 10120 初始化视频处理服务
+ERROR 2025-02-12 18:53:21,476 consumers 27960 10120 WebSocket连接建立失败: 'VideoAnalysisConsumer' object has no attribute 'get_session'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 37, in connect
+    session = await self.get_session()
+AttributeError: 'VideoAnalysisConsumer' object has no attribute 'get_session'
+INFO 2025-02-12 18:53:21,526 services 27960 10120 初始化视频处理服务
+ERROR 2025-02-12 18:53:21,527 consumers 27960 10120 WebSocket连接建立失败: 'VideoAnalysisConsumer' object has no attribute 'get_session'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 37, in connect
+    session = await self.get_session()
+AttributeError: 'VideoAnalysisConsumer' object has no attribute 'get_session'
+INFO 2025-02-12 19:01:16,174 views 30564 25100 收到请求: http://localhost:3000
+INFO 2025-02-12 19:01:16,174 views 30564 25100 请求方法: POST
+INFO 2025-02-12 19:01:16,174 views 30564 25100 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundarylfXhWb6S0pk4K1aW', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '48199506', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-12 19:01:16,216 serializers 30564 25100 开始验证视频文件
+DEBUG 2025-02-12 19:01:16,216 serializers 30564 25100 验证 standardVideo: 大小=24099588, 类型=video/mp4
+DEBUG 2025-02-12 19:01:16,216 serializers 30564 25100 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-12 19:01:16,216 serializers 30564 25100 视频文件验证通过
+INFO 2025-02-12 19:01:16,225 views 30564 25100 创建会话成功: ac23710c-aded-40f0-98b9-2514d29b3c35
+INFO 2025-02-12 19:01:16,379 consumers 30564 24788 WebSocket连接已建立: session_id=ac23710c-aded-40f0-98b9-2514d29b3c35, type=standard
+INFO 2025-02-12 19:01:16,518 consumers 30564 24788 WebSocket连接已建立: session_id=ac23710c-aded-40f0-98b9-2514d29b3c35, type=exercise
+INFO 2025-02-12 19:01:21,529 consumers 30564 24788 已发送WebRTC offer: session_id=ac23710c-aded-40f0-98b9-2514d29b3c35
+ERROR 2025-02-12 19:01:21,621 consumers 30564 24788 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 142, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:01:21,623 consumers 30564 24788 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 142, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:01:21,627 consumers 30564 24788 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 142, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:01:21,630 consumers 30564 24788 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 142, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:01:21,631 consumers 30564 24788 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 142, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-12 19:08:06,557 views 30564 28788 收到请求: http://localhost:3000
+INFO 2025-02-12 19:08:06,557 views 30564 28788 请求方法: POST
+INFO 2025-02-12 19:08:06,557 views 30564 28788 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundary81Ayuj9wBBohjbqT', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-12 19:08:06,615 serializers 30564 28788 开始验证视频文件
+DEBUG 2025-02-12 19:08:06,615 serializers 30564 28788 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-12 19:08:06,615 serializers 30564 28788 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-12 19:08:06,615 serializers 30564 28788 视频文件验证通过
+INFO 2025-02-12 19:08:06,621 views 30564 28788 创建会话成功: 784d8a7f-bc7b-4a74-96f6-5019721c8ed4
+INFO 2025-02-12 19:08:06,696 consumers 30564 24788 WebSocket连接已建立: session_id=784d8a7f-bc7b-4a74-96f6-5019721c8ed4, type=standard
+INFO 2025-02-12 19:08:06,732 consumers 30564 24788 WebSocket连接已建立: session_id=784d8a7f-bc7b-4a74-96f6-5019721c8ed4, type=exercise
+INFO 2025-02-12 19:08:11,742 consumers 30564 24788 已发送WebRTC offer: session_id=784d8a7f-bc7b-4a74-96f6-5019721c8ed4
+ERROR 2025-02-12 19:08:11,754 consumers 30564 24788 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 142, in receive
+    }))
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:08:11,755 consumers 30564 24788 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 142, in receive
+    }))
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:08:11,756 consumers 30564 24788 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 142, in receive
+    }))
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:08:11,757 consumers 30564 24788 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 142, in receive
+    }))
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:08:11,757 consumers 30564 24788 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 142, in receive
+    }))
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-12 19:11:37,991 views 28972 28392 收到请求: http://localhost:3000
+INFO 2025-02-12 19:11:37,991 views 28972 28392 请求方法: POST
+INFO 2025-02-12 19:11:37,991 views 28972 28392 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundarycUoyGgsWxFM0k6b7', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '48199506', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-12 19:11:38,047 serializers 28972 28392 开始验证视频文件
+DEBUG 2025-02-12 19:11:38,047 serializers 28972 28392 验证 standardVideo: 大小=24099588, 类型=video/mp4
+DEBUG 2025-02-12 19:11:38,047 serializers 28972 28392 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-12 19:11:38,047 serializers 28972 28392 视频文件验证通过
+INFO 2025-02-12 19:11:38,056 views 28972 28392 创建会话成功: a25ca3e5-ef1e-4045-800d-1c4dc0180ba4
+INFO 2025-02-12 19:11:38,175 consumers 28972 24152 WebSocket连接已建立: session_id=a25ca3e5-ef1e-4045-800d-1c4dc0180ba4, type=standard
+INFO 2025-02-12 19:11:38,233 consumers 28972 24152 WebSocket连接已建立: session_id=a25ca3e5-ef1e-4045-800d-1c4dc0180ba4, type=standard
+INFO 2025-02-12 19:11:38,271 consumers 28972 24152 WebSocket连接已建立: session_id=a25ca3e5-ef1e-4045-800d-1c4dc0180ba4, type=exercise
+INFO 2025-02-12 19:11:43,244 consumers 28972 24152 已发送WebRTC offer: session_id=a25ca3e5-ef1e-4045-800d-1c4dc0180ba4
+INFO 2025-02-12 19:11:43,275 consumers 28972 24152 已发送WebRTC offer: session_id=a25ca3e5-ef1e-4045-800d-1c4dc0180ba4
+ERROR 2025-02-12 19:11:43,288 consumers 28972 24152 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 121, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:11:43,289 consumers 28972 24152 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 121, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:11:43,290 consumers 28972 24152 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 121, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:11:43,291 consumers 28972 24152 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 121, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:11:43,291 consumers 28972 24152 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 121, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-12 19:11:43,323 consumers 28972 24152 已发送WebRTC offer: session_id=a25ca3e5-ef1e-4045-800d-1c4dc0180ba4
+ERROR 2025-02-12 19:11:43,374 consumers 28972 24152 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 121, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:11:43,375 consumers 28972 24152 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 121, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:11:43,375 consumers 28972 24152 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 121, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:11:43,376 consumers 28972 24152 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 121, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:11:43,377 consumers 28972 24152 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 121, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-12 19:13:10,231 views 25216 12788 收到请求: http://localhost:3000
+INFO 2025-02-12 19:13:10,232 views 25216 12788 请求方法: POST
+INFO 2025-02-12 19:13:10,232 views 25216 12788 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryApmf8aOR7RHNwmxB', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-12 19:13:10,289 serializers 25216 12788 开始验证视频文件
+DEBUG 2025-02-12 19:13:10,289 serializers 25216 12788 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-12 19:13:10,289 serializers 25216 12788 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-12 19:13:10,289 serializers 25216 12788 视频文件验证通过
+INFO 2025-02-12 19:13:10,297 views 25216 12788 创建会话成功: cd21e674-0e26-4c0f-81e9-5b24d7d0d1bb
+INFO 2025-02-12 19:13:10,426 consumers 25216 11132 WebSocket连接已建立: session_id=cd21e674-0e26-4c0f-81e9-5b24d7d0d1bb, type=standard
+INFO 2025-02-12 19:13:10,467 consumers 25216 11132 WebSocket连接已建立: session_id=cd21e674-0e26-4c0f-81e9-5b24d7d0d1bb, type=exercise
+INFO 2025-02-12 19:13:15,463 consumers 25216 11132 已发送WebRTC offer: session_id=cd21e674-0e26-4c0f-81e9-5b24d7d0d1bb
+ERROR 2025-02-12 19:13:15,478 consumers 25216 11132 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:13:15,479 consumers 25216 11132 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:13:15,480 consumers 25216 11132 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:13:15,481 consumers 25216 11132 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:13:15,481 consumers 25216 11132 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-12 19:13:15,512 consumers 25216 11132 已发送WebRTC offer: session_id=cd21e674-0e26-4c0f-81e9-5b24d7d0d1bb
+ERROR 2025-02-12 19:13:15,566 consumers 25216 11132 视频分析失败: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 88, in start_video_analysis
+    await self.process_and_stream_video(
+AttributeError: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+ERROR 2025-02-12 19:13:15,567 consumers 25216 11132 WebSocket连接建立失败: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 41, in connect
+    await self.start_video_analysis()
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 88, in start_video_analysis
+    await self.process_and_stream_video(
+AttributeError: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+INFO 2025-02-12 19:13:59,772 views 28532 10372 收到请求: http://localhost:3000
+INFO 2025-02-12 19:13:59,774 views 28532 10372 请求方法: POST
+INFO 2025-02-12 19:13:59,774 views 28532 10372 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundary1tgfrIe870cZdSka', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '48199506', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-12 19:13:59,831 serializers 28532 10372 开始验证视频文件
+DEBUG 2025-02-12 19:13:59,831 serializers 28532 10372 验证 standardVideo: 大小=24099588, 类型=video/mp4
+DEBUG 2025-02-12 19:13:59,831 serializers 28532 10372 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-12 19:13:59,831 serializers 28532 10372 视频文件验证通过
+INFO 2025-02-12 19:13:59,853 views 28532 10372 创建会话成功: 4febc555-734e-4fdd-92a0-1662b44a706d
+INFO 2025-02-12 19:13:59,972 consumers 28532 30556 WebSocket连接已建立: session_id=4febc555-734e-4fdd-92a0-1662b44a706d, type=standard
+INFO 2025-02-12 19:14:00,143 consumers 28532 30556 WebSocket连接已建立: session_id=4febc555-734e-4fdd-92a0-1662b44a706d, type=exercise
+INFO 2025-02-12 19:14:05,136 consumers 28532 30556 已发送WebRTC offer: session_id=4febc555-734e-4fdd-92a0-1662b44a706d
+ERROR 2025-02-12 19:14:05,140 consumers 28532 30556 视频分析失败: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 87, in start_video_analysis
+    await self.process_and_stream_video(
+AttributeError: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+ERROR 2025-02-12 19:14:05,142 consumers 28532 30556 WebSocket连接建立失败: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 40, in connect
+    await self.start_video_analysis()
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 87, in start_video_analysis
+    await self.process_and_stream_video(
+AttributeError: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+INFO 2025-02-12 19:14:05,185 consumers 28532 30556 已发送WebRTC offer: session_id=4febc555-734e-4fdd-92a0-1662b44a706d
+ERROR 2025-02-12 19:14:05,189 consumers 28532 30556 视频分析失败: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 87, in start_video_analysis
+    await self.process_and_stream_video(
+AttributeError: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+ERROR 2025-02-12 19:14:05,189 consumers 28532 30556 WebSocket连接建立失败: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 40, in connect
+    await self.start_video_analysis()
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 87, in start_video_analysis
+    await self.process_and_stream_video(
+AttributeError: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+INFO 2025-02-12 19:17:00,053 views 15072 12252 收到请求: http://localhost:3000
+INFO 2025-02-12 19:17:00,054 views 15072 12252 请求方法: POST
+INFO 2025-02-12 19:17:00,054 views 15072 12252 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryOp4V5DFeaaK53azr', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-12 19:17:00,099 serializers 15072 12252 开始验证视频文件
+DEBUG 2025-02-12 19:17:00,099 serializers 15072 12252 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-12 19:17:00,099 serializers 15072 12252 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-12 19:17:00,099 serializers 15072 12252 视频文件验证通过
+INFO 2025-02-12 19:17:00,119 views 15072 12252 创建会话成功: f52c681d-69d2-49bc-bf29-a7ad2ec7026a
+INFO 2025-02-12 19:17:00,196 consumers 15072 27676 WebSocket连接已建立: session_id=f52c681d-69d2-49bc-bf29-a7ad2ec7026a, type=standard
+INFO 2025-02-12 19:17:00,371 consumers 15072 27676 WebSocket连接已建立: session_id=f52c681d-69d2-49bc-bf29-a7ad2ec7026a, type=standard
+INFO 2025-02-12 19:17:00,408 consumers 15072 27676 WebSocket连接已建立: session_id=f52c681d-69d2-49bc-bf29-a7ad2ec7026a, type=exercise
+INFO 2025-02-12 19:17:05,366 consumers 15072 27676 已发送WebRTC offer: session_id=f52c681d-69d2-49bc-bf29-a7ad2ec7026a
+ERROR 2025-02-12 19:17:05,370 consumers 15072 27676 视频分析失败: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 88, in start_video_analysis
+    await self.process_and_stream_video(
+AttributeError: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+INFO 2025-02-12 19:17:05,431 consumers 15072 27676 已发送WebRTC offer: session_id=f52c681d-69d2-49bc-bf29-a7ad2ec7026a
+INFO 2025-02-12 19:17:05,431 consumers 15072 27676 已发送WebRTC offer: session_id=f52c681d-69d2-49bc-bf29-a7ad2ec7026a
+ERROR 2025-02-12 19:17:05,437 consumers 15072 27676 视频分析失败: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 88, in start_video_analysis
+    await self.process_and_stream_video(
+AttributeError: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+ERROR 2025-02-12 19:17:05,438 consumers 15072 27676 视频分析失败: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 88, in start_video_analysis
+    await self.process_and_stream_video(
+AttributeError: 'VideoAnalysisConsumer' object has no attribute 'process_and_stream_video'
+ERROR 2025-02-12 19:17:05,453 consumers 15072 27676 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:17:05,453 consumers 15072 27676 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:17:05,454 consumers 15072 27676 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:17:05,454 consumers 15072 27676 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:17:05,455 consumers 15072 27676 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:17:05,455 consumers 15072 27676 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:17:05,456 consumers 15072 27676 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:17:05,456 consumers 15072 27676 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:17:05,456 consumers 15072 27676 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:17:05,457 consumers 15072 27676 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-12 19:21:43,293 views 5204 24000 收到请求: http://localhost:3000
+INFO 2025-02-12 19:21:43,293 views 5204 24000 请求方法: POST
+INFO 2025-02-12 19:21:43,293 views 5204 24000 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryzeiRIXfo0gjFZ1Zv', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-12 19:21:43,338 serializers 5204 24000 开始验证视频文件
+DEBUG 2025-02-12 19:21:43,338 serializers 5204 24000 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-12 19:21:43,338 serializers 5204 24000 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-12 19:21:43,338 serializers 5204 24000 视频文件验证通过
+INFO 2025-02-12 19:21:43,348 views 5204 24000 创建会话成功: edc0f72f-f1af-497c-bc9e-c34ee47b3439
+INFO 2025-02-12 19:21:43,455 consumers 5204 30564 WebSocket连接已建立: session_id=edc0f72f-f1af-497c-bc9e-c34ee47b3439, type=standard
+INFO 2025-02-12 19:21:43,512 consumers 5204 30564 WebSocket连接已建立: session_id=edc0f72f-f1af-497c-bc9e-c34ee47b3439, type=standard
+INFO 2025-02-12 19:21:43,554 consumers 5204 30564 WebSocket连接已建立: session_id=edc0f72f-f1af-497c-bc9e-c34ee47b3439, type=exercise
+INFO 2025-02-12 19:21:48,510 consumers 5204 30564 已发送WebRTC offer: session_id=edc0f72f-f1af-497c-bc9e-c34ee47b3439
+INFO 2025-02-12 19:21:48,587 services 5204 30564 初始化视频处理服务
+INFO 2025-02-12 19:21:48,590 consumers 5204 30564 已发送WebRTC offer: session_id=edc0f72f-f1af-497c-bc9e-c34ee47b3439
+INFO 2025-02-12 19:21:48,591 consumers 5204 30564 已发送WebRTC offer: session_id=edc0f72f-f1af-497c-bc9e-c34ee47b3439
+ERROR 2025-02-12 19:21:48,677 consumers 5204 30564 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:21:48,682 consumers 5204 30564 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:21:48,696 consumers 5204 30564 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:21:48,987 consumers 5204 30564 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:21:48,993 consumers 5204 30564 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:21:49,018 consumers 5204 30564 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:21:49,020 consumers 5204 30564 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:21:49,021 consumers 5204 30564 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:21:49,021 consumers 5204 30564 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 19:21:49,022 consumers 5204 30564 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-12 19:22:20,073 services 5204 3788 视频处理完成: session_id=edc0f72f-f1af-497c-bc9e-c34ee47b3439, final_score=83.94857994193463
+INFO 2025-02-12 19:22:20,151 consumers 5204 30564 视频处理完成: session_id=edc0f72f-f1af-497c-bc9e-c34ee47b3439
+INFO 2025-02-12 19:22:20,207 services 5204 30564 初始化视频处理服务
+INFO 2025-02-12 19:22:20,263 services 5204 30564 初始化视频处理服务
+INFO 2025-02-12 19:22:52,768 services 5204 3788 视频处理完成: session_id=edc0f72f-f1af-497c-bc9e-c34ee47b3439, final_score=94.35741293216779
+INFO 2025-02-12 19:22:52,842 consumers 5204 30564 视频处理完成: session_id=edc0f72f-f1af-497c-bc9e-c34ee47b3439
+INFO 2025-02-12 19:23:25,200 services 5204 3788 视频处理完成: session_id=edc0f72f-f1af-497c-bc9e-c34ee47b3439, final_score=82.4962770399072
+INFO 2025-02-12 19:23:25,273 consumers 5204 30564 视频处理完成: session_id=edc0f72f-f1af-497c-bc9e-c34ee47b3439

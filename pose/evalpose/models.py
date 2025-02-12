@@ -12,7 +12,6 @@ class EvalSession(models.Model):
 
     session_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
     score = models.FloatField(null=True, blank=True)
     error_message = models.TextField(null=True, blank=True)

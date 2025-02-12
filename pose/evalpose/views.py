@@ -3,7 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .serializers import VideoUploadSerializer, SessionSerializer
-from .services import VideoProcessingService
+# from .services import VideoProcessingService
 from .models import EvalSession, VideoFile
 import threading
 import logging
@@ -47,23 +47,6 @@ class VideoUploadView(APIView):
                 # 确保文件已保存
                 standard_file.file.close()
                 exercise_file.file.close()
-
-                #异步处理视频
-                def process_videos():
-                    try:
-                        video_service = VideoProcessingService()
-                        video_service.process_videos(
-                            session_id=session.session_id,
-                            standard_video_path=standard_file.file.path,
-                            exercise_video_path=exercise_file.file.path
-                        )
-                    except Exception as e:
-                        logger.error(f"视频处理失败: {str(e)}", exc_info=True)
-                
-                # 启动异步处理
-                thread = threading.Thread(target=process_videos)
-                thread.daemon = True
-                thread.start()
                 
                 # 立即返回会话ID
                 response_serializer = SessionSerializer(session)

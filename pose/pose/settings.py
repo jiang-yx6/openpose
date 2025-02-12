@@ -32,8 +32,8 @@ ALLOWED_HOSTS = ['*', 'localhost', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    # 'daphne',  # 注释掉
-    # 'channels', # 注释掉
+    'daphne',
+    'channels',
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -76,6 +76,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "pose.wsgi.application"
 
+ASGI_APPLICATION = "pose.asgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
@@ -198,3 +199,10 @@ WEBRTC_ICE_SERVERS = [
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
+
+# 添加 Channel Layers 配置
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer"
+    }
+}
