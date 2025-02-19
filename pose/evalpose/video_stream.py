@@ -9,27 +9,31 @@ logger = logging.getLogger(__name__)
 class VideoStreamTrack(MediaStreamTrack):
     kind = "video"
 
-    def __init__(self, video_path):
+    def __init__(self, video_path, video_service):
         super().__init__()
         self.video_path = video_path
         self.cap = cv2.VideoCapture(video_path)
+        self.video_service = video_service
         self.frame_count = 0
+        self.ended = False
 
     async def recv(self):
-        """读取视频帧，转换为灰度并返回"""
         try:
+            if self.ended:
+                raise RuntimeError("视频已播放完毕")
+
             ret, frame = self.cap.read()
             if not ret:
-                # 如果视频结束，重新开始
-                self.cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
-                ret, frame = self.cap.read()
-                if not ret:
-                    raise RuntimeError("Could not read video frame")
+                self.ended = True
+                self.stop()
+                raise RuntimeError("视频已播放完毕")
 
-            # 转换为灰度图
-            frame_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-            # 转换回 RGB 格式（WebRTC需要），但实际显示的是灰度图
-            frame_rgb = cv2.cvtColor(frame_gray, cv2.COLOR_GRAY2RGB)
+            # 转换颜色空间从 BGR 到 RGB
+            frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            
+            # 使用服务处理帧（如果需要）
+            if hasattr(self.video_service, 'process_frame_for_stream'):
+                frame_rgb = self.video_service.process_frame_for_stream(frame_rgb)
             
             # 创建 VideoFrame
             video_frame = VideoFrame.from_ndarray(frame_rgb, format="rgb24")

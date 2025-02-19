@@ -2970,3 +2970,1620 @@ INFO 2025-02-12 19:22:52,768 services 5204 3788 视频处理完成: session_id=edc0f72
 INFO 2025-02-12 19:22:52,842 consumers 5204 30564 视频处理完成: session_id=edc0f72f-f1af-497c-bc9e-c34ee47b3439
 INFO 2025-02-12 19:23:25,200 services 5204 3788 视频处理完成: session_id=edc0f72f-f1af-497c-bc9e-c34ee47b3439, final_score=82.4962770399072
 INFO 2025-02-12 19:23:25,273 consumers 5204 30564 视频处理完成: session_id=edc0f72f-f1af-497c-bc9e-c34ee47b3439
+INFO 2025-02-12 20:21:28,790 views 22112 30868 收到请求: http://localhost:3000
+INFO 2025-02-12 20:21:28,791 views 22112 30868 请求方法: POST
+INFO 2025-02-12 20:21:28,791 views 22112 30868 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryS3FSQOywH8iGeVBh', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-12 20:21:28,850 serializers 22112 30868 开始验证视频文件
+DEBUG 2025-02-12 20:21:28,851 serializers 22112 30868 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-12 20:21:28,851 serializers 22112 30868 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-12 20:21:28,851 serializers 22112 30868 视频文件验证通过
+INFO 2025-02-12 20:21:28,874 views 22112 30868 创建会话成功: e037614e-6d2f-4d6f-b20b-5e985dfef579
+INFO 2025-02-12 20:21:29,000 consumers 22112 25068 WebSocket连接已建立: session_id=e037614e-6d2f-4d6f-b20b-5e985dfef579, type=standard
+INFO 2025-02-12 20:21:29,187 consumers 22112 25068 WebSocket连接已建立: session_id=e037614e-6d2f-4d6f-b20b-5e985dfef579, type=standard
+INFO 2025-02-12 20:21:29,236 consumers 22112 25068 WebSocket连接已建立: session_id=e037614e-6d2f-4d6f-b20b-5e985dfef579, type=exercise
+INFO 2025-02-12 20:21:34,191 consumers 22112 25068 已发送WebRTC offer: session_id=e037614e-6d2f-4d6f-b20b-5e985dfef579
+INFO 2025-02-12 20:21:34,242 services 22112 25068 初始化视频处理服务
+INFO 2025-02-12 20:21:34,244 consumers 22112 25068 已发送WebRTC offer: session_id=e037614e-6d2f-4d6f-b20b-5e985dfef579
+INFO 2025-02-12 20:21:34,269 consumers 22112 25068 已发送WebRTC offer: session_id=e037614e-6d2f-4d6f-b20b-5e985dfef579
+ERROR 2025-02-12 20:21:34,273 consumers 22112 25068 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:21:34,275 consumers 22112 25068 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:21:34,276 consumers 22112 25068 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:21:34,276 consumers 22112 25068 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:21:34,277 consumers 22112 25068 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:21:34,292 consumers 22112 25068 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:21:34,411 consumers 22112 25068 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:21:34,415 consumers 22112 25068 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:21:34,416 consumers 22112 25068 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:21:34,512 consumers 22112 25068 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-12 20:22:07,302 services 22112 30852 视频处理完成: session_id=e037614e-6d2f-4d6f-b20b-5e985dfef579, final_score=84.2644806967808
+INFO 2025-02-12 20:22:07,367 consumers 22112 25068 视频处理完成: session_id=e037614e-6d2f-4d6f-b20b-5e985dfef579
+INFO 2025-02-12 20:22:07,410 services 22112 25068 初始化视频处理服务
+INFO 2025-02-12 20:22:07,492 services 22112 25068 初始化视频处理服务
+ERROR 2025-02-12 20:22:15,741 services 22112 30852 视频处理失败: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\services.py", line 74, in process_videos
+    async_to_sync(self.channel_layer.group_send)(
+  File "D:\Anaconda3\envs\django\lib\site-packages\asgiref\sync.py", line 229, in __call__
+    loop_future = loop_executor.submit(
+  File "D:\Anaconda3\envs\django\lib\concurrent\futures\thread.py", line 181, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+ERROR 2025-02-12 20:22:16,102 services 22112 30852 视频处理失败: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\services.py", line 74, in process_videos
+    async_to_sync(self.channel_layer.group_send)(
+  File "D:\Anaconda3\envs\django\lib\site-packages\asgiref\sync.py", line 229, in __call__
+    loop_future = loop_executor.submit(
+  File "D:\Anaconda3\envs\django\lib\concurrent\futures\thread.py", line 181, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+INFO 2025-02-12 20:39:50,880 views 29828 25644 收到请求: http://localhost:3000
+INFO 2025-02-12 20:39:50,881 views 29828 25644 请求方法: POST
+INFO 2025-02-12 20:39:50,881 views 29828 25644 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundary56CsgAco32zi62n1', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-12 20:39:50,944 serializers 29828 25644 开始验证视频文件
+DEBUG 2025-02-12 20:39:50,944 serializers 29828 25644 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-12 20:39:50,944 serializers 29828 25644 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-12 20:39:50,944 serializers 29828 25644 视频文件验证通过
+INFO 2025-02-12 20:39:50,955 views 29828 25644 创建会话成功: 7ba02e68-6747-4fc2-8bc8-3106eb883fcf
+INFO 2025-02-12 20:39:51,045 consumers 29828 26812 WebSocket连接已建立: session_id=7ba02e68-6747-4fc2-8bc8-3106eb883fcf, type=standard
+INFO 2025-02-12 20:39:51,235 consumers 29828 26812 WebSocket连接已建立: session_id=7ba02e68-6747-4fc2-8bc8-3106eb883fcf, type=standard
+INFO 2025-02-12 20:39:51,285 consumers 29828 26812 WebSocket连接已建立: session_id=7ba02e68-6747-4fc2-8bc8-3106eb883fcf, type=exercise
+INFO 2025-02-12 20:39:56,237 consumers 29828 26812 已发送WebRTC offer: session_id=7ba02e68-6747-4fc2-8bc8-3106eb883fcf
+INFO 2025-02-12 20:39:56,271 services 29828 26812 初始化视频处理服务
+INFO 2025-02-12 20:39:56,286 consumers 29828 26812 已发送WebRTC offer: session_id=7ba02e68-6747-4fc2-8bc8-3106eb883fcf
+ERROR 2025-02-12 20:39:56,321 consumers 29828 26812 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:39:56,323 consumers 29828 26812 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:39:56,324 consumers 29828 26812 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:39:56,325 consumers 29828 26812 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:39:56,328 consumers 29828 26812 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-12 20:39:56,330 consumers 29828 26812 已发送WebRTC offer: session_id=7ba02e68-6747-4fc2-8bc8-3106eb883fcf
+ERROR 2025-02-12 20:39:56,522 consumers 29828 26812 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:39:56,525 consumers 29828 26812 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:39:56,527 consumers 29828 26812 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:39:56,529 consumers 29828 26812 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:39:56,533 consumers 29828 26812 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:39:56,535 consumers 29828 26812 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:39:56,655 consumers 29828 26812 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:39:56,678 consumers 29828 26812 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:39:56,680 consumers 29828 26812 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-12 20:39:56,681 consumers 29828 26812 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 124, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-12 20:40:33,489 services 29828 16224 视频处理完成: session_id=7ba02e68-6747-4fc2-8bc8-3106eb883fcf, final_score=88.99365381160506
+INFO 2025-02-12 20:40:33,595 consumers 29828 26812 视频处理完成: session_id=7ba02e68-6747-4fc2-8bc8-3106eb883fcf
+INFO 2025-02-12 20:40:33,658 services 29828 26812 初始化视频处理服务
+INFO 2025-02-12 20:40:33,695 services 29828 26812 初始化视频处理服务
+ERROR 2025-02-12 20:40:47,108 services 29828 16224 视频处理失败: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\services.py", line 74, in process_videos
+    async_to_sync(self.channel_layer.group_send)(
+  File "D:\Anaconda3\envs\django\lib\site-packages\asgiref\sync.py", line 229, in __call__
+    loop_future = loop_executor.submit(
+  File "D:\Anaconda3\envs\django\lib\concurrent\futures\thread.py", line 181, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+ERROR 2025-02-12 20:40:47,366 services 29828 16224 视频处理失败: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\services.py", line 74, in process_videos
+    async_to_sync(self.channel_layer.group_send)(
+  File "D:\Anaconda3\envs\django\lib\site-packages\asgiref\sync.py", line 229, in __call__
+    loop_future = loop_executor.submit(
+  File "D:\Anaconda3\envs\django\lib\concurrent\futures\thread.py", line 181, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+INFO 2025-02-16 22:32:00,273 views 19476 21680 收到请求: http://localhost:3000
+INFO 2025-02-16 22:32:00,275 views 19476 21680 请求方法: POST
+INFO 2025-02-16 22:32:00,275 views 19476 21680 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryiLH80EKMpsvGf5Zw', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-16 22:32:00,333 serializers 19476 21680 开始验证视频文件
+DEBUG 2025-02-16 22:32:00,333 serializers 19476 21680 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-16 22:32:00,334 serializers 19476 21680 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-16 22:32:00,334 serializers 19476 21680 视频文件验证通过
+INFO 2025-02-16 22:32:00,355 views 19476 21680 创建会话成功: a7e3ece4-4ed6-4e1e-9ae0-e3c0135499c5
+INFO 2025-02-16 22:32:00,863 consumers 19476 3216 WebSocket连接已建立: session_id=a7e3ece4-4ed6-4e1e-9ae0-e3c0135499c5, type=standard
+INFO 2025-02-16 22:32:01,076 consumers 19476 3216 WebSocket连接已建立: session_id=a7e3ece4-4ed6-4e1e-9ae0-e3c0135499c5, type=exercise
+INFO 2025-02-16 22:32:01,110 consumers 19476 3216 WebSocket连接已建立: session_id=a7e3ece4-4ed6-4e1e-9ae0-e3c0135499c5, type=standard
+INFO 2025-02-16 22:32:01,147 consumers 19476 3216 WebSocket连接已建立: session_id=a7e3ece4-4ed6-4e1e-9ae0-e3c0135499c5, type=exercise
+INFO 2025-02-16 22:32:06,093 consumers 19476 3216 已发送WebRTC offer: session_id=a7e3ece4-4ed6-4e1e-9ae0-e3c0135499c5
+INFO 2025-02-16 22:32:06,094 consumers 19476 3216 已发送WebRTC offer: session_id=a7e3ece4-4ed6-4e1e-9ae0-e3c0135499c5
+INFO 2025-02-16 22:32:06,149 services 19476 3216 初始化视频处理服务
+INFO 2025-02-16 22:32:06,151 consumers 19476 3216 已发送WebRTC offer: session_id=a7e3ece4-4ed6-4e1e-9ae0-e3c0135499c5
+INFO 2025-02-16 22:32:06,171 services 19476 3216 初始化视频处理服务
+INFO 2025-02-16 22:32:06,174 consumers 19476 3216 已发送WebRTC offer: session_id=a7e3ece4-4ed6-4e1e-9ae0-e3c0135499c5
+ERROR 2025-02-16 22:32:06,178 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:32:06,189 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:32:06,191 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:32:06,282 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:32:06,286 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:32:06,287 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:32:06,288 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:32:06,289 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:32:06,291 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:32:06,292 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-16 22:32:36,267 services 19476 21988 视频处理完成: session_id=a7e3ece4-4ed6-4e1e-9ae0-e3c0135499c5, final_score=81.16477324682825
+INFO 2025-02-16 22:32:36,326 consumers 19476 3216 视频处理完成: session_id=a7e3ece4-4ed6-4e1e-9ae0-e3c0135499c5
+INFO 2025-02-16 22:33:07,740 services 19476 21988 视频处理完成: session_id=a7e3ece4-4ed6-4e1e-9ae0-e3c0135499c5, final_score=80.94180167889266
+INFO 2025-02-16 22:33:07,786 consumers 19476 3216 视频处理完成: session_id=a7e3ece4-4ed6-4e1e-9ae0-e3c0135499c5
+INFO 2025-02-16 22:33:07,822 services 19476 3216 初始化视频处理服务
+INFO 2025-02-16 22:33:07,848 services 19476 3216 初始化视频处理服务
+INFO 2025-02-16 22:33:36,694 views 19476 24272 收到请求: http://localhost:3000
+INFO 2025-02-16 22:33:36,694 views 19476 24272 请求方法: POST
+INFO 2025-02-16 22:33:36,694 views 19476 24272 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryWYUaCKNpS5KmmlB7', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-16 22:33:36,757 serializers 19476 24272 开始验证视频文件
+DEBUG 2025-02-16 22:33:36,757 serializers 19476 24272 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-16 22:33:36,757 serializers 19476 24272 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-16 22:33:36,757 serializers 19476 24272 视频文件验证通过
+INFO 2025-02-16 22:33:36,764 views 19476 24272 创建会话成功: 1b66e281-d640-40c9-8444-12615d957a8c
+INFO 2025-02-16 22:33:37,117 services 19476 21988 视频处理完成: session_id=a7e3ece4-4ed6-4e1e-9ae0-e3c0135499c5, final_score=86.24123791977624
+INFO 2025-02-16 22:33:37,158 consumers 19476 3216 视频处理完成: session_id=a7e3ece4-4ed6-4e1e-9ae0-e3c0135499c5
+INFO 2025-02-16 22:33:58,806 services 19476 21988 视频处理完成: session_id=a7e3ece4-4ed6-4e1e-9ae0-e3c0135499c5, final_score=87.68562460317037
+INFO 2025-02-16 22:33:58,832 consumers 19476 3216 视频处理完成: session_id=a7e3ece4-4ed6-4e1e-9ae0-e3c0135499c5
+INFO 2025-02-16 22:35:28,380 views 19476 23172 收到请求: http://localhost:3000
+INFO 2025-02-16 22:35:28,380 views 19476 23172 请求方法: POST
+INFO 2025-02-16 22:35:28,380 views 19476 23172 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryjDwmtOIRrjX1LT1X', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-16 22:35:28,443 serializers 19476 23172 开始验证视频文件
+DEBUG 2025-02-16 22:35:28,443 serializers 19476 23172 验证 standardVideo: 大小=24099588, 类型=video/mp4
+DEBUG 2025-02-16 22:35:28,443 serializers 19476 23172 验证 exerciseVideo: 大小=21771833, 类型=video/mp4
+INFO 2025-02-16 22:35:28,443 serializers 19476 23172 视频文件验证通过
+INFO 2025-02-16 22:35:28,449 views 19476 23172 创建会话成功: d86c34a4-e94f-4860-bcf2-3c20eb268bc2
+INFO 2025-02-16 22:35:28,537 consumers 19476 3216 WebSocket连接已建立: session_id=d86c34a4-e94f-4860-bcf2-3c20eb268bc2, type=standard
+INFO 2025-02-16 22:35:28,577 consumers 19476 3216 WebSocket连接已建立: session_id=d86c34a4-e94f-4860-bcf2-3c20eb268bc2, type=exercise
+INFO 2025-02-16 22:35:33,578 consumers 19476 3216 已发送WebRTC offer: session_id=d86c34a4-e94f-4860-bcf2-3c20eb268bc2
+INFO 2025-02-16 22:35:33,598 services 19476 3216 初始化视频处理服务
+ERROR 2025-02-16 22:35:33,604 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:35:33,605 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:35:33,606 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:35:33,607 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:35:33,608 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-16 22:35:33,704 consumers 19476 3216 已发送WebRTC offer: session_id=d86c34a4-e94f-4860-bcf2-3c20eb268bc2
+ERROR 2025-02-16 22:35:33,732 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:35:33,733 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:35:33,734 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:35:33,740 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:35:33,741 consumers 19476 3216 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:35:54,445 services 19476 21988 视频处理失败: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\services.py", line 74, in process_videos
+    # 读取帧
+  File "D:\Anaconda3\envs\django\lib\site-packages\asgiref\sync.py", line 229, in __call__
+    loop_future = loop_executor.submit(
+  File "D:\Anaconda3\envs\django\lib\concurrent\futures\thread.py", line 181, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+INFO 2025-02-16 22:36:09,975 views 22288 24168 收到请求: http://localhost:3000
+INFO 2025-02-16 22:36:09,975 views 22288 24168 请求方法: POST
+INFO 2025-02-16 22:36:09,976 views 22288 24168 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundary07UFx1fwlZdOvTw0', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-16 22:36:10,013 serializers 22288 24168 开始验证视频文件
+DEBUG 2025-02-16 22:36:10,014 serializers 22288 24168 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-16 22:36:10,014 serializers 22288 24168 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-16 22:36:10,014 serializers 22288 24168 视频文件验证通过
+INFO 2025-02-16 22:36:10,022 views 22288 24168 创建会话成功: d94767c9-da66-4a6c-af0f-9274bb7eb0ce
+INFO 2025-02-16 22:36:10,097 consumers 22288 22284 WebSocket连接已建立: session_id=d94767c9-da66-4a6c-af0f-9274bb7eb0ce, type=standard
+INFO 2025-02-16 22:36:10,141 consumers 22288 22284 WebSocket连接已建立: session_id=d94767c9-da66-4a6c-af0f-9274bb7eb0ce, type=exercise
+INFO 2025-02-16 22:36:15,140 consumers 22288 22284 已发送WebRTC offer: session_id=d94767c9-da66-4a6c-af0f-9274bb7eb0ce
+INFO 2025-02-16 22:36:15,163 services 22288 22284 初始化视频处理服务
+INFO 2025-02-16 22:36:15,167 consumers 22288 22284 已发送WebRTC offer: session_id=d94767c9-da66-4a6c-af0f-9274bb7eb0ce
+ERROR 2025-02-16 22:36:15,168 consumers 22288 22284 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:36:15,170 consumers 22288 22284 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:36:15,170 consumers 22288 22284 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:36:15,171 consumers 22288 22284 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:36:15,171 consumers 22288 22284 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:36:15,183 consumers 22288 22284 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:36:15,184 services 22288 1504 视频处理失败: name 'mp_pose' is not defined
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\services.py", line 65, in process_videos
+    pose_standard = mp_pose.Pose(
+NameError: name 'mp_pose' is not defined
+ERROR 2025-02-16 22:36:15,186 consumers 22288 22284 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:36:15,236 consumers 22288 22284 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:36:15,237 consumers 22288 22284 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:36:15,238 consumers 22288 22284 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:36:15,300 consumers 22288 22284 视频处理失败: name 'mp_pose' is not defined
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 169, in process_and_stream_video
+    await database_sync_to_async(video_service.process_videos)(
+  File "D:\Anaconda3\envs\django\lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "D:\Anaconda3\envs\django\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Anaconda3\envs\django\lib\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "D:\Anaconda3\envs\django\lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\services.py", line 65, in process_videos
+    pose_standard = mp_pose.Pose(
+NameError: name 'mp_pose' is not defined
+INFO 2025-02-16 22:36:15,337 services 22288 22284 初始化视频处理服务
+ERROR 2025-02-16 22:36:15,362 services 22288 1504 视频处理失败: name 'mp_pose' is not defined
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\services.py", line 65, in process_videos
+    pose_standard = mp_pose.Pose(
+NameError: name 'mp_pose' is not defined
+ERROR 2025-02-16 22:36:15,387 consumers 22288 22284 视频处理失败: name 'mp_pose' is not defined
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 169, in process_and_stream_video
+    await database_sync_to_async(video_service.process_videos)(
+  File "D:\Anaconda3\envs\django\lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "D:\Anaconda3\envs\django\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Anaconda3\envs\django\lib\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "D:\Anaconda3\envs\django\lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\services.py", line 65, in process_videos
+    pose_standard = mp_pose.Pose(
+NameError: name 'mp_pose' is not defined
+INFO 2025-02-16 22:38:56,128 views 1108 23048 收到请求: http://localhost:3000
+INFO 2025-02-16 22:38:56,128 views 1108 23048 请求方法: POST
+INFO 2025-02-16 22:38:56,128 views 1108 23048 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryTq6aoTYlhy31zpno', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-16 22:38:56,174 serializers 1108 23048 开始验证视频文件
+DEBUG 2025-02-16 22:38:56,174 serializers 1108 23048 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-16 22:38:56,174 serializers 1108 23048 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-16 22:38:56,174 serializers 1108 23048 视频文件验证通过
+INFO 2025-02-16 22:38:56,183 views 1108 23048 创建会话成功: fc410929-4686-412b-9cd4-b1e447543242
+INFO 2025-02-16 22:38:56,266 consumers 1108 16392 WebSocket连接已建立: session_id=fc410929-4686-412b-9cd4-b1e447543242, type=standard
+INFO 2025-02-16 22:38:56,318 consumers 1108 16392 WebSocket连接已建立: session_id=fc410929-4686-412b-9cd4-b1e447543242, type=exercise
+INFO 2025-02-16 22:39:01,329 consumers 1108 16392 已发送WebRTC offer: session_id=fc410929-4686-412b-9cd4-b1e447543242
+INFO 2025-02-16 22:39:01,358 services 1108 16392 初始化视频处理服务
+INFO 2025-02-16 22:39:01,363 consumers 1108 16392 已发送WebRTC offer: session_id=fc410929-4686-412b-9cd4-b1e447543242
+ERROR 2025-02-16 22:39:01,365 consumers 1108 16392 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:39:01,367 consumers 1108 16392 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:39:01,370 consumers 1108 16392 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:39:01,371 consumers 1108 16392 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:39:01,371 consumers 1108 16392 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:39:01,452 consumers 1108 16392 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:39:01,453 consumers 1108 16392 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:39:01,454 consumers 1108 16392 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:39:01,455 consumers 1108 16392 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:39:01,457 consumers 1108 16392 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 125, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-16 22:40:21,830 services 1108 9912 视频处理完成: session_id=fc410929-4686-412b-9cd4-b1e447543242, final_score=94.62874778824433
+INFO 2025-02-16 22:40:21,889 consumers 1108 16392 视频处理完成: session_id=fc410929-4686-412b-9cd4-b1e447543242
+INFO 2025-02-16 22:40:21,935 services 1108 16392 初始化视频处理服务
+INFO 2025-02-16 22:41:42,288 services 1108 9912 视频处理完成: session_id=fc410929-4686-412b-9cd4-b1e447543242, final_score=94.62874778824433
+INFO 2025-02-16 22:41:42,336 consumers 1108 16392 视频处理完成: session_id=fc410929-4686-412b-9cd4-b1e447543242
+INFO 2025-02-16 22:45:22,609 views 21144 24144 收到请求: http://localhost:3000
+INFO 2025-02-16 22:45:22,609 views 21144 24144 请求方法: POST
+INFO 2025-02-16 22:45:22,609 views 21144 24144 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryik8chKQYXN8AV2Ev', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-16 22:45:22,656 serializers 21144 24144 开始验证视频文件
+DEBUG 2025-02-16 22:45:22,656 serializers 21144 24144 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-16 22:45:22,657 serializers 21144 24144 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-16 22:45:22,657 serializers 21144 24144 视频文件验证通过
+INFO 2025-02-16 22:45:22,669 views 21144 24144 创建会话成功: d804ff6a-d596-4d77-8dd0-abf613ea4182
+INFO 2025-02-16 22:45:22,823 consumers 21144 23036 WebSocket连接已建立: session_id=d804ff6a-d596-4d77-8dd0-abf613ea4182, type=standard
+ERROR 2025-02-16 22:45:22,834 consumers 21144 23036 设置视频流失败: __init__() missing 1 required positional argument: 'video_service'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 56, in setup_video_stream
+    video_track = VideoStreamTrack(video.file.path)
+TypeError: __init__() missing 1 required positional argument: 'video_service'
+ERROR 2025-02-16 22:45:22,836 consumers 21144 23036 WebSocket连接建立失败: __init__() missing 1 required positional argument: 'video_service'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 39, in connect
+    await self.setup_video_stream()
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 56, in setup_video_stream
+    video_track = VideoStreamTrack(video.file.path)
+TypeError: __init__() missing 1 required positional argument: 'video_service'
+INFO 2025-02-16 22:45:22,850 consumers 21144 23036 WebSocket连接已建立: session_id=d804ff6a-d596-4d77-8dd0-abf613ea4182, type=exercise
+ERROR 2025-02-16 22:45:22,855 consumers 21144 23036 设置视频流失败: __init__() missing 1 required positional argument: 'video_service'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 56, in setup_video_stream
+    video_track = VideoStreamTrack(video.file.path)
+TypeError: __init__() missing 1 required positional argument: 'video_service'
+ERROR 2025-02-16 22:45:22,855 consumers 21144 23036 WebSocket连接建立失败: __init__() missing 1 required positional argument: 'video_service'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 39, in connect
+    await self.setup_video_stream()
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 56, in setup_video_stream
+    video_track = VideoStreamTrack(video.file.path)
+TypeError: __init__() missing 1 required positional argument: 'video_service'
+INFO 2025-02-16 22:46:24,588 views 12844 17900 收到请求: http://localhost:3000
+INFO 2025-02-16 22:46:24,588 views 12844 17900 请求方法: POST
+INFO 2025-02-16 22:46:24,588 views 12844 17900 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryKQ7udgoet8cEHsl0', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-16 22:46:24,631 serializers 12844 17900 开始验证视频文件
+DEBUG 2025-02-16 22:46:24,631 serializers 12844 17900 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-16 22:46:24,631 serializers 12844 17900 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-16 22:46:24,631 serializers 12844 17900 视频文件验证通过
+INFO 2025-02-16 22:46:24,639 views 12844 17900 创建会话成功: 59504b8f-fe5d-4d62-ad37-30ceda6e0605
+INFO 2025-02-16 22:46:24,725 consumers 12844 23368 WebSocket连接已建立: session_id=59504b8f-fe5d-4d62-ad37-30ceda6e0605, type=standard
+ERROR 2025-02-16 22:46:24,733 consumers 12844 23368 设置视频流失败: __init__() missing 1 required positional argument: 'video_service'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 56, in setup_video_stream
+    video_track = VideoStreamTrack(video.file.path)
+TypeError: __init__() missing 1 required positional argument: 'video_service'
+ERROR 2025-02-16 22:46:24,734 consumers 12844 23368 WebSocket连接建立失败: __init__() missing 1 required positional argument: 'video_service'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 39, in connect
+    await self.setup_video_stream()
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 56, in setup_video_stream
+    video_track = VideoStreamTrack(video.file.path)
+TypeError: __init__() missing 1 required positional argument: 'video_service'
+INFO 2025-02-16 22:46:24,755 consumers 12844 23368 WebSocket连接已建立: session_id=59504b8f-fe5d-4d62-ad37-30ceda6e0605, type=exercise
+ERROR 2025-02-16 22:46:24,758 consumers 12844 23368 设置视频流失败: __init__() missing 1 required positional argument: 'video_service'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 56, in setup_video_stream
+    video_track = VideoStreamTrack(video.file.path)
+TypeError: __init__() missing 1 required positional argument: 'video_service'
+ERROR 2025-02-16 22:46:24,759 consumers 12844 23368 WebSocket连接建立失败: __init__() missing 1 required positional argument: 'video_service'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 39, in connect
+    await self.setup_video_stream()
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 56, in setup_video_stream
+    video_track = VideoStreamTrack(video.file.path)
+TypeError: __init__() missing 1 required positional argument: 'video_service'
+INFO 2025-02-16 22:47:30,984 views 19516 12964 收到请求: http://localhost:3000
+INFO 2025-02-16 22:47:30,985 views 19516 12964 请求方法: POST
+INFO 2025-02-16 22:47:30,985 views 19516 12964 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryDS285exa2xXoq9Co', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-16 22:47:31,048 serializers 19516 12964 开始验证视频文件
+DEBUG 2025-02-16 22:47:31,048 serializers 19516 12964 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-16 22:47:31,048 serializers 19516 12964 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-16 22:47:31,048 serializers 19516 12964 视频文件验证通过
+INFO 2025-02-16 22:47:31,058 views 19516 12964 创建会话成功: 33b46f52-6c39-4815-addd-bf3e665defe2
+INFO 2025-02-16 22:47:31,134 consumers 19516 14716 WebSocket连接已建立: session_id=33b46f52-6c39-4815-addd-bf3e665defe2, type=standard
+INFO 2025-02-16 22:47:31,144 services 19516 14716 初始化视频处理服务
+INFO 2025-02-16 22:47:31,209 consumers 19516 14716 WebSocket连接已建立: session_id=33b46f52-6c39-4815-addd-bf3e665defe2, type=exercise
+INFO 2025-02-16 22:47:31,221 services 19516 14716 初始化视频处理服务
+INFO 2025-02-16 22:47:31,262 consumers 19516 14716 WebSocket连接已建立: session_id=33b46f52-6c39-4815-addd-bf3e665defe2, type=standard
+INFO 2025-02-16 22:47:31,274 services 19516 14716 初始化视频处理服务
+INFO 2025-02-16 22:47:31,310 consumers 19516 14716 WebSocket连接已建立: session_id=33b46f52-6c39-4815-addd-bf3e665defe2, type=exercise
+INFO 2025-02-16 22:47:31,324 services 19516 14716 初始化视频处理服务
+INFO 2025-02-16 22:47:36,203 consumers 19516 14716 已发送WebRTC offer: session_id=33b46f52-6c39-4815-addd-bf3e665defe2
+INFO 2025-02-16 22:47:36,283 consumers 19516 14716 已发送WebRTC offer: session_id=33b46f52-6c39-4815-addd-bf3e665defe2
+INFO 2025-02-16 22:47:36,330 consumers 19516 14716 已发送WebRTC offer: session_id=33b46f52-6c39-4815-addd-bf3e665defe2
+INFO 2025-02-16 22:47:36,346 consumers 19516 14716 已发送WebRTC offer: session_id=33b46f52-6c39-4815-addd-bf3e665defe2
+ERROR 2025-02-16 22:47:36,359 consumers 19516 14716 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:47:36,360 consumers 19516 14716 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:47:36,361 consumers 19516 14716 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:47:36,361 consumers 19516 14716 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:47:36,362 consumers 19516 14716 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:47:36,365 consumers 19516 14716 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:47:36,366 consumers 19516 14716 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:47:36,368 consumers 19516 14716 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:47:36,369 consumers 19516 14716 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:47:36,473 consumers 19516 14716 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-16 22:48:41,818 services 19516 11092 视频处理完成: session_id=33b46f52-6c39-4815-addd-bf3e665defe2, final_score=96.45752027269911
+INFO 2025-02-16 22:48:41,883 consumers 19516 14716 视频处理完成: session_id=33b46f52-6c39-4815-addd-bf3e665defe2
+INFO 2025-02-16 22:49:49,434 services 19516 11092 视频处理完成: session_id=33b46f52-6c39-4815-addd-bf3e665defe2, final_score=96.45752027269911
+INFO 2025-02-16 22:49:49,511 consumers 19516 14716 视频处理完成: session_id=33b46f52-6c39-4815-addd-bf3e665defe2
+INFO 2025-02-16 22:51:09,047 services 19516 11092 视频处理完成: session_id=33b46f52-6c39-4815-addd-bf3e665defe2, final_score=95.21999032207758
+INFO 2025-02-16 22:51:09,120 consumers 19516 14716 视频处理完成: session_id=33b46f52-6c39-4815-addd-bf3e665defe2
+INFO 2025-02-16 22:52:28,240 services 19516 11092 视频处理完成: session_id=33b46f52-6c39-4815-addd-bf3e665defe2, final_score=95.1713967367953
+INFO 2025-02-16 22:52:28,311 consumers 19516 14716 视频处理完成: session_id=33b46f52-6c39-4815-addd-bf3e665defe2
+INFO 2025-02-16 22:56:25,970 views 7528 24256 收到请求: http://localhost:3000
+INFO 2025-02-16 22:56:25,970 views 7528 24256 请求方法: POST
+INFO 2025-02-16 22:56:25,970 views 7528 24256 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundarybv2vYVBAfh1uyix6', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-16 22:56:26,029 serializers 7528 24256 开始验证视频文件
+DEBUG 2025-02-16 22:56:26,029 serializers 7528 24256 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-16 22:56:26,029 serializers 7528 24256 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-16 22:56:26,030 serializers 7528 24256 视频文件验证通过
+INFO 2025-02-16 22:56:26,037 views 7528 24256 创建会话成功: 25e09250-f722-4fcc-8d15-c2eba8d183b8
+INFO 2025-02-16 22:56:26,135 consumers 7528 22356 WebSocket连接已建立: session_id=25e09250-f722-4fcc-8d15-c2eba8d183b8, type=standard
+INFO 2025-02-16 22:56:26,150 services 7528 22356 初始化视频处理服务
+INFO 2025-02-16 22:56:26,211 consumers 7528 22356 WebSocket连接已建立: session_id=25e09250-f722-4fcc-8d15-c2eba8d183b8, type=standard
+INFO 2025-02-16 22:56:26,227 services 7528 22356 初始化视频处理服务
+INFO 2025-02-16 22:56:26,267 consumers 7528 22356 WebSocket连接已建立: session_id=25e09250-f722-4fcc-8d15-c2eba8d183b8, type=exercise
+INFO 2025-02-16 22:56:26,279 services 7528 22356 初始化视频处理服务
+INFO 2025-02-16 22:56:31,204 consumers 7528 22356 已发送WebRTC offer: session_id=25e09250-f722-4fcc-8d15-c2eba8d183b8
+INFO 2025-02-16 22:56:31,282 consumers 7528 22356 已发送WebRTC offer: session_id=25e09250-f722-4fcc-8d15-c2eba8d183b8
+ERROR 2025-02-16 22:56:31,300 consumers 7528 22356 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:56:31,303 consumers 7528 22356 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:56:31,304 consumers 7528 22356 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:56:31,304 consumers 7528 22356 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:56:31,306 consumers 7528 22356 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-16 22:56:31,308 consumers 7528 22356 已发送WebRTC offer: session_id=25e09250-f722-4fcc-8d15-c2eba8d183b8
+ERROR 2025-02-16 22:56:31,503 consumers 7528 22356 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:56:31,504 consumers 7528 22356 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:56:31,505 consumers 7528 22356 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:56:31,508 consumers 7528 22356 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:56:31,511 consumers 7528 22356 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 149, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 22:57:38,416 video_stream 7528 22356 处理视频帧失败: 视频已播放完毕
+ERROR 2025-02-16 22:57:38,441 video_stream 7528 22356 处理视频帧失败: 视频已播放完毕
+INFO 2025-02-16 22:57:50,500 services 7528 13264 视频处理完成: session_id=25e09250-f722-4fcc-8d15-c2eba8d183b8, final_score=96.45752027269911
+INFO 2025-02-16 22:57:50,526 consumers 7528 22356 视频处理完成: session_id=25e09250-f722-4fcc-8d15-c2eba8d183b8
+INFO 2025-02-16 22:58:43,568 services 7528 13264 视频处理完成: session_id=25e09250-f722-4fcc-8d15-c2eba8d183b8, final_score=96.47061804869263
+INFO 2025-02-16 22:58:43,600 consumers 7528 22356 视频处理完成: session_id=25e09250-f722-4fcc-8d15-c2eba8d183b8
+INFO 2025-02-16 22:59:34,679 services 7528 13264 视频处理完成: session_id=25e09250-f722-4fcc-8d15-c2eba8d183b8, final_score=96.44623186098588
+INFO 2025-02-16 22:59:34,710 consumers 7528 22356 视频处理完成: session_id=25e09250-f722-4fcc-8d15-c2eba8d183b8
+INFO 2025-02-16 23:01:34,021 views 23176 23452 收到请求: http://localhost:3000
+INFO 2025-02-16 23:01:34,021 views 23176 23452 请求方法: POST
+INFO 2025-02-16 23:01:34,021 views 23176 23452 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundarywQaL0DhkPJtnBfVV', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-16 23:01:34,063 serializers 23176 23452 开始验证视频文件
+DEBUG 2025-02-16 23:01:34,063 serializers 23176 23452 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-16 23:01:34,063 serializers 23176 23452 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-16 23:01:34,064 serializers 23176 23452 视频文件验证通过
+INFO 2025-02-16 23:01:34,071 views 23176 23452 创建会话成功: c83fdb54-d6fb-48c6-b473-3dbad13a7a36
+INFO 2025-02-16 23:01:34,182 consumers 23176 24180 WebSocket连接已建立: session_id=c83fdb54-d6fb-48c6-b473-3dbad13a7a36, type=standard
+INFO 2025-02-16 23:01:34,196 services 23176 24180 初始化视频处理服务
+INFO 2025-02-16 23:01:34,246 consumers 23176 24180 WebSocket连接已建立: session_id=c83fdb54-d6fb-48c6-b473-3dbad13a7a36, type=exercise
+INFO 2025-02-16 23:01:34,258 services 23176 24180 初始化视频处理服务
+INFO 2025-02-16 23:01:39,255 consumers 23176 24180 已发送WebRTC offer: session_id=c83fdb54-d6fb-48c6-b473-3dbad13a7a36
+INFO 2025-02-16 23:01:39,296 consumers 23176 24180 已发送WebRTC offer: session_id=c83fdb54-d6fb-48c6-b473-3dbad13a7a36
+ERROR 2025-02-16 23:01:39,298 consumers 23176 24180 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:01:39,300 consumers 23176 24180 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:01:39,303 consumers 23176 24180 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:01:39,304 consumers 23176 24180 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:01:39,340 consumers 23176 24180 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:01:39,479 consumers 23176 24180 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:01:39,480 consumers 23176 24180 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:01:39,480 consumers 23176 24180 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:01:39,481 consumers 23176 24180 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:01:39,481 consumers 23176 24180 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:02:24,721 video_stream 23176 24180 处理视频帧失败: 视频已播放完毕
+ERROR 2025-02-16 23:02:24,739 video_stream 23176 24180 处理视频帧失败: 视频已播放完毕
+INFO 2025-02-16 23:03:00,732 views 23716 21868 收到请求: http://localhost:3000
+INFO 2025-02-16 23:03:00,732 views 23716 21868 请求方法: POST
+INFO 2025-02-16 23:03:00,732 views 23716 21868 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundarykRYokaLQBoRCraj7', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-16 23:03:00,783 serializers 23716 21868 开始验证视频文件
+DEBUG 2025-02-16 23:03:00,783 serializers 23716 21868 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-16 23:03:00,783 serializers 23716 21868 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-16 23:03:00,783 serializers 23716 21868 视频文件验证通过
+INFO 2025-02-16 23:03:00,791 views 23716 21868 创建会话成功: 9b45ff27-1a10-4122-8646-21eb604a52c5
+INFO 2025-02-16 23:03:00,855 consumers 23716 22920 WebSocket连接已建立: session_id=9b45ff27-1a10-4122-8646-21eb604a52c5, type=standard
+INFO 2025-02-16 23:03:00,870 services 23716 22920 初始化视频处理服务
+INFO 2025-02-16 23:03:00,923 consumers 23716 22920 WebSocket连接已建立: session_id=9b45ff27-1a10-4122-8646-21eb604a52c5, type=exercise
+INFO 2025-02-16 23:03:00,934 services 23716 22920 初始化视频处理服务
+INFO 2025-02-16 23:03:05,934 consumers 23716 22920 已发送WebRTC offer: session_id=9b45ff27-1a10-4122-8646-21eb604a52c5
+INFO 2025-02-16 23:03:05,965 consumers 23716 22920 已发送WebRTC offer: session_id=9b45ff27-1a10-4122-8646-21eb604a52c5
+ERROR 2025-02-16 23:03:05,966 consumers 23716 22920 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:03:05,967 consumers 23716 22920 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:03:05,969 consumers 23716 22920 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:03:05,993 consumers 23716 22920 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:03:05,996 consumers 23716 22920 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:03:06,089 consumers 23716 22920 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:03:06,090 consumers 23716 22920 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:03:06,091 consumers 23716 22920 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:03:06,091 consumers 23716 22920 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:03:06,093 consumers 23716 22920 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 161, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:03:50,945 video_stream 23716 22920 处理视频帧失败: 视频已播放完毕
+ERROR 2025-02-16 23:03:50,965 video_stream 23716 22920 处理视频帧失败: 视频已播放完毕
+INFO 2025-02-16 23:04:22,346 views 21040 24340 收到请求: http://localhost:3000
+INFO 2025-02-16 23:04:22,346 views 21040 24340 请求方法: POST
+INFO 2025-02-16 23:04:22,346 views 21040 24340 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryz24XAVQOXAPXkLCJ', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-16 23:04:22,386 serializers 21040 24340 开始验证视频文件
+DEBUG 2025-02-16 23:04:22,386 serializers 21040 24340 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-16 23:04:22,386 serializers 21040 24340 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-16 23:04:22,386 serializers 21040 24340 视频文件验证通过
+INFO 2025-02-16 23:04:22,393 views 21040 24340 创建会话成功: 5b051b6e-308f-4fab-ad20-877a995d772c
+INFO 2025-02-16 23:04:22,472 consumers 21040 14368 WebSocket连接已建立: session_id=5b051b6e-308f-4fab-ad20-877a995d772c, type=standard
+INFO 2025-02-16 23:04:22,486 services 21040 14368 初始化视频处理服务
+INFO 2025-02-16 23:04:22,541 consumers 21040 14368 WebSocket连接已建立: session_id=5b051b6e-308f-4fab-ad20-877a995d772c, type=exercise
+INFO 2025-02-16 23:04:22,553 services 21040 14368 初始化视频处理服务
+INFO 2025-02-16 23:04:27,537 consumers 21040 14368 已发送WebRTC offer: session_id=5b051b6e-308f-4fab-ad20-877a995d772c
+ERROR 2025-02-16 23:04:27,548 consumers 21040 14368 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:04:27,549 consumers 21040 14368 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:04:27,550 consumers 21040 14368 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:04:27,550 consumers 21040 14368 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:04:27,550 consumers 21040 14368 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-16 23:04:27,592 consumers 21040 14368 已发送WebRTC offer: session_id=5b051b6e-308f-4fab-ad20-877a995d772c
+ERROR 2025-02-16 23:04:27,665 video_stream 21040 14368 处理视频帧失败: 'VideoProcessingService' object has no attribute 'process_frame_for_stream'
+ERROR 2025-02-16 23:04:27,684 consumers 21040 14368 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:04:27,686 consumers 21040 14368 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:04:27,687 consumers 21040 14368 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:04:27,688 consumers 21040 14368 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:04:27,689 consumers 21040 14368 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:04:27,758 video_stream 21040 14368 处理视频帧失败: 'VideoProcessingService' object has no attribute 'process_frame_for_stream'
+INFO 2025-02-16 23:05:23,848 services 21040 2516 视频处理完成: session_id=5b051b6e-308f-4fab-ad20-877a995d772c, final_score=94.62874778824433
+INFO 2025-02-16 23:05:23,872 consumers 21040 14368 视频处理完成: session_id=5b051b6e-308f-4fab-ad20-877a995d772c
+ERROR 2025-02-16 23:06:09,930 services 21040 2516 视频处理失败: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\services.py", line 174, in process_videos
+    one_similarity = 1
+  File "D:\Anaconda3\envs\django\lib\site-packages\asgiref\sync.py", line 229, in __call__
+    loop_future = loop_executor.submit(
+  File "D:\Anaconda3\envs\django\lib\concurrent\futures\thread.py", line 181, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+INFO 2025-02-16 23:08:23,548 views 24208 26384 收到请求: http://localhost:3000
+INFO 2025-02-16 23:08:23,549 views 24208 26384 请求方法: POST
+INFO 2025-02-16 23:08:23,549 views 24208 26384 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryyU1Kp5AQLK7As5By', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-16 23:08:23,591 serializers 24208 26384 开始验证视频文件
+DEBUG 2025-02-16 23:08:23,591 serializers 24208 26384 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-16 23:08:23,591 serializers 24208 26384 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-16 23:08:23,591 serializers 24208 26384 视频文件验证通过
+INFO 2025-02-16 23:08:23,613 views 24208 26384 创建会话成功: 39075bdb-8f4f-4e1d-bc5b-8f63ba8b39dd
+INFO 2025-02-16 23:08:23,723 consumers 24208 22132 WebSocket连接已建立: session_id=39075bdb-8f4f-4e1d-bc5b-8f63ba8b39dd, type=standard
+INFO 2025-02-16 23:08:23,767 services 24208 22132 初始化视频处理服务
+INFO 2025-02-16 23:08:23,915 consumers 24208 22132 WebSocket连接已建立: session_id=39075bdb-8f4f-4e1d-bc5b-8f63ba8b39dd, type=exercise
+INFO 2025-02-16 23:08:23,923 services 24208 22132 初始化视频处理服务
+INFO 2025-02-16 23:08:28,930 consumers 24208 22132 已发送WebRTC offer: session_id=39075bdb-8f4f-4e1d-bc5b-8f63ba8b39dd
+INFO 2025-02-16 23:08:28,931 consumers 24208 22132 已发送WebRTC offer: session_id=39075bdb-8f4f-4e1d-bc5b-8f63ba8b39dd
+ERROR 2025-02-16 23:08:28,998 consumers 24208 22132 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:08:29,001 consumers 24208 22132 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:08:29,005 consumers 24208 22132 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:08:29,007 consumers 24208 22132 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:08:29,009 consumers 24208 22132 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:08:29,031 consumers 24208 22132 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:08:29,033 consumers 24208 22132 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:08:29,034 consumers 24208 22132 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:08:29,167 video_stream 24208 22132 处理视频帧失败: 'VideoProcessingService' object has no attribute 'process_frame_for_stream'
+ERROR 2025-02-16 23:08:29,194 consumers 24208 22132 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:08:29,246 video_stream 24208 22132 处理视频帧失败: 'VideoProcessingService' object has no attribute 'process_frame_for_stream'
+ERROR 2025-02-16 23:08:29,260 consumers 24208 22132 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-16 23:09:24,782 services 24208 20740 视频处理完成: session_id=39075bdb-8f4f-4e1d-bc5b-8f63ba8b39dd, final_score=96.45752027269911
+INFO 2025-02-16 23:09:24,817 consumers 24208 22132 视频处理完成: session_id=39075bdb-8f4f-4e1d-bc5b-8f63ba8b39dd
+INFO 2025-02-16 23:10:20,651 services 24208 20740 视频处理完成: session_id=39075bdb-8f4f-4e1d-bc5b-8f63ba8b39dd, final_score=96.45752027269911
+INFO 2025-02-16 23:10:20,683 consumers 24208 22132 视频处理完成: session_id=39075bdb-8f4f-4e1d-bc5b-8f63ba8b39dd
+INFO 2025-02-16 23:24:45,913 views 12052 26560 收到请求: http://localhost:3000
+INFO 2025-02-16 23:24:45,913 views 12052 26560 请求方法: POST
+INFO 2025-02-16 23:24:45,913 views 12052 26560 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundarym10uBuTMt96kgBvw', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-16 23:24:45,951 serializers 12052 26560 开始验证视频文件
+DEBUG 2025-02-16 23:24:45,951 serializers 12052 26560 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-16 23:24:45,952 serializers 12052 26560 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-16 23:24:45,952 serializers 12052 26560 视频文件验证通过
+INFO 2025-02-16 23:24:45,960 views 12052 26560 创建会话成功: 3f7ecb22-5fd7-4683-a1a3-187651f6e5cf
+INFO 2025-02-16 23:24:46,051 consumers 12052 25684 WebSocket连接已建立: session_id=3f7ecb22-5fd7-4683-a1a3-187651f6e5cf, type=standard
+INFO 2025-02-16 23:24:46,065 services 12052 25684 初始化视频处理服务
+INFO 2025-02-16 23:24:46,127 consumers 12052 25684 WebSocket连接已建立: session_id=3f7ecb22-5fd7-4683-a1a3-187651f6e5cf, type=exercise
+INFO 2025-02-16 23:24:46,140 services 12052 25684 初始化视频处理服务
+INFO 2025-02-16 23:24:51,127 consumers 12052 25684 已发送WebRTC offer: session_id=3f7ecb22-5fd7-4683-a1a3-187651f6e5cf
+ERROR 2025-02-16 23:24:51,140 consumers 12052 25684 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:24:51,141 consumers 12052 25684 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:24:51,141 consumers 12052 25684 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:24:51,142 consumers 12052 25684 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:24:51,142 consumers 12052 25684 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-16 23:24:51,177 consumers 12052 25684 已发送WebRTC offer: session_id=3f7ecb22-5fd7-4683-a1a3-187651f6e5cf
+ERROR 2025-02-16 23:24:51,222 video_stream 12052 25684 处理视频帧失败: 'VideoProcessingService' object has no attribute 'process_frame_for_stream'
+ERROR 2025-02-16 23:24:51,243 consumers 12052 25684 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:24:51,244 consumers 12052 25684 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:24:51,245 consumers 12052 25684 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:24:51,245 consumers 12052 25684 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:24:51,246 consumers 12052 25684 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:24:51,309 video_stream 12052 25684 处理视频帧失败: 'VideoProcessingService' object has no attribute 'process_frame_for_stream'
+INFO 2025-02-16 23:25:44,882 services 12052 24028 视频处理完成: session_id=3f7ecb22-5fd7-4683-a1a3-187651f6e5cf, final_score=82.21
+INFO 2025-02-16 23:25:44,911 consumers 12052 25684 视频处理完成: session_id=3f7ecb22-5fd7-4683-a1a3-187651f6e5cf
+ERROR 2025-02-16 23:25:52,467 services 12052 24028 视频处理失败: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\services.py", line 126, in process_videos
+    async_to_sync(self.channel_layer.group_send)(
+  File "D:\Anaconda3\envs\django\lib\site-packages\asgiref\sync.py", line 229, in __call__
+    loop_future = loop_executor.submit(
+  File "D:\Anaconda3\envs\django\lib\concurrent\futures\thread.py", line 181, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+INFO 2025-02-16 23:26:07,890 views 26996 25612 收到请求: http://localhost:3000
+INFO 2025-02-16 23:26:07,890 views 26996 25612 请求方法: POST
+INFO 2025-02-16 23:26:07,891 views 26996 25612 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundarypfoPjMAoQiygQc3N', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-16 23:26:07,953 serializers 26996 25612 开始验证视频文件
+DEBUG 2025-02-16 23:26:07,954 serializers 26996 25612 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-16 23:26:07,954 serializers 26996 25612 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-16 23:26:07,954 serializers 26996 25612 视频文件验证通过
+INFO 2025-02-16 23:26:07,962 views 26996 25612 创建会话成功: c7acb6ee-b3ea-48fd-8724-e4e8b8234e8d
+INFO 2025-02-16 23:26:08,025 consumers 26996 25276 WebSocket连接已建立: session_id=c7acb6ee-b3ea-48fd-8724-e4e8b8234e8d, type=standard
+INFO 2025-02-16 23:26:08,039 services 26996 25276 初始化视频处理服务
+INFO 2025-02-16 23:26:08,098 consumers 26996 25276 WebSocket连接已建立: session_id=c7acb6ee-b3ea-48fd-8724-e4e8b8234e8d, type=standard
+INFO 2025-02-16 23:26:08,109 services 26996 25276 初始化视频处理服务
+INFO 2025-02-16 23:26:08,144 consumers 26996 25276 WebSocket连接已建立: session_id=c7acb6ee-b3ea-48fd-8724-e4e8b8234e8d, type=exercise
+INFO 2025-02-16 23:26:08,156 services 26996 25276 初始化视频处理服务
+INFO 2025-02-16 23:26:13,101 consumers 26996 25276 已发送WebRTC offer: session_id=c7acb6ee-b3ea-48fd-8724-e4e8b8234e8d
+INFO 2025-02-16 23:26:13,148 consumers 26996 25276 已发送WebRTC offer: session_id=c7acb6ee-b3ea-48fd-8724-e4e8b8234e8d
+ERROR 2025-02-16 23:26:13,162 consumers 26996 25276 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:26:13,163 consumers 26996 25276 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:26:13,166 consumers 26996 25276 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:26:13,166 consumers 26996 25276 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:26:13,232 consumers 26996 25276 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-16 23:26:13,234 consumers 26996 25276 已发送WebRTC offer: session_id=c7acb6ee-b3ea-48fd-8724-e4e8b8234e8d
+ERROR 2025-02-16 23:26:13,247 consumers 26996 25276 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:26:13,248 consumers 26996 25276 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:26:13,249 consumers 26996 25276 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:26:13,249 consumers 26996 25276 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:26:13,250 consumers 26996 25276 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:26:31,026 video_stream 26996 25276 处理视频帧失败: 视频已播放完毕
+ERROR 2025-02-16 23:26:31,085 video_stream 26996 25276 处理视频帧失败: 视频已播放完毕
+INFO 2025-02-16 23:27:10,938 services 26996 2248 视频处理完成: session_id=c7acb6ee-b3ea-48fd-8724-e4e8b8234e8d, final_score=82.21
+INFO 2025-02-16 23:27:10,969 consumers 26996 25276 视频处理完成: session_id=c7acb6ee-b3ea-48fd-8724-e4e8b8234e8d
+ERROR 2025-02-16 23:27:26,000 services 26996 2248 视频处理失败: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\services.py", line 126, in process_videos
+    _, results_exercise = self.pose_processor.process_frame(
+  File "D:\Anaconda3\envs\django\lib\site-packages\asgiref\sync.py", line 229, in __call__
+    loop_future = loop_executor.submit(
+  File "D:\Anaconda3\envs\django\lib\concurrent\futures\thread.py", line 181, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+ERROR 2025-02-16 23:27:26,379 services 26996 2248 视频处理失败: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\services.py", line 126, in process_videos
+    _, results_exercise = self.pose_processor.process_frame(
+  File "D:\Anaconda3\envs\django\lib\site-packages\asgiref\sync.py", line 229, in __call__
+    loop_future = loop_executor.submit(
+  File "D:\Anaconda3\envs\django\lib\concurrent\futures\thread.py", line 181, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+INFO 2025-02-16 23:27:41,594 views 12748 18700 收到请求: http://localhost:3000
+INFO 2025-02-16 23:27:41,594 views 12748 18700 请求方法: POST
+INFO 2025-02-16 23:27:41,594 views 12748 18700 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryT5JTAYwBYTVQ72Hu', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-16 23:27:41,649 serializers 12748 18700 开始验证视频文件
+DEBUG 2025-02-16 23:27:41,649 serializers 12748 18700 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-16 23:27:41,649 serializers 12748 18700 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-16 23:27:41,649 serializers 12748 18700 视频文件验证通过
+INFO 2025-02-16 23:27:41,657 views 12748 18700 创建会话成功: 20fe0174-fbe8-4d8a-918e-e3debf05f2f0
+INFO 2025-02-16 23:27:41,741 consumers 12748 23372 WebSocket连接已建立: session_id=20fe0174-fbe8-4d8a-918e-e3debf05f2f0, type=standard
+INFO 2025-02-16 23:27:41,757 services 12748 23372 初始化视频处理服务
+INFO 2025-02-16 23:27:41,818 consumers 12748 23372 WebSocket连接已建立: session_id=20fe0174-fbe8-4d8a-918e-e3debf05f2f0, type=standard
+INFO 2025-02-16 23:27:41,831 services 12748 23372 初始化视频处理服务
+INFO 2025-02-16 23:27:41,871 consumers 12748 23372 WebSocket连接已建立: session_id=20fe0174-fbe8-4d8a-918e-e3debf05f2f0, type=exercise
+INFO 2025-02-16 23:27:41,884 services 12748 23372 初始化视频处理服务
+INFO 2025-02-16 23:27:46,826 consumers 12748 23372 已发送WebRTC offer: session_id=20fe0174-fbe8-4d8a-918e-e3debf05f2f0
+INFO 2025-02-16 23:27:46,890 consumers 12748 23372 已发送WebRTC offer: session_id=20fe0174-fbe8-4d8a-918e-e3debf05f2f0
+ERROR 2025-02-16 23:27:46,904 consumers 12748 23372 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:27:46,905 consumers 12748 23372 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:27:46,906 consumers 12748 23372 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:27:46,906 consumers 12748 23372 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:27:46,907 consumers 12748 23372 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-16 23:27:46,939 consumers 12748 23372 已发送WebRTC offer: session_id=20fe0174-fbe8-4d8a-918e-e3debf05f2f0
+ERROR 2025-02-16 23:27:47,047 consumers 12748 23372 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:27:47,048 consumers 12748 23372 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:27:47,049 consumers 12748 23372 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:27:47,049 consumers 12748 23372 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:27:47,050 consumers 12748 23372 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-16 23:28:38,232 video_stream 12748 23372 处理视频帧失败: 视频已播放完毕
+ERROR 2025-02-16 23:28:38,293 video_stream 12748 23372 处理视频帧失败: 视频已播放完毕
+INFO 2025-02-16 23:28:51,114 services 12748 24296 视频处理完成: session_id=20fe0174-fbe8-4d8a-918e-e3debf05f2f0, final_score=82.21
+INFO 2025-02-16 23:28:51,140 consumers 12748 23372 视频处理完成: session_id=20fe0174-fbe8-4d8a-918e-e3debf05f2f0
+INFO 2025-02-19 11:52:00,403 views 23404 21672 收到请求: http://localhost:3000
+INFO 2025-02-19 11:52:00,406 views 23404 21672 请求方法: POST
+INFO 2025-02-19 11:52:00,406 views 23404 21672 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryaVLUGjd7TUe42ukt', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-19 11:52:00,502 serializers 23404 21672 开始验证视频文件
+DEBUG 2025-02-19 11:52:00,503 serializers 23404 21672 验证 standardVideo: 大小=24099588, 类型=video/mp4
+DEBUG 2025-02-19 11:52:00,503 serializers 23404 21672 验证 exerciseVideo: 大小=21771833, 类型=video/mp4
+INFO 2025-02-19 11:52:00,503 serializers 23404 21672 视频文件验证通过
+INFO 2025-02-19 11:52:00,538 views 23404 21672 创建会话成功: 51efacdd-8838-4f2f-99d7-89e752178281
+INFO 2025-02-19 11:52:00,665 consumers 23404 23164 WebSocket连接已建立: session_id=51efacdd-8838-4f2f-99d7-89e752178281, type=standard
+INFO 2025-02-19 11:52:00,771 services 23404 23164 初始化视频处理服务
+INFO 2025-02-19 11:52:01,177 consumers 23404 23164 WebSocket连接已建立: session_id=51efacdd-8838-4f2f-99d7-89e752178281, type=standard
+INFO 2025-02-19 11:52:01,202 services 23404 23164 初始化视频处理服务
+INFO 2025-02-19 11:52:01,286 consumers 23404 23164 WebSocket连接已建立: session_id=51efacdd-8838-4f2f-99d7-89e752178281, type=exercise
+INFO 2025-02-19 11:52:01,310 services 23404 23164 初始化视频处理服务
+INFO 2025-02-19 11:52:06,218 consumers 23404 23164 已发送WebRTC offer: session_id=51efacdd-8838-4f2f-99d7-89e752178281
+INFO 2025-02-19 11:52:06,298 consumers 23404 23164 已发送WebRTC offer: session_id=51efacdd-8838-4f2f-99d7-89e752178281
+ERROR 2025-02-19 11:52:06,365 consumers 23404 23164 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 11:52:06,368 consumers 23404 23164 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 11:52:06,369 consumers 23404 23164 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 11:52:06,371 consumers 23404 23164 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 11:52:06,373 consumers 23404 23164 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-19 11:52:06,390 consumers 23404 23164 已发送WebRTC offer: session_id=51efacdd-8838-4f2f-99d7-89e752178281
+ERROR 2025-02-19 11:52:06,893 consumers 23404 23164 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 11:52:06,897 consumers 23404 23164 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 11:52:06,899 consumers 23404 23164 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 11:52:06,900 consumers 23404 23164 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 11:52:06,903 consumers 23404 23164 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 11:52:06,907 consumers 23404 23164 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 11:52:06,909 consumers 23404 23164 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 11:52:07,214 consumers 23404 23164 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 11:52:07,350 consumers 23404 23164 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 11:52:07,561 consumers 23404 23164 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-19 12:06:08,076 views 24508 7728 收到请求: http://localhost:3000
+INFO 2025-02-19 12:06:08,077 views 24508 7728 请求方法: POST
+INFO 2025-02-19 12:06:08,077 views 24508 7728 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundarydjrUWAZG87erqIYI', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-19 12:06:08,148 serializers 24508 7728 开始验证视频文件
+DEBUG 2025-02-19 12:06:08,149 serializers 24508 7728 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-19 12:06:08,149 serializers 24508 7728 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-19 12:06:08,149 serializers 24508 7728 视频文件验证通过
+INFO 2025-02-19 12:06:08,163 views 24508 7728 创建会话成功: d67e577f-1947-46b2-bc94-338a0103dc64
+INFO 2025-02-19 12:06:08,300 consumers 24508 16984 WebSocket连接已建立: session_id=d67e577f-1947-46b2-bc94-338a0103dc64, type=standard
+INFO 2025-02-19 12:06:08,339 services 24508 16984 初始化视频处理服务
+ERROR 2025-02-19 12:06:08,364 consumers 24508 16984 WebSocket连接建立失败: 'dict' object has no attribute 'iceServers'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 60, in connect
+    transceiver = self.pc.addTransceiver(
+  File "D:\Anaconda3\envs\django\lib\site-packages\aiortc\rtcpeerconnection.py", line 474, in addTransceiver
+    return self.__createTransceiver(
+  File "D:\Anaconda3\envs\django\lib\site-packages\aiortc\rtcpeerconnection.py", line 1087, in __createTransceiver
+    dtlsTransport = self.__createDtlsTransport()
+  File "D:\Anaconda3\envs\django\lib\site-packages\aiortc\rtcpeerconnection.py", line 1056, in __createDtlsTransport
+    iceGatherer = RTCIceGatherer(iceServers=self.__configuration.iceServers)
+AttributeError: 'dict' object has no attribute 'iceServers'
+INFO 2025-02-19 12:06:08,371 consumers 24508 16984 WebSocket连接已建立: session_id=d67e577f-1947-46b2-bc94-338a0103dc64, type=standard
+INFO 2025-02-19 12:06:08,399 services 24508 16984 初始化视频处理服务
+ERROR 2025-02-19 12:06:08,409 consumers 24508 16984 WebSocket连接建立失败: 'dict' object has no attribute 'iceServers'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 60, in connect
+    transceiver = self.pc.addTransceiver(
+  File "D:\Anaconda3\envs\django\lib\site-packages\aiortc\rtcpeerconnection.py", line 474, in addTransceiver
+    return self.__createTransceiver(
+  File "D:\Anaconda3\envs\django\lib\site-packages\aiortc\rtcpeerconnection.py", line 1087, in __createTransceiver
+    dtlsTransport = self.__createDtlsTransport()
+  File "D:\Anaconda3\envs\django\lib\site-packages\aiortc\rtcpeerconnection.py", line 1056, in __createDtlsTransport
+    iceGatherer = RTCIceGatherer(iceServers=self.__configuration.iceServers)
+AttributeError: 'dict' object has no attribute 'iceServers'
+INFO 2025-02-19 12:06:08,434 consumers 24508 16984 WebSocket连接已建立: session_id=d67e577f-1947-46b2-bc94-338a0103dc64, type=exercise
+INFO 2025-02-19 12:06:08,458 services 24508 16984 初始化视频处理服务
+ERROR 2025-02-19 12:06:08,471 consumers 24508 16984 WebSocket连接建立失败: 'dict' object has no attribute 'iceServers'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 60, in connect
+    transceiver = self.pc.addTransceiver(
+  File "D:\Anaconda3\envs\django\lib\site-packages\aiortc\rtcpeerconnection.py", line 474, in addTransceiver
+    return self.__createTransceiver(
+  File "D:\Anaconda3\envs\django\lib\site-packages\aiortc\rtcpeerconnection.py", line 1087, in __createTransceiver
+    dtlsTransport = self.__createDtlsTransport()
+  File "D:\Anaconda3\envs\django\lib\site-packages\aiortc\rtcpeerconnection.py", line 1056, in __createDtlsTransport
+    iceGatherer = RTCIceGatherer(iceServers=self.__configuration.iceServers)
+AttributeError: 'dict' object has no attribute 'iceServers'
+INFO 2025-02-19 12:07:29,385 views 23508 24124 收到请求: http://localhost:3000
+INFO 2025-02-19 12:07:29,385 views 23508 24124 请求方法: POST
+INFO 2025-02-19 12:07:29,385 views 23508 24124 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundary2bYeHMfhl84R7WQm', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-19 12:07:29,450 serializers 23508 24124 开始验证视频文件
+DEBUG 2025-02-19 12:07:29,451 serializers 23508 24124 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-19 12:07:29,451 serializers 23508 24124 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-19 12:07:29,451 serializers 23508 24124 视频文件验证通过
+INFO 2025-02-19 12:07:29,464 views 23508 24124 创建会话成功: e02bca8d-c3a2-4245-96b7-5feab0e73653
+INFO 2025-02-19 12:07:29,597 consumers 23508 10312 WebSocket连接已建立: session_id=e02bca8d-c3a2-4245-96b7-5feab0e73653, type=standard
+INFO 2025-02-19 12:07:29,618 services 23508 10312 初始化视频处理服务
+INFO 2025-02-19 12:07:29,715 consumers 23508 10312 WebSocket连接已建立: session_id=e02bca8d-c3a2-4245-96b7-5feab0e73653, type=exercise
+INFO 2025-02-19 12:07:29,733 services 23508 10312 初始化视频处理服务
+INFO 2025-02-19 12:07:34,716 consumers 23508 10312 已发送WebRTC offer: session_id=e02bca8d-c3a2-4245-96b7-5feab0e73653
+ERROR 2025-02-19 12:07:34,751 consumers 23508 10312 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 152, in receive
+    sdpMid=data['candidate']['sdpMid'],
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:07:34,753 consumers 23508 10312 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 152, in receive
+    sdpMid=data['candidate']['sdpMid'],
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:07:34,754 consumers 23508 10312 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 152, in receive
+    sdpMid=data['candidate']['sdpMid'],
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:07:34,755 consumers 23508 10312 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 152, in receive
+    sdpMid=data['candidate']['sdpMid'],
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:07:34,756 consumers 23508 10312 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 152, in receive
+    sdpMid=data['candidate']['sdpMid'],
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-19 12:07:35,059 consumers 23508 10312 已发送WebRTC offer: session_id=e02bca8d-c3a2-4245-96b7-5feab0e73653
+ERROR 2025-02-19 12:07:35,087 consumers 23508 10312 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 152, in receive
+    sdpMid=data['candidate']['sdpMid'],
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:07:35,090 consumers 23508 10312 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 152, in receive
+    sdpMid=data['candidate']['sdpMid'],
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:07:35,091 consumers 23508 10312 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 152, in receive
+    sdpMid=data['candidate']['sdpMid'],
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:07:35,092 consumers 23508 10312 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 152, in receive
+    sdpMid=data['candidate']['sdpMid'],
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:07:35,095 consumers 23508 10312 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 152, in receive
+    sdpMid=data['candidate']['sdpMid'],
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:08:49,083 services 23508 12712 视频处理失败: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\services.py", line 141, in process_videos
+  File "D:\Anaconda3\envs\django\lib\site-packages\asgiref\sync.py", line 229, in __call__
+    loop_future = loop_executor.submit(
+  File "D:\Anaconda3\envs\django\lib\concurrent\futures\thread.py", line 181, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+INFO 2025-02-19 12:09:08,448 views 13440 22616 收到请求: http://localhost:3000
+INFO 2025-02-19 12:09:08,448 views 13440 22616 请求方法: POST
+INFO 2025-02-19 12:09:08,449 views 13440 22616 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundarykSy51nv8hk0NMzVh', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-19 12:09:08,512 serializers 13440 22616 开始验证视频文件
+DEBUG 2025-02-19 12:09:08,512 serializers 13440 22616 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-19 12:09:08,512 serializers 13440 22616 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-19 12:09:08,513 serializers 13440 22616 视频文件验证通过
+INFO 2025-02-19 12:09:08,525 views 13440 22616 创建会话成功: 5994dbc8-65b9-46f9-a6dc-5cbf00bf757b
+INFO 2025-02-19 12:09:08,624 consumers 13440 24432 WebSocket连接已建立: session_id=5994dbc8-65b9-46f9-a6dc-5cbf00bf757b, type=standard
+INFO 2025-02-19 12:09:08,652 services 13440 24432 初始化视频处理服务
+INFO 2025-02-19 12:09:08,742 consumers 13440 24432 WebSocket连接已建立: session_id=5994dbc8-65b9-46f9-a6dc-5cbf00bf757b, type=standard
+INFO 2025-02-19 12:09:08,760 services 13440 24432 初始化视频处理服务
+INFO 2025-02-19 12:09:08,811 consumers 13440 24432 WebSocket连接已建立: session_id=5994dbc8-65b9-46f9-a6dc-5cbf00bf757b, type=exercise
+INFO 2025-02-19 12:09:08,828 services 13440 24432 初始化视频处理服务
+INFO 2025-02-19 12:09:13,748 consumers 13440 24432 已发送WebRTC offer: session_id=5994dbc8-65b9-46f9-a6dc-5cbf00bf757b
+INFO 2025-02-19 12:09:13,812 consumers 13440 24432 已发送WebRTC offer: session_id=5994dbc8-65b9-46f9-a6dc-5cbf00bf757b
+ERROR 2025-02-19 12:09:13,839 consumers 13440 24432 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:09:13,841 consumers 13440 24432 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:09:13,844 consumers 13440 24432 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:09:13,846 consumers 13440 24432 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:09:13,950 consumers 13440 24432 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-19 12:09:13,953 consumers 13440 24432 已发送WebRTC offer: session_id=5994dbc8-65b9-46f9-a6dc-5cbf00bf757b
+ERROR 2025-02-19 12:09:13,972 consumers 13440 24432 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:09:13,973 consumers 13440 24432 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:09:13,974 consumers 13440 24432 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:09:13,975 consumers 13440 24432 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:09:13,976 consumers 13440 24432 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:09:46,644 services 13440 3416 视频处理失败: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\services.py", line 148, in process_videos
+    )
+  File "D:\Anaconda3\envs\django\lib\site-packages\asgiref\sync.py", line 229, in __call__
+    loop_future = loop_executor.submit(
+  File "D:\Anaconda3\envs\django\lib\concurrent\futures\thread.py", line 181, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+INFO 2025-02-19 12:10:04,834 views 16508 4612 收到请求: http://localhost:3000
+INFO 2025-02-19 12:10:04,834 views 16508 4612 请求方法: POST
+INFO 2025-02-19 12:10:04,835 views 16508 4612 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryVCwo1oA0viyi6tAA', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '45871751', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-19 12:10:04,904 serializers 16508 4612 开始验证视频文件
+DEBUG 2025-02-19 12:10:04,904 serializers 16508 4612 验证 standardVideo: 大小=21771833, 类型=video/mp4
+DEBUG 2025-02-19 12:10:04,904 serializers 16508 4612 验证 exerciseVideo: 大小=24099588, 类型=video/mp4
+INFO 2025-02-19 12:10:04,905 serializers 16508 4612 视频文件验证通过
+INFO 2025-02-19 12:10:04,917 views 16508 4612 创建会话成功: 8635daf8-361d-4015-9ebf-831b32fde1ab
+INFO 2025-02-19 12:10:05,117 consumers 16508 5220 WebSocket连接已建立: session_id=8635daf8-361d-4015-9ebf-831b32fde1ab, type=standard
+INFO 2025-02-19 12:10:05,153 services 16508 5220 初始化视频处理服务
+INFO 2025-02-19 12:10:05,276 consumers 16508 5220 WebSocket连接已建立: session_id=8635daf8-361d-4015-9ebf-831b32fde1ab, type=exercise
+INFO 2025-02-19 12:10:05,297 services 16508 5220 初始化视频处理服务
+INFO 2025-02-19 12:10:10,310 consumers 16508 5220 已发送WebRTC offer: session_id=8635daf8-361d-4015-9ebf-831b32fde1ab
+ERROR 2025-02-19 12:10:10,333 consumers 16508 5220 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:10:10,335 consumers 16508 5220 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:10:10,337 consumers 16508 5220 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:10:10,339 consumers 16508 5220 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:10:10,341 consumers 16508 5220 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-19 12:10:10,682 consumers 16508 5220 已发送WebRTC offer: session_id=8635daf8-361d-4015-9ebf-831b32fde1ab
+ERROR 2025-02-19 12:10:10,716 consumers 16508 5220 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:10:10,722 consumers 16508 5220 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:10:10,725 consumers 16508 5220 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:10:10,950 consumers 16508 5220 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-19 12:10:11,063 consumers 16508 5220 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'

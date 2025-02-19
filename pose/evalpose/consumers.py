@@ -11,6 +11,8 @@ from channels.db import database_sync_to_async
 from .models import VideoFile
 from .services import VideoProcessingService
 import asyncio
+import time
+import cv2
 
 logger = logging.getLogger(__name__)
 
@@ -35,9 +37,33 @@ class VideoAnalysisConsumer(AsyncWebsocketConsumer):
             
             logger.info(f"WebSocket连接已建立: session_id={self.session_id}, type={self.type}")
 
-            # 如果是标准视频，设置WebRTC
-            await self.setup_video_stream()
-            # 如果是练习视频连接，开始视频分析
+            # 创建视频处理服务实例
+            self.video_service = VideoProcessingService()
+            
+            # 设置视频流时传入服务实例
+            video = await self.get_video_file()
+            if not video:
+                logger.error(f"找不到视频文件: session_id={self.session_id}, type={self.type}")
+                return
+                
+            self.pc = RTCPeerConnection()
+            video_track = VideoStreamTrack(video.file.path, self.video_service)
+            self.pc.addTrack(video_track)
+            
+            # 创建offer
+            offer = await self.pc.createOffer()
+            await self.pc.setLocalDescription(offer)
+            
+            await self.send(text_data=json.dumps({
+                'type': 'offer',
+                'offer': {
+                    'sdp': self.pc.localDescription.sdp,
+                    'type': self.pc.localDescription.type
+                }
+            }))
+            logger.info(f"已发送WebRTC offer: session_id={self.session_id}")
+            
+            # 开始视频分析
             asyncio.create_task(self.start_video_analysis())
                 
         except Exception as e:
@@ -53,7 +79,7 @@ class VideoAnalysisConsumer(AsyncWebsocketConsumer):
                 return
                 
             self.pc = RTCPeerConnection()
-            video_track = VideoStreamTrack(video.file.path)
+            video_track = VideoStreamTrack(video.file.path, self.video_service)
             self.pc.addTrack(video_track)
             
             # 创建offer
@@ -111,6 +137,7 @@ class VideoAnalysisConsumer(AsyncWebsocketConsumer):
         try:
             data = json.loads(text_data)
             
+            # 处理远端SDP回复消息
             if data['type'] == 'answer':
                 if self.pc:
                     answer = RTCSessionDescription(
@@ -161,11 +188,8 @@ class VideoAnalysisConsumer(AsyncWebsocketConsumer):
     async def process_and_stream_video(self, standard_video_path, exercise_video_path):
         """处理视频并发送评分"""
         try:
-            # 创建视频处理服务实例
-            video_service = VideoProcessingService()
-            
             # 调用处理方法
-            await database_sync_to_async(video_service.process_videos)(
+            await database_sync_to_async(self.video_service.process_videos)(
                 self.session_id,
                 standard_video_path,
                 exercise_video_path
