@@ -3,7 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .serializers import VideoUploadSerializer, SessionSerializer
-# from .services import VideoProcessingService
+from .services import VideoProcessingService
 from .models import EvalSession, VideoFile
 import threading
 import logging
@@ -48,12 +48,23 @@ class VideoUploadView(APIView):
                 standard_file.file.close()
                 exercise_file.file.close()
                 
-                # 立即返回会话ID
-                response_serializer = SessionSerializer(session)
-                return Response(response_serializer.data, status=status.HTTP_201_CREATED)
+                # 启动异步处理
+                video_service = VideoProcessingService()
+                thread = threading.Thread(
+                    target=video_service.process_videos,
+                    args=(session.session_id, standard_file.file.path, exercise_file.file.path),
+                    daemon=True
+                )
+                thread.start()
+                
+                return Response(SessionSerializer(session).data, status=status.HTTP_201_CREATED)
                 
             except Exception as e:
-                logger.error(f"创建会话失败: {str(e)}", exc_info=True)
+                logger.error(f"处理上传失败: {str(e)}", exc_info=True)
+                if 'session' in locals():
+                    session.status = 'failed'
+                    session.error_message = str(e)
+                    session.save()
                 return Response(
                     {'error': str(e)},
                     status=status.HTTP_500_INTERNAL_SERVER_ERROR

@@ -149,29 +149,39 @@ LOGGING = {
     'disable_existing_loggers': False,
     'formatters': {
         'verbose': {
-            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
-            'style': '{',
+            'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s',
+            'style': '%',
+            'datefmt': '%Y-%m-%d %H:%M:%S'
         },
         'simple': {
-            'format': '{levelname} {message}',
-            'style': '{',
+            'format': '%(levelname)s %(message)s',
+            'style': '%'
         },
     },
     'handlers': {
         'console': {
             'class': 'logging.StreamHandler',
             'formatter': 'verbose',
+            'stream': 'ext://sys.stdout',  # 使用标准输出
         },
         'file': {
-            'class': 'logging.FileHandler',
+            'class': 'logging.handlers.RotatingFileHandler',  # 使用 RotatingFileHandler
             'filename': 'debug.log',
             'formatter': 'verbose',
+            'encoding': 'utf-8',  # 文件处理器支持 encoding
+            'maxBytes': 10485760,  # 10MB
+            'backupCount': 5,
         },
     },
     'loggers': {
         'evalpose': {
             'handlers': ['console', 'file'],
             'level': 'DEBUG',
+            'propagate': True,
+        },
+        'django': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
             'propagate': True,
         },
     },

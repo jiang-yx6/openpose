@@ -7,7 +7,8 @@ class EvalSession(models.Model):
         ('pending', '等待处理'),
         ('processing', '处理中'),
         ('completed', '已完成'),
-        ('failed', '失败')
+        ('failed', '失败'),
+        ('cancelled', '已取消'),
     ]
 
     session_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
@@ -15,7 +16,11 @@ class EvalSession(models.Model):
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
     score = models.FloatField(null=True, blank=True)
     error_message = models.TextField(null=True, blank=True)
-
+    dtw_distance = models.FloatField(null=True, blank=True)
+    similarity_score = models.FloatField(null=True, blank=True)
+    frame_scores = models.JSONField(null=True, blank=True)
+    report_path = models.CharField(max_length=255, null=True, blank=True)    
+    frame_data = models.JSONField(null=True,blank=True)
     class Meta:
         ordering = ['-created_at']
 
@@ -39,3 +44,4 @@ class VideoFile(models.Model):
 
     def __str__(self):
         return f"{self.video_type} - {self.session.session_id}"
+

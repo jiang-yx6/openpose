@@ -23,6 +23,10 @@ class VideoAnalysisConsumer(AsyncWebsocketConsumer):
             # 从URL参数获取session_id和type
             self.session_id = self.scope['url_route']['kwargs']['session_id']
             self.type = self.scope['url_route']['kwargs']['type']
+            
+            logger.info(f"尝试建立WebSocket连接: URL={self.scope['path']}")
+            logger.info(f"连接参数: session_id={self.session_id}, type={self.type}")
+            
             self.room_group_name = f'session_{self.session_id}'
             self.pc = None
 
@@ -34,7 +38,6 @@ class VideoAnalysisConsumer(AsyncWebsocketConsumer):
             
             # 先接受连接
             await self.accept()
-            
             logger.info(f"WebSocket连接已建立: session_id={self.session_id}, type={self.type}")
 
             # 创建视频处理服务实例
@@ -47,7 +50,8 @@ class VideoAnalysisConsumer(AsyncWebsocketConsumer):
                 return
                 
             self.pc = RTCPeerConnection()
-            video_track = VideoStreamTrack(video.file.path, self.video_service)
+            
+            video_track = VideoStreamTrack(video.file.path, self.video_service,self.session_id,self.type)
             self.pc.addTrack(video_track)
             
             # 创建offer
@@ -61,10 +65,6 @@ class VideoAnalysisConsumer(AsyncWebsocketConsumer):
                     'type': self.pc.localDescription.type
                 }
             }))
-            logger.info(f"已发送WebRTC offer: session_id={self.session_id}")
-            
-            # 开始视频分析
-            asyncio.create_task(self.start_video_analysis())
                 
         except Exception as e:
             logger.error(f"WebSocket连接建立失败: {str(e)}", exc_info=True)

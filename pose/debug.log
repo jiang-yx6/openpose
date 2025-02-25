@@ -4587,3 +4587,2219 @@ Traceback (most recent call last):
   File "F:\DjangoRestfulAPI\openpose\pose\evalpose\consumers.py", line 151, in receive
     candidate = RTCIceCandidate(
 TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-25 10:49:36,643 views 14524 13648 �յ�����: http://localhost:3000
+INFO 2025-02-25 10:49:36,644 views 14524 13648 ���󷽷�: POST
+INFO 2025-02-25 10:49:36,644 views 14524 13648 ����ͷ: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryscxzKHX8Yqdumuen', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '969274', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-25 10:49:36,646 serializers 14524 13648 ��ʼ��֤��Ƶ�ļ�
+DEBUG 2025-02-25 10:49:36,646 serializers 14524 13648 ��֤ standardVideo: ��С=620008, ����=video/mp4
+DEBUG 2025-02-25 10:49:36,646 serializers 14524 13648 ��֤ exerciseVideo: ��С=348923, ����=video/mp4
+INFO 2025-02-25 10:49:36,646 serializers 14524 13648 ��Ƶ�ļ���֤ͨ��
+INFO 2025-02-25 10:49:36,670 views 14524 13648 �����Ự�ɹ�: 788ef0d2-fa8d-4978-b0ab-110015bd29e4
+INFO 2025-02-25 10:49:36,706 consumers 14524 9548 WebSocket�����ѽ���: session_id=788ef0d2-fa8d-4978-b0ab-110015bd29e4, type=standard
+INFO 2025-02-25 10:49:36,770 services 14524 9548 ��ʼ����Ƶ��������
+INFO 2025-02-25 10:49:37,025 consumers 14524 9548 WebSocket�����ѽ���: session_id=788ef0d2-fa8d-4978-b0ab-110015bd29e4, type=standard
+INFO 2025-02-25 10:49:37,037 services 14524 9548 ��ʼ����Ƶ��������
+INFO 2025-02-25 10:49:37,077 consumers 14524 9548 WebSocket�����ѽ���: session_id=788ef0d2-fa8d-4978-b0ab-110015bd29e4, type=exercise
+INFO 2025-02-25 10:49:37,089 services 14524 9548 ��ʼ����Ƶ��������
+INFO 2025-02-25 10:49:42,043 consumers 14524 9548 �ѷ���WebRTC offer: session_id=788ef0d2-fa8d-4978-b0ab-110015bd29e4
+INFO 2025-02-25 10:49:42,090 consumers 14524 9548 �ѷ���WebRTC offer: session_id=788ef0d2-fa8d-4978-b0ab-110015bd29e4
+INFO 2025-02-25 10:49:42,117 consumers 14524 9548 �ѷ���WebRTC offer: session_id=788ef0d2-fa8d-4978-b0ab-110015bd29e4
+ERROR 2025-02-25 10:49:42,120 consumers 14524 9548 ������Ϣʱ��������: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 10:49:42,123 consumers 14524 9548 ������Ϣʱ��������: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 10:49:42,125 consumers 14524 9548 ������Ϣʱ��������: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 10:49:42,126 consumers 14524 9548 ������Ϣʱ��������: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 10:49:42,127 consumers 14524 9548 ������Ϣʱ��������: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 10:49:42,299 consumers 14524 9548 ������Ϣʱ��������: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 10:49:42,300 consumers 14524 9548 ������Ϣʱ��������: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 10:49:42,301 consumers 14524 9548 ������Ϣʱ��������: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 10:49:42,302 consumers 14524 9548 ������Ϣʱ��������: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 10:49:42,304 consumers 14524 9548 ������Ϣʱ��������: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 10:49:48,566 video_stream 14524 9548 ������Ƶ֡ʧ��: ��Ƶ�Ѳ������
+INFO 2025-02-25 10:49:48,606 services 14524 18028 ��Ƶ�������: session_id=788ef0d2-fa8d-4978-b0ab-110015bd29e4, final_score=98.28
+INFO 2025-02-25 10:49:48,638 consumers 14524 9548 ��Ƶ�������: session_id=788ef0d2-fa8d-4978-b0ab-110015bd29e4
+ERROR 2025-02-25 10:49:49,549 video_stream 14524 9548 ������Ƶ֡ʧ��: ��Ƶ�Ѳ������
+INFO 2025-02-25 10:49:52,545 services 14524 18028 ��Ƶ�������: session_id=788ef0d2-fa8d-4978-b0ab-110015bd29e4, final_score=98.31
+INFO 2025-02-25 10:49:52,565 consumers 14524 9548 ��Ƶ�������: session_id=788ef0d2-fa8d-4978-b0ab-110015bd29e4
+INFO 2025-02-25 10:49:55,981 services 14524 18028 ��Ƶ�������: session_id=788ef0d2-fa8d-4978-b0ab-110015bd29e4, final_score=98.27
+INFO 2025-02-25 10:49:55,996 consumers 14524 9548 ��Ƶ�������: session_id=788ef0d2-fa8d-4978-b0ab-110015bd29e4
+INFO 2025-02-25 11:22:27 views 19568 15844 收到请求: http://localhost:3000
+INFO 2025-02-25 11:22:27 views 19568 15844 请求方法: POST
+INFO 2025-02-25 11:22:27 views 19568 15844 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryZQutQBoorpSJndvl', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '969274', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-25 11:22:27 serializers 19568 15844 开始验证视频文件
+DEBUG 2025-02-25 11:22:27 serializers 19568 15844 验证 standardVideo: 大小=620008, 类型=video/mp4
+DEBUG 2025-02-25 11:22:27 serializers 19568 15844 验证 exerciseVideo: 大小=348923, 类型=video/mp4
+INFO 2025-02-25 11:22:27 serializers 19568 15844 视频文件验证通过
+INFO 2025-02-25 11:22:27 views 19568 15844 创建会话成功: b07dce74-4c27-4f4d-b4af-ec048f7533ff
+INFO 2025-02-25 11:22:27 services 19568 15844 初始化视频处理服务
+INFO 2025-02-25 11:22:27 consumers 19568 21872 尝试建立WebSocket连接: URL=/ws/b07dce74-4c27-4f4d-b4af-ec048f7533ff/standard/
+INFO 2025-02-25 11:22:27 consumers 19568 21872 连接参数: session_id=b07dce74-4c27-4f4d-b4af-ec048f7533ff, type=standard
+INFO 2025-02-25 11:22:27 consumers 19568 21872 WebSocket连接已建立: session_id=b07dce74-4c27-4f4d-b4af-ec048f7533ff, type=standard
+INFO 2025-02-25 11:22:27 services 19568 21872 初始化视频处理服务
+ERROR 2025-02-25 11:22:27 consumers 19568 21872 WebSocket连接建立失败: __init__() takes 3 positional arguments but 5 were given
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 54, in connect
+    video_track = VideoStreamTrack(video.file.path, self.video_service,self.session_id,self.type)
+TypeError: __init__() takes 3 positional arguments but 5 were given
+INFO 2025-02-25 11:22:27 consumers 19568 21872 尝试建立WebSocket连接: URL=/ws/b07dce74-4c27-4f4d-b4af-ec048f7533ff/exercise/
+INFO 2025-02-25 11:22:27 consumers 19568 21872 连接参数: session_id=b07dce74-4c27-4f4d-b4af-ec048f7533ff, type=exercise
+INFO 2025-02-25 11:22:27 consumers 19568 21872 WebSocket连接已建立: session_id=b07dce74-4c27-4f4d-b4af-ec048f7533ff, type=exercise
+INFO 2025-02-25 11:22:27 services 19568 21872 初始化视频处理服务
+ERROR 2025-02-25 11:22:27 consumers 19568 21872 WebSocket连接建立失败: __init__() takes 3 positional arguments but 5 were given
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 54, in connect
+    video_track = VideoStreamTrack(video.file.path, self.video_service,self.session_id,self.type)
+TypeError: __init__() takes 3 positional arguments but 5 were given
+INFO 2025-02-25 11:22:33 services 19568 2168 视频处理完成: session_id=b07dce74-4c27-4f4d-b4af-ec048f7533ff, final_score=98.28
+INFO 2025-02-25 11:23:37 views 20952 21344 收到请求: http://localhost:3000
+INFO 2025-02-25 11:23:37 views 20952 21344 请求方法: POST
+INFO 2025-02-25 11:23:37 views 20952 21344 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundary6IEpIGU5MHcGdUD5', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '969274', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-25 11:23:37 serializers 20952 21344 开始验证视频文件
+DEBUG 2025-02-25 11:23:37 serializers 20952 21344 验证 standardVideo: 大小=620008, 类型=video/mp4
+DEBUG 2025-02-25 11:23:37 serializers 20952 21344 验证 exerciseVideo: 大小=348923, 类型=video/mp4
+INFO 2025-02-25 11:23:37 serializers 20952 21344 视频文件验证通过
+INFO 2025-02-25 11:23:37 views 20952 21344 创建会话成功: 633abdf3-ea10-4bd6-8de6-603d6242230f
+INFO 2025-02-25 11:23:37 services 20952 21344 初始化视频处理服务
+INFO 2025-02-25 11:23:37 consumers 20952 24260 尝试建立WebSocket连接: URL=/ws/633abdf3-ea10-4bd6-8de6-603d6242230f/standard/
+INFO 2025-02-25 11:23:37 consumers 20952 24260 连接参数: session_id=633abdf3-ea10-4bd6-8de6-603d6242230f, type=standard
+INFO 2025-02-25 11:23:37 consumers 20952 24260 WebSocket连接已建立: session_id=633abdf3-ea10-4bd6-8de6-603d6242230f, type=standard
+INFO 2025-02-25 11:23:37 services 20952 24260 初始化视频处理服务
+INFO 2025-02-25 11:23:37 consumers 20952 24260 尝试建立WebSocket连接: URL=/ws/633abdf3-ea10-4bd6-8de6-603d6242230f/exercise/
+INFO 2025-02-25 11:23:37 consumers 20952 24260 连接参数: session_id=633abdf3-ea10-4bd6-8de6-603d6242230f, type=exercise
+INFO 2025-02-25 11:23:37 consumers 20952 24260 WebSocket连接已建立: session_id=633abdf3-ea10-4bd6-8de6-603d6242230f, type=exercise
+INFO 2025-02-25 11:23:37 services 20952 24260 初始化视频处理服务
+INFO 2025-02-25 11:23:41 services 20952 18168 视频处理完成: session_id=633abdf3-ea10-4bd6-8de6-603d6242230f, final_score=98.28
+ERROR 2025-02-25 11:23:42 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:23:42 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:23:42 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:23:42 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:23:42 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:23:42 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:23:42 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:23:43 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:23:43 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:23:43 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:23:46 video_stream 20952 24260 处理视频帧失败: 视频已播放完毕
+ERROR 2025-02-25 11:23:47 video_stream 20952 24260 处理视频帧失败: 视频已播放完毕
+INFO 2025-02-25 11:23:55 views 20952 7176 收到请求: http://localhost:3000
+INFO 2025-02-25 11:23:55 views 20952 7176 请求方法: POST
+INFO 2025-02-25 11:23:55 views 20952 7176 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryvoRHOT1UaBkNefMU', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '969274', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-25 11:23:55 serializers 20952 7176 开始验证视频文件
+DEBUG 2025-02-25 11:23:55 serializers 20952 7176 验证 standardVideo: 大小=620008, 类型=video/mp4
+DEBUG 2025-02-25 11:23:55 serializers 20952 7176 验证 exerciseVideo: 大小=348923, 类型=video/mp4
+INFO 2025-02-25 11:23:55 serializers 20952 7176 视频文件验证通过
+INFO 2025-02-25 11:23:55 views 20952 7176 创建会话成功: d1f7a56e-bca9-49f7-b708-e95a14d01701
+INFO 2025-02-25 11:23:55 services 20952 7176 初始化视频处理服务
+INFO 2025-02-25 11:23:55 consumers 20952 24260 尝试建立WebSocket连接: URL=/ws/d1f7a56e-bca9-49f7-b708-e95a14d01701/standard/
+INFO 2025-02-25 11:23:55 consumers 20952 24260 连接参数: session_id=d1f7a56e-bca9-49f7-b708-e95a14d01701, type=standard
+INFO 2025-02-25 11:23:55 consumers 20952 24260 WebSocket连接已建立: session_id=d1f7a56e-bca9-49f7-b708-e95a14d01701, type=standard
+INFO 2025-02-25 11:23:55 services 20952 24260 初始化视频处理服务
+INFO 2025-02-25 11:23:55 consumers 20952 24260 尝试建立WebSocket连接: URL=/ws/d1f7a56e-bca9-49f7-b708-e95a14d01701/standard/
+INFO 2025-02-25 11:23:55 consumers 20952 24260 连接参数: session_id=d1f7a56e-bca9-49f7-b708-e95a14d01701, type=standard
+INFO 2025-02-25 11:23:55 consumers 20952 24260 WebSocket连接已建立: session_id=d1f7a56e-bca9-49f7-b708-e95a14d01701, type=standard
+INFO 2025-02-25 11:23:55 services 20952 24260 初始化视频处理服务
+INFO 2025-02-25 11:23:55 consumers 20952 24260 尝试建立WebSocket连接: URL=/ws/d1f7a56e-bca9-49f7-b708-e95a14d01701/exercise/
+INFO 2025-02-25 11:23:55 consumers 20952 24260 连接参数: session_id=d1f7a56e-bca9-49f7-b708-e95a14d01701, type=exercise
+INFO 2025-02-25 11:23:55 consumers 20952 24260 WebSocket连接已建立: session_id=d1f7a56e-bca9-49f7-b708-e95a14d01701, type=exercise
+INFO 2025-02-25 11:23:55 services 20952 24260 初始化视频处理服务
+INFO 2025-02-25 11:23:59 services 20952 18908 视频处理完成: session_id=d1f7a56e-bca9-49f7-b708-e95a14d01701, final_score=98.28
+ERROR 2025-02-25 11:24:00 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:24:00 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:24:00 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:24:00 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:24:00 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:24:00 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:24:00 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:24:00 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:24:00 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:24:00 consumers 20952 24260 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:24:03 video_stream 20952 24260 处理视频帧失败: 视频已播放完毕
+ERROR 2025-02-25 11:24:04 video_stream 20952 24260 处理视频帧失败: 视频已播放完毕
+INFO 2025-02-25 11:26:16 views 5100 412 收到请求: http://localhost:3000
+INFO 2025-02-25 11:26:16 views 5100 412 请求方法: POST
+INFO 2025-02-25 11:26:16 views 5100 412 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryGtyBAB6Z9GYxKC80', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '969274', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-25 11:26:16 serializers 5100 412 开始验证视频文件
+DEBUG 2025-02-25 11:26:16 serializers 5100 412 验证 standardVideo: 大小=620008, 类型=video/mp4
+DEBUG 2025-02-25 11:26:16 serializers 5100 412 验证 exerciseVideo: 大小=348923, 类型=video/mp4
+INFO 2025-02-25 11:26:16 serializers 5100 412 视频文件验证通过
+INFO 2025-02-25 11:26:16 views 5100 412 创建会话成功: e783826e-35d9-4ec2-a1e5-a4a0ca8144cc
+INFO 2025-02-25 11:26:16 services 5100 412 初始化视频处理服务
+INFO 2025-02-25 11:26:16 consumers 5100 23248 尝试建立WebSocket连接: URL=/ws/e783826e-35d9-4ec2-a1e5-a4a0ca8144cc/standard/
+INFO 2025-02-25 11:26:16 consumers 5100 23248 连接参数: session_id=e783826e-35d9-4ec2-a1e5-a4a0ca8144cc, type=standard
+INFO 2025-02-25 11:26:16 consumers 5100 23248 WebSocket连接已建立: session_id=e783826e-35d9-4ec2-a1e5-a4a0ca8144cc, type=standard
+INFO 2025-02-25 11:26:16 services 5100 23248 初始化视频处理服务
+INFO 2025-02-25 11:26:16 consumers 5100 23248 尝试建立WebSocket连接: URL=/ws/e783826e-35d9-4ec2-a1e5-a4a0ca8144cc/exercise/
+INFO 2025-02-25 11:26:16 consumers 5100 23248 连接参数: session_id=e783826e-35d9-4ec2-a1e5-a4a0ca8144cc, type=exercise
+INFO 2025-02-25 11:26:16 consumers 5100 23248 WebSocket连接已建立: session_id=e783826e-35d9-4ec2-a1e5-a4a0ca8144cc, type=exercise
+INFO 2025-02-25 11:26:16 services 5100 23248 初始化视频处理服务
+ERROR 2025-02-25 11:26:21 consumers 5100 23248 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:26:21 consumers 5100 23248 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:26:21 consumers 5100 23248 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:26:21 consumers 5100 23248 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:26:21 consumers 5100 23248 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:26:21 consumers 5100 23248 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:26:21 consumers 5100 23248 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:26:21 consumers 5100 23248 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:26:21 consumers 5100 23248 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:26:21 consumers 5100 23248 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-25 11:26:22 services 5100 23956 视频处理完成: session_id=e783826e-35d9-4ec2-a1e5-a4a0ca8144cc, final_score=98.28
+DEBUG 2025-02-25 11:26:22 video_stream 5100 23248 等待评分数据... (1/30)
+DEBUG 2025-02-25 11:26:22 video_stream 5100 23248 等待评分数据... (1/30)
+DEBUG 2025-02-25 11:26:23 video_stream 5100 23248 等待评分数据... (2/30)
+DEBUG 2025-02-25 11:26:23 video_stream 5100 23248 等待评分数据... (2/30)
+DEBUG 2025-02-25 11:26:24 video_stream 5100 23248 等待评分数据... (3/30)
+DEBUG 2025-02-25 11:26:24 video_stream 5100 23248 等待评分数据... (3/30)
+DEBUG 2025-02-25 11:26:25 video_stream 5100 23248 等待评分数据... (4/30)
+DEBUG 2025-02-25 11:26:25 video_stream 5100 23248 等待评分数据... (4/30)
+DEBUG 2025-02-25 11:26:26 video_stream 5100 23248 等待评分数据... (5/30)
+DEBUG 2025-02-25 11:26:26 video_stream 5100 23248 等待评分数据... (5/30)
+DEBUG 2025-02-25 11:26:27 video_stream 5100 23248 等待评分数据... (6/30)
+DEBUG 2025-02-25 11:26:27 video_stream 5100 23248 等待评分数据... (6/30)
+DEBUG 2025-02-25 11:26:28 video_stream 5100 23248 等待评分数据... (7/30)
+DEBUG 2025-02-25 11:26:28 video_stream 5100 23248 等待评分数据... (7/30)
+DEBUG 2025-02-25 11:26:29 video_stream 5100 23248 等待评分数据... (8/30)
+DEBUG 2025-02-25 11:26:29 video_stream 5100 23248 等待评分数据... (8/30)
+DEBUG 2025-02-25 11:26:30 video_stream 5100 23248 等待评分数据... (9/30)
+DEBUG 2025-02-25 11:26:30 video_stream 5100 23248 等待评分数据... (9/30)
+DEBUG 2025-02-25 11:26:31 video_stream 5100 23248 等待评分数据... (10/30)
+DEBUG 2025-02-25 11:26:31 video_stream 5100 23248 等待评分数据... (10/30)
+DEBUG 2025-02-25 11:26:32 video_stream 5100 23248 等待评分数据... (11/30)
+DEBUG 2025-02-25 11:26:32 video_stream 5100 23248 等待评分数据... (11/30)
+DEBUG 2025-02-25 11:26:33 video_stream 5100 23248 等待评分数据... (12/30)
+DEBUG 2025-02-25 11:26:33 video_stream 5100 23248 等待评分数据... (12/30)
+DEBUG 2025-02-25 11:26:34 video_stream 5100 23248 等待评分数据... (13/30)
+DEBUG 2025-02-25 11:26:34 video_stream 5100 23248 等待评分数据... (13/30)
+DEBUG 2025-02-25 11:26:35 video_stream 5100 23248 等待评分数据... (14/30)
+DEBUG 2025-02-25 11:26:35 video_stream 5100 23248 等待评分数据... (14/30)
+INFO 2025-02-25 11:27:21 views 16972 16256 收到请求: http://localhost:3000
+INFO 2025-02-25 11:27:21 views 16972 16256 请求方法: POST
+INFO 2025-02-25 11:27:21 views 16972 16256 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundary0JEFhF6UpAU42s0k', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '969274', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-25 11:27:21 serializers 16972 16256 开始验证视频文件
+DEBUG 2025-02-25 11:27:21 serializers 16972 16256 验证 standardVideo: 大小=620008, 类型=video/mp4
+DEBUG 2025-02-25 11:27:21 serializers 16972 16256 验证 exerciseVideo: 大小=348923, 类型=video/mp4
+INFO 2025-02-25 11:27:21 serializers 16972 16256 视频文件验证通过
+INFO 2025-02-25 11:27:21 views 16972 16256 创建会话成功: b06f01dd-144a-4d3d-93f8-0332939389b6
+INFO 2025-02-25 11:27:21 services 16972 16256 初始化视频处理服务
+INFO 2025-02-25 11:27:21 consumers 16972 18172 尝试建立WebSocket连接: URL=/ws/b06f01dd-144a-4d3d-93f8-0332939389b6/standard/
+INFO 2025-02-25 11:27:21 consumers 16972 18172 连接参数: session_id=b06f01dd-144a-4d3d-93f8-0332939389b6, type=standard
+INFO 2025-02-25 11:27:21 consumers 16972 18172 WebSocket连接已建立: session_id=b06f01dd-144a-4d3d-93f8-0332939389b6, type=standard
+INFO 2025-02-25 11:27:21 services 16972 18172 初始化视频处理服务
+INFO 2025-02-25 11:27:21 consumers 16972 18172 尝试建立WebSocket连接: URL=/ws/b06f01dd-144a-4d3d-93f8-0332939389b6/exercise/
+INFO 2025-02-25 11:27:21 consumers 16972 18172 连接参数: session_id=b06f01dd-144a-4d3d-93f8-0332939389b6, type=exercise
+INFO 2025-02-25 11:27:21 consumers 16972 18172 WebSocket连接已建立: session_id=b06f01dd-144a-4d3d-93f8-0332939389b6, type=exercise
+INFO 2025-02-25 11:27:21 services 16972 18172 初始化视频处理服务
+INFO 2025-02-25 11:27:25 services 16972 20724 视频处理完成: session_id=b06f01dd-144a-4d3d-93f8-0332939389b6, final_score=98.28
+ERROR 2025-02-25 11:27:26 consumers 16972 18172 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:27:26 consumers 16972 18172 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:27:26 consumers 16972 18172 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:27:26 consumers 16972 18172 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:27:26 consumers 16972 18172 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:27:26 consumers 16972 18172 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:27:26 consumers 16972 18172 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:27:26 consumers 16972 18172 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:27:26 consumers 16972 18172 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:27:26 consumers 16972 18172 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+DEBUG 2025-02-25 11:27:27 video_stream 16972 18172 等待评分数据... (1/30)
+DEBUG 2025-02-25 11:27:27 video_stream 16972 18172 等待评分数据... (1/30)
+DEBUG 2025-02-25 11:27:28 video_stream 16972 18172 等待评分数据... (2/30)
+DEBUG 2025-02-25 11:27:28 video_stream 16972 18172 等待评分数据... (2/30)
+DEBUG 2025-02-25 11:27:29 video_stream 16972 18172 等待评分数据... (3/30)
+DEBUG 2025-02-25 11:27:29 video_stream 16972 18172 等待评分数据... (3/30)
+DEBUG 2025-02-25 11:27:30 video_stream 16972 18172 等待评分数据... (4/30)
+DEBUG 2025-02-25 11:27:30 video_stream 16972 18172 等待评分数据... (4/30)
+DEBUG 2025-02-25 11:27:31 video_stream 16972 18172 等待评分数据... (5/30)
+DEBUG 2025-02-25 11:27:31 video_stream 16972 18172 等待评分数据... (5/30)
+DEBUG 2025-02-25 11:27:32 video_stream 16972 18172 等待评分数据... (6/30)
+DEBUG 2025-02-25 11:27:32 video_stream 16972 18172 等待评分数据... (6/30)
+DEBUG 2025-02-25 11:27:33 video_stream 16972 18172 等待评分数据... (7/30)
+DEBUG 2025-02-25 11:27:33 video_stream 16972 18172 等待评分数据... (7/30)
+DEBUG 2025-02-25 11:27:34 video_stream 16972 18172 等待评分数据... (8/30)
+DEBUG 2025-02-25 11:27:34 video_stream 16972 18172 等待评分数据... (8/30)
+DEBUG 2025-02-25 11:27:36 video_stream 16972 18172 等待评分数据... (9/30)
+DEBUG 2025-02-25 11:27:36 video_stream 16972 18172 等待评分数据... (9/30)
+INFO 2025-02-25 11:31:17 views 16880 22600 收到请求: http://localhost:3000
+INFO 2025-02-25 11:31:17 views 16880 22600 请求方法: POST
+INFO 2025-02-25 11:31:17 views 16880 22600 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryvM1fEbyF7A1trlSa', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '969274', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-25 11:31:17 serializers 16880 22600 开始验证视频文件
+DEBUG 2025-02-25 11:31:17 serializers 16880 22600 验证 standardVideo: 大小=620008, 类型=video/mp4
+DEBUG 2025-02-25 11:31:17 serializers 16880 22600 验证 exerciseVideo: 大小=348923, 类型=video/mp4
+INFO 2025-02-25 11:31:17 serializers 16880 22600 视频文件验证通过
+INFO 2025-02-25 11:31:17 views 16880 22600 创建会话成功: 63d5193c-de55-42ad-a4e1-6c2501815d6a
+INFO 2025-02-25 11:31:17 services 16880 22600 初始化视频处理服务
+INFO 2025-02-25 11:31:17 services 16880 24156 开始处理视频: session_id=63d5193c-de55-42ad-a4e1-6c2501815d6a
+INFO 2025-02-25 11:31:17 consumers 16880 1604 尝试建立WebSocket连接: URL=/ws/63d5193c-de55-42ad-a4e1-6c2501815d6a/standard/
+INFO 2025-02-25 11:31:17 consumers 16880 1604 连接参数: session_id=63d5193c-de55-42ad-a4e1-6c2501815d6a, type=standard
+INFO 2025-02-25 11:31:17 consumers 16880 1604 WebSocket连接已建立: session_id=63d5193c-de55-42ad-a4e1-6c2501815d6a, type=standard
+INFO 2025-02-25 11:31:17 services 16880 1604 初始化视频处理服务
+INFO 2025-02-25 11:31:17 consumers 16880 1604 尝试建立WebSocket连接: URL=/ws/63d5193c-de55-42ad-a4e1-6c2501815d6a/exercise/
+INFO 2025-02-25 11:31:17 consumers 16880 1604 连接参数: session_id=63d5193c-de55-42ad-a4e1-6c2501815d6a, type=exercise
+INFO 2025-02-25 11:31:17 consumers 16880 1604 WebSocket连接已建立: session_id=63d5193c-de55-42ad-a4e1-6c2501815d6a, type=exercise
+INFO 2025-02-25 11:31:17 services 16880 1604 初始化视频处理服务
+INFO 2025-02-25 11:31:18 services 16880 24156 session序列信息保存成功
+INFO 2025-02-25 11:31:18 services 16880 24156 视频序列提取完成，开始DTW分析
+INFO 2025-02-25 11:31:18 services 16880 24156 DTW分析完成: 0.06193417165445253
+INFO 2025-02-25 11:31:18 services 16880 24156 保存分析结果: frame_scores={'0': 0.0, '1': 100.0, '2': 67.10519014294891}
+ERROR 2025-02-25 11:31:22 consumers 16880 1604 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:31:22 consumers 16880 1604 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:31:22 consumers 16880 1604 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:31:22 consumers 16880 1604 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:31:22 consumers 16880 1604 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-25 11:31:22 video_stream 16880 23096 获取会话 63d5193c-de55-42ad-a4e1-6c2501815d6a 的帧评分数据: {'0': 0.0, '1': 100.0, '2': 67.10519014294891}
+INFO 2025-02-25 11:31:22 video_stream 16880 1604 评分数据准备完成: 3 帧
+DEBUG 2025-02-25 11:31:22 video_stream 16880 1604 帧 0 的评分: 0.0
+ERROR 2025-02-25 11:31:22 consumers 16880 1604 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:31:22 consumers 16880 1604 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:31:22 consumers 16880 1604 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:31:22 consumers 16880 1604 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:31:22 consumers 16880 1604 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-25 11:31:22 video_stream 16880 23096 获取会话 63d5193c-de55-42ad-a4e1-6c2501815d6a 的帧评分数据: {'0': 0.0, '1': 100.0, '2': 67.10519014294891}
+DEBUG 2025-02-25 11:31:22 video_stream 16880 1604 帧 1 的评分: 100.0
+INFO 2025-02-25 11:31:22 video_stream 16880 1604 评分数据准备完成: 3 帧
+DEBUG 2025-02-25 11:31:22 video_stream 16880 1604 帧 0 的评分: 0.0
+DEBUG 2025-02-25 11:31:22 video_stream 16880 1604 帧 2 的评分: 67.10519014294891
+DEBUG 2025-02-25 11:31:22 video_stream 16880 1604 帧 1 的评分: 100.0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 3 的评分: 0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 2 的评分: 67.10519014294891
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 4 的评分: 0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 3 的评分: 0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 5 的评分: 0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 4 的评分: 0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 6 的评分: 0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 5 的评分: 0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 7 的评分: 0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 6 的评分: 0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 8 的评分: 0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 7 的评分: 0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 9 的评分: 0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 8 的评分: 0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 10 的评分: 0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 9 的评分: 0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 11 的评分: 0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 10 的评分: 0
+DEBUG 2025-02-25 11:31:23 video_stream 16880 1604 帧 12 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 11 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 13 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 12 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 14 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 13 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 15 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 14 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 16 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 15 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 17 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 16 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 18 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 17 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 19 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 18 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 20 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 19 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 21 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 20 的评分: 0
+DEBUG 2025-02-25 11:31:24 video_stream 16880 1604 帧 22 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 21 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 23 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 22 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 24 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 23 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 25 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 24 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 26 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 25 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 27 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 26 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 28 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 27 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 29 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 28 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 30 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 29 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 31 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 30 的评分: 0
+DEBUG 2025-02-25 11:31:25 video_stream 16880 1604 帧 32 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 31 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 33 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 32 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 34 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 33 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 35 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 34 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 36 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 35 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 37 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 36 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 38 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 37 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 39 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 38 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 40 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 39 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 41 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 40 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 42 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 41 的评分: 0
+DEBUG 2025-02-25 11:31:26 video_stream 16880 1604 帧 43 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 42 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 44 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 43 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 45 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 44 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 46 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 45 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 47 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 46 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 48 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 47 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 49 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 48 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 50 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 49 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 51 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 50 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 52 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 51 的评分: 0
+DEBUG 2025-02-25 11:31:27 video_stream 16880 1604 帧 53 的评分: 0
+DEBUG 2025-02-25 11:31:28 video_stream 16880 1604 帧 52 的评分: 0
+DEBUG 2025-02-25 11:31:28 video_stream 16880 1604 帧 54 的评分: 0
+DEBUG 2025-02-25 11:31:28 video_stream 16880 1604 帧 55 的评分: 0
+DEBUG 2025-02-25 11:31:28 video_stream 16880 1604 帧 56 的评分: 0
+DEBUG 2025-02-25 11:31:28 video_stream 16880 1604 帧 57 的评分: 0
+DEBUG 2025-02-25 11:31:28 video_stream 16880 1604 帧 58 的评分: 0
+DEBUG 2025-02-25 11:31:28 video_stream 16880 1604 帧 59 的评分: 0
+DEBUG 2025-02-25 11:31:28 video_stream 16880 1604 帧 60 的评分: 0
+DEBUG 2025-02-25 11:31:28 video_stream 16880 1604 帧 61 的评分: 0
+DEBUG 2025-02-25 11:31:28 video_stream 16880 1604 帧 62 的评分: 0
+DEBUG 2025-02-25 11:31:28 video_stream 16880 1604 帧 63 的评分: 0
+DEBUG 2025-02-25 11:31:28 video_stream 16880 1604 帧 64 的评分: 0
+DEBUG 2025-02-25 11:31:28 video_stream 16880 1604 帧 65 的评分: 0
+DEBUG 2025-02-25 11:31:28 video_stream 16880 1604 帧 66 的评分: 0
+DEBUG 2025-02-25 11:31:28 video_stream 16880 1604 帧 67 的评分: 0
+DEBUG 2025-02-25 11:31:28 video_stream 16880 1604 帧 68 的评分: 0
+DEBUG 2025-02-25 11:31:28 video_stream 16880 1604 帧 69 的评分: 0
+DEBUG 2025-02-25 11:31:29 video_stream 16880 1604 帧 70 的评分: 0
+DEBUG 2025-02-25 11:31:29 video_stream 16880 1604 帧 71 的评分: 0
+DEBUG 2025-02-25 11:31:29 video_stream 16880 1604 帧 72 的评分: 0
+DEBUG 2025-02-25 11:31:29 video_stream 16880 1604 帧 73 的评分: 0
+DEBUG 2025-02-25 11:31:29 video_stream 16880 1604 帧 74 的评分: 0
+DEBUG 2025-02-25 11:31:29 video_stream 16880 1604 帧 75 的评分: 0
+DEBUG 2025-02-25 11:31:29 video_stream 16880 1604 帧 76 的评分: 0
+DEBUG 2025-02-25 11:31:29 video_stream 16880 1604 帧 77 的评分: 0
+DEBUG 2025-02-25 11:31:29 video_stream 16880 1604 帧 78 的评分: 0
+DEBUG 2025-02-25 11:31:29 video_stream 16880 1604 帧 79 的评分: 0
+DEBUG 2025-02-25 11:31:29 video_stream 16880 1604 帧 80 的评分: 0
+DEBUG 2025-02-25 11:31:29 video_stream 16880 1604 帧 81 的评分: 0
+DEBUG 2025-02-25 11:31:29 video_stream 16880 1604 帧 82 的评分: 0
+DEBUG 2025-02-25 11:31:29 video_stream 16880 1604 帧 83 的评分: 0
+INFO 2025-02-25 11:34:24 views 21768 6772 收到请求: http://localhost:3000
+INFO 2025-02-25 11:34:24 views 21768 6772 请求方法: POST
+INFO 2025-02-25 11:34:24 views 21768 6772 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryqLF8NTRNGfAsN5Q0', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '969274', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-25 11:34:24 serializers 21768 6772 开始验证视频文件
+DEBUG 2025-02-25 11:34:24 serializers 21768 6772 验证 standardVideo: 大小=620008, 类型=video/mp4
+DEBUG 2025-02-25 11:34:24 serializers 21768 6772 验证 exerciseVideo: 大小=348923, 类型=video/mp4
+INFO 2025-02-25 11:34:24 serializers 21768 6772 视频文件验证通过
+INFO 2025-02-25 11:34:24 views 21768 6772 创建会话成功: 6ebbeacd-de4a-436f-894c-907cc8b10474
+INFO 2025-02-25 11:34:24 services 21768 6772 初始化视频处理服务
+INFO 2025-02-25 11:34:24 services 21768 22524 开始处理视频: session_id=6ebbeacd-de4a-436f-894c-907cc8b10474
+INFO 2025-02-25 11:34:24 consumers 21768 2032 尝试建立WebSocket连接: URL=/ws/6ebbeacd-de4a-436f-894c-907cc8b10474/standard/
+INFO 2025-02-25 11:34:24 consumers 21768 2032 连接参数: session_id=6ebbeacd-de4a-436f-894c-907cc8b10474, type=standard
+INFO 2025-02-25 11:34:24 consumers 21768 2032 WebSocket连接已建立: session_id=6ebbeacd-de4a-436f-894c-907cc8b10474, type=standard
+INFO 2025-02-25 11:34:24 services 21768 2032 初始化视频处理服务
+INFO 2025-02-25 11:34:24 consumers 21768 2032 尝试建立WebSocket连接: URL=/ws/6ebbeacd-de4a-436f-894c-907cc8b10474/exercise/
+INFO 2025-02-25 11:34:24 consumers 21768 2032 连接参数: session_id=6ebbeacd-de4a-436f-894c-907cc8b10474, type=exercise
+INFO 2025-02-25 11:34:24 consumers 21768 2032 WebSocket连接已建立: session_id=6ebbeacd-de4a-436f-894c-907cc8b10474, type=exercise
+INFO 2025-02-25 11:34:24 services 21768 2032 初始化视频处理服务
+INFO 2025-02-25 11:34:24 services 21768 22524 session序列信息保存成功
+INFO 2025-02-25 11:34:24 services 21768 22524 视频序列提取完成，开始DTW分析
+INFO 2025-02-25 11:34:24 services 21768 22524 DTW分析完成: 0.06193417165445253
+INFO 2025-02-25 11:34:24 services 21768 22524 保存分析结果: frame_scores={'0': 0.0, '1': 100.0, '2': 67.10519014294891}
+ERROR 2025-02-25 11:34:29 consumers 21768 2032 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:34:29 consumers 21768 2032 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:34:29 consumers 21768 2032 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:34:29 consumers 21768 2032 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:34:29 consumers 21768 2032 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-25 11:34:29 video_stream 21768 19908 获取会话 6ebbeacd-de4a-436f-894c-907cc8b10474 的帧评分数据: {'0': 0.0, '1': 100.0, '2': 67.10519014294891}
+INFO 2025-02-25 11:34:29 video_stream 21768 2032 评分数据准备完成: 3 帧
+DEBUG 2025-02-25 11:34:29 video_stream 21768 2032 帧 0 的评分: 0.0
+ERROR 2025-02-25 11:34:29 consumers 21768 2032 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:34:29 consumers 21768 2032 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:34:29 consumers 21768 2032 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:34:29 consumers 21768 2032 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:34:29 consumers 21768 2032 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-25 11:34:29 video_stream 21768 19908 获取会话 6ebbeacd-de4a-436f-894c-907cc8b10474 的帧评分数据: {'0': 0.0, '1': 100.0, '2': 67.10519014294891}
+INFO 2025-02-25 11:34:29 video_stream 21768 2032 评分数据准备完成: 3 帧
+DEBUG 2025-02-25 11:34:29 video_stream 21768 2032 帧 0 的评分: 0.0
+DEBUG 2025-02-25 11:34:29 video_stream 21768 2032 帧 1 的评分: 100.0
+DEBUG 2025-02-25 11:34:29 video_stream 21768 2032 帧 1 的评分: 100.0
+DEBUG 2025-02-25 11:34:29 video_stream 21768 2032 帧 2 的评分: 67.10519014294891
+DEBUG 2025-02-25 11:34:29 video_stream 21768 2032 帧 2 的评分: 67.10519014294891
+DEBUG 2025-02-25 11:34:29 video_stream 21768 2032 帧 3 的评分: 0
+DEBUG 2025-02-25 11:34:29 video_stream 21768 2032 帧 3 的评分: 0
+DEBUG 2025-02-25 11:34:29 video_stream 21768 2032 帧 4 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 4 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 5 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 5 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 6 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 6 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 7 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 7 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 8 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 8 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 9 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 9 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 10 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 10 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 11 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 11 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 12 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 12 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 13 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 13 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 14 的评分: 0
+DEBUG 2025-02-25 11:34:30 video_stream 21768 2032 帧 14 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 15 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 15 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 16 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 16 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 17 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 17 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 18 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 18 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 19 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 19 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 20 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 20 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 21 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 21 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 22 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 22 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 23 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 23 的评分: 0
+DEBUG 2025-02-25 11:34:31 video_stream 21768 2032 帧 24 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 24 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 25 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 25 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 26 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 26 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 27 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 27 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 28 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 28 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 29 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 29 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 30 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 30 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 31 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 31 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 32 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 32 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 33 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 33 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 34 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 34 的评分: 0
+DEBUG 2025-02-25 11:34:32 video_stream 21768 2032 帧 35 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 35 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 36 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 36 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 37 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 37 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 38 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 38 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 39 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 39 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 40 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 40 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 41 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 41 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 42 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 42 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 43 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 43 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 44 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 44 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 45 的评分: 0
+DEBUG 2025-02-25 11:34:33 video_stream 21768 2032 帧 45 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 46 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 46 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 47 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 47 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 48 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 48 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 49 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 49 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 50 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 50 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 51 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 51 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 52 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 52 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 53 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 54 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 55 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 56 的评分: 0
+DEBUG 2025-02-25 11:34:34 video_stream 21768 2032 帧 57 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 58 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 59 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 60 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 61 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 62 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 63 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 64 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 65 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 66 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 67 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 68 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 69 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 70 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 71 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 72 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 73 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 74 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 75 的评分: 0
+DEBUG 2025-02-25 11:34:35 video_stream 21768 2032 帧 76 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 77 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 78 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 79 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 80 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 81 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 82 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 83 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 84 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 85 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 86 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 87 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 88 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 89 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 90 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 91 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 92 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 93 的评分: 0
+DEBUG 2025-02-25 11:34:36 video_stream 21768 2032 帧 94 的评分: 0
+DEBUG 2025-02-25 11:34:37 video_stream 21768 2032 帧 95 的评分: 0
+INFO 2025-02-25 11:37:59 views 10848 20112 收到请求: http://localhost:3000
+INFO 2025-02-25 11:37:59 views 10848 20112 请求方法: POST
+INFO 2025-02-25 11:37:59 views 10848 20112 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryf9PgXndBAd5pdsuG', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '969274', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-25 11:37:59 serializers 10848 20112 开始验证视频文件
+DEBUG 2025-02-25 11:37:59 serializers 10848 20112 验证 standardVideo: 大小=620008, 类型=video/mp4
+DEBUG 2025-02-25 11:37:59 serializers 10848 20112 验证 exerciseVideo: 大小=348923, 类型=video/mp4
+INFO 2025-02-25 11:37:59 serializers 10848 20112 视频文件验证通过
+INFO 2025-02-25 11:37:59 views 10848 20112 创建会话成功: 4a6da6cf-f505-468e-a189-250eea4ae22d
+INFO 2025-02-25 11:37:59 services 10848 20112 初始化视频处理服务
+INFO 2025-02-25 11:37:59 services 10848 22956 开始处理视频: session_id=4a6da6cf-f505-468e-a189-250eea4ae22d
+INFO 2025-02-25 11:37:59 consumers 10848 17972 尝试建立WebSocket连接: URL=/ws/4a6da6cf-f505-468e-a189-250eea4ae22d/standard/
+INFO 2025-02-25 11:37:59 consumers 10848 17972 连接参数: session_id=4a6da6cf-f505-468e-a189-250eea4ae22d, type=standard
+INFO 2025-02-25 11:37:59 consumers 10848 17972 WebSocket连接已建立: session_id=4a6da6cf-f505-468e-a189-250eea4ae22d, type=standard
+INFO 2025-02-25 11:37:59 services 10848 17972 初始化视频处理服务
+INFO 2025-02-25 11:37:59 consumers 10848 17972 尝试建立WebSocket连接: URL=/ws/4a6da6cf-f505-468e-a189-250eea4ae22d/exercise/
+INFO 2025-02-25 11:37:59 consumers 10848 17972 连接参数: session_id=4a6da6cf-f505-468e-a189-250eea4ae22d, type=exercise
+INFO 2025-02-25 11:37:59 consumers 10848 17972 WebSocket连接已建立: session_id=4a6da6cf-f505-468e-a189-250eea4ae22d, type=exercise
+INFO 2025-02-25 11:37:59 services 10848 17972 初始化视频处理服务
+INFO 2025-02-25 11:38:00 services 10848 22956 DTW分析完成: 0.06193417165445253
+INFO 2025-02-25 11:38:00 services 10848 22956 保存分析结果: frame_scores={'0': 0.0, '1': 100.0, '2': 67.10519014294891}
+ERROR 2025-02-25 11:38:04 consumers 10848 17972 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:38:04 consumers 10848 17972 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:38:04 consumers 10848 17972 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:38:04 consumers 10848 17972 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:38:04 consumers 10848 17972 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-25 11:38:04 video_stream 10848 2092 获取会话 4a6da6cf-f505-468e-a189-250eea4ae22d 的帧评分数据: {'0': 0.0, '1': 100.0, '2': 67.10519014294891}
+INFO 2025-02-25 11:38:04 video_stream 10848 17972 评分数据准备完成: 3 帧
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 0 的评分: 0.0
+ERROR 2025-02-25 11:38:05 consumers 10848 17972 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:38:05 consumers 10848 17972 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:38:05 consumers 10848 17972 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:38:05 consumers 10848 17972 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:38:05 consumers 10848 17972 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 1 的评分: 100.0
+INFO 2025-02-25 11:38:05 video_stream 10848 2092 获取会话 4a6da6cf-f505-468e-a189-250eea4ae22d 的帧评分数据: {'0': 0.0, '1': 100.0, '2': 67.10519014294891}
+INFO 2025-02-25 11:38:05 video_stream 10848 17972 评分数据准备完成: 3 帧
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 0 的评分: 0.0
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 2 的评分: 67.10519014294891
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 1 的评分: 100.0
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 3 的评分: 0
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 2 的评分: 67.10519014294891
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 4 的评分: 0
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 3 的评分: 0
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 5 的评分: 0
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 4 的评分: 0
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 6 的评分: 0
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 5 的评分: 0
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 7 的评分: 0
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 6 的评分: 0
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 8 的评分: 0
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 7 的评分: 0
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 9 的评分: 0
+DEBUG 2025-02-25 11:38:05 video_stream 10848 17972 帧 8 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 10 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 9 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 11 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 10 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 12 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 11 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 13 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 12 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 14 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 13 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 15 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 14 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 16 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 15 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 17 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 16 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 18 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 17 的评分: 0
+DEBUG 2025-02-25 11:38:06 video_stream 10848 17972 帧 19 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 18 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 20 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 19 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 21 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 20 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 22 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 21 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 23 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 22 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 24 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 23 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 25 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 24 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 26 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 25 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 27 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 26 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 28 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 27 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 29 的评分: 0
+DEBUG 2025-02-25 11:38:07 video_stream 10848 17972 帧 28 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 30 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 29 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 31 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 30 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 32 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 31 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 33 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 32 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 34 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 33 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 35 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 34 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 36 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 35 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 37 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 36 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 38 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 37 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 39 的评分: 0
+DEBUG 2025-02-25 11:38:08 video_stream 10848 17972 帧 38 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 40 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 39 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 41 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 40 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 42 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 41 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 43 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 42 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 44 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 43 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 45 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 44 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 46 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 45 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 47 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 46 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 48 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 47 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 49 的评分: 0
+DEBUG 2025-02-25 11:38:09 video_stream 10848 17972 帧 48 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 50 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 49 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 51 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 50 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 52 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 51 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 53 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 52 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 54 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 55 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 56 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 57 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 58 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 59 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 60 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 61 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 62 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 63 的评分: 0
+DEBUG 2025-02-25 11:38:10 video_stream 10848 17972 帧 64 的评分: 0
+DEBUG 2025-02-25 11:38:11 video_stream 10848 17972 帧 65 的评分: 0
+DEBUG 2025-02-25 11:38:11 video_stream 10848 17972 帧 66 的评分: 0
+DEBUG 2025-02-25 11:38:11 video_stream 10848 17972 帧 67 的评分: 0
+DEBUG 2025-02-25 11:38:11 video_stream 10848 17972 帧 68 的评分: 0
+DEBUG 2025-02-25 11:38:11 video_stream 10848 17972 帧 69 的评分: 0
+DEBUG 2025-02-25 11:38:11 video_stream 10848 17972 帧 70 的评分: 0
+DEBUG 2025-02-25 11:38:11 video_stream 10848 17972 帧 71 的评分: 0
+DEBUG 2025-02-25 11:38:11 video_stream 10848 17972 帧 72 的评分: 0
+DEBUG 2025-02-25 11:38:11 video_stream 10848 17972 帧 73 的评分: 0
+DEBUG 2025-02-25 11:38:11 video_stream 10848 17972 帧 74 的评分: 0
+DEBUG 2025-02-25 11:38:11 video_stream 10848 17972 帧 75 的评分: 0
+DEBUG 2025-02-25 11:38:11 video_stream 10848 17972 帧 76 的评分: 0
+DEBUG 2025-02-25 11:38:11 video_stream 10848 17972 帧 77 的评分: 0
+DEBUG 2025-02-25 11:38:11 video_stream 10848 17972 帧 78 的评分: 0
+DEBUG 2025-02-25 11:38:11 video_stream 10848 17972 帧 79 的评分: 0
+DEBUG 2025-02-25 11:38:11 video_stream 10848 17972 帧 80 的评分: 0
+DEBUG 2025-02-25 11:38:11 video_stream 10848 17972 帧 81 的评分: 0
+DEBUG 2025-02-25 11:38:12 video_stream 10848 17972 帧 82 的评分: 0
+DEBUG 2025-02-25 11:38:12 video_stream 10848 17972 帧 83 的评分: 0
+DEBUG 2025-02-25 11:38:12 video_stream 10848 17972 帧 84 的评分: 0
+DEBUG 2025-02-25 11:38:12 video_stream 10848 17972 帧 85 的评分: 0
+DEBUG 2025-02-25 11:38:12 video_stream 10848 17972 帧 86 的评分: 0
+DEBUG 2025-02-25 11:38:12 video_stream 10848 17972 帧 87 的评分: 0
+DEBUG 2025-02-25 11:38:12 video_stream 10848 17972 帧 88 的评分: 0
+DEBUG 2025-02-25 11:38:12 video_stream 10848 17972 帧 89 的评分: 0
+DEBUG 2025-02-25 11:38:12 video_stream 10848 17972 帧 90 的评分: 0
+DEBUG 2025-02-25 11:38:12 video_stream 10848 17972 帧 91 的评分: 0
+DEBUG 2025-02-25 11:38:12 video_stream 10848 17972 帧 92 的评分: 0
+DEBUG 2025-02-25 11:38:12 video_stream 10848 17972 帧 93 的评分: 0
+DEBUG 2025-02-25 11:38:12 video_stream 10848 17972 帧 94 的评分: 0
+DEBUG 2025-02-25 11:38:12 video_stream 10848 17972 帧 95 的评分: 0
+INFO 2025-02-25 11:43:48 views 23316 1460 收到请求: http://localhost:3000
+INFO 2025-02-25 11:43:48 views 23316 1460 请求方法: POST
+INFO 2025-02-25 11:43:48 views 23316 1460 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundarycAofYkpsIWK8TkwE', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '969274', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-25 11:43:48 serializers 23316 1460 开始验证视频文件
+DEBUG 2025-02-25 11:43:48 serializers 23316 1460 验证 standardVideo: 大小=620008, 类型=video/mp4
+DEBUG 2025-02-25 11:43:48 serializers 23316 1460 验证 exerciseVideo: 大小=348923, 类型=video/mp4
+INFO 2025-02-25 11:43:48 serializers 23316 1460 视频文件验证通过
+INFO 2025-02-25 11:43:48 views 23316 1460 创建会话成功: b31355b9-82ec-4f87-b37f-7165c6a29d05
+INFO 2025-02-25 11:43:48 services 23316 1460 初始化视频处理服务
+INFO 2025-02-25 11:43:48 services 23316 12016 开始处理视频: session_id=b31355b9-82ec-4f87-b37f-7165c6a29d05
+INFO 2025-02-25 11:43:48 consumers 23316 21580 尝试建立WebSocket连接: URL=/ws/b31355b9-82ec-4f87-b37f-7165c6a29d05/standard/
+INFO 2025-02-25 11:43:48 consumers 23316 21580 连接参数: session_id=b31355b9-82ec-4f87-b37f-7165c6a29d05, type=standard
+INFO 2025-02-25 11:43:48 consumers 23316 21580 WebSocket连接已建立: session_id=b31355b9-82ec-4f87-b37f-7165c6a29d05, type=standard
+INFO 2025-02-25 11:43:48 services 23316 21580 初始化视频处理服务
+INFO 2025-02-25 11:43:48 consumers 23316 21580 尝试建立WebSocket连接: URL=/ws/b31355b9-82ec-4f87-b37f-7165c6a29d05/exercise/
+INFO 2025-02-25 11:43:48 consumers 23316 21580 连接参数: session_id=b31355b9-82ec-4f87-b37f-7165c6a29d05, type=exercise
+INFO 2025-02-25 11:43:48 consumers 23316 21580 WebSocket连接已建立: session_id=b31355b9-82ec-4f87-b37f-7165c6a29d05, type=exercise
+INFO 2025-02-25 11:43:48 services 23316 21580 初始化视频处理服务
+INFO 2025-02-25 11:43:50 services 23316 12016 DTW分析完成: 0.04546846625409192
+INFO 2025-02-25 11:43:50 services 23316 12016 保存分析结果: 总帧数=26
+ERROR 2025-02-25 11:43:53 consumers 23316 21580 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:43:53 consumers 23316 21580 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:43:53 consumers 23316 21580 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:43:53 consumers 23316 21580 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:43:53 consumers 23316 21580 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-25 11:43:53 video_stream 23316 2932 获取会话 b31355b9-82ec-4f87-b37f-7165c6a29d05 的帧评分数据: {'0': 92.42015812978536, '1': 86.41894427226423, '2': 85.53823817739662, '3': 85.03378322085959, '4': 91.15271109802539, '5': 79.72739639913803, '6': 0.0, '7': 58.58170916875132, '8': 46.47101673945078, '9': 86.80964529468217, '10': 100.0, '11': 96.88821295849483, '12': 87.68418908806558, '13': 81.4345895942642, '14': 96.29295728942877, '15': 96.43460876502567, '16': 95.69222450126259, '17': 96.43504828328308, '18': 95.66476962310733, '19': 92.3684820230773, '20': 92.51110531181742, '21': 92.42909408770294, '22': 77.06101931183937, '23': 68.39574254830758, '24': 23.003680516639125, '25': 49.622021316265105}
+INFO 2025-02-25 11:43:53 video_stream 23316 21580 评分数据准备完成: 26 帧
+DEBUG 2025-02-25 11:43:53 video_stream 23316 21580 帧 0 的评分: 92.42015812978536
+ERROR 2025-02-25 11:43:53 consumers 23316 21580 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:43:53 consumers 23316 21580 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:43:53 consumers 23316 21580 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:43:53 consumers 23316 21580 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:43:53 consumers 23316 21580 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+DEBUG 2025-02-25 11:43:53 video_stream 23316 21580 帧 1 的评分: 86.41894427226423
+INFO 2025-02-25 11:43:53 video_stream 23316 2932 获取会话 b31355b9-82ec-4f87-b37f-7165c6a29d05 的帧评分数据: {'0': 92.42015812978536, '1': 86.41894427226423, '2': 85.53823817739662, '3': 85.03378322085959, '4': 91.15271109802539, '5': 79.72739639913803, '6': 0.0, '7': 58.58170916875132, '8': 46.47101673945078, '9': 86.80964529468217, '10': 100.0, '11': 96.88821295849483, '12': 87.68418908806558, '13': 81.4345895942642, '14': 96.29295728942877, '15': 96.43460876502567, '16': 95.69222450126259, '17': 96.43504828328308, '18': 95.66476962310733, '19': 92.3684820230773, '20': 92.51110531181742, '21': 92.42909408770294, '22': 77.06101931183937, '23': 68.39574254830758, '24': 23.003680516639125, '25': 49.622021316265105}
+INFO 2025-02-25 11:43:53 video_stream 23316 21580 评分数据准备完成: 26 帧
+DEBUG 2025-02-25 11:43:53 video_stream 23316 21580 帧 0 的评分: 92.42015812978536
+DEBUG 2025-02-25 11:43:53 video_stream 23316 21580 帧 2 的评分: 85.53823817739662
+DEBUG 2025-02-25 11:43:53 video_stream 23316 21580 帧 1 的评分: 86.41894427226423
+DEBUG 2025-02-25 11:43:53 video_stream 23316 21580 帧 3 的评分: 85.03378322085959
+DEBUG 2025-02-25 11:43:53 video_stream 23316 21580 帧 2 的评分: 85.53823817739662
+DEBUG 2025-02-25 11:43:53 video_stream 23316 21580 帧 4 的评分: 91.15271109802539
+DEBUG 2025-02-25 11:43:53 video_stream 23316 21580 帧 3 的评分: 85.03378322085959
+DEBUG 2025-02-25 11:43:53 video_stream 23316 21580 帧 5 的评分: 79.72739639913803
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 4 的评分: 91.15271109802539
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 6 的评分: 0.0
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 5 的评分: 79.72739639913803
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 7 的评分: 58.58170916875132
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 6 的评分: 0.0
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 8 的评分: 46.47101673945078
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 7 的评分: 58.58170916875132
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 9 的评分: 86.80964529468217
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 8 的评分: 46.47101673945078
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 10 的评分: 100.0
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 9 的评分: 86.80964529468217
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 11 的评分: 96.88821295849483
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 10 的评分: 100.0
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 12 的评分: 87.68418908806558
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 11 的评分: 96.88821295849483
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 13 的评分: 81.4345895942642
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 12 的评分: 87.68418908806558
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 14 的评分: 96.29295728942877
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 13 的评分: 81.4345895942642
+DEBUG 2025-02-25 11:43:54 video_stream 23316 21580 帧 15 的评分: 96.43460876502567
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 14 的评分: 96.29295728942877
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 16 的评分: 95.69222450126259
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 15 的评分: 96.43460876502567
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 17 的评分: 96.43504828328308
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 16 的评分: 95.69222450126259
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 18 的评分: 95.66476962310733
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 17 的评分: 96.43504828328308
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 19 的评分: 92.3684820230773
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 18 的评分: 95.66476962310733
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 20 的评分: 92.51110531181742
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 19 的评分: 92.3684820230773
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 21 的评分: 92.42909408770294
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 20 的评分: 92.51110531181742
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 22 的评分: 77.06101931183937
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 21 的评分: 92.42909408770294
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 23 的评分: 68.39574254830758
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 22 的评分: 77.06101931183937
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 24 的评分: 23.003680516639125
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 23 的评分: 68.39574254830758
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 25 的评分: 49.622021316265105
+DEBUG 2025-02-25 11:43:55 video_stream 23316 21580 帧 24 的评分: 23.003680516639125
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 26 的评分: 0
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 25 的评分: 49.622021316265105
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 27 的评分: 0
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 26 的评分: 0
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 28 的评分: 0
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 27 的评分: 0
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 29 的评分: 0
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 28 的评分: 0
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 30 的评分: 0
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 29 的评分: 0
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 31 的评分: 0
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 30 的评分: 0
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 32 的评分: 0
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 31 的评分: 0
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 33 的评分: 0
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 32 的评分: 0
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 34 的评分: 0
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 33 的评分: 0
+DEBUG 2025-02-25 11:43:56 video_stream 23316 21580 帧 35 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 34 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 36 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 35 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 37 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 36 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 38 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 37 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 39 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 38 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 40 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 39 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 41 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 40 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 42 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 41 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 43 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 42 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 44 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 43 的评分: 0
+DEBUG 2025-02-25 11:43:57 video_stream 23316 21580 帧 45 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 44 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 46 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 45 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 47 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 46 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 48 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 47 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 49 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 48 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 50 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 49 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 51 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 50 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 52 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 51 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 53 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 52 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 54 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 55 的评分: 0
+DEBUG 2025-02-25 11:43:58 video_stream 23316 21580 帧 56 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 57 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 58 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 59 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 60 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 61 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 62 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 63 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 64 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 65 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 66 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 67 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 68 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 69 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 70 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 71 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 72 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 73 的评分: 0
+DEBUG 2025-02-25 11:43:59 video_stream 23316 21580 帧 74 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 75 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 76 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 77 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 78 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 79 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 80 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 81 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 82 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 83 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 84 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 85 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 86 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 87 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 88 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 89 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 90 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 91 的评分: 0
+DEBUG 2025-02-25 11:44:00 video_stream 23316 21580 帧 92 的评分: 0
+DEBUG 2025-02-25 11:44:01 video_stream 23316 21580 帧 93 的评分: 0
+DEBUG 2025-02-25 11:44:01 video_stream 23316 21580 帧 94 的评分: 0
+DEBUG 2025-02-25 11:44:01 video_stream 23316 21580 帧 95 的评分: 0
+INFO 2025-02-25 11:46:00 views 10884 5124 收到请求: http://localhost:3000
+INFO 2025-02-25 11:46:00 views 10884 5124 请求方法: POST
+INFO 2025-02-25 11:46:00 views 10884 5124 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryQSksHnqVrRg5CrDo', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '969274', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-25 11:46:00 serializers 10884 5124 开始验证视频文件
+DEBUG 2025-02-25 11:46:00 serializers 10884 5124 验证 standardVideo: 大小=620008, 类型=video/mp4
+DEBUG 2025-02-25 11:46:00 serializers 10884 5124 验证 exerciseVideo: 大小=348923, 类型=video/mp4
+INFO 2025-02-25 11:46:00 serializers 10884 5124 视频文件验证通过
+INFO 2025-02-25 11:46:00 views 10884 5124 创建会话成功: 1ee1651c-f0b8-4df9-9cc2-e5371a4d1c6f
+INFO 2025-02-25 11:46:00 services 10884 5124 初始化视频处理服务
+INFO 2025-02-25 11:46:00 services 10884 3208 开始处理视频: session_id=1ee1651c-f0b8-4df9-9cc2-e5371a4d1c6f
+INFO 2025-02-25 11:46:00 consumers 10884 11652 尝试建立WebSocket连接: URL=/ws/1ee1651c-f0b8-4df9-9cc2-e5371a4d1c6f/standard/
+INFO 2025-02-25 11:46:00 consumers 10884 11652 连接参数: session_id=1ee1651c-f0b8-4df9-9cc2-e5371a4d1c6f, type=standard
+INFO 2025-02-25 11:46:00 consumers 10884 11652 WebSocket连接已建立: session_id=1ee1651c-f0b8-4df9-9cc2-e5371a4d1c6f, type=standard
+INFO 2025-02-25 11:46:00 services 10884 11652 初始化视频处理服务
+INFO 2025-02-25 11:46:00 consumers 10884 11652 尝试建立WebSocket连接: URL=/ws/1ee1651c-f0b8-4df9-9cc2-e5371a4d1c6f/exercise/
+INFO 2025-02-25 11:46:00 consumers 10884 11652 连接参数: session_id=1ee1651c-f0b8-4df9-9cc2-e5371a4d1c6f, type=exercise
+INFO 2025-02-25 11:46:00 consumers 10884 11652 WebSocket连接已建立: session_id=1ee1651c-f0b8-4df9-9cc2-e5371a4d1c6f, type=exercise
+INFO 2025-02-25 11:46:00 services 10884 11652 初始化视频处理服务
+INFO 2025-02-25 11:46:02 services 10884 3208 DTW分析完成: 0.04546846625409192
+INFO 2025-02-25 11:46:02 services 10884 3208 保存分析结果: 总帧数=26
+ERROR 2025-02-25 11:46:05 consumers 10884 11652 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:46:05 consumers 10884 11652 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:46:05 consumers 10884 11652 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:46:05 consumers 10884 11652 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:46:05 consumers 10884 11652 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-25 11:46:05 video_stream 10884 4176 获取会话 1ee1651c-f0b8-4df9-9cc2-e5371a4d1c6f 的帧评分数据: {'0': 92.42015812978536, '1': 86.41894427226423, '2': 85.53823817739662, '3': 85.03378322085959, '4': 91.15271109802539, '5': 79.72739639913803, '6': 0.0, '7': 58.58170916875132, '8': 46.47101673945078, '9': 86.80964529468217, '10': 100.0, '11': 96.88821295849483, '12': 87.68418908806558, '13': 81.4345895942642, '14': 96.29295728942877, '15': 96.43460876502567, '16': 95.69222450126259, '17': 96.43504828328308, '18': 95.66476962310733, '19': 92.3684820230773, '20': 92.51110531181742, '21': 92.42909408770294, '22': 77.06101931183937, '23': 68.39574254830758, '24': 23.003680516639125, '25': 49.622021316265105}
+INFO 2025-02-25 11:46:05 video_stream 10884 11652 评分数据准备完成: 26 帧
+DEBUG 2025-02-25 11:46:05 video_stream 10884 11652 帧 0 的评分: 92.42015812978536
+ERROR 2025-02-25 11:46:05 consumers 10884 11652 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:46:05 consumers 10884 11652 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:46:05 consumers 10884 11652 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:46:05 consumers 10884 11652 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:46:05 consumers 10884 11652 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+DEBUG 2025-02-25 11:46:05 video_stream 10884 11652 帧 1 的评分: 86.41894427226423
+INFO 2025-02-25 11:46:05 video_stream 10884 4176 获取会话 1ee1651c-f0b8-4df9-9cc2-e5371a4d1c6f 的帧评分数据: {'0': 92.42015812978536, '1': 86.41894427226423, '2': 85.53823817739662, '3': 85.03378322085959, '4': 91.15271109802539, '5': 79.72739639913803, '6': 0.0, '7': 58.58170916875132, '8': 46.47101673945078, '9': 86.80964529468217, '10': 100.0, '11': 96.88821295849483, '12': 87.68418908806558, '13': 81.4345895942642, '14': 96.29295728942877, '15': 96.43460876502567, '16': 95.69222450126259, '17': 96.43504828328308, '18': 95.66476962310733, '19': 92.3684820230773, '20': 92.51110531181742, '21': 92.42909408770294, '22': 77.06101931183937, '23': 68.39574254830758, '24': 23.003680516639125, '25': 49.622021316265105}
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 2 的评分: 85.53823817739662
+INFO 2025-02-25 11:46:06 video_stream 10884 11652 评分数据准备完成: 26 帧
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 0 的评分: 92.42015812978536
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 3 的评分: 85.03378322085959
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 1 的评分: 86.41894427226423
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 4 的评分: 91.15271109802539
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 2 的评分: 85.53823817739662
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 5 的评分: 79.72739639913803
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 3 的评分: 85.03378322085959
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 6 的评分: 0.0
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 4 的评分: 91.15271109802539
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 7 的评分: 58.58170916875132
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 5 的评分: 79.72739639913803
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 8 的评分: 46.47101673945078
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 6 的评分: 0.0
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 9 的评分: 86.80964529468217
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 7 的评分: 58.58170916875132
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 10 的评分: 100.0
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 8 的评分: 46.47101673945078
+DEBUG 2025-02-25 11:46:06 video_stream 10884 11652 帧 11 的评分: 96.88821295849483
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 9 的评分: 86.80964529468217
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 12 的评分: 87.68418908806558
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 10 的评分: 100.0
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 13 的评分: 81.4345895942642
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 11 的评分: 96.88821295849483
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 14 的评分: 96.29295728942877
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 12 的评分: 87.68418908806558
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 15 的评分: 96.43460876502567
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 13 的评分: 81.4345895942642
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 16 的评分: 95.69222450126259
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 14 的评分: 96.29295728942877
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 17 的评分: 96.43504828328308
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 15 的评分: 96.43460876502567
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 18 的评分: 95.66476962310733
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 16 的评分: 95.69222450126259
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 19 的评分: 92.3684820230773
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 17 的评分: 96.43504828328308
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 20 的评分: 92.51110531181742
+DEBUG 2025-02-25 11:46:07 video_stream 10884 11652 帧 18 的评分: 95.66476962310733
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 21 的评分: 92.42909408770294
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 19 的评分: 92.3684820230773
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 22 的评分: 77.06101931183937
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 20 的评分: 92.51110531181742
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 23 的评分: 68.39574254830758
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 21 的评分: 92.42909408770294
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 24 的评分: 23.003680516639125
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 22 的评分: 77.06101931183937
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 25 的评分: 49.622021316265105
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 23 的评分: 68.39574254830758
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 26 的评分: 0
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 24 的评分: 23.003680516639125
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 27 的评分: 0
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 25 的评分: 49.622021316265105
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 28 的评分: 0
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 26 的评分: 0
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 29 的评分: 0
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 27 的评分: 0
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 30 的评分: 0
+DEBUG 2025-02-25 11:46:08 video_stream 10884 11652 帧 28 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 31 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 29 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 32 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 30 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 33 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 31 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 34 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 32 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 35 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 33 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 36 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 34 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 37 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 35 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 38 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 36 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 39 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 37 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 40 的评分: 0
+DEBUG 2025-02-25 11:46:09 video_stream 10884 11652 帧 38 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 41 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 39 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 42 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 40 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 43 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 41 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 44 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 42 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 45 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 43 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 46 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 44 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 47 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 45 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 48 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 46 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 49 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 47 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 50 的评分: 0
+DEBUG 2025-02-25 11:46:10 video_stream 10884 11652 帧 48 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 51 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 49 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 52 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 50 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 53 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 51 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 54 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 52 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 55 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 56 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 57 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 58 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 59 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 60 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 61 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 62 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 63 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 64 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 65 的评分: 0
+DEBUG 2025-02-25 11:46:11 video_stream 10884 11652 帧 66 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 67 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 68 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 69 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 70 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 71 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 72 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 73 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 74 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 75 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 76 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 77 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 78 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 79 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 80 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 81 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 82 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 83 的评分: 0
+DEBUG 2025-02-25 11:46:12 video_stream 10884 11652 帧 84 的评分: 0
+DEBUG 2025-02-25 11:46:13 video_stream 10884 11652 帧 85 的评分: 0
+DEBUG 2025-02-25 11:46:13 video_stream 10884 11652 帧 86 的评分: 0
+DEBUG 2025-02-25 11:46:13 video_stream 10884 11652 帧 87 的评分: 0
+DEBUG 2025-02-25 11:46:13 video_stream 10884 11652 帧 88 的评分: 0
+DEBUG 2025-02-25 11:46:13 video_stream 10884 11652 帧 89 的评分: 0
+DEBUG 2025-02-25 11:46:13 video_stream 10884 11652 帧 90 的评分: 0
+DEBUG 2025-02-25 11:46:13 video_stream 10884 11652 帧 91 的评分: 0
+DEBUG 2025-02-25 11:46:13 video_stream 10884 11652 帧 92 的评分: 0
+DEBUG 2025-02-25 11:46:13 video_stream 10884 11652 帧 93 的评分: 0
+DEBUG 2025-02-25 11:46:13 video_stream 10884 11652 帧 94 的评分: 0
+DEBUG 2025-02-25 11:46:13 video_stream 10884 11652 帧 95 的评分: 0
+INFO 2025-02-25 11:47:49 views 6488 4176 收到请求: http://localhost:3000
+INFO 2025-02-25 11:47:49 views 6488 4176 请求方法: POST
+INFO 2025-02-25 11:47:49 views 6488 4176 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryZizww6scgoGBTD8I', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '969274', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-25 11:47:49 serializers 6488 4176 开始验证视频文件
+DEBUG 2025-02-25 11:47:49 serializers 6488 4176 验证 standardVideo: 大小=620008, 类型=video/mp4
+DEBUG 2025-02-25 11:47:49 serializers 6488 4176 验证 exerciseVideo: 大小=348923, 类型=video/mp4
+INFO 2025-02-25 11:47:49 serializers 6488 4176 视频文件验证通过
+INFO 2025-02-25 11:47:49 views 6488 4176 创建会话成功: 6ca73961-9f7e-4baa-9a0e-ca3feb073e0b
+INFO 2025-02-25 11:47:49 services 6488 4176 初始化视频处理服务
+INFO 2025-02-25 11:47:49 services 6488 15216 开始处理视频: session_id=6ca73961-9f7e-4baa-9a0e-ca3feb073e0b
+INFO 2025-02-25 11:47:49 consumers 6488 5124 尝试建立WebSocket连接: URL=/ws/6ca73961-9f7e-4baa-9a0e-ca3feb073e0b/standard/
+INFO 2025-02-25 11:47:49 consumers 6488 5124 连接参数: session_id=6ca73961-9f7e-4baa-9a0e-ca3feb073e0b, type=standard
+INFO 2025-02-25 11:47:49 consumers 6488 5124 WebSocket连接已建立: session_id=6ca73961-9f7e-4baa-9a0e-ca3feb073e0b, type=standard
+INFO 2025-02-25 11:47:49 services 6488 5124 初始化视频处理服务
+INFO 2025-02-25 11:47:49 consumers 6488 5124 尝试建立WebSocket连接: URL=/ws/6ca73961-9f7e-4baa-9a0e-ca3feb073e0b/exercise/
+INFO 2025-02-25 11:47:49 consumers 6488 5124 连接参数: session_id=6ca73961-9f7e-4baa-9a0e-ca3feb073e0b, type=exercise
+INFO 2025-02-25 11:47:49 consumers 6488 5124 WebSocket连接已建立: session_id=6ca73961-9f7e-4baa-9a0e-ca3feb073e0b, type=exercise
+INFO 2025-02-25 11:47:49 services 6488 5124 初始化视频处理服务
+INFO 2025-02-25 11:47:51 services 6488 15216 DTW分析完成: 0.04546846625409192
+INFO 2025-02-25 11:47:51 services 6488 15216 保存分析结果: 总帧数=26
+INFO 2025-02-25 11:47:51 services 6488 15216 保存分析结果: 总帧数=26
+ERROR 2025-02-25 11:47:54 consumers 6488 5124 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:47:54 consumers 6488 5124 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:47:54 consumers 6488 5124 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:47:54 consumers 6488 5124 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:47:54 consumers 6488 5124 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-25 11:47:54 video_stream 6488 14468 获取会话 6ca73961-9f7e-4baa-9a0e-ca3feb073e0b 的帧评分数据: {'0': 92.42015812978536, '1': 86.41894427226423, '2': 85.53823817739662, '3': 85.03378322085959, '4': 91.15271109802539, '5': 79.72739639913803, '6': 0.0, '7': 58.58170916875132, '8': 46.47101673945078, '9': 86.80964529468217, '10': 100.0, '11': 96.88821295849483, '12': 87.68418908806558, '13': 81.4345895942642, '14': 96.29295728942877, '15': 96.43460876502567, '16': 95.69222450126259, '17': 96.43504828328308, '18': 95.66476962310733, '19': 92.3684820230773, '20': 92.51110531181742, '21': 92.42909408770294, '22': 77.06101931183937, '23': 68.39574254830758, '24': 23.003680516639125, '25': 49.622021316265105}
+INFO 2025-02-25 11:47:54 video_stream 6488 5124 评分数据准备完成: 26 帧
+DEBUG 2025-02-25 11:47:54 video_stream 6488 5124 帧 0 的评分: 92.42015812978536
+ERROR 2025-02-25 11:47:54 consumers 6488 5124 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:47:54 consumers 6488 5124 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:47:54 consumers 6488 5124 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:47:54 consumers 6488 5124 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:47:54 consumers 6488 5124 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+DEBUG 2025-02-25 11:47:54 video_stream 6488 5124 帧 1 的评分: 86.41894427226423
+INFO 2025-02-25 11:47:54 video_stream 6488 14468 获取会话 6ca73961-9f7e-4baa-9a0e-ca3feb073e0b 的帧评分数据: {'0': 92.42015812978536, '1': 86.41894427226423, '2': 85.53823817739662, '3': 85.03378322085959, '4': 91.15271109802539, '5': 79.72739639913803, '6': 0.0, '7': 58.58170916875132, '8': 46.47101673945078, '9': 86.80964529468217, '10': 100.0, '11': 96.88821295849483, '12': 87.68418908806558, '13': 81.4345895942642, '14': 96.29295728942877, '15': 96.43460876502567, '16': 95.69222450126259, '17': 96.43504828328308, '18': 95.66476962310733, '19': 92.3684820230773, '20': 92.51110531181742, '21': 92.42909408770294, '22': 77.06101931183937, '23': 68.39574254830758, '24': 23.003680516639125, '25': 49.622021316265105}
+INFO 2025-02-25 11:47:54 video_stream 6488 5124 评分数据准备完成: 26 帧
+DEBUG 2025-02-25 11:47:54 video_stream 6488 5124 帧 0 的评分: 92.42015812978536
+DEBUG 2025-02-25 11:47:54 video_stream 6488 5124 帧 2 的评分: 85.53823817739662
+DEBUG 2025-02-25 11:47:54 video_stream 6488 5124 帧 1 的评分: 86.41894427226423
+DEBUG 2025-02-25 11:47:54 video_stream 6488 5124 帧 3 的评分: 85.03378322085959
+DEBUG 2025-02-25 11:47:54 video_stream 6488 5124 帧 2 的评分: 85.53823817739662
+DEBUG 2025-02-25 11:47:54 video_stream 6488 5124 帧 4 的评分: 91.15271109802539
+DEBUG 2025-02-25 11:47:54 video_stream 6488 5124 帧 3 的评分: 85.03378322085959
+DEBUG 2025-02-25 11:47:54 video_stream 6488 5124 帧 5 的评分: 79.72739639913803
+DEBUG 2025-02-25 11:47:54 video_stream 6488 5124 帧 4 的评分: 91.15271109802539
+DEBUG 2025-02-25 11:47:54 video_stream 6488 5124 帧 6 的评分: 0.0
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 5 的评分: 79.72739639913803
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 7 的评分: 58.58170916875132
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 6 的评分: 0.0
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 8 的评分: 46.47101673945078
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 7 的评分: 58.58170916875132
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 9 的评分: 86.80964529468217
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 8 的评分: 46.47101673945078
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 10 的评分: 100.0
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 9 的评分: 86.80964529468217
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 11 的评分: 96.88821295849483
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 10 的评分: 100.0
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 12 的评分: 87.68418908806558
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 11 的评分: 96.88821295849483
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 13 的评分: 81.4345895942642
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 12 的评分: 87.68418908806558
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 14 的评分: 96.29295728942877
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 13 的评分: 81.4345895942642
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 15 的评分: 96.43460876502567
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 14 的评分: 96.29295728942877
+DEBUG 2025-02-25 11:47:55 video_stream 6488 5124 帧 16 的评分: 95.69222450126259
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 15 的评分: 96.43460876502567
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 17 的评分: 96.43504828328308
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 16 的评分: 95.69222450126259
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 18 的评分: 95.66476962310733
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 17 的评分: 96.43504828328308
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 19 的评分: 92.3684820230773
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 18 的评分: 95.66476962310733
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 20 的评分: 92.51110531181742
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 19 的评分: 92.3684820230773
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 21 的评分: 92.42909408770294
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 20 的评分: 92.51110531181742
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 22 的评分: 77.06101931183937
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 21 的评分: 92.42909408770294
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 23 的评分: 68.39574254830758
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 22 的评分: 77.06101931183937
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 24 的评分: 23.003680516639125
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 23 的评分: 68.39574254830758
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 25 的评分: 49.622021316265105
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 24 的评分: 23.003680516639125
+DEBUG 2025-02-25 11:47:56 video_stream 6488 5124 帧 26 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 25 的评分: 49.622021316265105
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 27 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 26 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 28 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 27 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 29 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 28 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 30 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 29 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 31 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 30 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 32 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 31 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 33 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 32 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 34 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 33 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 35 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 34 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 36 的评分: 0
+DEBUG 2025-02-25 11:47:57 video_stream 6488 5124 帧 35 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 37 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 36 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 38 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 37 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 39 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 38 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 40 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 39 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 41 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 40 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 42 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 41 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 43 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 42 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 44 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 43 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 45 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 44 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 46 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 45 的评分: 0
+DEBUG 2025-02-25 11:47:58 video_stream 6488 5124 帧 47 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 46 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 48 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 47 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 49 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 48 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 50 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 49 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 51 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 50 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 52 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 51 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 53 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 52 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 54 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 55 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 56 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 57 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 58 的评分: 0
+DEBUG 2025-02-25 11:47:59 video_stream 6488 5124 帧 59 的评分: 0
+DEBUG 2025-02-25 11:48:00 video_stream 6488 5124 帧 60 的评分: 0
+DEBUG 2025-02-25 11:48:00 video_stream 6488 5124 帧 61 的评分: 0
+DEBUG 2025-02-25 11:48:00 video_stream 6488 5124 帧 62 的评分: 0
+DEBUG 2025-02-25 11:48:00 video_stream 6488 5124 帧 63 的评分: 0
+DEBUG 2025-02-25 11:48:00 video_stream 6488 5124 帧 64 的评分: 0
+DEBUG 2025-02-25 11:48:00 video_stream 6488 5124 帧 65 的评分: 0
+DEBUG 2025-02-25 11:48:00 video_stream 6488 5124 帧 66 的评分: 0
+DEBUG 2025-02-25 11:48:00 video_stream 6488 5124 帧 67 的评分: 0
+DEBUG 2025-02-25 11:48:00 video_stream 6488 5124 帧 68 的评分: 0
+DEBUG 2025-02-25 11:48:00 video_stream 6488 5124 帧 69 的评分: 0
+DEBUG 2025-02-25 11:48:00 video_stream 6488 5124 帧 70 的评分: 0
+DEBUG 2025-02-25 11:48:00 video_stream 6488 5124 帧 71 的评分: 0
+DEBUG 2025-02-25 11:48:00 video_stream 6488 5124 帧 72 的评分: 0
+DEBUG 2025-02-25 11:48:00 video_stream 6488 5124 帧 73 的评分: 0
+DEBUG 2025-02-25 11:48:00 video_stream 6488 5124 帧 74 的评分: 0
+DEBUG 2025-02-25 11:48:00 video_stream 6488 5124 帧 75 的评分: 0
+DEBUG 2025-02-25 11:48:00 video_stream 6488 5124 帧 76 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 77 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 78 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 79 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 80 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 81 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 82 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 83 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 84 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 85 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 86 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 87 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 88 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 89 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 90 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 91 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 92 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 93 的评分: 0
+DEBUG 2025-02-25 11:48:01 video_stream 6488 5124 帧 94 的评分: 0
+DEBUG 2025-02-25 11:48:02 video_stream 6488 5124 帧 95 的评分: 0
+INFO 2025-02-25 11:49:23 views 23180 2500 收到请求: http://localhost:3000
+INFO 2025-02-25 11:49:23 views 23180 2500 请求方法: POST
+INFO 2025-02-25 11:49:23 views 23180 2500 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryKyTBHJzLcKbA8926', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '969274', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-25 11:49:23 serializers 23180 2500 开始验证视频文件
+DEBUG 2025-02-25 11:49:23 serializers 23180 2500 验证 standardVideo: 大小=620008, 类型=video/mp4
+DEBUG 2025-02-25 11:49:23 serializers 23180 2500 验证 exerciseVideo: 大小=348923, 类型=video/mp4
+INFO 2025-02-25 11:49:23 serializers 23180 2500 视频文件验证通过
+INFO 2025-02-25 11:49:23 views 23180 2500 创建会话成功: ae6cd9d3-76fa-446e-b168-6f99d1995db6
+INFO 2025-02-25 11:49:23 services 23180 2500 初始化视频处理服务
+INFO 2025-02-25 11:49:23 services 23180 2164 开始处理视频: session_id=ae6cd9d3-76fa-446e-b168-6f99d1995db6
+INFO 2025-02-25 11:49:23 services 23180 2164 开始处理标准视频
+INFO 2025-02-25 11:49:23 consumers 23180 24064 尝试建立WebSocket连接: URL=/ws/ae6cd9d3-76fa-446e-b168-6f99d1995db6/standard/
+INFO 2025-02-25 11:49:23 consumers 23180 24064 连接参数: session_id=ae6cd9d3-76fa-446e-b168-6f99d1995db6, type=standard
+INFO 2025-02-25 11:49:23 consumers 23180 24064 WebSocket连接已建立: session_id=ae6cd9d3-76fa-446e-b168-6f99d1995db6, type=standard
+INFO 2025-02-25 11:49:23 services 23180 24064 初始化视频处理服务
+INFO 2025-02-25 11:49:23 consumers 23180 24064 尝试建立WebSocket连接: URL=/ws/ae6cd9d3-76fa-446e-b168-6f99d1995db6/exercise/
+INFO 2025-02-25 11:49:23 consumers 23180 24064 连接参数: session_id=ae6cd9d3-76fa-446e-b168-6f99d1995db6, type=exercise
+INFO 2025-02-25 11:49:23 consumers 23180 24064 WebSocket连接已建立: session_id=ae6cd9d3-76fa-446e-b168-6f99d1995db6, type=exercise
+INFO 2025-02-25 11:49:23 services 23180 24064 初始化视频处理服务
+INFO 2025-02-25 11:49:25 services 23180 2164 标准视频处理完成,有效帧数: 96
+INFO 2025-02-25 11:49:25 services 23180 2164 开始处理练习视频
+INFO 2025-02-25 11:49:26 services 23180 2164 练习视频处理完成,有效帧数: 53
+INFO 2025-02-25 11:49:26 services 23180 2164 DTW分析完成: 0.039118676231252085
+INFO 2025-02-25 11:49:26 services 23180 2164 保存分析结果: 总帧数=53
+ERROR 2025-02-25 11:49:28 consumers 23180 24064 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:49:28 consumers 23180 24064 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:49:28 consumers 23180 24064 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:49:28 consumers 23180 24064 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:49:28 consumers 23180 24064 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-25 11:49:28 video_stream 23180 14060 获取会话 ae6cd9d3-76fa-446e-b168-6f99d1995db6 的帧评分数据: {'0': 98.58840019106168, '1': 97.79646967590735, '2': 97.32505508326794, '3': 97.27630787586003, '4': 97.32790290237662, '5': 96.88395912502244, '6': 96.96473082835524, '7': 97.17624038642693, '8': 97.65673828005933, '9': 98.07939971608572, '10': 98.14401798204852, '11': 98.07006045441837, '12': 91.95931683268786, '13': 93.26694570077588, '14': 96.07107123725612, '15': 97.183135228899, '16': 96.98601510210742, '17': 93.12571889781943, '18': 100.0, '19': 99.56685497751536, '20': 99.94111284665529, '21': 99.25158565349017, '22': 98.96835581627883, '23': 98.61053214187717, '24': 96.29611119127375, '25': 96.20261429178683, '26': 93.30613719540689, '27': 94.77432254067594, '28': 96.73399332810813, '29': 97.0333293213604, '30': 98.18233260051429, '31': 96.03694616955569, '32': 96.69184589557493, '33': 98.2339281903059, '34': 97.95098135515883, '35': 98.56586409674094, '36': 98.97783198687496, '37': 98.64913418086837, '38': 94.04282543434623, '39': 90.66406449471424, '40': 90.90869597618314, '41': 91.44802695876692, '42': 91.45704972506078, '43': 91.75401854234704, '44': 92.84770211776855, '45': 93.39591109069173, '46': 93.71521915685366, '47': 90.48370693805455, '48': 92.79957167321321, '49': 86.98887602803357, '50': 88.43173140088888, '51': 60.60488857091653, '52': 0.0}
+INFO 2025-02-25 11:49:28 video_stream 23180 24064 评分数据准备完成: 53 帧
+DEBUG 2025-02-25 11:49:28 video_stream 23180 24064 帧 0 的评分: 98.58840019106168
+ERROR 2025-02-25 11:49:28 consumers 23180 24064 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:49:28 consumers 23180 24064 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:49:28 consumers 23180 24064 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:49:28 consumers 23180 24064 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:49:28 consumers 23180 24064 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+DEBUG 2025-02-25 11:49:28 video_stream 23180 24064 帧 1 的评分: 97.79646967590735
+INFO 2025-02-25 11:49:28 video_stream 23180 14060 获取会话 ae6cd9d3-76fa-446e-b168-6f99d1995db6 的帧评分数据: {'0': 98.58840019106168, '1': 97.79646967590735, '2': 97.32505508326794, '3': 97.27630787586003, '4': 97.32790290237662, '5': 96.88395912502244, '6': 96.96473082835524, '7': 97.17624038642693, '8': 97.65673828005933, '9': 98.07939971608572, '10': 98.14401798204852, '11': 98.07006045441837, '12': 91.95931683268786, '13': 93.26694570077588, '14': 96.07107123725612, '15': 97.183135228899, '16': 96.98601510210742, '17': 93.12571889781943, '18': 100.0, '19': 99.56685497751536, '20': 99.94111284665529, '21': 99.25158565349017, '22': 98.96835581627883, '23': 98.61053214187717, '24': 96.29611119127375, '25': 96.20261429178683, '26': 93.30613719540689, '27': 94.77432254067594, '28': 96.73399332810813, '29': 97.0333293213604, '30': 98.18233260051429, '31': 96.03694616955569, '32': 96.69184589557493, '33': 98.2339281903059, '34': 97.95098135515883, '35': 98.56586409674094, '36': 98.97783198687496, '37': 98.64913418086837, '38': 94.04282543434623, '39': 90.66406449471424, '40': 90.90869597618314, '41': 91.44802695876692, '42': 91.45704972506078, '43': 91.75401854234704, '44': 92.84770211776855, '45': 93.39591109069173, '46': 93.71521915685366, '47': 90.48370693805455, '48': 92.79957167321321, '49': 86.98887602803357, '50': 88.43173140088888, '51': 60.60488857091653, '52': 0.0}
+INFO 2025-02-25 11:49:28 video_stream 23180 24064 评分数据准备完成: 53 帧
+DEBUG 2025-02-25 11:49:28 video_stream 23180 24064 帧 0 的评分: 98.58840019106168
+DEBUG 2025-02-25 11:49:28 video_stream 23180 24064 帧 2 的评分: 97.32505508326794
+DEBUG 2025-02-25 11:49:28 video_stream 23180 24064 帧 1 的评分: 97.79646967590735
+DEBUG 2025-02-25 11:49:28 video_stream 23180 24064 帧 3 的评分: 97.27630787586003
+DEBUG 2025-02-25 11:49:28 video_stream 23180 24064 帧 2 的评分: 97.32505508326794
+DEBUG 2025-02-25 11:49:28 video_stream 23180 24064 帧 4 的评分: 97.32790290237662
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 3 的评分: 97.27630787586003
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 5 的评分: 96.88395912502244
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 4 的评分: 97.32790290237662
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 6 的评分: 96.96473082835524
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 5 的评分: 96.88395912502244
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 7 的评分: 97.17624038642693
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 6 的评分: 96.96473082835524
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 8 的评分: 97.65673828005933
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 7 的评分: 97.17624038642693
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 9 的评分: 98.07939971608572
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 8 的评分: 97.65673828005933
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 10 的评分: 98.14401798204852
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 9 的评分: 98.07939971608572
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 11 的评分: 98.07006045441837
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 10 的评分: 98.14401798204852
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 12 的评分: 91.95931683268786
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 11 的评分: 98.07006045441837
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 13 的评分: 93.26694570077588
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 12 的评分: 91.95931683268786
+DEBUG 2025-02-25 11:49:29 video_stream 23180 24064 帧 14 的评分: 96.07107123725612
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 13 的评分: 93.26694570077588
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 15 的评分: 97.183135228899
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 14 的评分: 96.07107123725612
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 16 的评分: 96.98601510210742
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 15 的评分: 97.183135228899
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 17 的评分: 93.12571889781943
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 16 的评分: 96.98601510210742
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 18 的评分: 100.0
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 17 的评分: 93.12571889781943
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 19 的评分: 99.56685497751536
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 18 的评分: 100.0
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 20 的评分: 99.94111284665529
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 19 的评分: 99.56685497751536
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 21 的评分: 99.25158565349017
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 20 的评分: 99.94111284665529
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 22 的评分: 98.96835581627883
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 21 的评分: 99.25158565349017
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 23 的评分: 98.61053214187717
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 22 的评分: 98.96835581627883
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 24 的评分: 96.29611119127375
+DEBUG 2025-02-25 11:49:30 video_stream 23180 24064 帧 23 的评分: 98.61053214187717
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 25 的评分: 96.20261429178683
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 24 的评分: 96.29611119127375
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 26 的评分: 93.30613719540689
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 25 的评分: 96.20261429178683
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 27 的评分: 94.77432254067594
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 26 的评分: 93.30613719540689
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 28 的评分: 96.73399332810813
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 27 的评分: 94.77432254067594
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 29 的评分: 97.0333293213604
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 28 的评分: 96.73399332810813
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 30 的评分: 98.18233260051429
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 29 的评分: 97.0333293213604
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 31 的评分: 96.03694616955569
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 30 的评分: 98.18233260051429
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 32 的评分: 96.69184589557493
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 31 的评分: 96.03694616955569
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 33 的评分: 98.2339281903059
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 32 的评分: 96.69184589557493
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 34 的评分: 97.95098135515883
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 33 的评分: 98.2339281903059
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 35 的评分: 98.56586409674094
+DEBUG 2025-02-25 11:49:31 video_stream 23180 24064 帧 34 的评分: 97.95098135515883
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 36 的评分: 98.97783198687496
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 35 的评分: 98.56586409674094
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 37 的评分: 98.64913418086837
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 36 的评分: 98.97783198687496
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 38 的评分: 94.04282543434623
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 37 的评分: 98.64913418086837
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 39 的评分: 90.66406449471424
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 38 的评分: 94.04282543434623
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 40 的评分: 90.90869597618314
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 39 的评分: 90.66406449471424
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 41 的评分: 91.44802695876692
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 40 的评分: 90.90869597618314
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 42 的评分: 91.45704972506078
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 41 的评分: 91.44802695876692
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 43 的评分: 91.75401854234704
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 42 的评分: 91.45704972506078
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 44 的评分: 92.84770211776855
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 43 的评分: 91.75401854234704
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 45 的评分: 93.39591109069173
+DEBUG 2025-02-25 11:49:32 video_stream 23180 24064 帧 44 的评分: 92.84770211776855
+DEBUG 2025-02-25 11:49:33 video_stream 23180 24064 帧 46 的评分: 93.71521915685366
+DEBUG 2025-02-25 11:49:33 video_stream 23180 24064 帧 45 的评分: 93.39591109069173
+DEBUG 2025-02-25 11:49:33 video_stream 23180 24064 帧 47 的评分: 90.48370693805455
+DEBUG 2025-02-25 11:49:33 video_stream 23180 24064 帧 46 的评分: 93.71521915685366
+DEBUG 2025-02-25 11:49:33 video_stream 23180 24064 帧 48 的评分: 92.79957167321321
+DEBUG 2025-02-25 11:49:33 video_stream 23180 24064 帧 47 的评分: 90.48370693805455
+DEBUG 2025-02-25 11:49:33 video_stream 23180 24064 帧 49 的评分: 86.98887602803357
+DEBUG 2025-02-25 11:49:33 video_stream 23180 24064 帧 48 的评分: 92.79957167321321
+DEBUG 2025-02-25 11:49:33 video_stream 23180 24064 帧 50 的评分: 88.43173140088888
+DEBUG 2025-02-25 11:49:33 video_stream 23180 24064 帧 49 的评分: 86.98887602803357
+DEBUG 2025-02-25 11:49:33 video_stream 23180 24064 帧 51 的评分: 60.60488857091653
+DEBUG 2025-02-25 11:49:33 video_stream 23180 24064 帧 50 的评分: 88.43173140088888
+DEBUG 2025-02-25 11:49:34 video_stream 23180 24064 帧 52 的评分: 0.0
+DEBUG 2025-02-25 11:49:34 video_stream 23180 24064 帧 51 的评分: 60.60488857091653
+DEBUG 2025-02-25 11:49:34 video_stream 23180 24064 帧 53 的评分: 0
+DEBUG 2025-02-25 11:49:34 video_stream 23180 24064 帧 52 的评分: 0.0
+DEBUG 2025-02-25 11:49:34 video_stream 23180 24064 帧 54 的评分: 0
+DEBUG 2025-02-25 11:49:34 video_stream 23180 24064 帧 55 的评分: 0
+DEBUG 2025-02-25 11:49:34 video_stream 23180 24064 帧 56 的评分: 0
+DEBUG 2025-02-25 11:49:34 video_stream 23180 24064 帧 57 的评分: 0
+DEBUG 2025-02-25 11:49:34 video_stream 23180 24064 帧 58 的评分: 0
+DEBUG 2025-02-25 11:49:34 video_stream 23180 24064 帧 59 的评分: 0
+DEBUG 2025-02-25 11:49:34 video_stream 23180 24064 帧 60 的评分: 0
+DEBUG 2025-02-25 11:49:35 video_stream 23180 24064 帧 61 的评分: 0
+DEBUG 2025-02-25 11:49:35 video_stream 23180 24064 帧 62 的评分: 0
+DEBUG 2025-02-25 11:49:35 video_stream 23180 24064 帧 63 的评分: 0
+DEBUG 2025-02-25 11:49:35 video_stream 23180 24064 帧 64 的评分: 0
+DEBUG 2025-02-25 11:49:35 video_stream 23180 24064 帧 65 的评分: 0
+DEBUG 2025-02-25 11:49:35 video_stream 23180 24064 帧 66 的评分: 0
+DEBUG 2025-02-25 11:49:35 video_stream 23180 24064 帧 67 的评分: 0
+DEBUG 2025-02-25 11:49:35 video_stream 23180 24064 帧 68 的评分: 0
+DEBUG 2025-02-25 11:49:35 video_stream 23180 24064 帧 69 的评分: 0
+DEBUG 2025-02-25 11:49:36 video_stream 23180 24064 帧 70 的评分: 0
+DEBUG 2025-02-25 11:49:36 video_stream 23180 24064 帧 71 的评分: 0
+DEBUG 2025-02-25 11:49:36 video_stream 23180 24064 帧 72 的评分: 0
+DEBUG 2025-02-25 11:49:36 video_stream 23180 24064 帧 73 的评分: 0
+DEBUG 2025-02-25 11:49:36 video_stream 23180 24064 帧 74 的评分: 0
+DEBUG 2025-02-25 11:49:36 video_stream 23180 24064 帧 75 的评分: 0
+DEBUG 2025-02-25 11:49:36 video_stream 23180 24064 帧 76 的评分: 0
+DEBUG 2025-02-25 11:49:36 video_stream 23180 24064 帧 77 的评分: 0
+DEBUG 2025-02-25 11:49:36 video_stream 23180 24064 帧 78 的评分: 0
+DEBUG 2025-02-25 11:49:36 video_stream 23180 24064 帧 79 的评分: 0
+DEBUG 2025-02-25 11:49:36 video_stream 23180 24064 帧 80 的评分: 0
+DEBUG 2025-02-25 11:49:37 video_stream 23180 24064 帧 81 的评分: 0
+DEBUG 2025-02-25 11:49:37 video_stream 23180 24064 帧 82 的评分: 0
+DEBUG 2025-02-25 11:49:37 video_stream 23180 24064 帧 83 的评分: 0
+DEBUG 2025-02-25 11:49:37 video_stream 23180 24064 帧 84 的评分: 0
+DEBUG 2025-02-25 11:49:37 video_stream 23180 24064 帧 85 的评分: 0
+DEBUG 2025-02-25 11:49:37 video_stream 23180 24064 帧 86 的评分: 0
+DEBUG 2025-02-25 11:49:37 video_stream 23180 24064 帧 87 的评分: 0
+DEBUG 2025-02-25 11:49:37 video_stream 23180 24064 帧 88 的评分: 0
+DEBUG 2025-02-25 11:49:37 video_stream 23180 24064 帧 89 的评分: 0
+DEBUG 2025-02-25 11:49:37 video_stream 23180 24064 帧 90 的评分: 0
+DEBUG 2025-02-25 11:49:37 video_stream 23180 24064 帧 91 的评分: 0
+DEBUG 2025-02-25 11:49:38 video_stream 23180 24064 帧 92 的评分: 0
+DEBUG 2025-02-25 11:49:38 video_stream 23180 24064 帧 93 的评分: 0
+DEBUG 2025-02-25 11:49:38 video_stream 23180 24064 帧 94 的评分: 0
+DEBUG 2025-02-25 11:49:38 video_stream 23180 24064 帧 95 的评分: 0
+INFO 2025-02-25 11:53:47 views 7908 2800 收到请求: http://localhost:3000
+INFO 2025-02-25 11:53:47 views 7908 2800 请求方法: POST
+INFO 2025-02-25 11:53:47 views 7908 2800 请求头: {'Cookie': 'ajs_anonymous_id=244dc9d3-6369-455c-965d-f0825bb1fab7', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Referer': 'http://localhost:3000/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Origin': 'http://localhost:3000', 'Accept': '*/*', 'Sec-Ch-Ua-Mobile': '?0', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryDqmmaml9krthabtH', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Content-Length': '969274', 'Connection': 'close', 'Host': '127.0.0.1:8000'}
+INFO 2025-02-25 11:53:47 serializers 7908 2800 开始验证视频文件
+DEBUG 2025-02-25 11:53:47 serializers 7908 2800 验证 standardVideo: 大小=620008, 类型=video/mp4
+DEBUG 2025-02-25 11:53:47 serializers 7908 2800 验证 exerciseVideo: 大小=348923, 类型=video/mp4
+INFO 2025-02-25 11:53:47 serializers 7908 2800 视频文件验证通过
+INFO 2025-02-25 11:53:47 views 7908 2800 创建会话成功: e2e9c06c-4368-459e-8385-fd01471f6ac4
+INFO 2025-02-25 11:53:47 services 7908 2800 初始化视频处理服务
+INFO 2025-02-25 11:53:47 services 7908 24096 开始处理视频: session_id=e2e9c06c-4368-459e-8385-fd01471f6ac4
+INFO 2025-02-25 11:53:47 services 7908 24096 开始处理标准视频
+INFO 2025-02-25 11:53:47 consumers 7908 2040 尝试建立WebSocket连接: URL=/ws/e2e9c06c-4368-459e-8385-fd01471f6ac4/standard/
+INFO 2025-02-25 11:53:47 consumers 7908 2040 连接参数: session_id=e2e9c06c-4368-459e-8385-fd01471f6ac4, type=standard
+INFO 2025-02-25 11:53:47 consumers 7908 2040 WebSocket连接已建立: session_id=e2e9c06c-4368-459e-8385-fd01471f6ac4, type=standard
+INFO 2025-02-25 11:53:47 services 7908 2040 初始化视频处理服务
+INFO 2025-02-25 11:53:47 consumers 7908 2040 尝试建立WebSocket连接: URL=/ws/e2e9c06c-4368-459e-8385-fd01471f6ac4/exercise/
+INFO 2025-02-25 11:53:47 consumers 7908 2040 连接参数: session_id=e2e9c06c-4368-459e-8385-fd01471f6ac4, type=exercise
+INFO 2025-02-25 11:53:47 consumers 7908 2040 WebSocket连接已建立: session_id=e2e9c06c-4368-459e-8385-fd01471f6ac4, type=exercise
+INFO 2025-02-25 11:53:47 services 7908 2040 初始化视频处理服务
+INFO 2025-02-25 11:53:49 services 7908 24096 标准视频处理完成,有效帧数: 96
+INFO 2025-02-25 11:53:49 services 7908 24096 开始处理练习视频
+INFO 2025-02-25 11:53:51 services 7908 24096 练习视频处理完成,有效帧数: 53
+INFO 2025-02-25 11:53:51 services 7908 24096 DTW分析完成: 0.039118676231252085
+INFO 2025-02-25 11:53:51 services 7908 24096 保存分析结果: 总帧数=53
+ERROR 2025-02-25 11:53:52 consumers 7908 2040 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:53:52 consumers 7908 2040 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:53:52 consumers 7908 2040 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:53:52 consumers 7908 2040 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:53:52 consumers 7908 2040 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:53:52 consumers 7908 2040 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+ERROR 2025-02-25 11:53:52 consumers 7908 2040 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-25 11:53:52 video_stream 7908 7792 获取会话 e2e9c06c-4368-459e-8385-fd01471f6ac4 的帧评分数据: {'0': 98.58840019106168, '1': 97.79646967590735, '2': 97.32505508326794, '3': 97.27630787586003, '4': 97.32790290237662, '5': 96.88395912502244, '6': 96.96473082835524, '7': 97.17624038642693, '8': 97.65673828005933, '9': 98.07939971608572, '10': 98.14401798204852, '11': 98.07006045441837, '12': 91.95931683268786, '13': 93.26694570077588, '14': 96.07107123725612, '15': 97.183135228899, '16': 96.98601510210742, '17': 93.12571889781943, '18': 100.0, '19': 99.56685497751536, '20': 99.94111284665529, '21': 99.25158565349017, '22': 98.96835581627883, '23': 98.61053214187717, '24': 96.29611119127375, '25': 96.20261429178683, '26': 93.30613719540689, '27': 94.77432254067594, '28': 96.73399332810813, '29': 97.0333293213604, '30': 98.18233260051429, '31': 96.03694616955569, '32': 96.69184589557493, '33': 98.2339281903059, '34': 97.95098135515883, '35': 98.56586409674094, '36': 98.97783198687496, '37': 98.64913418086837, '38': 94.04282543434623, '39': 90.66406449471424, '40': 90.90869597618314, '41': 91.44802695876692, '42': 91.45704972506078, '43': 91.75401854234704, '44': 92.84770211776855, '45': 93.39591109069173, '46': 93.71521915685366, '47': 90.48370693805455, '48': 92.79957167321321, '49': 86.98887602803357, '50': 88.43173140088888, '51': 60.60488857091653, '52': 0.0}
+ERROR 2025-02-25 11:53:52 consumers 7908 2040 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-25 11:53:52 video_stream 7908 2040 评分数据准备完成: 53 帧
+INFO 2025-02-25 11:53:52 video_stream 7908 7792 获取会话 e2e9c06c-4368-459e-8385-fd01471f6ac4 的帧评分数据: {'0': 98.58840019106168, '1': 97.79646967590735, '2': 97.32505508326794, '3': 97.27630787586003, '4': 97.32790290237662, '5': 96.88395912502244, '6': 96.96473082835524, '7': 97.17624038642693, '8': 97.65673828005933, '9': 98.07939971608572, '10': 98.14401798204852, '11': 98.07006045441837, '12': 91.95931683268786, '13': 93.26694570077588, '14': 96.07107123725612, '15': 97.183135228899, '16': 96.98601510210742, '17': 93.12571889781943, '18': 100.0, '19': 99.56685497751536, '20': 99.94111284665529, '21': 99.25158565349017, '22': 98.96835581627883, '23': 98.61053214187717, '24': 96.29611119127375, '25': 96.20261429178683, '26': 93.30613719540689, '27': 94.77432254067594, '28': 96.73399332810813, '29': 97.0333293213604, '30': 98.18233260051429, '31': 96.03694616955569, '32': 96.69184589557493, '33': 98.2339281903059, '34': 97.95098135515883, '35': 98.56586409674094, '36': 98.97783198687496, '37': 98.64913418086837, '38': 94.04282543434623, '39': 90.66406449471424, '40': 90.90869597618314, '41': 91.44802695876692, '42': 91.45704972506078, '43': 91.75401854234704, '44': 92.84770211776855, '45': 93.39591109069173, '46': 93.71521915685366, '47': 90.48370693805455, '48': 92.79957167321321, '49': 86.98887602803357, '50': 88.43173140088888, '51': 60.60488857091653, '52': 0.0}
+DEBUG 2025-02-25 11:53:52 video_stream 7908 2040 帧 0 的评分: 98.58840019106168
+ERROR 2025-02-25 11:53:52 consumers 7908 2040 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+INFO 2025-02-25 11:53:52 video_stream 7908 2040 评分数据准备完成: 53 帧
+DEBUG 2025-02-25 11:53:52 video_stream 7908 2040 帧 0 的评分: 98.58840019106168
+ERROR 2025-02-25 11:53:52 consumers 7908 2040 处理消息时发生错误: __init__() got an unexpected keyword argument 'candidate'
+Traceback (most recent call last):
+  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\consumers.py", line 151, in receive
+    candidate = RTCIceCandidate(
+TypeError: __init__() got an unexpected keyword argument 'candidate'
+DEBUG 2025-02-25 11:53:52 video_stream 7908 2040 帧 1 的评分: 97.79646967590735
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 1 的评分: 97.79646967590735
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 2 的评分: 97.32505508326794
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 2 的评分: 97.32505508326794
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 3 的评分: 97.27630787586003
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 3 的评分: 97.27630787586003
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 4 的评分: 97.32790290237662
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 4 的评分: 97.32790290237662
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 5 的评分: 96.88395912502244
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 5 的评分: 96.88395912502244
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 6 的评分: 96.96473082835524
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 6 的评分: 96.96473082835524
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 7 的评分: 97.17624038642693
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 7 的评分: 97.17624038642693
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 8 的评分: 97.65673828005933
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 8 的评分: 97.65673828005933
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 9 的评分: 98.07939971608572
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 9 的评分: 98.07939971608572
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 10 的评分: 98.14401798204852
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 10 的评分: 98.14401798204852
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 11 的评分: 98.07006045441837
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 11 的评分: 98.07006045441837
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 12 的评分: 91.95931683268786
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 12 的评分: 91.95931683268786
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 13 的评分: 93.26694570077588
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 13 的评分: 93.26694570077588
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 14 的评分: 96.07107123725612
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 14 的评分: 96.07107123725612
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 15 的评分: 97.183135228899
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 15 的评分: 97.183135228899
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 16 的评分: 96.98601510210742
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 16 的评分: 96.98601510210742
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 17 的评分: 93.12571889781943
+DEBUG 2025-02-25 11:53:53 video_stream 7908 2040 帧 17 的评分: 93.12571889781943
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 18 的评分: 100.0
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 18 的评分: 100.0
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 19 的评分: 99.56685497751536
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 19 的评分: 99.56685497751536
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 20 的评分: 99.94111284665529
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 20 的评分: 99.94111284665529
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 21 的评分: 99.25158565349017
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 21 的评分: 99.25158565349017
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 22 的评分: 98.96835581627883
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 22 的评分: 98.96835581627883
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 23 的评分: 98.61053214187717
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 23 的评分: 98.61053214187717
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 24 的评分: 96.29611119127375
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 24 的评分: 96.29611119127375
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 25 的评分: 96.20261429178683
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 25 的评分: 96.20261429178683
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 26 的评分: 93.30613719540689
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 26 的评分: 93.30613719540689
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 27 的评分: 94.77432254067594
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 27 的评分: 94.77432254067594
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 28 的评分: 96.73399332810813
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 28 的评分: 96.73399332810813
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 29 的评分: 97.0333293213604
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 29 的评分: 97.0333293213604
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 30 的评分: 98.18233260051429
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 30 的评分: 98.18233260051429
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 31 的评分: 96.03694616955569
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 31 的评分: 96.03694616955569
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 32 的评分: 96.69184589557493
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 32 的评分: 96.69184589557493
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 33 的评分: 98.2339281903059
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 33 的评分: 98.2339281903059
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 34 的评分: 97.95098135515883
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 34 的评分: 97.95098135515883
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 35 的评分: 98.56586409674094
+DEBUG 2025-02-25 11:53:54 video_stream 7908 2040 帧 35 的评分: 98.56586409674094
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 36 的评分: 98.97783198687496
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 36 的评分: 98.97783198687496
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 37 的评分: 98.64913418086837
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 37 的评分: 98.64913418086837
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 38 的评分: 94.04282543434623
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 38 的评分: 94.04282543434623
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 39 的评分: 90.66406449471424
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 39 的评分: 90.66406449471424
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 40 的评分: 90.90869597618314
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 40 的评分: 90.90869597618314
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 41 的评分: 91.44802695876692
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 41 的评分: 91.44802695876692
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 42 的评分: 91.45704972506078
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 42 的评分: 91.45704972506078
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 43 的评分: 91.75401854234704
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 43 的评分: 91.75401854234704
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 44 的评分: 92.84770211776855
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 44 的评分: 92.84770211776855
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 45 的评分: 93.39591109069173
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 45 的评分: 93.39591109069173
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 46 的评分: 93.71521915685366
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 46 的评分: 93.71521915685366
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 47 的评分: 90.48370693805455
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 47 的评分: 90.48370693805455
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 48 的评分: 92.79957167321321
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 48 的评分: 92.79957167321321
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 49 的评分: 86.98887602803357
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 49 的评分: 86.98887602803357
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 50 的评分: 88.43173140088888
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 50 的评分: 88.43173140088888
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 51 的评分: 60.60488857091653
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 51 的评分: 60.60488857091653
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 52 的评分: 0.0
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 52 的评分: 0.0
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 53 的评分: 0.0
+INFO 2025-02-25 11:53:55 video_stream 7908 2040 练习视频播放完毕，发送最终平均分: 93.271652592232
+ERROR 2025-02-25 11:53:55 video_stream 7908 2040 处理视频帧失败: 视频已播放完毕
+DEBUG 2025-02-25 11:53:55 video_stream 7908 2040 帧 54 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 55 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 56 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 57 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 58 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 59 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 60 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 61 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 62 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 63 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 64 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 65 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 66 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 67 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 68 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 69 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 70 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 71 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 72 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 73 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 74 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 75 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 76 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 77 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 78 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 79 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 80 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 81 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 82 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 83 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 84 的评分: 0.0
+DEBUG 2025-02-25 11:53:56 video_stream 7908 2040 帧 85 的评分: 0.0
+DEBUG 2025-02-25 11:53:57 video_stream 7908 2040 帧 86 的评分: 0.0
+DEBUG 2025-02-25 11:53:57 video_stream 7908 2040 帧 87 的评分: 0.0
+DEBUG 2025-02-25 11:53:57 video_stream 7908 2040 帧 88 的评分: 0.0
+DEBUG 2025-02-25 11:53:57 video_stream 7908 2040 帧 89 的评分: 0.0
+DEBUG 2025-02-25 11:53:57 video_stream 7908 2040 帧 90 的评分: 0.0
+DEBUG 2025-02-25 11:53:57 video_stream 7908 2040 帧 91 的评分: 0.0
+DEBUG 2025-02-25 11:53:57 video_stream 7908 2040 帧 92 的评分: 0.0
+DEBUG 2025-02-25 11:53:57 video_stream 7908 2040 帧 93 的评分: 0.0
+DEBUG 2025-02-25 11:53:57 video_stream 7908 2040 帧 94 的评分: 0.0
+DEBUG 2025-02-25 11:53:57 video_stream 7908 2040 帧 95 的评分: 0.0
