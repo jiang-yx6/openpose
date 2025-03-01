@@ -19,9 +19,12 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from evalpose.views import VideoUploadView, HealthCheckView
+from evalpose.views import VideoUploadView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('upload-videos/', VideoUploadView.as_view(), name='upload_videos'),
 ]
+
+# 添加媒体文件的URL配置
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,13 +1,11 @@
 import cv2
 import mediapipe as mp
-import time
 import math
 import numpy as np
 from fastdtw import fastdtw
 from scipy.spatial.distance import euclidean
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
-import os
 
 class Config:
     KEY_ANGLES = {
@@ -287,6 +285,7 @@ class ActionComparator:
         max_length = max(len(self.std_seq), len(self.pat_seq))
         normalized_distance = distance / max_length
         similarity = 1 / (1 + normalized_distance)
+        
         # 计算患者视频帧与多个标准视频帧的对比评分
         frame_scores = self._compare_frames_with_multiple_matches(path)
         # print(len(frame_scores))

@@ -26,14 +26,12 @@ SECRET_KEY = "django-insecure-lx20l=wrl3wcjl)od56^zz7%0ffrwm-9-5o5@je(f_(ovd@utu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'daphne',
-    'channels',
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -76,7 +74,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "pose.wsgi.application"
 
-ASGI_APPLICATION = "pose.asgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
@@ -123,7 +120,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -132,7 +130,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # 添加媒体文件配置
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # DRF 配置
 REST_FRAMEWORK = {
@@ -188,31 +186,39 @@ LOGGING = {
 }
 
 # 在文件末尾添加
-FILE_UPLOAD_HANDLERS = [
-    'django.core.files.uploadhandler.MemoryFileUploadHandler',
-    'django.core.files.uploadhandler.TemporaryFileUploadHandler',
-]
+# FILE_UPLOAD_HANDLERS = [
+#     'django.core.files.uploadhandler.MemoryFileUploadHandler',
+#     'django.core.files.uploadhandler.TemporaryFileUploadHandler',
+# ]
 
 # 临时文件目录
-FILE_UPLOAD_TEMP_DIR = BASE_DIR / 'temp_uploads'
+# FILE_UPLOAD_TEMP_DIR = BASE_DIR / 'temp_uploads'
 
 # 确保媒体文件目录存在
 os.makedirs(MEDIA_ROOT, exist_ok=True)
-os.makedirs(FILE_UPLOAD_TEMP_DIR, exist_ok=True)
+os.makedirs(os.path.join(MEDIA_ROOT, 'hls'), exist_ok=True)
+# os.makedirs(FILE_UPLOAD_TEMP_DIR, exist_ok=True)
 
 # WebRTC 配置
-WEBRTC_ICE_SERVERS = [
-    {
-        'urls': 'stun:stun.l.google.com:19302'
-    }
-]
+# WEBRTC_ICE_SERVERS = [
+#     {
+#         'urls': 'stun:stun.l.google.com:19302'
+#     }
+# ]
 
-CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOW_CREDENTIALS = True
 
 # 添加 Channel Layers 配置
-CHANNEL_LAYERS = {
-    "default": {
-        "BACKEND": "channels.layers.InMemoryChannelLayer"
-    }
-}
+# CHANNEL_LAYERS = {
+#     "default": {
+#         "BACKEND": "channels.layers.InMemoryChannelLayer"
+#     }
+# }
+
+# CORS配置
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+]
+
+# 如果您希望允许所有来源，可以使用以下配置（不推荐用于生产环境）
+# CORS_ALLOW_ALL_ORIGINS = True

@@ -33,4 +33,4 @@ class VideoUploadSerializer(serializers.Serializer):
 class SessionSerializer(serializers.ModelSerializer):
     class Meta:
         model = EvalSession
-        fields = ['session_id', 'status', 'score'] 
+        fields = ['session_id', 'status', 'score']
