@@ -7,6 +7,7 @@ from .models import EvalSession, VideoFile
 import logging
 import time
 from django.http import JsonResponse
+
 logger = logging.getLogger(__name__)
 
 # Create your views here.
@@ -23,19 +24,29 @@ class VideoUploadView(APIView):
                 session = EvalSession.objects.create(status='pending')
                 logger.info(f"创建会话成功: {session.session_id}")
 
-                # 保存视频文件
-                standard_video = serializer.validated_data['standardVideo']
-                exercise_video = serializer.validated_data['exerciseVideo']
+                # 从base64数据创建文件
+                standard_filename = f"standard_{session.session_id}.mp4"
+                exercise_filename = f"exercise_{session.session_id}.mp4"
+                
+                # 转换base64为文件
+                standard_file_obj = serializer.base64_to_file(
+                    serializer.validated_data['standard'],
+                    standard_filename
+                )
+                exercise_file_obj = serializer.base64_to_file(
+                    serializer.validated_data['exercise'],
+                    exercise_filename
+                )
 
                 # 创建视频文件记录
                 standard_file = VideoFile.objects.create(
                     session=session,
-                    file=standard_video,
+                    file=standard_file_obj,
                     video_type='standard'
                 )
                 exercise_file = VideoFile.objects.create(
                     session=session,
-                    file=exercise_video,
+                    file=exercise_file_obj,
                     video_type='exercise'
                 )
 
@@ -47,7 +58,7 @@ class VideoUploadView(APIView):
                 video_service = VideoProcessingService()
                 video_service.process_videos(session.session_id, standard_file.file.path, exercise_file.file.path)
                 
-                # 返回会话ID和HLS URL
+                # 返回会话ID和视频URL
                 return JsonResponse({
                     'session_id': session.session_id, 
                     'hls_url': f'/media/hls/{session.session_id}/output.m3u8',
