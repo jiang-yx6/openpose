@@ -29,26 +29,12 @@ class VideoUploadView(APIView):
                 exercise_filename = f"exercise_{session.session_id}.mp4"
                 
                 # 转换base64为文件
-                standard_file_obj = serializer.base64_to_file(
-                    serializer.validated_data['standard'],
-                    standard_filename
-                )
-                exercise_file_obj = serializer.base64_to_file(
-                    serializer.validated_data['exercise'],
-                    exercise_filename
-                )
+                standard_file_obj = serializer.base64_to_file(serializer.validated_data['standard'],standard_filename)
+                exercise_file_obj = serializer.base64_to_file(serializer.validated_data['exercise'],exercise_filename)
 
                 # 创建视频文件记录
-                standard_file = VideoFile.objects.create(
-                    session=session,
-                    file=standard_file_obj,
-                    video_type='standard'
-                )
-                exercise_file = VideoFile.objects.create(
-                    session=session,
-                    file=exercise_file_obj,
-                    video_type='exercise'
-                )
+                standard_file = VideoFile.objects.create(session=session,file=standard_file_obj,video_type='standard')
+                exercise_file = VideoFile.objects.create(session=session,file=exercise_file_obj,video_type='exercise')
 
                 # 确保文件已保存
                 standard_file.file.close()
@@ -56,15 +42,35 @@ class VideoUploadView(APIView):
 
                 # 启动视频分析和处理
                 video_service = VideoProcessingService()
-                video_service.process_videos(session.session_id, standard_file.file.path, exercise_file.file.path)
+                process_result = video_service.process_videos(
+                    session.session_id, 
+                    standard_file.file.path, 
+                    exercise_file.file.path
+                )
+                
+                # 检查处理结果
+                if not process_result['hls_success']:
+                    logger.warning(f"HLS 转换未完全成功: standard={process_result['standard_hls']}, exercise={process_result['exercise_hls']}")
                 
                 # 返回会话ID和视频URL
-                return JsonResponse({
-                    'session_id': session.session_id, 
-                    'hls_url': f'/media/hls/{session.session_id}/output.m3u8',
-                    'standard_video': f'/media/hls/{session.session_id}/standard_annotated.mp4',
-                    'exercise_video': f'/media/hls/{session.session_id}/exercise_annotated.mp4'
-                }, status=status.HTTP_201_CREATED)
+                response_data = {
+                    'session_id': session.session_id,
+                    'standard_video_hls': f'/media/hls/{session.session_id}/standard.m3u8',
+                    'exercise_video_hls': f'/media/hls/{session.session_id}/exercise.m3u8',
+                    'overlap_video_hls': f'/media/hls/{session.session_id}/overlap.m3u8',
+                    'exercise_worst_frames': [f'/media/hls/{session.session_id}/patient_frame_1.jpg',
+                                              f'/media/hls/{session.session_id}/patient_frame_2.jpg',
+                                              f'/media/hls/{session.session_id}/patient_frame_3.jpg'],
+                    'processing_status': {
+                        'dtw_success': process_result['dtw_success'],
+                        'hls_success': process_result['hls_success'],
+                        'standard_hls': process_result['standard_hls'],
+                        'exercise_hls': process_result['exercise_hls'],
+                        'overlap_hls': process_result['overlap_hls']
+                    }
+                }
+                
+                return JsonResponse(response_data, status=status.HTTP_201_CREATED)
 
             except Exception as e:
                 logger.error(f"处理上传失败: {str(e)}", exc_info=True)
@@ -72,6 +78,9 @@ class VideoUploadView(APIView):
                     session.status = 'failed'
                     session.error_message = str(e)
                     session.save()
-                return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+                return Response({
+                    'error': str(e),
+                    'status': 'failed'
+                }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

@@ -20,11 +20,17 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 from evalpose.views import VideoUploadView
+from django.views.static import serve
+from django.urls import re_path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('upload-videos/', VideoUploadView.as_view(), name='upload_videos'),
+    # 添加专门的 HLS 文件服务路由
+    re_path(r'^media/hls/(?P<path>.*)$', serve, {
+        'document_root': settings.MEDIA_ROOT + '/hls/',
+    }),
 ]
 
 # 添加媒体文件的URL配置
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

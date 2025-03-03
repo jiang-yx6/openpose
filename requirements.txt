@@ -1,9 +1,194 @@
-torch>=0.4.1
-torchvision>=0.2.1
-pycocotools
-opencv-python>=3.4.0.14
-numpy>=1.14.0
-opencv-python
-numpy
-mediapipe
-opencv-python
+absl-py==2.1.0
+    # via mediapipe
+aioice==0.9.0
+    # via aiortc
+aiortc==1.10.1
+    # via openpose
+asgiref==3.8.1
+    # via channels
+    # via daphne
+    # via django
+    # via django-cors-headers
+attrs==25.1.0
+    # via mediapipe
+    # via service-identity
+    # via twisted
+autobahn==24.4.2
+    # via daphne
+automat==24.8.1
+    # via twisted
+av==13.1.0
+    # via aiortc
+cffi==1.17.1
+    # via aiortc
+    # via cryptography
+    # via pylibsrtp
+    # via sounddevice
+channels==4.2.0
+    # via openpose
+constantly==23.10.4
+    # via twisted
+contourpy==1.3.1
+    # via matplotlib
+cryptography==44.0.1
+    # via aiortc
+    # via autobahn
+    # via pyopenssl
+    # via service-identity
+cycler==0.12.1
+    # via matplotlib
+daphne==4.1.2
+    # via channels
+    # via openpose
+django==5.1.6
+    # via channels
+    # via django-cors-headers
+    # via djangorestframework
+    # via openpose
+django-cors-headers==4.7.0
+    # via openpose
+djangorestframework==3.15.2
+    # via openpose
+dnspython==2.7.0
+    # via aioice
+fastdtw==0.3.4
+    # via openpose
+filelock==3.17.0
+    # via torch
+flatbuffers==25.2.10
+    # via mediapipe
+fonttools==4.56.0
+    # via matplotlib
+fsspec==2025.2.0
+    # via torch
+google-crc32c==1.6.0
+    # via aiortc
+hyperlink==21.0.0
+    # via autobahn
+    # via twisted
+idna==3.10
+    # via hyperlink
+    # via twisted
+ifaddr==0.2.0
+    # via aioice
+incremental==24.7.2
+    # via twisted
+jax==0.5.1
+    # via mediapipe
+jaxlib==0.5.1
+    # via jax
+    # via mediapipe
+jinja2==3.1.5
+    # via torch
+joblib==1.4.2
+    # via scikit-learn
+kiwisolver==1.4.8
+    # via matplotlib
+markupsafe==3.0.2
+    # via jinja2
+matplotlib==3.10.1
+    # via mediapipe
+    # via pycocotools
+mediapipe==0.10.21
+    # via openpose
+ml-dtypes==0.5.1
+    # via jax
+    # via jaxlib
+mpmath==1.3.0
+    # via sympy
+networkx==3.4.2
+    # via torch
+numpy==1.26.4
+    # via contourpy
+    # via fastdtw
+    # via jax
+    # via jaxlib
+    # via matplotlib
+    # via mediapipe
+    # via ml-dtypes
+    # via opencv-contrib-python
+    # via opencv-python
+    # via opencv-python-headless
+    # via openpose
+    # via pycocotools
+    # via scikit-learn
+    # via scipy
+    # via torchvision
+opencv-contrib-python==4.11.0.86
+    # via mediapipe
+opencv-python==4.11.0.86
+    # via openpose
+opencv-python-headless==4.11.0.86
+    # via opencv-python
+opt-einsum==3.4.0
+    # via jax
+packaging==24.2
+    # via matplotlib
+pillow==11.1.0
+    # via matplotlib
+    # via torchvision
+protobuf==4.25.6
+    # via mediapipe
+pyasn1==0.6.1
+    # via pyasn1-modules
+    # via service-identity
+pyasn1-modules==0.4.1
+    # via service-identity
+pycocotools==2.0.8
+    # via openpose
+pycparser==2.22
+    # via cffi
+pyee==12.1.1
+    # via aiortc
+pylibsrtp==0.11.0
+    # via aiortc
+pyopenssl==25.0.0
+    # via aiortc
+    # via twisted
+pyparsing==3.2.1
+    # via matplotlib
+python-dateutil==2.9.0.post0
+    # via matplotlib
+scikit-learn==1.6.1
+    # via openpose
+scipy==1.15.2
+    # via jax
+    # via jaxlib
+    # via scikit-learn
+sentencepiece==0.2.0
+    # via mediapipe
+service-identity==24.2.0
+    # via twisted
+setuptools==75.8.2
+    # via autobahn
+    # via incremental
+    # via torch
+    # via zope-interface
+six==1.17.0
+    # via python-dateutil
+sounddevice==0.5.1
+    # via mediapipe
+sqlparse==0.5.3
+    # via django
+sympy==1.13.1
+    # via torch
+threadpoolctl==3.5.0
+    # via scikit-learn
+torch==2.6.0
+    # via openpose
+    # via torchvision
+torchvision==0.21.0
+    # via openpose
+twisted==24.11.0
+    # via daphne
+txaio==23.1.1
+    # via autobahn
+typing-extensions==4.12.2
+    # via pyee
+    # via pyopenssl
+    # via torch
+    # via twisted
+tzdata==2025.1
+    # via django
+zope-interface==7.2
+    # via twisted

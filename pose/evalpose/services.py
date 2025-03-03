@@ -5,8 +5,9 @@ import logging
 from .models import EvalSession, VideoFile
 import os
 import subprocess
-from .pose_analyzer import PoseDetector, VideoAnalyzer, ActionComparator
+from .pose_analyzer import VideoAnalyzer, ActionComparator
 from django.conf import settings
+from concurrent.futures import ThreadPoolExecutor
 
 logger = logging.getLogger(__name__)
 mp_drawing = mp.solutions.drawing_utils
@@ -64,10 +65,20 @@ class PoseProcessor:
 class VideoProcessingService:
     def __init__(self):
         self.pose_processor = PoseProcessor()
+        self.hls_ouput_path = None
         logger.info("初始化视频处理服务")
 
     def process_videos(self, session_id, standard_video_path, exercise_video_path):
         """使用 DTW 处理视频对比并生成标注后的视频"""
+        result = {
+            'dtw_success': False,
+            'hls_success': False,
+            'standard_hls': False,
+            'exercise_hls': False,
+            'overlap_hls': False
+        }
+        
+        self.hls_ouput_path = os.path.join(settings.MEDIA_ROOT, 'hls', str(session_id))
         try:
             logger.info(f"开始处理视频: session_id={session_id}")
             
@@ -76,72 +87,81 @@ class VideoProcessingService:
             
             # 获取所有帧数据
             std_sequence = analyzer.process_video(standard_video_path, skip_frames=2) 
-            exercise_sequence = analyzer.process_video(exercise_video_path, skip_frames=2)
+            exe_sequence = analyzer.process_video(exercise_video_path, skip_frames=2)
 
             # 2. 比较序列
-            comparator = ActionComparator(std_sequence, exercise_sequence)
-            result = comparator.compare_sequences()
+            comparator = ActionComparator(std_sequence, exe_sequence)
+            dtw_result = comparator.compare_sequences()
+            result['dtw_success'] = True
             
-            logger.info(f"DTW分析完成: {result['similarity_score']}")
+            logger.info(f"DTW分析完成: {dtw_result['similarity_score']}")
 
             # 3. 保存结果
             session = EvalSession.objects.get(pk=session_id)
-            session.dtw_distance = float(result['dtw_distance'])
-            session.similarity_score = float(result['similarity_score'] * 100)
-            session.frame_data = {'std_frame_data': std_sequence, 'exercise_frame_data': exercise_sequence}
-            session.frame_scores = {str(idx): float(score) for idx, score in result['frame_scores']}
+            session.dtw_distance = float(dtw_result['dtw_distance'])
+            session.similarity_score = float(dtw_result['similarity_score'] * 100)
+            session.frame_data = {'std_frame_data': std_sequence, 'exercise_frame_data': exe_sequence}
+            session.frame_scores = {str(idx): float(score) for idx, score in dtw_result['frame_scores']}
             session.status = 'completed'
             session.save()
 
-            logger.info(f"保存分析结果: 总帧数={len(result['frame_scores'])}")
-            
-            # 4. 生成标注后的视频
-            self._generate_annotated_videos(session_id, standard_video_path, exercise_video_path, 
-                                           std_sequence, exercise_sequence, result['frame_scores'])
-
-        except Exception as e:
-            logger.error(f"视频处理失败: {str(e)}", exc_info=True)
-            session = EvalSession.objects.get(pk=session_id)
-            session.status = 'failed'
-            session.error_message = str(e)
-            session.save()
-            raise
-
-    def _generate_annotated_videos(self, session_id, standard_video_path, exercise_video_path, 
-                                  std_sequence, exercise_sequence, frame_scores):
-        """生成标注关键点和得分的视频"""
-        try:
-            # 创建输出目录
+            # 4. 生成标注后的视频并转换为HLS
             output_dir = os.path.join(settings.MEDIA_ROOT, 'hls', str(session_id))
             os.makedirs(output_dir, exist_ok=True)
             
-            # 标准视频处理
             std_output_path = os.path.join(output_dir, 'standard_annotated.mp4')
-            self._process_video_with_annotations(
-                standard_video_path, 
-                std_output_path, 
-                std_sequence, 
-                color=(0, 255, 0),  # 绿色
-                is_standard=True
-            )
-            
-            # 练习视频处理
             ex_output_path = os.path.join(output_dir, 'exercise_annotated.mp4')
-            self._process_video_with_annotations(
-                exercise_video_path, 
-                ex_output_path, 
-                exercise_sequence, 
-                frame_scores=frame_scores,
-                color=(0, 0, 255)  # 红色
-            )
+            overlap_output_path = os.path.join(output_dir, 'overlap_annotated.mp4')
+
+
+            with ThreadPoolExecutor(max_workers=3) as executor:
+                futures = [
+                    executor.submit(self._process_video_with_annotations, standard_video_path, std_output_path, std_sequence, color=(0, 255, 0), is_standard=True),
+                    executor.submit(self._process_video_with_annotations, exercise_video_path, ex_output_path, exe_sequence, frame_scores=dtw_result['frame_scores'], color=(0, 0, 255)),
+                    executor.submit(analyzer._process_overlap_video, std_sequence, exe_sequence, dtw_result, overlap_output_path, exercise_video_path)
+                ]
+                for future in futures:
+                    future.result()
+            # 处理标准视频
+            # self._process_video_with_annotations(
+            #     standard_video_path, 
+            #     std_output_path, 
+            #     std_sequence, 
+            #     color=(0, 255, 0),
+            #     is_standard=True
+            # )
+            # # 处理练习视频
+            # self._process_video_with_annotations(
+            #     exercise_video_path, 
+            #     ex_output_path, 
+            #     exe_sequence, 
+            #     frame_scores=dtw_result['frame_scores'],
+            #     color=(0, 0, 255)
+            # )
             
+            # analyzer._process_overlap_video(
+            #     std_sequence,
+            #     exe_sequence,
+            #     dtw_result,
+            #     overlap_output_path,
+            #     exercise_video_path               
+            # )
+
             # 生成HLS流
-            self._generate_hls_stream(session_id, ex_output_path)
-            
-            logger.info(f"已生成标注视频: {std_output_path}, {ex_output_path}")
-            
+            result['overlap_hls'] = self._generate_hls_stream(session_id, overlap_output_path, 'overlap')
+            result['standard_hls'] = self._generate_hls_stream(session_id, std_output_path, 'standard')
+            result['exercise_hls'] = self._generate_hls_stream(session_id, ex_output_path, 'exercise')
+            result['hls_success'] = result['standard_hls'] and result['exercise_hls'] and  result['overlap_hls']
+
+            logger.info(f"视频处理完成，HLS转换状态: {result}")
+            return result
+
         except Exception as e:
-            logger.error(f"生成标注视频失败: {str(e)}", exc_info=True)
+            logger.error(f"视频处理失败: {str(e)}", exc_info=True)
+            if 'session' in locals():
+                session.status = 'failed'
+                session.error_message = str(e)
+                session.save()
             raise
 
     def _process_video_with_annotations(self, input_path, output_path, sequence_data, 
@@ -151,7 +171,7 @@ class VideoProcessingService:
             cap = cv2.VideoCapture(input_path)
             if not cap.isOpened():
                 raise ValueError(f"无法打开视频: {input_path}")
-                
+
             # 获取视频属性
             width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
             height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
@@ -170,7 +190,6 @@ class VideoProcessingService:
                 if not ret:
                     break
                     
-                # 每隔2帧处理一次（与process_video中的skip_frames保持一致）
                 if seq_idx < len(sequence_data):
                     # 绘制关键点
                     landmarks = sequence_data[seq_idx].get('landmarks', [])
@@ -242,11 +261,14 @@ class VideoProcessingService:
         except Exception as e:
             logger.error(f"绘制骨架失败: {str(e)}")
 
-    def _generate_hls_stream(self, session_id, video_path):
+    def _generate_hls_stream(self, session_id, video_path, video_type='exercise'):
         """生成HLS流"""
         try:
             hls_output_path = os.path.join(settings.MEDIA_ROOT, 'hls', str(session_id))
             os.makedirs(hls_output_path, exist_ok=True)
+
+            # 根据视频类型设置输出文件名
+            output_filename = f"{video_type}.m3u8"
 
             # FFmpeg 命令
             command = [
@@ -254,16 +276,37 @@ class VideoProcessingService:
                 '-i', video_path,
                 '-hls_time', '2',  # 每个片段的时长
                 '-hls_list_size', '0',  # 保留所有片段
+                '-hls_segment_filename', os.path.join(hls_output_path, f"{video_type}_%03d.ts"),  # 片段文件名格式
                 '-f', 'hls',
-                os.path.join(hls_output_path, 'output.m3u8')  # 输出播放列表
+                os.path.join(hls_output_path, output_filename)  # 输出播放列表
             ]
-            logger.info(f"开始生成HLS流: {command}")
-            # 启动 FFmpeg 进程并捕获输出
-            result = subprocess.run(command, capture_output=True, text=True)
-            if result.returncode != 0:
-                logger.error(f"FFmpeg 错误: {result.stderr}")
+            logger.info(f"开始生成{video_type}视频的HLS流: {' '.join(command)}")
+            # 使用 Popen 来运行 FFmpeg，并等待完成
+            process = subprocess.Popen(
+                command,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True
+            )
+            
+            # 实时获取输出
+            while True:
+                output = process.stderr.readline()
+                if output == '' and process.poll() is not None:
+                    break
+                if output:
+                    logger.debug(f"FFmpeg 输出: {output.strip()}")
+            
+            # 获取最终结果
+            stdout, stderr = process.communicate()
+            if process.returncode != 0:
+                logger.error(f"FFmpeg 错误: {stderr}")
+                return False
             else:
-                logger.info(f"HLS 流处理已启动: {hls_output_path}/output.m3u8")
-
+                logger.info(f"HLS 流处理完成: {hls_output_path}/{output_filename}")
+                return True
+           
         except Exception as e:
             logger.error(f"启动 HLS 流处理失败: {str(e)}")
+
+    
