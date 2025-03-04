@@ -262,7 +262,7 @@ class VideoAnalyzer(PoseDetector):
             # 获取最低得分的三帧
             if save_lowest_scores:
                 lowest_scores = sorted(dtw_result['frame_scores'], key=lambda x: x[1])[:3]
-            
+            idx = 1
             while cap_pat.isOpened():
                 success_pat, img_pat = cap_pat.read()
                 
@@ -311,7 +311,7 @@ class VideoAnalyzer(PoseDetector):
                     # 绘制标准骨架的线条（绿色）
                     self.draw_bone(img_pat, std_landmarks_translated, [(p1, p2), (p2, p3)], color=(0, 255, 0))  # 绿色线条
                 
-                idx = 1
+                
                 # 保存得分最低的三帧
                 if save_lowest_scores:
                     for lowest_score in lowest_scores:

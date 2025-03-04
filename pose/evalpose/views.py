@@ -84,3 +84,45 @@ class VideoUploadView(APIView):
                 }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class FrameScoresView(APIView):
+    def get(self, request, session_id):
+        session = EvalSession.objects.get(session_id=session_id)
+        if session.status != 'completed':
+            return Response({
+                'error': '会话未完成',
+                'status': 'failed'
+            }, status=status.HTTP_400_BAD_REQUEST)
+        frame_scores = session.frame_scores
+        response_data = {
+            "status": "success",
+            "session_id": session_id,
+            "frame_scores": frame_scores
+        }
+        return Response(response_data)
+        
+
+
+class TestUploadView(APIView):
+    def post(self, request):
+        # # 返回会话ID和视频URL
+        # logger.info(f"收到请求: {request.META.get('HTTP_ORIGIN')}")
+
+        # response_data = {
+        #     'session_id': session.session_id,
+        #     'standard_video_hls': f'/media/hls/{session.session_id}/standard.m3u8',
+        #     'exercise_video_hls': f'/media/hls/{session.session_id}/exercise.m3u8',
+        #     'overlap_video_hls': f'/media/hls/{session.session_id}/overlap.m3u8',
+        #     'exercise_worst_frames': [f'/media/hls/{session.session_id}/patient_frame_1.jpg',
+        #                                 f'/media/hls/{session.session_id}/patient_frame_2.jpg',
+        #                                 f'/media/hls/{session.session_id}/patient_frame_3.jpg'],
+        #     'processing_status': {
+        #         'dtw_success': process_result['dtw_success'],
+        #         'hls_success': process_result['hls_success'],
+        #         'standard_hls': process_result['standard_hls'],
+        #         'exercise_hls': process_result['exercise_hls'],
+        #         'overlap_hls': process_result['overlap_hls']
+        #     }
+        # }
+        response_data = {}
+        return JsonResponse(response_data, status=status.HTTP_201_CREATED)

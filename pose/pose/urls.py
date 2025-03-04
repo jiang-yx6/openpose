@@ -19,7 +19,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from evalpose.views import VideoUploadView
+from evalpose.views import VideoUploadView,TestUploadView,FrameScoresView
 from django.views.static import serve
 from django.urls import re_path
 
@@ -27,6 +27,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('upload-videos/', VideoUploadView.as_view(), name='upload_videos'),
     # 添加专门的 HLS 文件服务路由
+    path('test-upload/', TestUploadView.as_view(), name='test_upload'),
+    path('frame-scores/<str:session_id>/', FrameScoresView.as_view(), name='frame_scores'),
     re_path(r'^media/hls/(?P<path>.*)$', serve, {
         'document_root': settings.MEDIA_ROOT + '/hls/',
     }),

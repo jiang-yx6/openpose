@@ -218,7 +218,9 @@ os.makedirs(os.path.join(MEDIA_ROOT, 'hls'), exist_ok=True)
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "http://yf.free4inno.com",
+    "https://chat.free4inno.com",
 ]
 
 # 如果您希望允许所有来源，可以使用以下配置（不推荐用于生产环境）
-# CORS_ALLOW_ALL_ORIGINS = True
+#CORS_ALLOW_ALL_ORIGINS = True
