@@ -240,3 +240,5 @@ WARNING 2025-03-04 16:13:11 basehttp 10752 1168 "GET /static/rest_framework/js/d
 WARNING 2025-03-04 16:13:11 basehttp 10752 18520 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 404 179
 INFO 2025-03-04 16:13:40 autoreload 10752 16352 F:\DjangoRestfulAPI\openpose3\pose\pose\urls.py changed, reloading.
 INFO 2025-03-04 16:13:41 autoreload 2456 20204 Watching for file changes with StatReloader
+INFO 2025-03-04 16:16:20 autoreload 2456 20204 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
+INFO 2025-03-04 16:16:21 autoreload 21232 2144 Watching for file changes with StatReloader

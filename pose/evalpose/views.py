@@ -99,7 +99,7 @@ class FrameScoresView(APIView):
             "session_id": session_id,
             "frame_scores": frame_scores
         }
-        return Response(response_data)
+        return Response(response_data, status=status.HTTP_200_OK)
         
 
 
