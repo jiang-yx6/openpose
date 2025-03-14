@@ -6,7 +6,7 @@ from fastdtw import fastdtw
 from scipy.spatial.distance import euclidean
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
-
+import os
 class Config:
     KEY_ANGLES = {
         'left_elbow': [11,13,15],
@@ -220,7 +220,265 @@ class VideoAnalyzer(PoseDetector):
         
         return normalized_scores
 
+    def detect_action_stages(self, sequence, angle_threshold=5):
+        """
+        根据关键点角度的变化自动识别动作阶段。
+        :param sequence: 动作序列（包含每帧的关节角度信息）
+        :param angle_threshold: 用于判断动作变化的角度阈值
+        :return: 动作阶段列表，每个阶段是一个包含帧索引的元组
+        """
+        stages = []
+        prev_angles = None
+        stage_start = 0
+        
+        for i, frame in enumerate(sequence):
+            angles = frame['angles']
+            
+            if prev_angles:
+                # 计算角度变化量
+                angle_diff = {joint: abs(angles[joint] - prev_angles.get(joint, 0)) for joint in angles}
+                if any(diff > angle_threshold for diff in angle_diff.values()):
+                    # 如果角度变化超过阈值，认为这是一个新的阶段
+                    stage_end = i
+                    stages.append((stage_start, stage_end))
+                    stage_start = i
+            
+            prev_angles = angles
+            
+        # 捕捉最后一个阶段
+        stages.append((stage_start, len(sequence)-1))
+        
+        return stages
 
+    def select_lowest_score_frames(self, dtw_result, stages, max_frames=3):
+        """
+        在识别的阶段中选取最低评分的帧，如果阶段数超过三个，则选取评分最低的三帧。
+        :param dtw_result: DTW对齐结果（包含每帧的评分）
+        :param stages: 动作阶段列表，每个阶段是一个包含帧索引的元组
+        :param max_frames: 要选择的最大帧数
+        :return: 选定的最低评分帧
+        """
+        frame_scores = dtw_result['frame_scores']
+        
+        # 获取每个阶段的最低评分帧
+        lowest_frames = []
+        for stage_start, stage_end in stages:
+            stage_scores = frame_scores[stage_start:stage_end+1]
+            lowest_frames.append(sorted(stage_scores, key=lambda x: x[1])[0])  # 选取每个阶段的最低评分帧
+        
+        # 如果阶段数超过3个，则从所有阶段中选取评分最低的3个帧
+        if len(stages) > max_frames:
+            # 对所有阶段中的帧按评分排序，选取评分最低的max_frames帧
+            lowest_frames = sorted(lowest_frames, key=lambda x: x[1])[:max_frames]
+        
+        return lowest_frames
+
+
+
+
+    def draw_bone(self, img, landmarks, connections, color=(0, 255, 0)):
+        """
+        绘制骨架连接。
+        :param img: 图像
+        :param landmarks: 关节点坐标
+        :param connections: 骨架连接对（每对关节索引表示连接）
+        :param color: 绘制颜色
+        """
+        for connection in connections:
+            x1, y1 = landmarks[connection[0]]
+            x2, y2 = landmarks[connection[1]]
+            cv2.line(img, (int(x1), int(y1)), (int(x2), int(y2)), color, 2)
+
+
+    def generate_video_with_selected_frames(self, std_video, pat_video, dtw_result, output_video_path, video_path_pat, stages, save_lowest_scores=True):
+        """
+        生成包含最低评分帧的对比视频，并绘制标准骨架和患者骨架。
+        :param std_video: 标准视频的骨架数据
+        :param pat_video: 患者视频的骨架数据
+        :param dtw_result: DTW对齐结果
+        :param output_video_path: 输出视频路径
+        :param video_path_pat: 患者视频路径
+        :param stages: 识别到的动作阶段
+        :param save_lowest_scores: 是否保存得分最低的帧
+        """
+        # 获取每个阶段的最低评分帧
+        lowest_score_frames = self.select_lowest_score_frames(dtw_result, stages)
+        
+        # 打开患者视频文件
+        cap_pat = cv2.VideoCapture(video_path_pat)
+        
+        if not cap_pat.isOpened():
+            raise ValueError("无法打开视频文件")
+        
+        # 视频编写器设置
+        fourcc = cv2.VideoWriter_fourcc(*'XVID')
+        fps = cap_pat.get(cv2.CAP_PROP_FPS)
+        width = int(cap_pat.get(cv2.CAP_PROP_FRAME_WIDTH))
+        height = int(cap_pat.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        
+        out = cv2.VideoWriter(output_video_path, fourcc, fps, (width, height))
+        
+        frame_idx = 0
+        
+        while cap_pat.isOpened():
+            success_pat, img_pat = cap_pat.read()
+            
+            if not success_pat:
+                break
+            
+            # 获取当前帧的患者骨架数据和标准骨架数据
+            pat_frame = pat_video[frame_idx]
+            std_frame_idx = dtw_result['alignment_path'][frame_idx][1]  # DTW路径获取标准视频的对应帧
+            std_frame = std_video[std_frame_idx]
+            
+            # 获取患者骨架坐标
+            pat_landmarks = [(lm[1], lm[2]) for lm in pat_frame['landmarks']]
+            
+            # 只绘制与角度相关的骨架
+            for angle_name, joints in Config.KEY_ANGLES.items():
+                p1, p2, p3 = joints
+                # 绘制患者骨架连接（线段连接）
+                self.draw_bone(img_pat, pat_landmarks, [(p1, p2), (p2, p3)], color=(0, 0, 255))  # 红色线条
+            
+            # 获取患者和标准骨架的左肩坐标
+            pat_shoulder_left = np.array(pat_frame['landmarks'][11][1:])
+            pat_shoulder_right = np.array(pat_frame['landmarks'][12][1:])
+            std_landmarks = [(lm[1], lm[2]) for lm in std_frame['landmarks']]
+            
+            # 计算肩宽并标准化
+            shoulder_width_pat = np.linalg.norm(pat_shoulder_left - pat_shoulder_right)
+            
+            # 获取标准骨架坐标并进行平移
+            std_shoulder_left = np.array(std_frame['landmarks'][11][1:])
+            
+            # 计算平移量（使标准骨架的左肩与患者的左肩对齐）
+            translation_vector = pat_shoulder_left - std_shoulder_left
+            
+            # 平移标准骨架
+            std_landmarks_translated = []
+            for x, y in std_landmarks:
+                x_translated = x + translation_vector[0]
+                y_translated = y + translation_vector[1]
+                std_landmarks_translated.append((x_translated, y_translated))
+            
+            # 绘制平移后的标准骨架
+            for angle_name, joints in Config.KEY_ANGLES.items():
+                p1, p2, p3 = joints
+                # 绘制标准骨架的线条（绿色）
+                self.draw_bone(img_pat, std_landmarks_translated, [(p1, p2), (p2, p3)], color=(0, 255, 0))  # 绿色线条
+            
+            # 判断当前帧是否为最低评分帧，如果是，保存该帧
+            if frame_idx in [frame[0] for frame in lowest_score_frames]:  # 使用frame_idx来匹配
+                img_name = f'patient_frame_{frame_idx}.jpg'
+                cv2.imwrite(img_name, img_pat)
+                print(f"保存最低得分的患者帧：{img_name}")
+            
+            # 写入输出视频
+            out.write(img_pat)
+            
+            frame_idx += 1
+        
+        cap_pat.release()
+        out.release()
+
+    def _process_overlap_video(self, std_video, pat_video, dtw_result, output_video_path, video_path_pat, save_lowest_scores=True):
+        """
+        生成带有患者骨架和标准骨架的视频（标准骨架通过平移与患者肩关节对齐）。生成自generate_video_with_selected_frames方法。
+        
+        :param std_video: 标准视频的骨架数据
+        :param pat_video: 患者视频的骨架数据
+        :param dtw_result: DTW对齐结果
+        :param output_video_path: 输出视频路径
+        :param video_path_pat: 患者视频路径
+        :param save_lowest_scores: 是否保存得分最低的三帧为图片
+        """
+        # 自动识别动作阶段
+        stages = self.detect_action_stages(pat_video)
+        
+        # 获取每个阶段的最低评分帧
+        if save_lowest_scores:
+            lowest_score_frames = self.select_lowest_score_frames(dtw_result, stages)
+        
+        # 打开患者视频文件
+        cap_pat = cv2.VideoCapture(video_path_pat)
+        
+        if not cap_pat.isOpened():
+            raise ValueError(f"无法打开视频文件: {video_path_pat}")
+                
+        # 视频编写器设置
+        fourcc = cv2.VideoWriter_fourcc(*'XVID')
+        fps = cap_pat.get(cv2.CAP_PROP_FPS)
+        width = int(cap_pat.get(cv2.CAP_PROP_FRAME_WIDTH))
+        height = int(cap_pat.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        
+        out = cv2.VideoWriter(output_video_path, fourcc, fps, (width, height))
+        
+        frame_idx = 0
+        idx = 1
+        
+        while cap_pat.isOpened():
+            success_pat, img_pat = cap_pat.read()
+            
+            if not success_pat:
+                break
+            
+            # 获取当前帧的患者骨架数据和标准骨架数据
+            pat_frame = pat_video[frame_idx]
+            std_frame_idx = dtw_result['alignment_path'][frame_idx][1]  # DTW路径获取标准视频的对应帧
+            std_frame = std_video[std_frame_idx]
+            
+            # 获取患者骨架坐标
+            pat_landmarks = [(lm[1], lm[2]) for lm in pat_frame['landmarks']]
+            
+            # 只绘制与角度相关的骨架
+            for angle_name, joints in Config.KEY_ANGLES.items():
+                # 获取每个夹角的三个关节
+                p1, p2, p3 = joints
+                # 绘制骨架连接（线段连接）
+                self.draw_bone(img_pat, pat_landmarks, [(p1, p2), (p2, p3)], (0, 0, 255))  # 红色线条
+            
+            # 获取标准骨架坐标并进行平移
+            pat_shoulder_left = np.array(pat_frame['landmarks'][11][1:])
+            pat_shoulder_right = np.array(pat_frame['landmarks'][12][1:])
+            shoulder_width_pat = np.linalg.norm(pat_shoulder_left - pat_shoulder_right)
+            
+            std_landmarks = [(lm[1], lm[2]) for lm in std_frame['landmarks']]
+            std_landmarks_translated = []
+            
+            # 获取患者左肩和标准左肩坐标
+            std_shoulder_left = np.array(std_frame['landmarks'][11][1:])
+            
+            # 计算平移量（使标准骨架的左肩与患者的左肩对齐）
+            translation_vector = pat_shoulder_left - std_shoulder_left
+            
+            # 平移标准骨架
+            for x, y in std_landmarks:
+                x_translated = x + translation_vector[0]
+                y_translated = y + translation_vector[1]
+                std_landmarks_translated.append((x_translated, y_translated))
+            
+            # 绘制平移后的标准骨架
+            for angle_name, joints in Config.KEY_ANGLES.items():
+                # 获取每个夹角的三个关节
+                p1, p2, p3 = joints
+                # 绘制标准骨架的线条（绿色）
+                self.draw_bone(img_pat, std_landmarks_translated, [(p1, p2), (p2, p3)], color=(0, 255, 0))  # 绿色线条
+            
+            # 保存得分最低的帧
+            if save_lowest_scores:
+                if frame_idx in [frame[0] for frame in lowest_score_frames]:
+                    img_name = os.path.join(os.path.dirname(output_video_path), f'patient_frame_{idx}.jpg')
+                    idx += 1
+                    cv2.imwrite(img_name, img_pat)
+                    print(f"保存最低得分的患者帧：{img_name}")
+            
+            # 写入输出视频
+            out.write(img_pat)
+            
+            frame_idx += 1
+        
+        cap_pat.release()
+        out.release()
 # def main():
 #     analyzer = VideoAnalyzer()
     

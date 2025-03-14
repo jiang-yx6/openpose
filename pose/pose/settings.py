@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-lx20l=wrl3wcjl)od56^zz7%0ffrwm-9-5o5@je(f_(ovd@utu"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -215,10 +215,6 @@ os.makedirs(os.path.join(MEDIA_ROOT, 'hls'), exist_ok=True)
 # }
 
 # CORS配置
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-]
 
 # 如果您希望允许所有来源，可以使用以下配置（不推荐用于生产环境）
-# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True

@@ -1,1862 +1,244 @@
-INFO 2025-02-28 15:20:27 autoreload 10512 20984 Watching for file changes with StatReloader
-INFO 2025-02-28 15:21:00 autoreload 10512 20984 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 15:22:27 autoreload 18504 8868 Watching for file changes with StatReloader
-INFO 2025-02-28 15:23:06 autoreload 21816 10324 Watching for file changes with StatReloader
-INFO 2025-02-28 15:23:25 autoreload 21816 10324 F:\DjangoRestfulAPI\openpose3\pose\pose\urls.py changed, reloading.
-INFO 2025-02-28 15:23:27 autoreload 4268 7172 Watching for file changes with StatReloader
-INFO 2025-02-28 15:24:40 autoreload 7140 18700 Watching for file changes with StatReloader
-INFO 2025-02-28 15:24:52 autoreload 7140 18700 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 15:24:53 autoreload 3216 11856 Watching for file changes with StatReloader
-INFO 2025-02-28 15:24:58 autoreload 3216 11856 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 15:24:59 autoreload 4036 12276 Watching for file changes with StatReloader
-INFO 2025-02-28 15:25:10 autoreload 4036 12276 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 15:25:10 autoreload 14660 9072 Watching for file changes with StatReloader
-INFO 2025-02-28 15:25:22 autoreload 19484 3700 Watching for file changes with StatReloader
-INFO 2025-02-28 15:25:32 views 19484 2896 收到请求: http://localhost:3000
-INFO 2025-02-28 15:25:32 serializers 19484 2896 开始验证视频文件
-DEBUG 2025-02-28 15:25:32 serializers 19484 2896 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 15:25:32 serializers 19484 2896 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 15:25:32 serializers 19484 2896 视频文件验证通过
-INFO 2025-02-28 15:25:32 views 19484 2896 创建会话成功: bfb46894-f842-473b-92e9-7dc9508f93b8
-INFO 2025-02-28 15:25:32 services 19484 2896 初始化视频处理服务
-INFO 2025-02-28 15:25:32 services 19484 2896 开始处理视频: session_id=bfb46894-f842-473b-92e9-7dc9508f93b8
-INFO 2025-02-28 15:25:36 services 19484 2896 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 15:25:36 services 19484 2896 保存分析结果: 总帧数=53
-INFO 2025-02-28 15:25:36 services 19484 2896 HLS 流处理已启动: media/hls/bfb46894-f842-473b-92e9-7dc9508f93b8//output.m3u8
-INFO 2025-02-28 15:25:36 basehttp 19484 2896 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 15:29:57 views 19484 928 收到请求: http://localhost:3000
-INFO 2025-02-28 15:29:57 serializers 19484 928 开始验证视频文件
-DEBUG 2025-02-28 15:29:57 serializers 19484 928 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 15:29:57 serializers 19484 928 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 15:29:57 serializers 19484 928 视频文件验证通过
-INFO 2025-02-28 15:29:57 views 19484 928 创建会话成功: 5c9fcecc-ceb7-4bdb-bc66-b684ba469de2
-INFO 2025-02-28 15:29:57 services 19484 928 初始化视频处理服务
-INFO 2025-02-28 15:29:57 services 19484 928 开始处理视频: session_id=5c9fcecc-ceb7-4bdb-bc66-b684ba469de2
-INFO 2025-02-28 15:30:01 services 19484 928 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 15:30:01 services 19484 928 保存分析结果: 总帧数=53
-INFO 2025-02-28 15:30:01 services 19484 928 HLS 流处理已启动: media/hls/5c9fcecc-ceb7-4bdb-bc66-b684ba469de2//output.m3u8
-INFO 2025-02-28 15:30:01 basehttp 19484 928 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 15:47:53 views 19484 9500 收到请求: http://localhost:3000
-INFO 2025-02-28 15:47:53 serializers 19484 9500 开始验证视频文件
-DEBUG 2025-02-28 15:47:53 serializers 19484 9500 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 15:47:53 serializers 19484 9500 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 15:47:53 serializers 19484 9500 视频文件验证通过
-INFO 2025-02-28 15:47:53 views 19484 9500 创建会话成功: efc54be6-bb02-4884-91f7-6735ebccada8
-INFO 2025-02-28 15:47:53 services 19484 9500 初始化视频处理服务
-INFO 2025-02-28 15:47:53 services 19484 9500 开始处理视频: session_id=efc54be6-bb02-4884-91f7-6735ebccada8
-INFO 2025-02-28 15:47:57 services 19484 9500 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 15:47:57 services 19484 9500 保存分析结果: 总帧数=53
-INFO 2025-02-28 15:47:57 services 19484 9500 HLS 流处理已启动: media/hls/efc54be6-bb02-4884-91f7-6735ebccada8//output.m3u8
-INFO 2025-02-28 15:47:57 basehttp 19484 9500 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 15:51:42 views 19484 16780 收到请求: http://localhost:3000
-INFO 2025-02-28 15:51:42 serializers 19484 16780 开始验证视频文件
-DEBUG 2025-02-28 15:51:42 serializers 19484 16780 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 15:51:42 serializers 19484 16780 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 15:51:42 serializers 19484 16780 视频文件验证通过
-INFO 2025-02-28 15:51:42 views 19484 16780 创建会话成功: f5403505-8929-4588-b354-a56fc056a769
-INFO 2025-02-28 15:51:42 services 19484 16780 初始化视频处理服务
-INFO 2025-02-28 15:51:42 services 19484 16780 开始处理视频: session_id=f5403505-8929-4588-b354-a56fc056a769
-INFO 2025-02-28 15:51:46 services 19484 16780 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 15:51:46 services 19484 16780 保存分析结果: 总帧数=53
-INFO 2025-02-28 15:51:46 services 19484 16780 HLS 流处理已启动: media/hls/f5403505-8929-4588-b354-a56fc056a769//output.m3u8
-INFO 2025-02-28 15:51:46 basehttp 19484 16780 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 15:51:46 log 19484 18668 Not Found: /media/hls/f5403505-8929-4588-b354-a56fc056a769/output.m3u8
-WARNING 2025-02-28 15:51:46 basehttp 19484 18668 "GET /media/hls/f5403505-8929-4588-b354-a56fc056a769/output.m3u8 HTTP/1.1" 404 2385
-WARNING 2025-02-28 15:51:46 log 19484 3640 Not Found: /media/hls/f5403505-8929-4588-b354-a56fc056a769/output.m3u8
-WARNING 2025-02-28 15:51:46 basehttp 19484 3640 "GET /media/hls/f5403505-8929-4588-b354-a56fc056a769/output.m3u8 HTTP/1.1" 404 2385
-WARNING 2025-02-28 15:51:46 log 19484 3640 Not Found: /media/hls/f5403505-8929-4588-b354-a56fc056a769/output.m3u8
-WARNING 2025-02-28 15:51:46 basehttp 19484 3640 "GET /media/hls/f5403505-8929-4588-b354-a56fc056a769/output.m3u8 HTTP/1.1" 404 2385
-INFO 2025-02-28 15:52:29 views 19484 22160 收到请求: http://localhost:3000
-INFO 2025-02-28 15:52:29 serializers 19484 22160 开始验证视频文件
-DEBUG 2025-02-28 15:52:29 serializers 19484 22160 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 15:52:29 serializers 19484 22160 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 15:52:29 serializers 19484 22160 视频文件验证通过
-INFO 2025-02-28 15:52:29 views 19484 22160 创建会话成功: 17a99491-5ba5-4954-9f9a-182b35563d47
-INFO 2025-02-28 15:52:29 services 19484 22160 初始化视频处理服务
-INFO 2025-02-28 15:52:29 services 19484 22160 开始处理视频: session_id=17a99491-5ba5-4954-9f9a-182b35563d47
-INFO 2025-02-28 15:52:32 services 19484 22160 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 15:52:32 services 19484 22160 保存分析结果: 总帧数=53
-INFO 2025-02-28 15:52:32 services 19484 22160 HLS 流处理已启动: media/hls/17a99491-5ba5-4954-9f9a-182b35563d47//output.m3u8
-INFO 2025-02-28 15:52:32 basehttp 19484 22160 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 15:52:32 log 19484 18456 Not Found: /media/hls/17a99491-5ba5-4954-9f9a-182b35563d47/output.m3u8
-WARNING 2025-02-28 15:52:32 basehttp 19484 18456 "GET /media/hls/17a99491-5ba5-4954-9f9a-182b35563d47/output.m3u8 HTTP/1.1" 404 2385
-WARNING 2025-02-28 15:52:32 log 19484 9952 Not Found: /media/hls/17a99491-5ba5-4954-9f9a-182b35563d47/output.m3u8
-WARNING 2025-02-28 15:52:32 basehttp 19484 9952 "GET /media/hls/17a99491-5ba5-4954-9f9a-182b35563d47/output.m3u8 HTTP/1.1" 404 2385
-WARNING 2025-02-28 15:52:32 log 19484 3576 Not Found: /media/hls/17a99491-5ba5-4954-9f9a-182b35563d47/output.m3u8
-WARNING 2025-02-28 15:52:32 basehttp 19484 3576 "GET /media/hls/17a99491-5ba5-4954-9f9a-182b35563d47/output.m3u8 HTTP/1.1" 404 2385
-INFO 2025-02-28 15:53:58 autoreload 19484 3700 F:\DjangoRestfulAPI\openpose3\pose\pose\urls.py changed, reloading.
-INFO 2025-02-28 15:53:59 autoreload 11464 22880 Watching for file changes with StatReloader
-INFO 2025-02-28 16:03:27 autoreload 11464 22880 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 16:16:21 autoreload 16408 11432 Watching for file changes with StatReloader
-INFO 2025-02-28 16:16:26 views 16408 7948 收到请求: http://localhost:3000
-INFO 2025-02-28 16:16:26 serializers 16408 7948 开始验证视频文件
-DEBUG 2025-02-28 16:16:26 serializers 16408 7948 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:16:26 serializers 16408 7948 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:16:26 serializers 16408 7948 视频文件验证通过
-INFO 2025-02-28 16:16:26 views 16408 7948 创建会话成功: dc0586d3-7cde-4f2f-baaf-738f4dd03e4d
-INFO 2025-02-28 16:16:26 services 16408 7948 初始化视频处理服务
-INFO 2025-02-28 16:16:26 services 16408 7948 开始处理视频: session_id=dc0586d3-7cde-4f2f-baaf-738f4dd03e4d
-INFO 2025-02-28 16:16:29 services 16408 7948 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:16:29 services 16408 7948 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:16:29 services 16408 7948 HLS 流处理已启动: media/hls/dc0586d3-7cde-4f2f-baaf-738f4dd03e4d//output.m3u8
-INFO 2025-02-28 16:16:29 basehttp 16408 7948 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 16:16:29 log 16408 21076 Not Found: /media/hls/dc0586d3-7cde-4f2f-baaf-738f4dd03e4d/output.m3u8
-WARNING 2025-02-28 16:16:29 basehttp 16408 21076 "GET /media/hls/dc0586d3-7cde-4f2f-baaf-738f4dd03e4d/output.m3u8 HTTP/1.1" 404 2538
-WARNING 2025-02-28 16:16:29 log 16408 2272 Not Found: /media/hls/dc0586d3-7cde-4f2f-baaf-738f4dd03e4d/output.m3u8
-WARNING 2025-02-28 16:16:29 basehttp 16408 2272 "GET /media/hls/dc0586d3-7cde-4f2f-baaf-738f4dd03e4d/output.m3u8 HTTP/1.1" 404 2538
-INFO 2025-02-28 16:17:31 views 16408 20284 收到请求: http://localhost:3000
-INFO 2025-02-28 16:17:31 serializers 16408 20284 开始验证视频文件
-DEBUG 2025-02-28 16:17:31 serializers 16408 20284 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:17:31 serializers 16408 20284 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:17:31 serializers 16408 20284 视频文件验证通过
-INFO 2025-02-28 16:17:31 views 16408 20284 创建会话成功: e31db22a-da32-4e38-bc56-5d6975675bc8
-INFO 2025-02-28 16:17:31 services 16408 20284 初始化视频处理服务
-INFO 2025-02-28 16:17:31 services 16408 20284 开始处理视频: session_id=e31db22a-da32-4e38-bc56-5d6975675bc8
-INFO 2025-02-28 16:17:35 services 16408 20284 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:17:35 services 16408 20284 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:17:35 services 16408 20284 HLS 流处理已启动: media/hls/e31db22a-da32-4e38-bc56-5d6975675bc8//output.m3u8
-INFO 2025-02-28 16:17:35 basehttp 16408 20284 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 16:17:35 log 16408 13660 Not Found: /media/hls/e31db22a-da32-4e38-bc56-5d6975675bc8/output.m3u8
-WARNING 2025-02-28 16:17:35 basehttp 16408 13660 "GET /media/hls/e31db22a-da32-4e38-bc56-5d6975675bc8/output.m3u8 HTTP/1.1" 404 2538
-WARNING 2025-02-28 16:17:35 log 16408 19824 Not Found: /media/hls/e31db22a-da32-4e38-bc56-5d6975675bc8/output.m3u8
-WARNING 2025-02-28 16:17:35 basehttp 16408 19824 "GET /media/hls/e31db22a-da32-4e38-bc56-5d6975675bc8/output.m3u8 HTTP/1.1" 404 2538
-WARNING 2025-02-28 16:17:35 log 16408 14172 Not Found: /media/hls/e31db22a-da32-4e38-bc56-5d6975675bc8/output.m3u8
-WARNING 2025-02-28 16:17:35 basehttp 16408 14172 "GET /media/hls/e31db22a-da32-4e38-bc56-5d6975675bc8/output.m3u8 HTTP/1.1" 404 2538
-INFO 2025-02-28 16:18:32 autoreload 16408 11432 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:18:33 autoreload 23504 21892 Watching for file changes with StatReloader
-INFO 2025-02-28 16:18:42 autoreload 23504 21892 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:18:42 autoreload 22408 16832 Watching for file changes with StatReloader
-INFO 2025-02-28 16:18:44 views 22408 23308 收到请求: http://localhost:3000
-INFO 2025-02-28 16:18:44 serializers 22408 23308 开始验证视频文件
-DEBUG 2025-02-28 16:18:44 serializers 22408 23308 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:18:44 serializers 22408 23308 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:18:44 serializers 22408 23308 视频文件验证通过
-INFO 2025-02-28 16:18:44 views 22408 23308 创建会话成功: 3081f0e6-b9ef-454e-8cd2-405e74455678
-INFO 2025-02-28 16:18:45 services 22408 23308 初始化视频处理服务
-INFO 2025-02-28 16:18:45 services 22408 23308 开始处理视频: session_id=3081f0e6-b9ef-454e-8cd2-405e74455678
-INFO 2025-02-28 16:18:48 services 22408 23308 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:18:48 services 22408 23308 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:18:48 services 22408 23308 HLS 流处理已启动: media/hls/3081f0e6-b9ef-454e-8cd2-405e74455678//output.m3u8
-INFO 2025-02-28 16:18:48 basehttp 22408 23308 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 16:18:48 log 22408 21500 Not Found: /media/hls/3081f0e6-b9ef-454e-8cd2-405e74455678/output.m3u8
-WARNING 2025-02-28 16:18:48 basehttp 22408 21500 "GET /media/hls/3081f0e6-b9ef-454e-8cd2-405e74455678/output.m3u8 HTTP/1.1" 404 2538
-WARNING 2025-02-28 16:18:48 log 22408 6332 Not Found: /media/hls/3081f0e6-b9ef-454e-8cd2-405e74455678/output.m3u8
-WARNING 2025-02-28 16:18:48 basehttp 22408 6332 "GET /media/hls/3081f0e6-b9ef-454e-8cd2-405e74455678/output.m3u8 HTTP/1.1" 404 2538
-WARNING 2025-02-28 16:18:48 log 22408 9312 Not Found: /media/hls/3081f0e6-b9ef-454e-8cd2-405e74455678/output.m3u8
-WARNING 2025-02-28 16:18:48 basehttp 22408 9312 "GET /media/hls/3081f0e6-b9ef-454e-8cd2-405e74455678/output.m3u8 HTTP/1.1" 404 2538
-WARNING 2025-02-28 16:18:48 log 22408 5424 Not Found: /media/hls/3081f0e6-b9ef-454e-8cd2-405e74455678/output.m3u8
-WARNING 2025-02-28 16:18:48 basehttp 22408 5424 "GET /media/hls/3081f0e6-b9ef-454e-8cd2-405e74455678/output.m3u8 HTTP/1.1" 404 2538
-INFO 2025-02-28 16:19:01 autoreload 22408 16832 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:19:02 autoreload 10328 11604 Watching for file changes with StatReloader
-INFO 2025-02-28 16:19:22 autoreload 10328 11604 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:19:23 autoreload 1776 20440 Watching for file changes with StatReloader
-INFO 2025-02-28 16:19:37 autoreload 1776 20440 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:19:38 autoreload 5708 20912 Watching for file changes with StatReloader
-INFO 2025-02-28 16:19:55 autoreload 5708 20912 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:19:55 autoreload 18016 14600 Watching for file changes with StatReloader
-INFO 2025-02-28 16:20:31 autoreload 18016 14600 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:20:32 autoreload 9808 15180 Watching for file changes with StatReloader
-INFO 2025-02-28 16:21:05 autoreload 9808 15180 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 16:21:05 autoreload 20452 23156 Watching for file changes with StatReloader
-INFO 2025-02-28 16:21:18 views 20452 15940 收到请求: http://localhost:3000
-INFO 2025-02-28 16:21:18 serializers 20452 15940 开始验证视频文件
-DEBUG 2025-02-28 16:21:18 serializers 20452 15940 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:21:18 serializers 20452 15940 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:21:18 serializers 20452 15940 视频文件验证通过
-INFO 2025-02-28 16:21:18 views 20452 15940 创建会话成功: 80fa2097-3352-4881-ae98-58be979a8906
-INFO 2025-02-28 16:21:18 services 20452 15940 初始化视频处理服务
-INFO 2025-02-28 16:21:18 services 20452 15940 开始处理视频: session_id=80fa2097-3352-4881-ae98-58be979a8906
-INFO 2025-02-28 16:21:22 services 20452 15940 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:21:22 services 20452 15940 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:21:22 services 20452 15940 HLS 流处理已启动: media/hls/80fa2097-3352-4881-ae98-58be979a8906//output.m3u8
-INFO 2025-02-28 16:21:22 basehttp 20452 15940 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 16:21:22 log 20452 23404 Not Found: /hls/80fa2097-3352-4881-ae98-58be979a8906/output.m3u8
-WARNING 2025-02-28 16:21:22 basehttp 20452 23404 "GET /hls/80fa2097-3352-4881-ae98-58be979a8906/output.m3u8 HTTP/1.1" 404 2520
-WARNING 2025-02-28 16:21:22 log 20452 11172 Not Found: /hls/80fa2097-3352-4881-ae98-58be979a8906/output.m3u8
-WARNING 2025-02-28 16:21:22 basehttp 20452 11172 "GET /hls/80fa2097-3352-4881-ae98-58be979a8906/output.m3u8 HTTP/1.1" 404 2520
-WARNING 2025-02-28 16:21:22 log 20452 20128 Not Found: /hls/80fa2097-3352-4881-ae98-58be979a8906/output.m3u8
-WARNING 2025-02-28 16:21:22 basehttp 20452 20128 "GET /hls/80fa2097-3352-4881-ae98-58be979a8906/output.m3u8 HTTP/1.1" 404 2520
-INFO 2025-02-28 16:21:26 views 20452 11672 收到请求: http://localhost:3000
-INFO 2025-02-28 16:21:26 serializers 20452 11672 开始验证视频文件
-DEBUG 2025-02-28 16:21:26 serializers 20452 11672 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:21:26 serializers 20452 11672 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:21:26 serializers 20452 11672 视频文件验证通过
-INFO 2025-02-28 16:21:26 views 20452 11672 创建会话成功: 5e084f3a-4e7c-4487-b9e3-e7c98404783e
-INFO 2025-02-28 16:21:26 services 20452 11672 初始化视频处理服务
-INFO 2025-02-28 16:21:26 services 20452 11672 开始处理视频: session_id=5e084f3a-4e7c-4487-b9e3-e7c98404783e
-INFO 2025-02-28 16:21:29 services 20452 11672 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:21:29 services 20452 11672 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:21:30 services 20452 11672 HLS 流处理已启动: media/hls/5e084f3a-4e7c-4487-b9e3-e7c98404783e//output.m3u8
-INFO 2025-02-28 16:21:30 basehttp 20452 11672 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 16:21:30 log 20452 16212 Not Found: /hls/5e084f3a-4e7c-4487-b9e3-e7c98404783e/output.m3u8
-WARNING 2025-02-28 16:21:30 basehttp 20452 16212 "GET /hls/5e084f3a-4e7c-4487-b9e3-e7c98404783e/output.m3u8 HTTP/1.1" 404 2520
-WARNING 2025-02-28 16:21:30 log 20452 22680 Not Found: /hls/5e084f3a-4e7c-4487-b9e3-e7c98404783e/output.m3u8
-WARNING 2025-02-28 16:21:30 basehttp 20452 22680 "GET /hls/5e084f3a-4e7c-4487-b9e3-e7c98404783e/output.m3u8 HTTP/1.1" 404 2520
-INFO 2025-02-28 16:22:55 autoreload 7660 22340 Watching for file changes with StatReloader
-INFO 2025-02-28 16:23:54 autoreload 7660 22340 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:23:55 autoreload 22656 8544 Watching for file changes with StatReloader
-INFO 2025-02-28 16:24:07 autoreload 22656 8544 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:24:07 autoreload 13712 22144 Watching for file changes with StatReloader
-INFO 2025-02-28 16:24:14 autoreload 23244 15444 Watching for file changes with StatReloader
-INFO 2025-02-28 16:24:23 views 23244 13860 收到请求: http://localhost:3000
-INFO 2025-02-28 16:24:23 serializers 23244 13860 开始验证视频文件
-DEBUG 2025-02-28 16:24:23 serializers 23244 13860 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:24:23 serializers 23244 13860 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:24:23 serializers 23244 13860 视频文件验证通过
-INFO 2025-02-28 16:24:23 views 23244 13860 创建会话成功: 604808f2-e89d-4d95-b3a4-3a66b3e1ada7
-INFO 2025-02-28 16:24:23 services 23244 13860 初始化视频处理服务
-INFO 2025-02-28 16:24:23 services 23244 13860 开始处理视频: session_id=604808f2-e89d-4d95-b3a4-3a66b3e1ada7
-INFO 2025-02-28 16:24:26 services 23244 13860 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:24:26 services 23244 13860 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:24:27 services 23244 13860 HLS 流处理已启动: media/hls/604808f2-e89d-4d95-b3a4-3a66b3e1ada7//output.m3u8
-INFO 2025-02-28 16:24:27 basehttp 23244 13860 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 16:24:27 log 23244 18832 Not Found: /hls/604808f2-e89d-4d95-b3a4-3a66b3e1ada7/output.m3u8
-WARNING 2025-02-28 16:24:27 basehttp 23244 18832 "GET /hls/604808f2-e89d-4d95-b3a4-3a66b3e1ada7/output.m3u8 HTTP/1.1" 404 2520
-WARNING 2025-02-28 16:24:27 log 23244 9312 Not Found: /hls/604808f2-e89d-4d95-b3a4-3a66b3e1ada7/output.m3u8
-WARNING 2025-02-28 16:24:27 basehttp 23244 9312 "GET /hls/604808f2-e89d-4d95-b3a4-3a66b3e1ada7/output.m3u8 HTTP/1.1" 404 2520
-INFO 2025-02-28 16:25:43 autoreload 23244 15444 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 16:25:44 autoreload 21968 12304 Watching for file changes with StatReloader
-INFO 2025-02-28 16:25:48 views 21968 6668 收到请求: http://localhost:3000
-INFO 2025-02-28 16:25:48 serializers 21968 6668 开始验证视频文件
-DEBUG 2025-02-28 16:25:48 serializers 21968 6668 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:25:48 serializers 21968 6668 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:25:48 serializers 21968 6668 视频文件验证通过
-INFO 2025-02-28 16:25:48 views 21968 6668 创建会话成功: 93bb4fa9-8d8b-4ed8-acf6-6228de198cb0
-INFO 2025-02-28 16:25:48 services 21968 6668 初始化视频处理服务
-INFO 2025-02-28 16:25:48 services 21968 6668 开始处理视频: session_id=93bb4fa9-8d8b-4ed8-acf6-6228de198cb0
-INFO 2025-02-28 16:25:51 services 21968 6668 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:25:51 services 21968 6668 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:25:52 services 21968 6668 HLS 流处理已启动: media/hls/93bb4fa9-8d8b-4ed8-acf6-6228de198cb0//output.m3u8
-INFO 2025-02-28 16:25:52 basehttp 21968 6668 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 16:25:52 log 21968 2636 Not Found: /hls/93bb4fa9-8d8b-4ed8-acf6-6228de198cb0/output.m3u8
-WARNING 2025-02-28 16:25:52 basehttp 21968 2636 "GET /hls/93bb4fa9-8d8b-4ed8-acf6-6228de198cb0/output.m3u8 HTTP/1.1" 404 2520
-WARNING 2025-02-28 16:25:52 log 21968 13328 Not Found: /hls/93bb4fa9-8d8b-4ed8-acf6-6228de198cb0/output.m3u8
-WARNING 2025-02-28 16:25:52 basehttp 21968 13328 "GET /hls/93bb4fa9-8d8b-4ed8-acf6-6228de198cb0/output.m3u8 HTTP/1.1" 404 2520
-INFO 2025-02-28 16:26:04 autoreload 14252 23420 Watching for file changes with StatReloader
-INFO 2025-02-28 16:26:13 views 14252 7924 收到请求: http://localhost:3000
-INFO 2025-02-28 16:26:13 serializers 14252 7924 开始验证视频文件
-DEBUG 2025-02-28 16:26:13 serializers 14252 7924 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:26:13 serializers 14252 7924 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:26:13 serializers 14252 7924 视频文件验证通过
-INFO 2025-02-28 16:26:13 views 14252 7924 创建会话成功: dd5223fd-1d98-4f6e-9f0c-5165c2559267
-INFO 2025-02-28 16:26:13 services 14252 7924 初始化视频处理服务
-INFO 2025-02-28 16:26:13 services 14252 7924 开始处理视频: session_id=dd5223fd-1d98-4f6e-9f0c-5165c2559267
-INFO 2025-02-28 16:26:17 services 14252 7924 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:26:17 services 14252 7924 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:26:17 services 14252 7924 HLS 流处理已启动: media/hls/dd5223fd-1d98-4f6e-9f0c-5165c2559267//output.m3u8
-INFO 2025-02-28 16:26:17 basehttp 14252 7924 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 16:26:17 log 14252 5796 Not Found: /hls/dd5223fd-1d98-4f6e-9f0c-5165c2559267/output.m3u8
-WARNING 2025-02-28 16:26:17 basehttp 14252 5796 "GET /hls/dd5223fd-1d98-4f6e-9f0c-5165c2559267/output.m3u8 HTTP/1.1" 404 2520
-WARNING 2025-02-28 16:26:17 log 14252 4456 Not Found: /hls/dd5223fd-1d98-4f6e-9f0c-5165c2559267/output.m3u8
-WARNING 2025-02-28 16:26:17 basehttp 14252 4456 "GET /hls/dd5223fd-1d98-4f6e-9f0c-5165c2559267/output.m3u8 HTTP/1.1" 404 2520
-INFO 2025-02-28 16:27:23 autoreload 4012 23272 Watching for file changes with StatReloader
-INFO 2025-02-28 16:28:04 views 4012 18752 收到请求: http://localhost:3000
-INFO 2025-02-28 16:28:04 serializers 4012 18752 开始验证视频文件
-DEBUG 2025-02-28 16:28:04 serializers 4012 18752 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:28:04 serializers 4012 18752 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:28:04 serializers 4012 18752 视频文件验证通过
-INFO 2025-02-28 16:28:04 views 4012 18752 创建会话成功: c6de07ab-b104-4ae2-a7b9-629504ea654d
-INFO 2025-02-28 16:28:04 services 4012 18752 初始化视频处理服务
-INFO 2025-02-28 16:28:04 services 4012 18752 开始处理视频: session_id=c6de07ab-b104-4ae2-a7b9-629504ea654d
-INFO 2025-02-28 16:28:07 services 4012 18752 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:28:07 services 4012 18752 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:28:08 services 4012 18752 HLS 流处理已启动: media/hls/c6de07ab-b104-4ae2-a7b9-629504ea654d//output.m3u8
-INFO 2025-02-28 16:28:08 basehttp 4012 18752 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 16:28:08 log 4012 23508 Not Found: /hls/c6de07ab-b104-4ae2-a7b9-629504ea654d
-WARNING 2025-02-28 16:28:08 basehttp 4012 23508 "GET /hls/c6de07ab-b104-4ae2-a7b9-629504ea654d HTTP/1.1" 404 2484
-WARNING 2025-02-28 16:28:08 log 4012 8496 Not Found: /hls/c6de07ab-b104-4ae2-a7b9-629504ea654d
-WARNING 2025-02-28 16:28:08 basehttp 4012 8496 "GET /hls/c6de07ab-b104-4ae2-a7b9-629504ea654d HTTP/1.1" 404 2484
-WARNING 2025-02-28 16:28:08 log 4012 1184 Not Found: /hls/c6de07ab-b104-4ae2-a7b9-629504ea654d
-WARNING 2025-02-28 16:28:08 basehttp 4012 1184 "GET /hls/c6de07ab-b104-4ae2-a7b9-629504ea654d HTTP/1.1" 404 2484
-WARNING 2025-02-28 16:28:42 log 4012 14684 Not Found: /media/upload-videos/
-WARNING 2025-02-28 16:28:42 basehttp 4012 14684 "POST /media/upload-videos/ HTTP/1.1" 404 2425
-WARNING 2025-02-28 16:28:46 log 4012 23464 Not Found: /media/upload-videos/
-WARNING 2025-02-28 16:28:46 basehttp 4012 23464 "POST /media/upload-videos/ HTTP/1.1" 404 2425
-WARNING 2025-02-28 16:28:53 log 4012 15604 Not Found: /media/upload-videos/
-WARNING 2025-02-28 16:28:53 basehttp 4012 15604 "POST /media/upload-videos/ HTTP/1.1" 404 2425
-INFO 2025-02-28 16:30:09 views 4012 9492 收到请求: http://localhost:3000
-INFO 2025-02-28 16:30:09 serializers 4012 9492 开始验证视频文件
-DEBUG 2025-02-28 16:30:09 serializers 4012 9492 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:30:09 serializers 4012 9492 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:30:09 serializers 4012 9492 视频文件验证通过
-INFO 2025-02-28 16:30:09 views 4012 9492 创建会话成功: 8994bf4c-fadb-4366-9cc5-a7ce097627e3
-INFO 2025-02-28 16:30:09 services 4012 9492 初始化视频处理服务
-INFO 2025-02-28 16:30:09 services 4012 9492 开始处理视频: session_id=8994bf4c-fadb-4366-9cc5-a7ce097627e3
-INFO 2025-02-28 16:30:12 services 4012 9492 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:30:12 services 4012 9492 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:30:13 services 4012 9492 HLS 流处理已启动: media/hls/8994bf4c-fadb-4366-9cc5-a7ce097627e3//output.m3u8
-INFO 2025-02-28 16:30:13 basehttp 4012 9492 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 16:30:13 basehttp 4012 14556 "GET /media/hls/8994bf4c-fadb-4366-9cc5-a7ce097627e3 HTTP/1.1" 301 0
-INFO 2025-02-28 16:30:13 basehttp 4012 13460 "GET /media/hls/8994bf4c-fadb-4366-9cc5-a7ce097627e3 HTTP/1.1" 301 0
-INFO 2025-02-28 16:31:55 views 4012 20780 收到请求: http://localhost:3000
-INFO 2025-02-28 16:31:55 serializers 4012 20780 开始验证视频文件
-DEBUG 2025-02-28 16:31:55 serializers 4012 20780 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:31:55 serializers 4012 20780 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:31:55 serializers 4012 20780 视频文件验证通过
-INFO 2025-02-28 16:31:55 views 4012 20780 创建会话成功: 3cc3f35c-aa4d-4d59-a136-54a5f522b305
-INFO 2025-02-28 16:31:55 services 4012 20780 初始化视频处理服务
-INFO 2025-02-28 16:31:55 services 4012 20780 开始处理视频: session_id=3cc3f35c-aa4d-4d59-a136-54a5f522b305
-INFO 2025-02-28 16:31:58 services 4012 20780 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:31:59 services 4012 20780 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:31:59 services 4012 20780 HLS 流处理已启动: media/hls/3cc3f35c-aa4d-4d59-a136-54a5f522b305//output.m3u8
-INFO 2025-02-28 16:31:59 basehttp 4012 20780 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 16:31:59 basehttp 4012 14536 "GET /media/hls/3cc3f35c-aa4d-4d59-a136-54a5f522b305 HTTP/1.1" 301 0
-INFO 2025-02-28 16:32:28 autoreload 4012 23272 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:32:28 autoreload 13712 22144 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:32:29 autoreload 21016 21452 Watching for file changes with StatReloader
-INFO 2025-02-28 16:32:29 autoreload 18924 5152 Watching for file changes with StatReloader
-INFO 2025-02-28 16:33:37 autoreload 18924 5152 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:33:38 autoreload 18752 8676 Watching for file changes with StatReloader
-INFO 2025-02-28 16:33:38 autoreload 21016 21452 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:33:39 autoreload 4216 20780 Watching for file changes with StatReloader
-INFO 2025-02-28 16:33:41 autoreload 18752 8676 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:33:41 autoreload 20252 2920 Watching for file changes with StatReloader
-INFO 2025-02-28 16:35:43 autoreload 3468 23116 Watching for file changes with StatReloader
-INFO 2025-02-28 16:35:48 views 3468 20988 收到请求: http://localhost:3000
-INFO 2025-02-28 16:35:48 serializers 3468 20988 开始验证视频文件
-DEBUG 2025-02-28 16:35:48 serializers 3468 20988 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:35:48 serializers 3468 20988 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:35:48 serializers 3468 20988 视频文件验证通过
-INFO 2025-02-28 16:35:48 views 3468 20988 创建会话成功: ad68dc13-4eb9-4608-bbb2-45c4036d52f7
-INFO 2025-02-28 16:35:48 services 3468 20988 初始化视频处理服务
-INFO 2025-02-28 16:35:48 services 3468 20988 开始处理视频: session_id=ad68dc13-4eb9-4608-bbb2-45c4036d52f7
-INFO 2025-02-28 16:35:51 services 3468 20988 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:35:51 services 3468 20988 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:35:52 services 3468 20988 HLS 流处理已启动: media/hls/ad68dc13-4eb9-4608-bbb2-45c4036d52f7//output.m3u8
-INFO 2025-02-28 16:35:52 basehttp 3468 20988 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 16:35:52 basehttp 3468 2932 "GET /media/hls/ad68dc13-4eb9-4608-bbb2-45c4036d52f7 HTTP/1.1" 301 0
-ERROR 2025-02-28 16:35:52 log 3468 21220 Internal Server Error: /media/hls/ad68dc13-4eb9-4608-bbb2-45c4036d52f7/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-TypeError: get() got an unexpected keyword argument 'session_id'
-ERROR 2025-02-28 16:35:52 basehttp 3468 21220 "GET /media/hls/ad68dc13-4eb9-4608-bbb2-45c4036d52f7/ HTTP/1.1" 500 100680
-ERROR 2025-02-28 16:35:52 log 3468 5156 Internal Server Error: /media/hls/ad68dc13-4eb9-4608-bbb2-45c4036d52f7/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-TypeError: get() got an unexpected keyword argument 'session_id'
-ERROR 2025-02-28 16:35:52 basehttp 3468 5156 "GET /media/hls/ad68dc13-4eb9-4608-bbb2-45c4036d52f7/ HTTP/1.1" 500 100680
-ERROR 2025-02-28 16:35:53 log 3468 5156 Internal Server Error: /media/hls/ad68dc13-4eb9-4608-bbb2-45c4036d52f7/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-TypeError: get() got an unexpected keyword argument 'session_id'
-ERROR 2025-02-28 16:35:53 basehttp 3468 5156 "GET /media/hls/ad68dc13-4eb9-4608-bbb2-45c4036d52f7/ HTTP/1.1" 500 100680
-ERROR 2025-02-28 16:35:53 log 3468 5156 Internal Server Error: /media/hls/ad68dc13-4eb9-4608-bbb2-45c4036d52f7/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-TypeError: get() got an unexpected keyword argument 'session_id'
-ERROR 2025-02-28 16:35:53 basehttp 3468 5156 "GET /media/hls/ad68dc13-4eb9-4608-bbb2-45c4036d52f7/ HTTP/1.1" 500 100680
-INFO 2025-02-28 16:37:04 autoreload 3468 23116 F:\DjangoRestfulAPI\openpose3\pose\pose\urls.py changed, reloading.
-INFO 2025-02-28 16:37:04 autoreload 21880 2572 Watching for file changes with StatReloader
-INFO 2025-02-28 16:37:10 views 21880 11744 收到请求: http://localhost:3000
-INFO 2025-02-28 16:37:10 serializers 21880 11744 开始验证视频文件
-DEBUG 2025-02-28 16:37:10 serializers 21880 11744 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:37:10 serializers 21880 11744 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:37:10 serializers 21880 11744 视频文件验证通过
-INFO 2025-02-28 16:37:10 views 21880 11744 创建会话成功: 34ce24b6-5581-4b5d-875f-576cf911026f
-INFO 2025-02-28 16:37:10 services 21880 11744 初始化视频处理服务
-INFO 2025-02-28 16:37:10 services 21880 11744 开始处理视频: session_id=34ce24b6-5581-4b5d-875f-576cf911026f
-INFO 2025-02-28 16:37:13 services 21880 11744 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:37:13 services 21880 11744 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:37:14 services 21880 11744 HLS 流处理已启动: media/hls/34ce24b6-5581-4b5d-875f-576cf911026f//output.m3u8
-INFO 2025-02-28 16:37:14 basehttp 21880 11744 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 16:37:14 basehttp 21880 7948 "GET /media/hls/34ce24b6-5581-4b5d-875f-576cf911026f HTTP/1.1" 301 0
-INFO 2025-02-28 16:37:14 views 21880 11604 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\34ce24b6-5581-4b5d-875f-576cf911026f
-ERROR 2025-02-28 16:37:14 log 21880 11604 Internal Server Error: /media/hls/34ce24b6-5581-4b5d-875f-576cf911026f/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\34ce24b6-5581-4b5d-875f-576cf911026f'
-ERROR 2025-02-28 16:37:14 basehttp 21880 11604 "GET /media/hls/34ce24b6-5581-4b5d-875f-576cf911026f/ HTTP/1.1" 500 104907
-INFO 2025-02-28 16:37:14 views 21880 20996 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\34ce24b6-5581-4b5d-875f-576cf911026f
-ERROR 2025-02-28 16:37:14 log 21880 20996 Internal Server Error: /media/hls/34ce24b6-5581-4b5d-875f-576cf911026f/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\34ce24b6-5581-4b5d-875f-576cf911026f'
-ERROR 2025-02-28 16:37:14 basehttp 21880 20996 "GET /media/hls/34ce24b6-5581-4b5d-875f-576cf911026f/ HTTP/1.1" 500 104907
-INFO 2025-02-28 16:37:15 views 21880 20996 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\34ce24b6-5581-4b5d-875f-576cf911026f
-ERROR 2025-02-28 16:37:15 log 21880 20996 Internal Server Error: /media/hls/34ce24b6-5581-4b5d-875f-576cf911026f/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\34ce24b6-5581-4b5d-875f-576cf911026f'
-INFO 2025-02-28 16:37:15 views 21880 11604 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\34ce24b6-5581-4b5d-875f-576cf911026f
-ERROR 2025-02-28 16:37:15 basehttp 21880 20996 "GET /media/hls/34ce24b6-5581-4b5d-875f-576cf911026f/ HTTP/1.1" 500 104907
-ERROR 2025-02-28 16:37:15 log 21880 11604 Internal Server Error: /media/hls/34ce24b6-5581-4b5d-875f-576cf911026f/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\34ce24b6-5581-4b5d-875f-576cf911026f'
-ERROR 2025-02-28 16:37:15 basehttp 21880 11604 "GET /media/hls/34ce24b6-5581-4b5d-875f-576cf911026f/ HTTP/1.1" 500 104907
-INFO 2025-02-28 16:38:10 autoreload 21880 2572 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 16:38:11 autoreload 20616 8496 Watching for file changes with StatReloader
-INFO 2025-02-28 16:38:14 autoreload 20616 8496 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 16:38:15 autoreload 23404 1068 Watching for file changes with StatReloader
-INFO 2025-02-28 16:38:28 views 23404 21796 收到请求: http://localhost:3000
-INFO 2025-02-28 16:38:28 serializers 23404 21796 开始验证视频文件
-DEBUG 2025-02-28 16:38:28 serializers 23404 21796 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:38:28 serializers 23404 21796 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:38:28 serializers 23404 21796 视频文件验证通过
-INFO 2025-02-28 16:38:28 views 23404 21796 创建会话成功: 8a351e82-5671-4d06-ad9f-62654abbae9c
-INFO 2025-02-28 16:38:28 services 23404 21796 初始化视频处理服务
-INFO 2025-02-28 16:38:28 services 23404 21796 开始处理视频: session_id=8a351e82-5671-4d06-ad9f-62654abbae9c
-ERROR 2025-02-28 16:38:28 services 23404 21796 视频处理失败: join() argument must be str, bytes, or os.PathLike object, not 'UUID'
-Traceback (most recent call last):
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py", line 95, in process_videos
-    hls_directory = os.path.join(settings.MEDIA_ROOT, 'hls', session_id)
-  File "D:\Anaconda3\envs\django\lib\ntpath.py", line 117, in join
-    genericpath._check_arg_types('join', path, *paths)
-  File "D:\Anaconda3\envs\django\lib\genericpath.py", line 152, in _check_arg_types
-    raise TypeError(f'{funcname}() argument must be str, bytes, or '
-TypeError: join() argument must be str, bytes, or os.PathLike object, not 'UUID'
-ERROR 2025-02-28 16:38:28 views 23404 21796 处理上传失败: join() argument must be str, bytes, or os.PathLike object, not 'UUID'
-Traceback (most recent call last):
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 54, in post
-    video_service.process_videos(session.session_id, standard_file.file.path, exercise_file.file.path)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py", line 95, in process_videos
-    hls_directory = os.path.join(settings.MEDIA_ROOT, 'hls', session_id)
-  File "D:\Anaconda3\envs\django\lib\ntpath.py", line 117, in join
-    genericpath._check_arg_types('join', path, *paths)
-  File "D:\Anaconda3\envs\django\lib\genericpath.py", line 152, in _check_arg_types
-    raise TypeError(f'{funcname}() argument must be str, bytes, or '
-TypeError: join() argument must be str, bytes, or os.PathLike object, not 'UUID'
-ERROR 2025-02-28 16:38:28 log 23404 21796 Internal Server Error: /upload-videos/
-ERROR 2025-02-28 16:38:28 basehttp 23404 21796 "POST /upload-videos/ HTTP/1.1" 500 81
-INFO 2025-02-28 16:38:34 views 23404 21032 收到请求: http://localhost:3000
-INFO 2025-02-28 16:38:34 serializers 23404 21032 开始验证视频文件
-DEBUG 2025-02-28 16:38:34 serializers 23404 21032 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:38:34 serializers 23404 21032 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:38:34 serializers 23404 21032 视频文件验证通过
-INFO 2025-02-28 16:38:34 views 23404 21032 创建会话成功: 00683233-8999-43b9-9f72-824858ee642a
-INFO 2025-02-28 16:38:34 services 23404 21032 初始化视频处理服务
-INFO 2025-02-28 16:38:34 services 23404 21032 开始处理视频: session_id=00683233-8999-43b9-9f72-824858ee642a
-ERROR 2025-02-28 16:38:34 services 23404 21032 视频处理失败: join() argument must be str, bytes, or os.PathLike object, not 'UUID'
-Traceback (most recent call last):
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py", line 95, in process_videos
-    hls_directory = os.path.join(settings.MEDIA_ROOT, 'hls', session_id)
-  File "D:\Anaconda3\envs\django\lib\ntpath.py", line 117, in join
-    genericpath._check_arg_types('join', path, *paths)
-  File "D:\Anaconda3\envs\django\lib\genericpath.py", line 152, in _check_arg_types
-    raise TypeError(f'{funcname}() argument must be str, bytes, or '
-TypeError: join() argument must be str, bytes, or os.PathLike object, not 'UUID'
-ERROR 2025-02-28 16:38:34 views 23404 21032 处理上传失败: join() argument must be str, bytes, or os.PathLike object, not 'UUID'
-Traceback (most recent call last):
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 54, in post
-    video_service.process_videos(session.session_id, standard_file.file.path, exercise_file.file.path)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py", line 95, in process_videos
-    hls_directory = os.path.join(settings.MEDIA_ROOT, 'hls', session_id)
-  File "D:\Anaconda3\envs\django\lib\ntpath.py", line 117, in join
-    genericpath._check_arg_types('join', path, *paths)
-  File "D:\Anaconda3\envs\django\lib\genericpath.py", line 152, in _check_arg_types
-    raise TypeError(f'{funcname}() argument must be str, bytes, or '
-TypeError: join() argument must be str, bytes, or os.PathLike object, not 'UUID'
-ERROR 2025-02-28 16:38:34 log 23404 21032 Internal Server Error: /upload-videos/
-ERROR 2025-02-28 16:38:34 basehttp 23404 21032 "POST /upload-videos/ HTTP/1.1" 500 81
-INFO 2025-02-28 16:38:51 autoreload 8024 23124 Watching for file changes with StatReloader
-INFO 2025-02-28 16:38:54 views 8024 22160 收到请求: http://localhost:3000
-INFO 2025-02-28 16:38:54 serializers 8024 22160 开始验证视频文件
-DEBUG 2025-02-28 16:38:54 serializers 8024 22160 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:38:54 serializers 8024 22160 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:38:54 serializers 8024 22160 视频文件验证通过
-INFO 2025-02-28 16:38:54 views 8024 22160 创建会话成功: ad161965-ca28-4f7e-b1be-e90cbad3d1f9
-INFO 2025-02-28 16:38:54 services 8024 22160 初始化视频处理服务
-INFO 2025-02-28 16:38:54 services 8024 22160 开始处理视频: session_id=ad161965-ca28-4f7e-b1be-e90cbad3d1f9
-ERROR 2025-02-28 16:38:54 services 8024 22160 视频处理失败: join() argument must be str, bytes, or os.PathLike object, not 'UUID'
-Traceback (most recent call last):
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py", line 95, in process_videos
-    hls_directory = os.path.join(settings.MEDIA_ROOT, 'hls', session_id)
-  File "D:\Anaconda3\envs\django\lib\ntpath.py", line 117, in join
-    genericpath._check_arg_types('join', path, *paths)
-  File "D:\Anaconda3\envs\django\lib\genericpath.py", line 152, in _check_arg_types
-    raise TypeError(f'{funcname}() argument must be str, bytes, or '
-TypeError: join() argument must be str, bytes, or os.PathLike object, not 'UUID'
-ERROR 2025-02-28 16:38:54 views 8024 22160 处理上传失败: join() argument must be str, bytes, or os.PathLike object, not 'UUID'
-Traceback (most recent call last):
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 54, in post
-    video_service.process_videos(session.session_id, standard_file.file.path, exercise_file.file.path)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py", line 95, in process_videos
-    hls_directory = os.path.join(settings.MEDIA_ROOT, 'hls', session_id)
-  File "D:\Anaconda3\envs\django\lib\ntpath.py", line 117, in join
-    genericpath._check_arg_types('join', path, *paths)
-  File "D:\Anaconda3\envs\django\lib\genericpath.py", line 152, in _check_arg_types
-    raise TypeError(f'{funcname}() argument must be str, bytes, or '
-TypeError: join() argument must be str, bytes, or os.PathLike object, not 'UUID'
-ERROR 2025-02-28 16:38:54 log 8024 22160 Internal Server Error: /upload-videos/
-ERROR 2025-02-28 16:38:54 basehttp 8024 22160 "POST /upload-videos/ HTTP/1.1" 500 81
-INFO 2025-02-28 16:39:05 autoreload 8024 23124 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 16:39:06 autoreload 19624 22952 Watching for file changes with StatReloader
-INFO 2025-02-28 16:39:10 views 19624 21728 收到请求: http://localhost:3000
-INFO 2025-02-28 16:39:10 serializers 19624 21728 开始验证视频文件
-DEBUG 2025-02-28 16:39:10 serializers 19624 21728 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:39:10 serializers 19624 21728 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:39:10 serializers 19624 21728 视频文件验证通过
-INFO 2025-02-28 16:39:10 views 19624 21728 创建会话成功: d4c0f239-3956-4dd4-9ce3-49bcfb933ee8
-INFO 2025-02-28 16:39:10 services 19624 21728 初始化视频处理服务
-INFO 2025-02-28 16:39:10 services 19624 21728 开始处理视频: session_id=d4c0f239-3956-4dd4-9ce3-49bcfb933ee8
-INFO 2025-02-28 16:39:14 services 19624 21728 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:39:14 services 19624 21728 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:39:14 services 19624 21728 HLS 流处理已启动: media/hls/d4c0f239-3956-4dd4-9ce3-49bcfb933ee8//output.m3u8
-INFO 2025-02-28 16:39:14 basehttp 19624 21728 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 16:39:14 basehttp 19624 14476 "GET /media/hls/d4c0f239-3956-4dd4-9ce3-49bcfb933ee8 HTTP/1.1" 301 0
-INFO 2025-02-28 16:39:14 views 19624 5364 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\d4c0f239-3956-4dd4-9ce3-49bcfb933ee8
-ERROR 2025-02-28 16:39:14 log 19624 5364 Internal Server Error: /media/hls/d4c0f239-3956-4dd4-9ce3-49bcfb933ee8/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\d4c0f239-3956-4dd4-9ce3-49bcfb933ee8'
-INFO 2025-02-28 16:39:14 views 19624 4216 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\d4c0f239-3956-4dd4-9ce3-49bcfb933ee8
-ERROR 2025-02-28 16:39:14 basehttp 19624 5364 "GET /media/hls/d4c0f239-3956-4dd4-9ce3-49bcfb933ee8/ HTTP/1.1" 500 105069
-ERROR 2025-02-28 16:39:14 log 19624 4216 Internal Server Error: /media/hls/d4c0f239-3956-4dd4-9ce3-49bcfb933ee8/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\d4c0f239-3956-4dd4-9ce3-49bcfb933ee8'
-ERROR 2025-02-28 16:39:14 basehttp 19624 4216 "GET /media/hls/d4c0f239-3956-4dd4-9ce3-49bcfb933ee8/ HTTP/1.1" 500 105069
-INFO 2025-02-28 16:39:15 views 19624 4216 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\d4c0f239-3956-4dd4-9ce3-49bcfb933ee8
-ERROR 2025-02-28 16:39:15 log 19624 4216 Internal Server Error: /media/hls/d4c0f239-3956-4dd4-9ce3-49bcfb933ee8/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\d4c0f239-3956-4dd4-9ce3-49bcfb933ee8'
-INFO 2025-02-28 16:39:15 views 19624 5364 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\d4c0f239-3956-4dd4-9ce3-49bcfb933ee8
-ERROR 2025-02-28 16:39:15 basehttp 19624 4216 "GET /media/hls/d4c0f239-3956-4dd4-9ce3-49bcfb933ee8/ HTTP/1.1" 500 105069
-ERROR 2025-02-28 16:39:15 log 19624 5364 Internal Server Error: /media/hls/d4c0f239-3956-4dd4-9ce3-49bcfb933ee8/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\d4c0f239-3956-4dd4-9ce3-49bcfb933ee8'
-ERROR 2025-02-28 16:39:15 basehttp 19624 5364 "GET /media/hls/d4c0f239-3956-4dd4-9ce3-49bcfb933ee8/ HTTP/1.1" 500 105069
-INFO 2025-02-28 16:40:15 autoreload 19624 22952 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 16:40:16 autoreload 16204 14356 Watching for file changes with StatReloader
-INFO 2025-02-28 16:40:27 autoreload 16204 14356 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 16:40:28 autoreload 12520 20452 Watching for file changes with StatReloader
-INFO 2025-02-28 16:40:33 views 12520 19828 收到请求: http://localhost:3000
-INFO 2025-02-28 16:40:33 serializers 12520 19828 开始验证视频文件
-DEBUG 2025-02-28 16:40:33 serializers 12520 19828 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:40:33 serializers 12520 19828 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:40:33 serializers 12520 19828 视频文件验证通过
-INFO 2025-02-28 16:40:33 views 12520 19828 创建会话成功: 45e8c328-8489-49e6-93a7-b9381057d52b
-INFO 2025-02-28 16:40:33 services 12520 19828 初始化视频处理服务
-INFO 2025-02-28 16:40:33 services 12520 19828 开始处理视频: session_id=45e8c328-8489-49e6-93a7-b9381057d52b
-INFO 2025-02-28 16:40:36 services 12520 19828 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:40:36 services 12520 19828 保存分析结果: 总帧数=53
-ERROR 2025-02-28 16:40:36 services 12520 19828 启动 HLS 流处理失败: join() argument must be str, bytes, or os.PathLike object, not 'UUID'
-INFO 2025-02-28 16:40:36 basehttp 12520 19828 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 16:40:36 basehttp 12520 14548 "GET /media/hls/45e8c328-8489-49e6-93a7-b9381057d52b HTTP/1.1" 301 0
-INFO 2025-02-28 16:40:36 views 12520 18568 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\45e8c328-8489-49e6-93a7-b9381057d52b
-WARNING 2025-02-28 16:40:36 log 12520 18568 Not Found: /media/hls/45e8c328-8489-49e6-93a7-b9381057d52b/
-WARNING 2025-02-28 16:40:36 basehttp 12520 18568 "GET /media/hls/45e8c328-8489-49e6-93a7-b9381057d52b/ HTTP/1.1" 404 28
-INFO 2025-02-28 16:40:36 views 12520 18664 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\45e8c328-8489-49e6-93a7-b9381057d52b
-WARNING 2025-02-28 16:40:36 log 12520 18664 Not Found: /media/hls/45e8c328-8489-49e6-93a7-b9381057d52b/
-WARNING 2025-02-28 16:40:36 basehttp 12520 18664 "GET /media/hls/45e8c328-8489-49e6-93a7-b9381057d52b/ HTTP/1.1" 404 28
-INFO 2025-02-28 16:41:47 autoreload 12520 20452 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 16:41:48 autoreload 5132 2096 Watching for file changes with StatReloader
-INFO 2025-02-28 16:41:50 autoreload 5132 2096 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 16:41:51 autoreload 11800 20696 Watching for file changes with StatReloader
-INFO 2025-02-28 16:41:56 views 11800 19976 收到请求: http://localhost:3000
-INFO 2025-02-28 16:41:56 serializers 11800 19976 开始验证视频文件
-DEBUG 2025-02-28 16:41:56 serializers 11800 19976 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:41:56 serializers 11800 19976 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:41:56 serializers 11800 19976 视频文件验证通过
-INFO 2025-02-28 16:41:56 views 11800 19976 创建会话成功: 1be775b9-8cb0-4a97-a2ee-9bcaba1f971a
-INFO 2025-02-28 16:41:56 services 11800 19976 初始化视频处理服务
-INFO 2025-02-28 16:41:56 services 11800 19976 开始处理视频: session_id=1be775b9-8cb0-4a97-a2ee-9bcaba1f971a
-INFO 2025-02-28 16:41:59 services 11800 19976 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:41:59 services 11800 19976 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:42:00 services 11800 19976 HLS 流处理已启动: F:\DjangoRestfulAPI\openpose3\pose\media\hls\1be775b9-8cb0-4a97-a2ee-9bcaba1f971a/output.m3u8
-INFO 2025-02-28 16:42:00 basehttp 11800 19976 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 16:42:00 basehttp 11800 22264 "GET /media/hls/1be775b9-8cb0-4a97-a2ee-9bcaba1f971a HTTP/1.1" 301 0
-INFO 2025-02-28 16:42:00 views 11800 20436 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\1be775b9-8cb0-4a97-a2ee-9bcaba1f971a
-ERROR 2025-02-28 16:42:00 log 11800 20436 Internal Server Error: /media/hls/1be775b9-8cb0-4a97-a2ee-9bcaba1f971a/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\1be775b9-8cb0-4a97-a2ee-9bcaba1f971a'
-ERROR 2025-02-28 16:42:00 basehttp 11800 20436 "GET /media/hls/1be775b9-8cb0-4a97-a2ee-9bcaba1f971a/ HTTP/1.1" 500 105069
-INFO 2025-02-28 16:42:00 views 11800 19172 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\1be775b9-8cb0-4a97-a2ee-9bcaba1f971a
-ERROR 2025-02-28 16:42:00 log 11800 19172 Internal Server Error: /media/hls/1be775b9-8cb0-4a97-a2ee-9bcaba1f971a/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\1be775b9-8cb0-4a97-a2ee-9bcaba1f971a'
-ERROR 2025-02-28 16:42:00 basehttp 11800 19172 "GET /media/hls/1be775b9-8cb0-4a97-a2ee-9bcaba1f971a/ HTTP/1.1" 500 105069
-INFO 2025-02-28 16:42:01 views 11800 19172 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\1be775b9-8cb0-4a97-a2ee-9bcaba1f971a
-ERROR 2025-02-28 16:42:01 log 11800 19172 Internal Server Error: /media/hls/1be775b9-8cb0-4a97-a2ee-9bcaba1f971a/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\1be775b9-8cb0-4a97-a2ee-9bcaba1f971a'
-ERROR 2025-02-28 16:42:01 basehttp 11800 19172 "GET /media/hls/1be775b9-8cb0-4a97-a2ee-9bcaba1f971a/ HTTP/1.1" 500 105069
-INFO 2025-02-28 16:42:01 views 11800 20436 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\1be775b9-8cb0-4a97-a2ee-9bcaba1f971a
-ERROR 2025-02-28 16:42:01 log 11800 20436 Internal Server Error: /media/hls/1be775b9-8cb0-4a97-a2ee-9bcaba1f971a/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\1be775b9-8cb0-4a97-a2ee-9bcaba1f971a'
-ERROR 2025-02-28 16:42:01 basehttp 11800 20436 "GET /media/hls/1be775b9-8cb0-4a97-a2ee-9bcaba1f971a/ HTTP/1.1" 500 105069
-INFO 2025-02-28 16:42:20 autoreload 11800 20696 F:\DjangoRestfulAPI\openpose3\pose\pose\urls.py changed, reloading.
-INFO 2025-02-28 16:42:21 autoreload 1744 13956 Watching for file changes with StatReloader
-INFO 2025-02-28 16:42:39 autoreload 1744 13956 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 16:42:39 autoreload 20696 11800 Watching for file changes with StatReloader
-INFO 2025-02-28 16:42:50 autoreload 20696 11800 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 16:42:51 autoreload 17992 2260 Watching for file changes with StatReloader
-INFO 2025-02-28 16:44:28 views 17992 2788 收到请求: http://localhost:3000
-INFO 2025-02-28 16:44:28 serializers 17992 2788 开始验证视频文件
-DEBUG 2025-02-28 16:44:28 serializers 17992 2788 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:44:28 serializers 17992 2788 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:44:28 serializers 17992 2788 视频文件验证通过
-INFO 2025-02-28 16:44:28 views 17992 2788 创建会话成功: e247ea96-fecf-450e-a255-4d68b56d8d2a
-INFO 2025-02-28 16:44:28 services 17992 2788 初始化视频处理服务
-INFO 2025-02-28 16:44:28 services 17992 2788 开始处理视频: session_id=e247ea96-fecf-450e-a255-4d68b56d8d2a
-INFO 2025-02-28 16:44:32 services 17992 2788 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:44:32 services 17992 2788 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:44:32 services 17992 2788 HLS 流处理已启动: F:\DjangoRestfulAPI\openpose3\pose\media\hls\e247ea96-fecf-450e-a255-4d68b56d8d2a/output.m3u8
-INFO 2025-02-28 16:44:32 basehttp 17992 2788 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 16:44:32 basehttp 17992 22608 "GET /media/hls/e247ea96-fecf-450e-a255-4d68b56d8d2a HTTP/1.1" 301 0
-ERROR 2025-02-28 16:44:32 log 17992 19392 Internal Server Error: /media/hls/e247ea96-fecf-450e-a255-4d68b56d8d2a/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-TypeError: get() missing 1 required positional argument: 'filename'
-ERROR 2025-02-28 16:44:32 basehttp 17992 19392 "GET /media/hls/e247ea96-fecf-450e-a255-4d68b56d8d2a/ HTTP/1.1" 500 100698
-ERROR 2025-02-28 16:44:32 log 17992 9304 Internal Server Error: /media/hls/e247ea96-fecf-450e-a255-4d68b56d8d2a/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-TypeError: get() missing 1 required positional argument: 'filename'
-ERROR 2025-02-28 16:44:32 basehttp 17992 9304 "GET /media/hls/e247ea96-fecf-450e-a255-4d68b56d8d2a/ HTTP/1.1" 500 100698
-ERROR 2025-02-28 16:44:33 log 17992 9304 Internal Server Error: /media/hls/e247ea96-fecf-450e-a255-4d68b56d8d2a/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-TypeError: get() missing 1 required positional argument: 'filename'
-ERROR 2025-02-28 16:44:33 basehttp 17992 9304 "GET /media/hls/e247ea96-fecf-450e-a255-4d68b56d8d2a/ HTTP/1.1" 500 100698
-ERROR 2025-02-28 16:44:33 log 17992 19392 Internal Server Error: /media/hls/e247ea96-fecf-450e-a255-4d68b56d8d2a/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-TypeError: get() missing 1 required positional argument: 'filename'
-ERROR 2025-02-28 16:44:33 basehttp 17992 19392 "GET /media/hls/e247ea96-fecf-450e-a255-4d68b56d8d2a/ HTTP/1.1" 500 100698
-INFO 2025-02-28 16:44:53 autoreload 17992 2260 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 16:45:00 autoreload 13068 6064 Watching for file changes with StatReloader
-INFO 2025-02-28 16:45:04 views 13068 1744 收到请求: http://localhost:3000
-INFO 2025-02-28 16:45:04 serializers 13068 1744 开始验证视频文件
-DEBUG 2025-02-28 16:45:04 serializers 13068 1744 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:45:04 serializers 13068 1744 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:45:04 serializers 13068 1744 视频文件验证通过
-INFO 2025-02-28 16:45:04 views 13068 1744 创建会话成功: 9d503635-e528-496c-9eda-2a89fd50b165
-INFO 2025-02-28 16:45:04 services 13068 1744 初始化视频处理服务
-INFO 2025-02-28 16:45:04 services 13068 1744 开始处理视频: session_id=9d503635-e528-496c-9eda-2a89fd50b165
-INFO 2025-02-28 16:45:08 services 13068 1744 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:45:08 services 13068 1744 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:45:08 services 13068 1744 HLS 流处理已启动: F:\DjangoRestfulAPI\openpose3\pose\media\hls\9d503635-e528-496c-9eda-2a89fd50b165/output.m3u8
-INFO 2025-02-28 16:45:08 basehttp 13068 1744 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 16:45:08 basehttp 13068 8348 "GET /media/hls/9d503635-e528-496c-9eda-2a89fd50b165 HTTP/1.1" 301 0
-ERROR 2025-02-28 16:45:08 log 13068 8496 Internal Server Error: /media/hls/9d503635-e528-496c-9eda-2a89fd50b165/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 75, in get
-    file_path = os.path.join(hls_directory, session_id)
-  File "D:\Anaconda3\envs\django\lib\ntpath.py", line 117, in join
-    genericpath._check_arg_types('join', path, *paths)
-  File "D:\Anaconda3\envs\django\lib\genericpath.py", line 152, in _check_arg_types
-    raise TypeError(f'{funcname}() argument must be str, bytes, or '
-TypeError: join() argument must be str, bytes, or os.PathLike object, not 'UUID'
-ERROR 2025-02-28 16:45:08 basehttp 13068 8496 "GET /media/hls/9d503635-e528-496c-9eda-2a89fd50b165/ HTTP/1.1" 500 113703
-ERROR 2025-02-28 16:45:08 log 13068 13796 Internal Server Error: /media/hls/9d503635-e528-496c-9eda-2a89fd50b165/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 75, in get
-    file_path = os.path.join(hls_directory, session_id)
-  File "D:\Anaconda3\envs\django\lib\ntpath.py", line 117, in join
-    genericpath._check_arg_types('join', path, *paths)
-  File "D:\Anaconda3\envs\django\lib\genericpath.py", line 152, in _check_arg_types
-    raise TypeError(f'{funcname}() argument must be str, bytes, or '
-TypeError: join() argument must be str, bytes, or os.PathLike object, not 'UUID'
-ERROR 2025-02-28 16:45:08 basehttp 13068 13796 "GET /media/hls/9d503635-e528-496c-9eda-2a89fd50b165/ HTTP/1.1" 500 113703
-ERROR 2025-02-28 16:45:09 log 13068 13796 Internal Server Error: /media/hls/9d503635-e528-496c-9eda-2a89fd50b165/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 75, in get
-    file_path = os.path.join(hls_directory, session_id)
-  File "D:\Anaconda3\envs\django\lib\ntpath.py", line 117, in join
-    genericpath._check_arg_types('join', path, *paths)
-  File "D:\Anaconda3\envs\django\lib\genericpath.py", line 152, in _check_arg_types
-    raise TypeError(f'{funcname}() argument must be str, bytes, or '
-TypeError: join() argument must be str, bytes, or os.PathLike object, not 'UUID'
-ERROR 2025-02-28 16:45:09 basehttp 13068 13796 "GET /media/hls/9d503635-e528-496c-9eda-2a89fd50b165/ HTTP/1.1" 500 113703
-ERROR 2025-02-28 16:45:09 log 13068 8496 Internal Server Error: /media/hls/9d503635-e528-496c-9eda-2a89fd50b165/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 75, in get
-    file_path = os.path.join(hls_directory, session_id)
-  File "D:\Anaconda3\envs\django\lib\ntpath.py", line 117, in join
-    genericpath._check_arg_types('join', path, *paths)
-  File "D:\Anaconda3\envs\django\lib\genericpath.py", line 152, in _check_arg_types
-    raise TypeError(f'{funcname}() argument must be str, bytes, or '
-TypeError: join() argument must be str, bytes, or os.PathLike object, not 'UUID'
-ERROR 2025-02-28 16:45:09 basehttp 13068 8496 "GET /media/hls/9d503635-e528-496c-9eda-2a89fd50b165/ HTTP/1.1" 500 113703
-INFO 2025-02-28 16:45:46 autoreload 13068 6064 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 16:45:46 autoreload 18264 16584 Watching for file changes with StatReloader
-INFO 2025-02-28 16:45:49 autoreload 18264 16584 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 16:45:50 autoreload 20984 22644 Watching for file changes with StatReloader
-INFO 2025-02-28 16:45:53 views 20984 11676 收到请求: http://localhost:3000
-INFO 2025-02-28 16:45:53 serializers 20984 11676 开始验证视频文件
-DEBUG 2025-02-28 16:45:53 serializers 20984 11676 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:45:53 serializers 20984 11676 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:45:53 serializers 20984 11676 视频文件验证通过
-INFO 2025-02-28 16:45:53 views 20984 11676 创建会话成功: 5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f
-INFO 2025-02-28 16:45:53 services 20984 11676 初始化视频处理服务
-INFO 2025-02-28 16:45:53 services 20984 11676 开始处理视频: session_id=5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f
-INFO 2025-02-28 16:45:57 services 20984 11676 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:45:57 services 20984 11676 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:45:57 services 20984 11676 HLS 流处理已启动: F:\DjangoRestfulAPI\openpose3\pose\media\hls\5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f/output.m3u8
-INFO 2025-02-28 16:45:57 basehttp 20984 11676 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 16:45:57 basehttp 20984 19908 "GET /media/hls/5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f HTTP/1.1" 301 0
-INFO 2025-02-28 16:45:57 views 20984 7864 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f
-ERROR 2025-02-28 16:45:57 log 20984 7864 Internal Server Error: /media/hls/5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f'
-ERROR 2025-02-28 16:45:57 basehttp 20984 7864 "GET /media/hls/5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f/ HTTP/1.1" 500 104960
-INFO 2025-02-28 16:45:57 views 20984 2412 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f
-ERROR 2025-02-28 16:45:57 log 20984 2412 Internal Server Error: /media/hls/5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f'
-ERROR 2025-02-28 16:45:57 basehttp 20984 2412 "GET /media/hls/5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f/ HTTP/1.1" 500 104960
-INFO 2025-02-28 16:45:58 views 20984 2412 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f
-ERROR 2025-02-28 16:45:58 log 20984 2412 Internal Server Error: /media/hls/5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f'
-ERROR 2025-02-28 16:45:58 basehttp 20984 2412 "GET /media/hls/5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f/ HTTP/1.1" 500 104960
-INFO 2025-02-28 16:45:58 views 20984 7864 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f
-ERROR 2025-02-28 16:45:58 log 20984 7864 Internal Server Error: /media/hls/5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f'
-ERROR 2025-02-28 16:45:58 basehttp 20984 7864 "GET /media/hls/5f6cc644-5c6e-4cc4-ab95-4ddd748aa78f/ HTTP/1.1" 500 104960
-INFO 2025-02-28 16:48:06 autoreload 20252 2920 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:48:07 autoreload 21996 2572 Watching for file changes with StatReloader
-INFO 2025-02-28 16:48:14 autoreload 21996 2572 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:48:14 autoreload 14588 5132 Watching for file changes with StatReloader
-INFO 2025-02-28 16:48:26 autoreload 14588 5132 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:48:26 autoreload 15444 9312 Watching for file changes with StatReloader
-INFO 2025-02-28 16:48:59 autoreload 15444 9312 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:49:00 autoreload 11160 9420 Watching for file changes with StatReloader
-INFO 2025-02-28 16:49:02 autoreload 11160 9420 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:49:02 autoreload 16900 3412 Watching for file changes with StatReloader
-INFO 2025-02-28 16:49:15 autoreload 16900 3412 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 16:49:15 autoreload 16148 19744 Watching for file changes with StatReloader
-INFO 2025-02-28 16:49:37 autoreload 11304 20140 Watching for file changes with StatReloader
-INFO 2025-02-28 16:49:42 views 11304 6992 收到请求: http://localhost:3000
-INFO 2025-02-28 16:49:42 serializers 11304 6992 开始验证视频文件
-DEBUG 2025-02-28 16:49:42 serializers 11304 6992 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:49:42 serializers 11304 6992 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:49:42 serializers 11304 6992 视频文件验证通过
-INFO 2025-02-28 16:49:42 views 11304 6992 创建会话成功: f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae
-INFO 2025-02-28 16:49:42 services 11304 6992 初始化视频处理服务
-INFO 2025-02-28 16:49:42 services 11304 6992 开始处理视频: session_id=f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae
-INFO 2025-02-28 16:49:45 services 11304 6992 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:49:45 services 11304 6992 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:49:46 services 11304 6992 HLS 流处理已启动: F:\DjangoRestfulAPI\openpose3\pose\media\hls\f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae/output.m3u8
-INFO 2025-02-28 16:49:46 basehttp 11304 6992 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 16:49:46 basehttp 11304 23316 "GET /media/hls/f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae HTTP/1.1" 301 0
-INFO 2025-02-28 16:49:46 views 11304 19000 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae
-ERROR 2025-02-28 16:49:46 log 11304 19000 Internal Server Error: /media/hls/f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae'
-ERROR 2025-02-28 16:49:46 basehttp 11304 19000 "GET /media/hls/f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae/ HTTP/1.1" 500 104960
-INFO 2025-02-28 16:49:46 views 11304 1408 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae
-ERROR 2025-02-28 16:49:46 log 11304 1408 Internal Server Error: /media/hls/f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae'
-ERROR 2025-02-28 16:49:46 basehttp 11304 1408 "GET /media/hls/f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae/ HTTP/1.1" 500 104960
-INFO 2025-02-28 16:49:47 views 11304 1408 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae
-ERROR 2025-02-28 16:49:47 log 11304 1408 Internal Server Error: /media/hls/f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae'
-ERROR 2025-02-28 16:49:47 basehttp 11304 1408 "GET /media/hls/f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae/ HTTP/1.1" 500 104960
-INFO 2025-02-28 16:49:47 views 11304 19000 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae
-ERROR 2025-02-28 16:49:47 log 11304 19000 Internal Server Error: /media/hls/f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae'
-ERROR 2025-02-28 16:49:47 basehttp 11304 19000 "GET /media/hls/f7f7b338-9f9b-4ed7-bb33-1dab4090c0ae/ HTTP/1.1" 500 104960
-INFO 2025-02-28 16:51:08 views 11304 3600 收到请求: http://localhost:3000
-INFO 2025-02-28 16:51:08 serializers 11304 3600 开始验证视频文件
-DEBUG 2025-02-28 16:51:08 serializers 11304 3600 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:51:08 serializers 11304 3600 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:51:08 serializers 11304 3600 视频文件验证通过
-INFO 2025-02-28 16:51:08 views 11304 3600 创建会话成功: 7a8bbd78-357c-49ea-89f5-dd75f963ddb1
-INFO 2025-02-28 16:51:08 services 11304 3600 初始化视频处理服务
-INFO 2025-02-28 16:51:08 services 11304 3600 开始处理视频: session_id=7a8bbd78-357c-49ea-89f5-dd75f963ddb1
-INFO 2025-02-28 16:51:12 services 11304 3600 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:51:12 services 11304 3600 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:51:12 services 11304 3600 HLS 流处理已启动: F:\DjangoRestfulAPI\openpose3\pose\media\hls\7a8bbd78-357c-49ea-89f5-dd75f963ddb1/output.m3u8
-INFO 2025-02-28 16:51:12 basehttp 11304 3600 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 16:51:12 basehttp 11304 19000 "GET /media/hls/7a8bbd78-357c-49ea-89f5-dd75f963ddb1 HTTP/1.1" 301 0
-INFO 2025-02-28 16:51:12 views 11304 1408 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\7a8bbd78-357c-49ea-89f5-dd75f963ddb1
-ERROR 2025-02-28 16:51:12 log 11304 1408 Internal Server Error: /media/hls/7a8bbd78-357c-49ea-89f5-dd75f963ddb1/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\7a8bbd78-357c-49ea-89f5-dd75f963ddb1'
-INFO 2025-02-28 16:51:12 views 11304 5076 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\7a8bbd78-357c-49ea-89f5-dd75f963ddb1
-ERROR 2025-02-28 16:51:12 basehttp 11304 1408 "GET /media/hls/7a8bbd78-357c-49ea-89f5-dd75f963ddb1/ HTTP/1.1" 500 104960
-ERROR 2025-02-28 16:51:12 log 11304 5076 Internal Server Error: /media/hls/7a8bbd78-357c-49ea-89f5-dd75f963ddb1/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\7a8bbd78-357c-49ea-89f5-dd75f963ddb1'
-ERROR 2025-02-28 16:51:12 basehttp 11304 5076 "GET /media/hls/7a8bbd78-357c-49ea-89f5-dd75f963ddb1/ HTTP/1.1" 500 104960
-INFO 2025-02-28 16:51:14 views 11304 5076 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\7a8bbd78-357c-49ea-89f5-dd75f963ddb1
-ERROR 2025-02-28 16:51:14 log 11304 5076 Internal Server Error: /media/hls/7a8bbd78-357c-49ea-89f5-dd75f963ddb1/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\7a8bbd78-357c-49ea-89f5-dd75f963ddb1'
-INFO 2025-02-28 16:51:14 views 11304 1408 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\7a8bbd78-357c-49ea-89f5-dd75f963ddb1
-ERROR 2025-02-28 16:51:14 basehttp 11304 5076 "GET /media/hls/7a8bbd78-357c-49ea-89f5-dd75f963ddb1/ HTTP/1.1" 500 104960
-ERROR 2025-02-28 16:51:14 log 11304 1408 Internal Server Error: /media/hls/7a8bbd78-357c-49ea-89f5-dd75f963ddb1/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\7a8bbd78-357c-49ea-89f5-dd75f963ddb1'
-ERROR 2025-02-28 16:51:14 basehttp 11304 1408 "GET /media/hls/7a8bbd78-357c-49ea-89f5-dd75f963ddb1/ HTTP/1.1" 500 104960
-INFO 2025-02-28 16:52:26 views 11304 4788 收到请求: http://localhost:3000
-INFO 2025-02-28 16:52:26 serializers 11304 4788 开始验证视频文件
-DEBUG 2025-02-28 16:52:26 serializers 11304 4788 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:52:26 serializers 11304 4788 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:52:26 serializers 11304 4788 视频文件验证通过
-INFO 2025-02-28 16:52:26 views 11304 4788 创建会话成功: 4cc05a98-886d-4f1f-b9ee-404ff252c51e
-INFO 2025-02-28 16:52:26 services 11304 4788 初始化视频处理服务
-INFO 2025-02-28 16:52:26 services 11304 4788 开始处理视频: session_id=4cc05a98-886d-4f1f-b9ee-404ff252c51e
-INFO 2025-02-28 16:52:30 services 11304 4788 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:52:30 services 11304 4788 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:52:30 services 11304 4788 HLS 流处理已启动: F:\DjangoRestfulAPI\openpose3\pose\media\hls\4cc05a98-886d-4f1f-b9ee-404ff252c51e/output.m3u8
-INFO 2025-02-28 16:52:30 basehttp 11304 4788 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 16:52:30 basehttp 11304 1408 "GET /media/hls/4cc05a98-886d-4f1f-b9ee-404ff252c51e HTTP/1.1" 301 0
-INFO 2025-02-28 16:52:30 views 11304 5076 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\4cc05a98-886d-4f1f-b9ee-404ff252c51e
-ERROR 2025-02-28 16:52:30 log 11304 5076 Internal Server Error: /media/hls/4cc05a98-886d-4f1f-b9ee-404ff252c51e/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\4cc05a98-886d-4f1f-b9ee-404ff252c51e'
-INFO 2025-02-28 16:52:30 views 11304 14408 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\4cc05a98-886d-4f1f-b9ee-404ff252c51e
-ERROR 2025-02-28 16:52:30 basehttp 11304 5076 "GET /media/hls/4cc05a98-886d-4f1f-b9ee-404ff252c51e/ HTTP/1.1" 500 104960
-ERROR 2025-02-28 16:52:30 log 11304 14408 Internal Server Error: /media/hls/4cc05a98-886d-4f1f-b9ee-404ff252c51e/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\4cc05a98-886d-4f1f-b9ee-404ff252c51e'
-ERROR 2025-02-28 16:52:30 basehttp 11304 14408 "GET /media/hls/4cc05a98-886d-4f1f-b9ee-404ff252c51e/ HTTP/1.1" 500 104960
-INFO 2025-02-28 16:52:31 views 11304 14408 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\4cc05a98-886d-4f1f-b9ee-404ff252c51e
-ERROR 2025-02-28 16:52:31 log 11304 14408 Internal Server Error: /media/hls/4cc05a98-886d-4f1f-b9ee-404ff252c51e/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\4cc05a98-886d-4f1f-b9ee-404ff252c51e'
-ERROR 2025-02-28 16:52:31 basehttp 11304 14408 "GET /media/hls/4cc05a98-886d-4f1f-b9ee-404ff252c51e/ HTTP/1.1" 500 104960
-INFO 2025-02-28 16:52:31 views 11304 14408 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\4cc05a98-886d-4f1f-b9ee-404ff252c51e
-ERROR 2025-02-28 16:52:31 log 11304 14408 Internal Server Error: /media/hls/4cc05a98-886d-4f1f-b9ee-404ff252c51e/
-Traceback (most recent call last):
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
-    return view_func(*args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\Anaconda3\envs\django\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 78, in get
-    return FileResponse(open(file_path, 'rb'), content_type='application/x-mpegURL')
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\4cc05a98-886d-4f1f-b9ee-404ff252c51e'
-ERROR 2025-02-28 16:52:31 basehttp 11304 14408 "GET /media/hls/4cc05a98-886d-4f1f-b9ee-404ff252c51e/ HTTP/1.1" 500 104960
-INFO 2025-02-28 16:53:51 autoreload 11304 20140 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 16:53:52 autoreload 19900 2224 Watching for file changes with StatReloader
-INFO 2025-02-28 16:53:56 autoreload 19900 2224 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 16:53:57 autoreload 19924 3200 Watching for file changes with StatReloader
-INFO 2025-02-28 16:54:03 views 19924 4628 收到请求: http://localhost:3000
-INFO 2025-02-28 16:54:03 serializers 19924 4628 开始验证视频文件
-DEBUG 2025-02-28 16:54:03 serializers 19924 4628 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 16:54:03 serializers 19924 4628 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 16:54:03 serializers 19924 4628 视频文件验证通过
-INFO 2025-02-28 16:54:03 views 19924 4628 创建会话成功: 09db6873-7b89-4dab-8f3d-9e6450d57983
-INFO 2025-02-28 16:54:03 services 19924 4628 初始化视频处理服务
-INFO 2025-02-28 16:54:03 services 19924 4628 开始处理视频: session_id=09db6873-7b89-4dab-8f3d-9e6450d57983
-INFO 2025-02-28 16:54:06 services 19924 4628 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 16:54:06 services 19924 4628 保存分析结果: 总帧数=53
-INFO 2025-02-28 16:54:07 services 19924 4628 HLS 流处理已启动: F:\DjangoRestfulAPI\openpose3\pose\media\hls\09db6873-7b89-4dab-8f3d-9e6450d57983/output.m3u8
-INFO 2025-02-28 16:54:07 basehttp 19924 4628 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 16:54:07 basehttp 19924 23808 "GET /media/hls/09db6873-7b89-4dab-8f3d-9e6450d57983 HTTP/1.1" 301 0
-INFO 2025-02-28 16:54:07 views 19924 12576 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\09db6873-7b89-4dab-8f3d-9e6450d57983
-ERROR 2025-02-28 16:54:07 views 19924 12576 打开文件失败: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\09db6873-7b89-4dab-8f3d-9e6450d57983'
-Traceback (most recent call last):
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 79, in get
-    with open(file_path, 'rb') as file:
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\09db6873-7b89-4dab-8f3d-9e6450d57983'
-WARNING 2025-02-28 16:54:07 log 19924 12576 Not Found: /media/hls/09db6873-7b89-4dab-8f3d-9e6450d57983/
-WARNING 2025-02-28 16:54:07 basehttp 19924 12576 "GET /media/hls/09db6873-7b89-4dab-8f3d-9e6450d57983/ HTTP/1.1" 404 31
-INFO 2025-02-28 16:54:07 views 19924 13800 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\09db6873-7b89-4dab-8f3d-9e6450d57983
-ERROR 2025-02-28 16:54:07 views 19924 13800 打开文件失败: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\09db6873-7b89-4dab-8f3d-9e6450d57983'
-Traceback (most recent call last):
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 79, in get
-    with open(file_path, 'rb') as file:
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\09db6873-7b89-4dab-8f3d-9e6450d57983'
-WARNING 2025-02-28 16:54:07 log 19924 13800 Not Found: /media/hls/09db6873-7b89-4dab-8f3d-9e6450d57983/
-WARNING 2025-02-28 16:54:07 basehttp 19924 13800 "GET /media/hls/09db6873-7b89-4dab-8f3d-9e6450d57983/ HTTP/1.1" 404 31
-INFO 2025-02-28 16:54:18 autoreload 19924 3200 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 16:54:19 autoreload 12856 9200 Watching for file changes with StatReloader
-INFO 2025-02-28 16:54:57 autoreload 12856 9200 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 16:54:58 autoreload 15736 6064 Watching for file changes with StatReloader
-INFO 2025-02-28 16:55:01 autoreload 15736 6064 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 16:55:02 autoreload 11672 13896 Watching for file changes with StatReloader
-INFO 2025-02-28 16:55:07 autoreload 11672 13896 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 16:55:08 autoreload 23724 9500 Watching for file changes with StatReloader
-INFO 2025-02-28 16:55:11 autoreload 23724 9500 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 16:55:12 autoreload 8300 22856 Watching for file changes with StatReloader
-INFO 2025-02-28 16:55:15 autoreload 8300 22856 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 16:55:16 autoreload 22552 12520 Watching for file changes with StatReloader
-INFO 2025-02-28 16:55:28 autoreload 22552 12520 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 16:55:29 autoreload 18564 13672 Watching for file changes with StatReloader
-INFO 2025-02-28 17:13:38 autoreload 18564 13672 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 17:13:39 autoreload 1712 19080 Watching for file changes with StatReloader
-INFO 2025-02-28 17:13:43 autoreload 1712 19080 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 17:13:44 autoreload 16356 22568 Watching for file changes with StatReloader
-INFO 2025-02-28 17:13:52 autoreload 16356 22568 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 17:13:53 autoreload 22728 22940 Watching for file changes with StatReloader
-INFO 2025-02-28 17:13:57 views 22728 22876 收到请求: http://localhost:3000
-INFO 2025-02-28 17:13:57 serializers 22728 22876 开始验证视频文件
-DEBUG 2025-02-28 17:13:57 serializers 22728 22876 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 17:13:57 serializers 22728 22876 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 17:13:57 serializers 22728 22876 视频文件验证通过
-INFO 2025-02-28 17:13:57 views 22728 22876 创建会话成功: 0417225f-c098-44c9-95a7-fa00b565a66a
-INFO 2025-02-28 17:13:57 services 22728 22876 初始化视频处理服务
-INFO 2025-02-28 17:13:57 services 22728 22876 开始处理视频: session_id=0417225f-c098-44c9-95a7-fa00b565a66a
-INFO 2025-02-28 17:14:01 services 22728 22876 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 17:14:01 services 22728 22876 保存分析结果: 总帧数=53
-INFO 2025-02-28 17:14:01 services 22728 22876 HLS 流处理已启动: F:\DjangoRestfulAPI\openpose3\pose\media\hls\0417225f-c098-44c9-95a7-fa00b565a66a/output.m3u8
-INFO 2025-02-28 17:14:01 basehttp 22728 22876 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 17:14:01 basehttp 22728 9548 "GET /media/hls/0417225f-c098-44c9-95a7-fa00b565a66a HTTP/1.1" 301 0
-INFO 2025-02-28 17:14:01 views 22728 5732 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\0417225f-c098-44c9-95a7-fa00b565a66a
-ERROR 2025-02-28 17:14:11 views 22728 5732 打开文件失败: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\0417225f-c098-44c9-95a7-fa00b565a66a'
-Traceback (most recent call last):
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 80, in get
-    with open(file_path, 'rb') as file:
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\0417225f-c098-44c9-95a7-fa00b565a66a'
-WARNING 2025-02-28 17:14:11 log 22728 5732 Not Found: /media/hls/0417225f-c098-44c9-95a7-fa00b565a66a/
-WARNING 2025-02-28 17:14:11 basehttp 22728 5732 "GET /media/hls/0417225f-c098-44c9-95a7-fa00b565a66a/ HTTP/1.1" 404 31
-INFO 2025-02-28 17:14:11 views 22728 11752 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\0417225f-c098-44c9-95a7-fa00b565a66a
-INFO 2025-02-28 17:14:21 views 22728 5732 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\0417225f-c098-44c9-95a7-fa00b565a66a
-ERROR 2025-02-28 17:14:21 views 22728 11752 打开文件失败: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\0417225f-c098-44c9-95a7-fa00b565a66a'
-Traceback (most recent call last):
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 80, in get
-    with open(file_path, 'rb') as file:
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\0417225f-c098-44c9-95a7-fa00b565a66a'
-WARNING 2025-02-28 17:14:21 log 22728 11752 Not Found: /media/hls/0417225f-c098-44c9-95a7-fa00b565a66a/
-INFO 2025-02-28 17:14:21 basehttp 22728 11752 - Broken pipe from ('127.0.0.1', 49894)
-ERROR 2025-02-28 17:14:31 views 22728 5732 打开文件失败: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\0417225f-c098-44c9-95a7-fa00b565a66a'
-Traceback (most recent call last):
-  File "F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py", line 80, in get
-    with open(file_path, 'rb') as file:
-PermissionError: [Errno 13] Permission denied: 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\0417225f-c098-44c9-95a7-fa00b565a66a'
-WARNING 2025-02-28 17:14:31 log 22728 5732 Not Found: /media/hls/0417225f-c098-44c9-95a7-fa00b565a66a/
-WARNING 2025-02-28 17:14:31 basehttp 22728 5732 "GET /media/hls/0417225f-c098-44c9-95a7-fa00b565a66a/ HTTP/1.1" 404 31
-INFO 2025-02-28 17:15:05 autoreload 22728 22940 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 17:15:06 autoreload 13860 19068 Watching for file changes with StatReloader
-INFO 2025-02-28 17:15:10 autoreload 13860 19068 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 17:15:11 autoreload 24544 23932 Watching for file changes with StatReloader
-INFO 2025-02-28 17:15:14 autoreload 24544 23932 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 17:15:15 autoreload 24356 17928 Watching for file changes with StatReloader
-INFO 2025-02-28 17:15:26 autoreload 24356 17928 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 17:15:27 autoreload 23988 18964 Watching for file changes with StatReloader
-INFO 2025-02-28 17:15:33 views 23988 19452 收到请求: http://localhost:3000
-INFO 2025-02-28 17:15:33 serializers 23988 19452 开始验证视频文件
-DEBUG 2025-02-28 17:15:33 serializers 23988 19452 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 17:15:33 serializers 23988 19452 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 17:15:33 serializers 23988 19452 视频文件验证通过
-INFO 2025-02-28 17:15:33 views 23988 19452 创建会话成功: c5a26e8d-f7cf-4aa5-9114-93469325fd4a
-INFO 2025-02-28 17:15:33 services 23988 19452 初始化视频处理服务
-INFO 2025-02-28 17:15:33 services 23988 19452 开始处理视频: session_id=c5a26e8d-f7cf-4aa5-9114-93469325fd4a
-INFO 2025-02-28 17:15:37 services 23988 19452 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 17:15:37 services 23988 19452 保存分析结果: 总帧数=53
-INFO 2025-02-28 17:15:37 services 23988 19452 HLS 流处理已启动: F:\DjangoRestfulAPI\openpose3\pose\media\hls\c5a26e8d-f7cf-4aa5-9114-93469325fd4a/output.m3u8
-INFO 2025-02-28 17:15:37 basehttp 23988 19452 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 17:15:37 basehttp 23988 22912 "GET /media/hls/c5a26e8d-f7cf-4aa5-9114-93469325fd4a HTTP/1.1" 301 0
-INFO 2025-02-28 17:15:37 views 23988 5512 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\c5a26e8d-f7cf-4aa5-9114-93469325fd4a\output.m3u8
-INFO 2025-02-28 17:15:37 basehttp 23988 5512 "GET /media/hls/c5a26e8d-f7cf-4aa5-9114-93469325fd4a/ HTTP/1.1" 200 0
-INFO 2025-02-28 17:15:37 views 23988 23840 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\c5a26e8d-f7cf-4aa5-9114-93469325fd4a\output.m3u8
-INFO 2025-02-28 17:15:37 basehttp 23988 23840 "GET /media/hls/c5a26e8d-f7cf-4aa5-9114-93469325fd4a/ HTTP/1.1" 200 0
-INFO 2025-02-28 17:17:47 views 23988 14332 收到请求: http://localhost:3000
-INFO 2025-02-28 17:17:47 serializers 23988 14332 开始验证视频文件
-DEBUG 2025-02-28 17:17:47 serializers 23988 14332 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 17:17:47 serializers 23988 14332 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 17:17:47 serializers 23988 14332 视频文件验证通过
-INFO 2025-02-28 17:17:47 views 23988 14332 创建会话成功: 6da2bf90-808d-40db-a7af-28398d7d5dd4
-INFO 2025-02-28 17:17:47 services 23988 14332 初始化视频处理服务
-INFO 2025-02-28 17:17:47 services 23988 14332 开始处理视频: session_id=6da2bf90-808d-40db-a7af-28398d7d5dd4
-INFO 2025-02-28 17:17:50 services 23988 14332 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 17:17:50 services 23988 14332 保存分析结果: 总帧数=53
-INFO 2025-02-28 17:17:51 services 23988 14332 HLS 流处理已启动: F:\DjangoRestfulAPI\openpose3\pose\media\hls\6da2bf90-808d-40db-a7af-28398d7d5dd4/output.m3u8
-INFO 2025-02-28 17:17:51 basehttp 23988 14332 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 17:17:51 basehttp 23988 12988 "GET /media/hls/6da2bf90-808d-40db-a7af-28398d7d5dd4 HTTP/1.1" 301 0
-INFO 2025-02-28 17:17:51 views 23988 8004 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\6da2bf90-808d-40db-a7af-28398d7d5dd4\output.m3u8
-INFO 2025-02-28 17:17:51 basehttp 23988 8004 "GET /media/hls/6da2bf90-808d-40db-a7af-28398d7d5dd4/ HTTP/1.1" 200 0
-INFO 2025-02-28 17:17:51 views 23988 20088 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\6da2bf90-808d-40db-a7af-28398d7d5dd4\output.m3u8
-INFO 2025-02-28 17:17:51 basehttp 23988 20088 "GET /media/hls/6da2bf90-808d-40db-a7af-28398d7d5dd4/ HTTP/1.1" 200 0
-INFO 2025-02-28 17:18:49 autoreload 23988 18964 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 17:19:21 autoreload 23388 20596 Watching for file changes with StatReloader
-INFO 2025-02-28 17:19:25 views 23388 16132 收到请求: http://localhost:3000
-INFO 2025-02-28 17:19:25 serializers 23388 16132 开始验证视频文件
-DEBUG 2025-02-28 17:19:25 serializers 23388 16132 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 17:19:25 serializers 23388 16132 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 17:19:25 serializers 23388 16132 视频文件验证通过
-INFO 2025-02-28 17:19:25 views 23388 16132 创建会话成功: a30e6df0-4b0c-4e0f-8ba5-183a2d1456ff
-INFO 2025-02-28 17:19:25 services 23388 16132 初始化视频处理服务
-INFO 2025-02-28 17:19:25 services 23388 16132 开始处理视频: session_id=a30e6df0-4b0c-4e0f-8ba5-183a2d1456ff
-INFO 2025-02-28 17:19:28 services 23388 16132 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 17:19:28 services 23388 16132 保存分析结果: 总帧数=53
-INFO 2025-02-28 17:19:29 services 23388 16132 HLS 流处理已启动: F:\DjangoRestfulAPI\openpose3\pose\media\hls\a30e6df0-4b0c-4e0f-8ba5-183a2d1456ff/output.m3u8
-INFO 2025-02-28 17:19:29 basehttp 23388 16132 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 17:19:29 basehttp 23388 11244 "GET /media/hls/a30e6df0-4b0c-4e0f-8ba5-183a2d1456ff HTTP/1.1" 301 0
-INFO 2025-02-28 17:19:29 views 23388 24060 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\a30e6df0-4b0c-4e0f-8ba5-183a2d1456ff\output.m3u8
-INFO 2025-02-28 17:19:29 basehttp 23388 24060 "GET /media/hls/a30e6df0-4b0c-4e0f-8ba5-183a2d1456ff/ HTTP/1.1" 200 0
-INFO 2025-02-28 17:19:29 views 23388 3240 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\a30e6df0-4b0c-4e0f-8ba5-183a2d1456ff\output.m3u8
-INFO 2025-02-28 17:19:29 basehttp 23388 3240 "GET /media/hls/a30e6df0-4b0c-4e0f-8ba5-183a2d1456ff/ HTTP/1.1" 200 0
-INFO 2025-02-28 17:19:50 autoreload 23388 20596 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 17:20:00 autoreload 14448 3220 Watching for file changes with StatReloader
-INFO 2025-02-28 17:20:03 views 14448 1372 收到请求: http://localhost:3000
-INFO 2025-02-28 17:20:03 serializers 14448 1372 开始验证视频文件
-DEBUG 2025-02-28 17:20:03 serializers 14448 1372 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 17:20:03 serializers 14448 1372 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 17:20:03 serializers 14448 1372 视频文件验证通过
-INFO 2025-02-28 17:20:03 views 14448 1372 创建会话成功: c1c809ec-acf3-4d1e-a512-6a395c8b89b2
-INFO 2025-02-28 17:20:03 services 14448 1372 初始化视频处理服务
-INFO 2025-02-28 17:20:03 services 14448 1372 开始处理视频: session_id=c1c809ec-acf3-4d1e-a512-6a395c8b89b2
-INFO 2025-02-28 17:20:06 services 14448 1372 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 17:20:06 services 14448 1372 保存分析结果: 总帧数=53
-INFO 2025-02-28 17:20:06 services 14448 1372 HLS 流处理已启动: F:\DjangoRestfulAPI\openpose3\pose\media\hls\c1c809ec-acf3-4d1e-a512-6a395c8b89b2/output.m3u8
-INFO 2025-02-28 17:20:06 basehttp 14448 1372 "POST /upload-videos/ HTTP/1.1" 201 128
-INFO 2025-02-28 17:20:06 basehttp 14448 19504 "GET /media/hls/c1c809ec-acf3-4d1e-a512-6a395c8b89b2 HTTP/1.1" 301 0
-INFO 2025-02-28 17:20:06 views 14448 9844 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\c1c809ec-acf3-4d1e-a512-6a395c8b89b2\output.m3u8
-INFO 2025-02-28 17:20:11 basehttp 14448 9844 "GET /media/hls/c1c809ec-acf3-4d1e-a512-6a395c8b89b2/ HTTP/1.1" 200 0
-INFO 2025-02-28 17:20:11 views 14448 22340 HLS 文件路径: F:\DjangoRestfulAPI\openpose3\pose\media\hls\c1c809ec-acf3-4d1e-a512-6a395c8b89b2\output.m3u8
-INFO 2025-02-28 17:20:16 basehttp 14448 22340 "GET /media/hls/c1c809ec-acf3-4d1e-a512-6a395c8b89b2/ HTTP/1.1" 200 0
-INFO 2025-02-28 17:39:45 autoreload 14448 3220 F:\DjangoRestfulAPI\openpose3\pose\pose\urls.py changed, reloading.
-INFO 2025-02-28 19:35:30 autoreload 21372 5140 Watching for file changes with StatReloader
-INFO 2025-02-28 19:36:18 autoreload 22880 10588 Watching for file changes with StatReloader
-INFO 2025-02-28 19:37:51 autoreload 26748 20820 Watching for file changes with StatReloader
-INFO 2025-02-28 19:41:50 autoreload 25788 12736 Watching for file changes with StatReloader
-INFO 2025-02-28 19:42:58 autoreload 23824 20948 Watching for file changes with StatReloader
-INFO 2025-02-28 19:43:24 autoreload 23824 20948 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 19:43:28 autoreload 15484 1776 Watching for file changes with StatReloader
-INFO 2025-02-28 19:43:40 autoreload 15484 1776 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 19:43:46 autoreload 27152 22040 Watching for file changes with StatReloader
-INFO 2025-02-28 19:44:57 autoreload 18596 3840 Watching for file changes with StatReloader
-INFO 2025-02-28 19:46:02 autoreload 360 19164 Watching for file changes with StatReloader
-INFO 2025-02-28 19:46:29 autoreload 360 19164 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 19:46:32 autoreload 21312 21060 Watching for file changes with StatReloader
-INFO 2025-02-28 19:46:43 autoreload 21312 21060 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 19:46:50 autoreload 5732 14856 Watching for file changes with StatReloader
-INFO 2025-02-28 19:47:35 autoreload 900 26600 Watching for file changes with StatReloader
-INFO 2025-02-28 19:51:36 autoreload 20392 25372 Watching for file changes with StatReloader
-INFO 2025-02-28 19:51:50 autoreload 20392 25372 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 19:52:05 autoreload 15136 11072 Watching for file changes with StatReloader
-INFO 2025-02-28 19:57:00 autoreload 8352 19668 Watching for file changes with StatReloader
-INFO 2025-02-28 19:57:23 autoreload 18364 20212 Watching for file changes with StatReloader
-INFO 2025-02-28 19:57:55 autoreload 23116 2412 Watching for file changes with StatReloader
-INFO 2025-02-28 20:00:02 autoreload 22044 13516 Watching for file changes with StatReloader
-INFO 2025-02-28 20:00:41 autoreload 9956 24448 Watching for file changes with StatReloader
-INFO 2025-02-28 20:01:06 autoreload 10768 3652 Watching for file changes with StatReloader
-INFO 2025-02-28 20:02:19 autoreload 14024 27108 Watching for file changes with StatReloader
-INFO 2025-02-28 20:04:55 autoreload 14024 27108 F:\DjangoRestfulAPI\openpose3\pose\pose\urls.py changed, reloading.
-INFO 2025-02-28 20:05:03 autoreload 26928 22780 Watching for file changes with StatReloader
-INFO 2025-02-28 20:05:14 autoreload 26928 22780 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 20:05:14 autoreload 18524 26044 Watching for file changes with StatReloader
-INFO 2025-02-28 20:05:22 autoreload 18524 26044 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 20:05:23 autoreload 21452 21428 Watching for file changes with StatReloader
-INFO 2025-02-28 20:05:31 autoreload 21452 21428 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 20:06:46 autoreload 17708 27032 Watching for file changes with StatReloader
-INFO 2025-02-28 20:06:52 views 17708 25832 收到请求: http://localhost:3000
-INFO 2025-02-28 20:06:52 serializers 17708 25832 开始验证视频文件
-DEBUG 2025-02-28 20:06:52 serializers 17708 25832 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 20:06:52 serializers 17708 25832 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 20:06:52 serializers 17708 25832 视频文件验证通过
-INFO 2025-02-28 20:06:52 views 17708 25832 创建会话成功: 5c1c9e9f-97df-4e14-bf7d-105664e59fee
-INFO 2025-02-28 20:06:52 services 17708 25832 初始化视频处理服务
-INFO 2025-02-28 20:06:52 basehttp 17708 25832 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 20:06:52 log 17708 21196 Not Found: /media/hls/5c1c9e9f-97df-4e14-bf7d-105664e59fee
-WARNING 2025-02-28 20:06:52 basehttp 17708 21196 "GET /media/hls/5c1c9e9f-97df-4e14-bf7d-105664e59fee HTTP/1.1" 404 2349
-WARNING 2025-02-28 20:06:52 log 17708 16848 Not Found: /media/hls/5c1c9e9f-97df-4e14-bf7d-105664e59fee
-WARNING 2025-02-28 20:06:52 basehttp 17708 16848 "GET /media/hls/5c1c9e9f-97df-4e14-bf7d-105664e59fee HTTP/1.1" 404 2349
-WARNING 2025-02-28 20:06:52 log 17708 16848 Not Found: /media/hls/5c1c9e9f-97df-4e14-bf7d-105664e59fee
-WARNING 2025-02-28 20:06:52 basehttp 17708 16848 "GET /media/hls/5c1c9e9f-97df-4e14-bf7d-105664e59fee HTTP/1.1" 404 2349
-INFO 2025-02-28 20:07:08 autoreload 10536 25280 Watching for file changes with StatReloader
-INFO 2025-02-28 20:07:10 views 10536 12612 收到请求: http://localhost:3000
-INFO 2025-02-28 20:07:10 serializers 10536 12612 开始验证视频文件
-DEBUG 2025-02-28 20:07:10 serializers 10536 12612 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 20:07:10 serializers 10536 12612 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 20:07:10 serializers 10536 12612 视频文件验证通过
-INFO 2025-02-28 20:07:10 views 10536 12612 创建会话成功: 905b7fa9-2e93-46f5-9ff1-ade5bcd30751
-INFO 2025-02-28 20:07:10 services 10536 12612 初始化视频处理服务
-INFO 2025-02-28 20:07:10 basehttp 10536 12612 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 20:07:10 log 10536 24980 Not Found: /media/hls/905b7fa9-2e93-46f5-9ff1-ade5bcd30751
-WARNING 2025-02-28 20:07:10 basehttp 10536 24980 "GET /media/hls/905b7fa9-2e93-46f5-9ff1-ade5bcd30751 HTTP/1.1" 404 2349
-WARNING 2025-02-28 20:07:10 log 10536 19416 Not Found: /media/hls/905b7fa9-2e93-46f5-9ff1-ade5bcd30751
-WARNING 2025-02-28 20:07:10 basehttp 10536 19416 "GET /media/hls/905b7fa9-2e93-46f5-9ff1-ade5bcd30751 HTTP/1.1" 404 2349
-WARNING 2025-02-28 20:07:10 log 10536 19416 Not Found: /media/hls/905b7fa9-2e93-46f5-9ff1-ade5bcd30751
-WARNING 2025-02-28 20:07:10 basehttp 10536 19416 "GET /media/hls/905b7fa9-2e93-46f5-9ff1-ade5bcd30751 HTTP/1.1" 404 2349
-INFO 2025-02-28 20:07:24 autoreload 10536 25280 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-02-28 20:07:24 autoreload 1516 13152 Watching for file changes with StatReloader
-INFO 2025-02-28 20:07:27 views 1516 25428 收到请求: http://localhost:3000
-INFO 2025-02-28 20:07:27 serializers 1516 25428 开始验证视频文件
-DEBUG 2025-02-28 20:07:27 serializers 1516 25428 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 20:07:27 serializers 1516 25428 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 20:07:27 serializers 1516 25428 视频文件验证通过
-INFO 2025-02-28 20:07:27 views 1516 25428 创建会话成功: 895fc6d3-6227-487d-992c-2f3ad4e30425
-INFO 2025-02-28 20:07:27 services 1516 25428 初始化视频处理服务
-INFO 2025-02-28 20:07:27 basehttp 1516 25428 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 20:07:27 log 1516 12736 Not Found: /media/hls/895fc6d3-6227-487d-992c-2f3ad4e30425
-WARNING 2025-02-28 20:07:27 basehttp 1516 12736 "GET /media/hls/895fc6d3-6227-487d-992c-2f3ad4e30425 HTTP/1.1" 404 2349
-WARNING 2025-02-28 20:07:27 log 1516 20832 Not Found: /media/hls/895fc6d3-6227-487d-992c-2f3ad4e30425
-WARNING 2025-02-28 20:07:27 basehttp 1516 20832 "GET /media/hls/895fc6d3-6227-487d-992c-2f3ad4e30425 HTTP/1.1" 404 2349
-INFO 2025-02-28 20:08:15 views 1516 8296 收到请求: http://localhost:3000
-INFO 2025-02-28 20:08:15 serializers 1516 8296 开始验证视频文件
-DEBUG 2025-02-28 20:08:15 serializers 1516 8296 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 20:08:15 serializers 1516 8296 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 20:08:15 serializers 1516 8296 视频文件验证通过
-INFO 2025-02-28 20:08:15 views 1516 8296 创建会话成功: 35bec68d-5470-4fa1-b19f-6df84ba47375
-INFO 2025-02-28 20:08:15 services 1516 8296 初始化视频处理服务
-INFO 2025-02-28 20:08:15 basehttp 1516 8296 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 20:08:15 log 1516 20832 Not Found: /media/hls/35bec68d-5470-4fa1-b19f-6df84ba47375
-WARNING 2025-02-28 20:08:15 basehttp 1516 20832 "GET /media/hls/35bec68d-5470-4fa1-b19f-6df84ba47375 HTTP/1.1" 404 2349
-WARNING 2025-02-28 20:08:15 log 1516 12736 Not Found: /media/hls/35bec68d-5470-4fa1-b19f-6df84ba47375
-WARNING 2025-02-28 20:08:15 basehttp 1516 12736 "GET /media/hls/35bec68d-5470-4fa1-b19f-6df84ba47375 HTTP/1.1" 404 2349
-INFO 2025-02-28 20:08:51 autoreload 1516 13152 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 20:08:52 autoreload 13928 13112 Watching for file changes with StatReloader
-INFO 2025-02-28 20:08:58 autoreload 13928 13112 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 20:08:59 autoreload 4976 14444 Watching for file changes with StatReloader
-INFO 2025-02-28 20:09:03 autoreload 4976 14444 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 20:09:04 autoreload 23600 23544 Watching for file changes with StatReloader
-INFO 2025-02-28 20:09:06 views 23600 9432 收到请求: http://localhost:3000
-INFO 2025-02-28 20:09:06 serializers 23600 9432 开始验证视频文件
-DEBUG 2025-02-28 20:09:06 serializers 23600 9432 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 20:09:06 serializers 23600 9432 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 20:09:06 serializers 23600 9432 视频文件验证通过
-INFO 2025-02-28 20:09:06 views 23600 9432 创建会话成功: 2a5cb6b7-8622-47d1-9fe0-6d8f4cf55075
-INFO 2025-02-28 20:09:06 services 23600 9432 初始化视频处理服务
-INFO 2025-02-28 20:09:16 basehttp 23600 9432 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 20:09:16 log 23600 19732 Not Found: /media/hls/2a5cb6b7-8622-47d1-9fe0-6d8f4cf55075
-WARNING 2025-02-28 20:09:16 basehttp 23600 19732 "GET /media/hls/2a5cb6b7-8622-47d1-9fe0-6d8f4cf55075 HTTP/1.1" 404 2349
-WARNING 2025-02-28 20:09:16 log 23600 20828 Not Found: /media/hls/2a5cb6b7-8622-47d1-9fe0-6d8f4cf55075
-WARNING 2025-02-28 20:09:16 basehttp 23600 20828 "GET /media/hls/2a5cb6b7-8622-47d1-9fe0-6d8f4cf55075 HTTP/1.1" 404 2349
-INFO 2025-02-28 20:09:31 autoreload 23600 23544 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 20:09:32 autoreload 26340 6148 Watching for file changes with StatReloader
-INFO 2025-02-28 20:09:34 autoreload 26340 6148 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 20:09:35 autoreload 4232 1444 Watching for file changes with StatReloader
-INFO 2025-02-28 20:09:38 views 4232 22800 收到请求: http://localhost:3000
-INFO 2025-02-28 20:09:38 serializers 4232 22800 开始验证视频文件
-DEBUG 2025-02-28 20:09:38 serializers 4232 22800 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 20:09:38 serializers 4232 22800 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 20:09:38 serializers 4232 22800 视频文件验证通过
-INFO 2025-02-28 20:09:38 views 4232 22800 创建会话成功: 8ffedd71-8409-4dcb-b1ff-4d039e8eaac5
-INFO 2025-02-28 20:09:38 services 4232 22800 初始化视频处理服务
-INFO 2025-02-28 20:09:38 services 4232 22800 开始处理视频: session_id=8ffedd71-8409-4dcb-b1ff-4d039e8eaac5
-INFO 2025-02-28 20:09:42 services 4232 22800 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 20:09:42 services 4232 22800 保存分析结果: 总帧数=53
-INFO 2025-02-28 20:09:52 basehttp 4232 22800 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 20:09:52 log 4232 14444 Not Found: /media/hls/8ffedd71-8409-4dcb-b1ff-4d039e8eaac5
-WARNING 2025-02-28 20:09:52 basehttp 4232 14444 "GET /media/hls/8ffedd71-8409-4dcb-b1ff-4d039e8eaac5 HTTP/1.1" 404 2349
-WARNING 2025-02-28 20:09:52 log 4232 4976 Not Found: /media/hls/8ffedd71-8409-4dcb-b1ff-4d039e8eaac5
-WARNING 2025-02-28 20:09:52 basehttp 4232 4976 "GET /media/hls/8ffedd71-8409-4dcb-b1ff-4d039e8eaac5 HTTP/1.1" 404 2349
-INFO 2025-02-28 20:10:06 autoreload 4232 1444 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
-INFO 2025-02-28 20:10:07 autoreload 15968 7536 Watching for file changes with StatReloader
-INFO 2025-02-28 20:10:10 views 15968 7700 收到请求: http://localhost:3000
-INFO 2025-02-28 20:10:10 serializers 15968 7700 开始验证视频文件
-DEBUG 2025-02-28 20:10:10 serializers 15968 7700 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 20:10:10 serializers 15968 7700 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 20:10:10 serializers 15968 7700 视频文件验证通过
-INFO 2025-02-28 20:10:10 views 15968 7700 创建会话成功: 78a07bfd-7139-44b4-afc6-5a47041e6271
-INFO 2025-02-28 20:10:10 services 15968 7700 初始化视频处理服务
-INFO 2025-02-28 20:10:10 services 15968 7700 开始处理视频: session_id=78a07bfd-7139-44b4-afc6-5a47041e6271
-INFO 2025-02-28 20:10:13 services 15968 7700 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 20:10:13 services 15968 7700 保存分析结果: 总帧数=53
-INFO 2025-02-28 20:10:13 basehttp 15968 7700 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 20:10:13 log 15968 24260 Not Found: /media/hls/78a07bfd-7139-44b4-afc6-5a47041e6271
-WARNING 2025-02-28 20:10:13 basehttp 15968 24260 "GET /media/hls/78a07bfd-7139-44b4-afc6-5a47041e6271 HTTP/1.1" 404 2349
-WARNING 2025-02-28 20:10:13 log 15968 23864 Not Found: /media/hls/78a07bfd-7139-44b4-afc6-5a47041e6271
-WARNING 2025-02-28 20:10:13 basehttp 15968 23864 "GET /media/hls/78a07bfd-7139-44b4-afc6-5a47041e6271 HTTP/1.1" 404 2349
-INFO 2025-02-28 20:10:25 autoreload 15968 7536 F:\DjangoRestfulAPI\openpose3\pose\evalpose\services.py changed, reloading.
-INFO 2025-02-28 20:10:26 autoreload 8076 20256 Watching for file changes with StatReloader
-INFO 2025-02-28 20:10:29 views 8076 12716 收到请求: http://localhost:3000
-INFO 2025-02-28 20:10:29 serializers 8076 12716 开始验证视频文件
-DEBUG 2025-02-28 20:10:29 serializers 8076 12716 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-02-28 20:10:29 serializers 8076 12716 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-02-28 20:10:29 serializers 8076 12716 视频文件验证通过
-INFO 2025-02-28 20:10:29 views 8076 12716 创建会话成功: 6c849c84-6c0e-42d1-93c1-f28fd8cf977a
-INFO 2025-02-28 20:10:29 services 8076 12716 初始化视频处理服务
-INFO 2025-02-28 20:10:29 services 8076 12716 开始处理视频: session_id=6c849c84-6c0e-42d1-93c1-f28fd8cf977a
-INFO 2025-02-28 20:10:32 services 8076 12716 DTW分析完成: 0.039118676231252085
-INFO 2025-02-28 20:10:32 services 8076 12716 保存分析结果: 总帧数=53
-INFO 2025-02-28 20:10:33 services 8076 12716 HLS 流处理已启动: F:\DjangoRestfulAPI\openpose3\pose\media\hls\6c849c84-6c0e-42d1-93c1-f28fd8cf977a/output.m3u8
-INFO 2025-02-28 20:10:33 basehttp 8076 12716 "POST /upload-videos/ HTTP/1.1" 201 128
-WARNING 2025-02-28 20:10:33 log 8076 14448 Not Found: /media/hls/6c849c84-6c0e-42d1-93c1-f28fd8cf977a
-WARNING 2025-02-28 20:10:33 basehttp 8076 14448 "GET /media/hls/6c849c84-6c0e-42d1-93c1-f28fd8cf977a HTTP/1.1" 404 2349
-WARNING 2025-02-28 20:10:33 log 8076 14520 Not Found: /media/hls/6c849c84-6c0e-42d1-93c1-f28fd8cf977a
-WARNING 2025-02-28 20:10:33 basehttp 8076 14520 "GET /media/hls/6c849c84-6c0e-42d1-93c1-f28fd8cf977a HTTP/1.1" 404 2349
-INFO 2025-02-28 21:05:26 autoreload 8076 20256 F:\DjangoRestfulAPI\openpose3\pose\evalpose\serializers.py changed, reloading.
-INFO 2025-02-28 21:05:27 autoreload 25432 18724 Watching for file changes with StatReloader
-INFO 2025-03-01 18:27:53 autoreload 8124 15192 Watching for file changes with StatReloader
-INFO 2025-03-01 18:29:42 views 8124 20260 收到请求: http://localhost:3000
-INFO 2025-03-01 18:29:42 serializers 8124 20260 开始验证视频文件
-DEBUG 2025-03-01 18:29:42 serializers 8124 20260 验证 standardVideo: 大小=620008, 类型=video/mp4
-DEBUG 2025-03-01 18:29:42 serializers 8124 20260 验证 exerciseVideo: 大小=348923, 类型=video/mp4
-INFO 2025-03-01 18:29:42 serializers 8124 20260 视频文件验证通过
-INFO 2025-03-01 18:29:42 views 8124 20260 创建会话成功: 313584e9-7229-4892-8f40-f77eb265b1e0
-INFO 2025-03-01 18:29:42 services 8124 20260 初始化视频处理服务
-INFO 2025-03-01 18:29:42 services 8124 20260 开始处理视频: session_id=313584e9-7229-4892-8f40-f77eb265b1e0
-INFO 2025-03-01 18:29:46 services 8124 20260 DTW分析完成: 0.039118676231252085
-INFO 2025-03-01 18:29:46 services 8124 20260 保存分析结果: 总帧数=53
-INFO 2025-03-01 18:29:47 services 8124 20260 开始生成HLS流: ['ffmpeg', '-i', 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\313584e9-7229-4892-8f40-f77eb265b1e0\\exercise_annotated.mp4', '-hls_time', '2', '-hls_list_size', '0', '-f', 'hls', 'F:\\DjangoRestfulAPI\\openpose3\\pose\\media\\hls\\313584e9-7229-4892-8f40-f77eb265b1e0\\output.m3u8']
-INFO 2025-03-01 18:29:48 services 8124 20260 HLS 流处理已启动: F:\DjangoRestfulAPI\openpose3\pose\media\hls\313584e9-7229-4892-8f40-f77eb265b1e0/output.m3u8
-INFO 2025-03-01 18:29:48 services 8124 20260 已生成标注视频: F:\DjangoRestfulAPI\openpose3\pose\media\hls\313584e9-7229-4892-8f40-f77eb265b1e0\standard_annotated.mp4, F:\DjangoRestfulAPI\openpose3\pose\media\hls\313584e9-7229-4892-8f40-f77eb265b1e0\exercise_annotated.mp4
-INFO 2025-03-01 18:29:48 basehttp 8124 20260 "POST /upload-videos/ HTTP/1.1" 201 312
-WARNING 2025-03-01 18:29:49 log 8124 24520 Not Found: /media/hls/313584e9-7229-4892-8f40-f77eb265b1e0
-WARNING 2025-03-01 18:29:49 basehttp 8124 24520 "GET /media/hls/313584e9-7229-4892-8f40-f77eb265b1e0 HTTP/1.1" 404 2349
-WARNING 2025-03-01 18:29:49 log 8124 20864 Not Found: /media/hls/313584e9-7229-4892-8f40-f77eb265b1e0
-WARNING 2025-03-01 18:29:49 basehttp 8124 20864 "GET /media/hls/313584e9-7229-4892-8f40-f77eb265b1e0 HTTP/1.1" 404 2349
-INFO 2025-03-01 19:16:33 autoreload 8124 15192 F:\DjangoRestfulAPI\openpose3\pose\pose\urls.py changed, reloading.
-INFO 2025-03-01 19:16:34 autoreload 21192 14568 Watching for file changes with StatReloader
-INFO 2025-03-01 19:18:49 autoreload 21192 14568 F:\DjangoRestfulAPI\openpose3\pose\pose\settings.py changed, reloading.
-INFO 2025-03-01 19:18:50 autoreload 25940 26200 Watching for file changes with StatReloader
-INFO 2025-03-01 19:19:00 autoreload 25940 26200 F:\DjangoRestfulAPI\openpose3\pose\pose\urls.py changed, reloading.
-INFO 2025-03-01 19:19:01 autoreload 23372 16388 Watching for file changes with StatReloader
+INFO 2025-03-03 21:16:31 autoreload 8208 5516 Watching for file changes with StatReloader
+INFO 2025-03-03 21:17:36 views 8208 12032 收到请求: http://localhost:3000
+INFO 2025-03-03 21:17:36 serializers 8208 12032 开始验证base64编码的视频数据
+INFO 2025-03-03 21:17:36 serializers 8208 12032 视频数据验证通过
+INFO 2025-03-03 21:17:36 views 8208 12032 创建会话成功: c8d30a36-1652-4ba7-9655-a40dfabfda04
+INFO 2025-03-03 21:17:36 services 8208 12032 初始化视频处理服务
+INFO 2025-03-03 21:17:36 services 8208 12032 开始处理视频: session_id=c8d30a36-1652-4ba7-9655-a40dfabfda04
+INFO 2025-03-03 21:17:40 services 8208 12032 DTW分析完成: 0.039118676231252085
+INFO 2025-03-03 21:17:40 services 8208 12032 开始生成overlap视频的HLS流: ffmpeg -i F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\overlap_annotated.mp4 -hls_time 2 -hls_list_size 0 -hls_segment_filename F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\overlap_%03d.ts -f hls F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\overlap.m3u8
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: ffmpeg version 7.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: built with gcc 13.2.0 (Rev5, Built by MSYS2 project)
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: libavutil      59.  8.100 / 59.  8.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: libavcodec     61.  3.100 / 61.  3.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: libavformat    61.  1.100 / 61.  1.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: libavdevice    61.  1.100 / 61.  1.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: libavfilter    10.  1.100 / 10.  1.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: libswscale      8.  1.100 /  8.  1.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: libswresample   5.  1.100 /  5.  1.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: libpostproc    58.  1.100 / 58.  1.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\overlap_annotated.mp4':
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Metadata:
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: encoder         : Lavf58.76.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Duration: 00:00:01.77, start: 0.000000, bitrate: 4472 kb/s
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Stream #0:0[0x1](und): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 4467 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Metadata:
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Stream mapping:
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Stream #0:0 -> #0:0 (mpeg4 (native) -> h264 (libx264))
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Press [q] to stop, [?] for help
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] using SAR=1/1
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] profile High, level 3.1, 4:2:0, 8-bit
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] 264 - core 164 r3191 4613ac3 - H.264/MPEG-4 AVC codec - Copyleft 2003-2024 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=22 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Output #0, hls, to 'F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\overlap.m3u8':
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Metadata:
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: encoder         : Lavf61.1.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Stream #0:0(und): Video: h264, yuv420p(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 90k tbn (default)
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Metadata:
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: encoder         : Lavc61.3.100 libx264
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Side data:
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [hls @ 0000016c52de3440] Opening 'F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\overlap_000.ts' for writing
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [hls @ 0000016c52de3440] Opening 'F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\overlap.m3u8.tmp' for writing
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [out#0/hls @ 0000016c52dec700] video:401KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: frame=   53 fps=0.0 q=-1.0 Lsize=N/A time=00:00:01.70 bitrate=N/A speed=5.01x
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] frame I:1     Avg QP:19.00  size: 18646
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] frame P:40    Avg QP:21.79  size:  8554
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] frame B:12    Avg QP:23.65  size:  4119
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] consecutive B-frames: 62.3% 18.9% 11.3%  7.5%
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] mb I  I16..4: 48.0% 47.8%  4.1%
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] mb P  I16..4:  3.2%  7.5%  0.3%  P16..4: 33.0%  5.5%  2.9%  0.0%  0.0%    skip:47.7%
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] mb B  I16..4:  0.9%  1.7%  0.0%  B16..8: 38.9%  2.8%  0.5%  direct: 1.8%  skip:53.3%  L0:52.8% L1:43.4% BI: 3.9%
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] 8x8 transform intra:64.7% inter:83.5%
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] coded y,uvDC,uvAC intra: 28.0% 29.9% 2.6% inter: 8.4% 8.7% 1.6%
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] i16 v,h,dc,p: 41% 40% 16%  4%
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 26% 40%  1%  1%  1%  1%  1%  1%
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 36% 30% 18%  2%  2%  3%  2%  2%  5%
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] i8c dc,h,v,p: 52% 25% 21%  2%
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] Weighted P-Frames: Y:0.0% UV:0.0%
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] ref P L0: 73.6% 10.7% 11.9%  3.8%
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] ref B L0: 85.8% 12.3%  1.8%
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] ref B L1: 99.0%  1.0%
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 0000016c52e34b40] kb/s:1857.64
+INFO 2025-03-03 21:17:42 services 8208 12032 HLS 流处理完成: F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04/overlap.m3u8
+INFO 2025-03-03 21:17:42 services 8208 12032 开始生成standard视频的HLS流: ffmpeg -i F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\standard_annotated.mp4 -hls_time 2 -hls_list_size 0 -hls_segment_filename F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\standard_%03d.ts -f hls F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\standard.m3u8
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: ffmpeg version 7.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: built with gcc 13.2.0 (Rev5, Built by MSYS2 project)
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: libavutil      59.  8.100 / 59.  8.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: libavcodec     61.  3.100 / 61.  3.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: libavformat    61.  1.100 / 61.  1.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: libavdevice    61.  1.100 / 61.  1.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: libavfilter    10.  1.100 / 10.  1.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: libswscale      8.  1.100 /  8.  1.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: libswresample   5.  1.100 /  5.  1.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: libpostproc    58.  1.100 / 58.  1.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\standard_annotated.mp4':
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Metadata:
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: encoder         : Lavf58.76.100
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Duration: 00:00:03.20, start: 0.000000, bitrate: 4503 kb/s
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Stream #0:0[0x1](und): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 4500 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Metadata:
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Stream mapping:
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Stream #0:0 -> #0:0 (mpeg4 (native) -> h264 (libx264))
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: Press [q] to stop, [?] for help
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] using SAR=1/1
+DEBUG 2025-03-03 21:17:42 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] profile High, level 3.1, 4:2:0, 8-bit
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] 264 - core 164 r3191 4613ac3 - H.264/MPEG-4 AVC codec - Copyleft 2003-2024 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=22 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Output #0, hls, to 'F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\standard.m3u8':
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Metadata:
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: encoder         : Lavf61.1.100
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Stream #0:0(und): Video: h264, yuv420p(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 90k tbn (default)
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Metadata:
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: encoder         : Lavc61.3.100 libx264
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Side data:
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [hls @ 000001f81d32c540] Opening 'F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\standard_000.ts' for writing
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [hls @ 000001f81d32c540] Opening 'F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\standard.m3u8.tmp' for writing
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [out#0/hls @ 000001f81d32fe80] video:651KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: frame=   96 fps=0.0 q=-1.0 Lsize=N/A time=00:00:03.13 bitrate=N/A speed=6.47x
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] frame I:1     Avg QP:18.90  size: 19346
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] frame P:46    Avg QP:21.42  size: 10820
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] frame B:49    Avg QP:23.36  size:  3046
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] consecutive B-frames: 20.8% 27.1% 18.8% 33.3%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] mb I  I16..4: 45.5% 47.7%  6.8%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] mb P  I16..4:  3.5%  8.5%  0.3%  P16..4: 33.5%  7.7%  4.1%  0.0%  0.0%    skip:42.3%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] mb B  I16..4:  0.7%  1.3%  0.0%  B16..8: 38.0%  2.0%  0.5%  direct: 1.9%  skip:55.7%  L0:52.7% L1:44.6% BI: 2.7%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] 8x8 transform intra:65.5% inter:79.6%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] coded y,uvDC,uvAC intra: 27.8% 31.8% 2.6% inter: 7.7% 8.5% 1.4%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] i16 v,h,dc,p: 41% 40% 14%  5%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 27% 24% 43%  1%  1%  1%  1%  1%  1%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 35% 32% 21%  2%  2%  2%  2%  2%  4%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] i8c dc,h,v,p: 50% 26% 22%  1%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] Weighted P-Frames: Y:0.0% UV:0.0%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] ref P L0: 76.0%  6.9% 12.8%  4.3%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] ref B L0: 84.8% 13.5%  1.7%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] ref B L1: 98.2%  1.8%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001f81d32e980] kb/s:1665.72
+INFO 2025-03-03 21:17:43 services 8208 12032 HLS 流处理完成: F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04/standard.m3u8
+INFO 2025-03-03 21:17:43 services 8208 12032 开始生成exercise视频的HLS流: ffmpeg -i F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\exercise_annotated.mp4 -hls_time 2 -hls_list_size 0 -hls_segment_filename F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\exercise_%03d.ts -f hls F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\exercise.m3u8
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: ffmpeg version 7.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: built with gcc 13.2.0 (Rev5, Built by MSYS2 project)
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: libavutil      59.  8.100 / 59.  8.100
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: libavcodec     61.  3.100 / 61.  3.100
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: libavformat    61.  1.100 / 61.  1.100
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: libavdevice    61.  1.100 / 61.  1.100
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: libavfilter    10.  1.100 / 10.  1.100
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: libswscale      8.  1.100 /  8.  1.100
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: libswresample   5.  1.100 /  5.  1.100
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: libpostproc    58.  1.100 / 58.  1.100
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\exercise_annotated.mp4':
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Metadata:
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: encoder         : Lavf58.76.100
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Duration: 00:00:01.77, start: 0.000000, bitrate: 4393 kb/s
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Stream #0:0[0x1](und): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 4388 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Metadata:
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Stream mapping:
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Stream #0:0 -> #0:0 (mpeg4 (native) -> h264 (libx264))
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Press [q] to stop, [?] for help
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] using SAR=1/1
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] profile High, level 3.1, 4:2:0, 8-bit
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] 264 - core 164 r3191 4613ac3 - H.264/MPEG-4 AVC codec - Copyleft 2003-2024 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=22 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Output #0, hls, to 'F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\exercise.m3u8':
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Metadata:
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: encoder         : Lavf61.1.100
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Stream #0:0(und): Video: h264, yuv420p(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 90k tbn (default)
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Metadata:
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: encoder         : Lavc61.3.100 libx264
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: Side data:
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [hls @ 000001e421bb3440] Opening 'F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\exercise_000.ts' for writing
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [hls @ 000001e421bb3440] Opening 'F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04\exercise.m3u8.tmp' for writing
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [out#0/hls @ 000001e421bbc700] video:392KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: frame=   53 fps=0.0 q=-1.0 Lsize=N/A time=00:00:01.70 bitrate=N/A speed=4.88x
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] frame I:1     Avg QP:18.64  size: 20225
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] frame P:41    Avg QP:21.89  size:  8357
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] frame B:11    Avg QP:23.41  size:  3457
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] consecutive B-frames: 62.3% 26.4% 11.3%  0.0%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] mb I  I16..4: 51.7% 44.1%  4.2%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] mb P  I16..4:  3.2%  7.5%  0.3%  P16..4: 33.1%  5.6%  3.1%  0.0%  0.0%    skip:47.3%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] mb B  I16..4:  0.7%  1.3%  0.0%  B16..8: 36.7%  2.5%  0.4%  direct: 2.1%  skip:56.2%  L0:52.3% L1:44.8% BI: 3.0%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] 8x8 transform intra:63.9% inter:82.7%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] coded y,uvDC,uvAC intra: 28.1% 30.2% 2.4% inter: 8.5% 9.0% 1.9%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] i16 v,h,dc,p: 41% 40% 14%  4%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 26% 41%  1%  1%  1%  1%  1%  1%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 40% 30% 17%  2%  2%  3%  2%  2%  2%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] i8c dc,h,v,p: 52% 25% 21%  2%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] Weighted P-Frames: Y:0.0% UV:0.0%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] ref P L0: 73.6% 11.0% 11.8%  3.7%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] ref B L0: 83.0% 15.8%  1.2%
+DEBUG 2025-03-03 21:17:43 services 8208 12032 FFmpeg 输出: [libx264 @ 000001e421ba2bc0] kb/s:1815.36
+INFO 2025-03-03 21:17:43 services 8208 12032 HLS 流处理完成: F:\DjangoRestfulAPI\openpose3\pose\media\hls\c8d30a36-1652-4ba7-9655-a40dfabfda04/exercise.m3u8
+INFO 2025-03-03 21:17:43 services 8208 12032 视频处理完成，HLS转换状态: {'dtw_success': True, 'hls_success': True, 'standard_hls': True, 'exercise_hls': True, 'overlap_hls': True}
+INFO 2025-03-03 21:17:43 basehttp 8208 12032 "POST /upload-videos/ HTTP/1.1" 201 683
+INFO 2025-03-03 21:17:43 basehttp 8208 22428 "GET /media/hls/c8d30a36-1652-4ba7-9655-a40dfabfda04/standard.m3u8 HTTP/1.1" 200 122
+INFO 2025-03-03 21:17:43 basehttp 8208 22368 "GET /media/hls/c8d30a36-1652-4ba7-9655-a40dfabfda04/exercise.m3u8 HTTP/1.1" 200 122
+INFO 2025-03-03 21:17:52 basehttp 8208 22428 "GET /media/hls/c8d30a36-1652-4ba7-9655-a40dfabfda04/exercise_000.ts HTTP/1.1" 200 417924
+INFO 2025-03-03 21:17:52 basehttp 8208 22368 "GET /media/hls/c8d30a36-1652-4ba7-9655-a40dfabfda04/standard_000.ts HTTP/1.1" 200 693908
+INFO 2025-03-04 16:12:28 autoreload 10752 16352 Watching for file changes with StatReloader
+WARNING 2025-03-04 16:12:45 log 10752 20464 Not Found: /
+WARNING 2025-03-04 16:12:45 basehttp 10752 20464 "GET / HTTP/1.1" 404 179
+WARNING 2025-03-04 16:12:45 log 10752 13964 Not Found: /favicon.ico
+WARNING 2025-03-04 16:12:45 basehttp 10752 13964 "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-03-04 16:13:11 basehttp 10752 21052 "GET /frame-scores/c8d30a3616524ba79655a40dfabfda04 HTTP/1.1" 301 0
+INFO 2025-03-04 16:13:11 basehttp 10752 1168 "GET /frame-scores/c8d30a3616524ba79655a40dfabfda04/ HTTP/1.1" 200 12674
+WARNING 2025-03-04 16:13:11 log 10752 1168 Not Found: /static/rest_framework/css/bootstrap.min.css
+WARNING 2025-03-04 16:13:11 basehttp 10752 1168 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
+WARNING 2025-03-04 16:13:11 log 10752 20556 Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+WARNING 2025-03-04 16:13:11 log 10752 20980 Not Found: /static/rest_framework/css/prettify.css
+WARNING 2025-03-04 16:13:11 log 10752 1168 Not Found: /static/rest_framework/js/csrf.js
+WARNING 2025-03-04 16:13:11 basehttp 10752 20556 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
+WARNING 2025-03-04 16:13:11 log 10752 18520 Not Found: /static/rest_framework/css/default.css
+WARNING 2025-03-04 16:13:11 basehttp 10752 20980 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
+WARNING 2025-03-04 16:13:11 basehttp 10752 1168 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
+WARNING 2025-03-04 16:13:11 log 10752 20660 Not Found: /static/rest_framework/js/jquery-3.7.1.min.js
+WARNING 2025-03-04 16:13:11 log 10752 20556 Not Found: /static/rest_framework/js/prettify-min.js
+WARNING 2025-03-04 16:13:11 basehttp 10752 18520 "GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
+WARNING 2025-03-04 16:13:11 log 10752 21016 Not Found: /static/rest_framework/js/ajax-form.js
+WARNING 2025-03-04 16:13:11 log 10752 20980 Not Found: /static/rest_framework/js/bootstrap.min.js
+WARNING 2025-03-04 16:13:11 log 10752 1168 Not Found: /static/rest_framework/js/default.js
+WARNING 2025-03-04 16:13:11 log 10752 18520 Not Found: /static/rest_framework/js/load-ajax-form.js
+WARNING 2025-03-04 16:13:11 basehttp 10752 20660 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 404 179
+WARNING 2025-03-04 16:13:11 basehttp 10752 20556 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
+WARNING 2025-03-04 16:13:11 basehttp 10752 21016 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
+WARNING 2025-03-04 16:13:11 basehttp 10752 20980 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-03-04 16:13:11 basehttp 10752 1168 "GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
+WARNING 2025-03-04 16:13:11 basehttp 10752 18520 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 404 179
+INFO 2025-03-04 16:13:40 autoreload 10752 16352 F:\DjangoRestfulAPI\openpose3\pose\pose\urls.py changed, reloading.
+INFO 2025-03-04 16:13:41 autoreload 2456 20204 Watching for file changes with StatReloader
+INFO 2025-03-04 16:16:20 autoreload 2456 20204 F:\DjangoRestfulAPI\openpose3\pose\evalpose\views.py changed, reloading.
+INFO 2025-03-04 16:16:21 autoreload 21232 2144 Watching for file changes with StatReloader
