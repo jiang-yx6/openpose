@@ -223,4 +223,4 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 # 如果您希望允许所有来源，可以使用以下配置（不推荐用于生产环境）
-#CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True

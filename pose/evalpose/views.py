@@ -61,6 +61,7 @@ class VideoUploadView(APIView):
                     'exercise_worst_frames': [f'/media/hls/{session.session_id}/patient_frame_1.jpg',
                                               f'/media/hls/{session.session_id}/patient_frame_2.jpg',
                                               f'/media/hls/{session.session_id}/patient_frame_3.jpg'],
+                    'frame_scores': process_result['frame_scores'],
                     'processing_status': {
                         'dtw_success': process_result['dtw_success'],
                         'hls_success': process_result['hls_success'],
@@ -99,8 +100,7 @@ class FrameScoresView(APIView):
             "session_id": session_id,
             "frame_scores": frame_scores
         }
-        return Response(response_data, status=status.HTTP_200_OK)
-        
+        return Response(response_data, status=status.HTTP_200_OK)        
 
 
 class TestUploadView(APIView):
