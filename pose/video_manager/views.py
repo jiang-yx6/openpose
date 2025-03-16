@@ -137,14 +137,8 @@ def get_all_videos(request):
                 'tag4': video.tag4,
                 'tag5': video.tag5,
             },
-            'video_paths': {
-                'original': video.original_mp4_path,
-                'processed': video.mp4_path,
-            },
-            'cover_paths': {
-                'original': video.original_cover_path,
-                'processed': video.cover_path,
-            },
+            'video_paths': video.mp4_path,
+            'cover_paths': video.cover_path,
         }
         video_list.append(video_data)
     
