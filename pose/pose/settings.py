@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'rest_framework',
     'evalpose',
+    'video_manager',
     'corsheaders',
+    'drf_yasg',  # Api docs
 ]
 
 MIDDLEWARE = [

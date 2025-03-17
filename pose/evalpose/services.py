@@ -75,7 +75,8 @@ class VideoProcessingService:
             'hls_success': False,
             'standard_hls': False,
             'exercise_hls': False,
-            'overlap_hls': False
+            'overlap_hls': False,
+            'frame_scores': []
         }
         
         self.hls_ouput_path = os.path.join(settings.MEDIA_ROOT, 'hls', str(session_id))
@@ -102,6 +103,7 @@ class VideoProcessingService:
             session.similarity_score = float(dtw_result['similarity_score'] * 100)
             session.frame_data = {'std_frame_data': std_sequence, 'exercise_frame_data': exe_sequence}
             session.frame_scores = {str(idx): float(score) for idx, score in dtw_result['frame_scores']}
+            result['frame_scores'] = session.frame_scores
             session.status = 'completed'
             session.save()
 
@@ -152,7 +154,7 @@ class VideoProcessingService:
             result['standard_hls'] = self._generate_hls_stream(session_id, std_output_path, 'standard')
             result['exercise_hls'] = self._generate_hls_stream(session_id, ex_output_path, 'exercise')
             result['hls_success'] = result['standard_hls'] and result['exercise_hls'] and  result['overlap_hls']
-
+            
             logger.info(f"视频处理完成，HLS转换状态: {result}")
             return result
 
