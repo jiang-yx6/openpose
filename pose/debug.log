@@ -5504,3 +5504,115 @@ WARNING 2025-03-17 03:36:13 log 34976 16668 Not Found: /static/drf-yasg/redoc/re
 WARNING 2025-03-17 03:36:13 basehttp 34976 16668 "GET /static/drf-yasg/redoc/redoc-logo.png HTTP/1.1" 404 179
 INFO 2025-03-17 03:36:40 autoreload 34976 34980 E:\Digital_people\openpose\app\pose\pose\api_docs.py changed, reloading.
 INFO 2025-03-17 03:36:41 autoreload 31260 3988 Watching for file changes with StatReloader
+INFO 2025-03-17 17:06:14 autoreload 4048 3332 Watching for file changes with StatReloader
+WARNING 2025-03-17 17:06:39 log 4048 15072 Not Found: /
+WARNING 2025-03-17 17:06:39 basehttp 4048 15072 "GET / HTTP/1.1" 404 179
+WARNING 2025-03-17 17:06:39 log 4048 15072 Not Found: /favicon.ico
+WARNING 2025-03-17 17:06:39 basehttp 4048 15072 "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-03-17 17:06:51 basehttp 4048 15072 "GET /api-docs/swagger HTTP/1.1" 301 0
+INFO 2025-03-17 17:06:51 basehttp 4048 18664 "GET /api-docs/swagger/ HTTP/1.1" 200 2230
+WARNING 2025-03-17 17:06:52 log 4048 18664 Not Found: /static/drf-yasg/style.css
+WARNING 2025-03-17 17:06:52 basehttp 4048 18664 "GET /static/drf-yasg/style.css HTTP/1.1" 404 179
+WARNING 2025-03-17 17:06:52 log 4048 18664 Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui.css
+WARNING 2025-03-17 17:06:52 basehttp 4048 18664 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 404 179
+WARNING 2025-03-17 17:06:52 log 4048 18664 Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js
+WARNING 2025-03-17 17:06:52 basehttp 4048 18664 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 404 179
+WARNING 2025-03-17 17:06:52 log 4048 18664 Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js
+WARNING 2025-03-17 17:06:52 basehttp 4048 18664 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 404 179
+WARNING 2025-03-17 17:06:52 log 4048 18664 Not Found: /static/drf-yasg/insQ.min.js
+WARNING 2025-03-17 17:06:52 basehttp 4048 18664 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 404 179
+WARNING 2025-03-17 17:06:52 log 4048 18664 Not Found: /static/drf-yasg/immutable.min.js
+WARNING 2025-03-17 17:06:52 basehttp 4048 18664 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 404 179
+WARNING 2025-03-17 17:06:52 log 4048 18664 Not Found: /static/drf-yasg/swagger-ui-init.js
+WARNING 2025-03-17 17:06:52 basehttp 4048 18664 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 404 179
+WARNING 2025-03-17 17:06:52 log 4048 18664 Not Found: /static/drf-yasg/swagger-ui-dist/favicon-32x32.png
+WARNING 2025-03-17 17:06:52 basehttp 4048 18664 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 404 179
+INFO 2025-03-17 17:06:57 basehttp 4048 18664 "GET /api-docs/redoc/ HTTP/1.1" 200 935
+WARNING 2025-03-17 17:06:57 log 4048 18664 Not Found: /static/drf-yasg/style.css
+WARNING 2025-03-17 17:06:57 basehttp 4048 18664 "GET /static/drf-yasg/style.css HTTP/1.1" 404 179
+WARNING 2025-03-17 17:06:57 log 4048 19308 Not Found: /static/drf-yasg/insQ.min.js
+WARNING 2025-03-17 17:06:57 log 4048 8328 Not Found: /static/drf-yasg/redoc/redoc.min.js
+WARNING 2025-03-17 17:06:57 log 4048 22108 Not Found: /static/drf-yasg/redoc-init.js
+WARNING 2025-03-17 17:06:57 basehttp 4048 19308 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 404 179
+WARNING 2025-03-17 17:06:57 basehttp 4048 22108 "GET /static/drf-yasg/redoc-init.js HTTP/1.1" 404 179
+WARNING 2025-03-17 17:06:57 basehttp 4048 8328 "GET /static/drf-yasg/redoc/redoc.min.js HTTP/1.1" 404 179
+WARNING 2025-03-17 17:06:57 log 4048 8328 Not Found: /static/drf-yasg/redoc/redoc-logo.png
+WARNING 2025-03-17 17:06:57 basehttp 4048 8328 "GET /static/drf-yasg/redoc/redoc-logo.png HTTP/1.1" 404 179
+INFO 2025-03-17 17:08:45 autoreload 4048 3332 E:\Digital_people\openpose\app\pose\pose\urls.py changed, reloading.
+INFO 2025-03-17 17:08:46 autoreload 20368 19664 Watching for file changes with StatReloader
+INFO 2025-03-17 17:09:14 autoreload 20368 19664 E:\Digital_people\openpose\app\pose\video_manager\urls.py changed, reloading.
+INFO 2025-03-17 17:09:15 autoreload 13828 20584 Watching for file changes with StatReloader
+INFO 2025-03-17 17:09:27 basehttp 13828 6728 "GET /api-docs/redoc/ HTTP/1.1" 200 935
+WARNING 2025-03-17 17:09:27 log 13828 6728 Not Found: /static/drf-yasg/style.css
+WARNING 2025-03-17 17:09:27 basehttp 13828 6728 "GET /static/drf-yasg/style.css HTTP/1.1" 404 179
+WARNING 2025-03-17 17:09:27 log 13828 6728 Not Found: /static/drf-yasg/insQ.min.js
+WARNING 2025-03-17 17:09:27 basehttp 13828 6728 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 404 179
+WARNING 2025-03-17 17:09:27 log 13828 6728 Not Found: /static/drf-yasg/redoc-init.js
+WARNING 2025-03-17 17:09:27 basehttp 13828 6728 "GET /static/drf-yasg/redoc-init.js HTTP/1.1" 404 179
+WARNING 2025-03-17 17:09:27 log 13828 6728 Not Found: /static/drf-yasg/redoc/redoc.min.js
+WARNING 2025-03-17 17:09:27 basehttp 13828 6728 "GET /static/drf-yasg/redoc/redoc.min.js HTTP/1.1" 404 179
+INFO 2025-03-17 17:15:26 autoreload 18460 21912 Watching for file changes with StatReloader
+INFO 2025-03-17 17:15:34 basehttp 18460 21164 "GET /api-docs/redoc/ HTTP/1.1" 200 935
+WARNING 2025-03-17 17:15:34 log 18460 21164 Not Found: /static/drf-yasg/style.css
+WARNING 2025-03-17 17:15:34 basehttp 18460 21164 "GET /static/drf-yasg/style.css HTTP/1.1" 404 179
+WARNING 2025-03-17 17:15:34 log 18460 21164 Not Found: /static/drf-yasg/insQ.min.js
+WARNING 2025-03-17 17:15:34 basehttp 18460 21164 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 404 179
+WARNING 2025-03-17 17:15:34 log 18460 21164 Not Found: /static/drf-yasg/redoc-init.js
+WARNING 2025-03-17 17:15:34 basehttp 18460 21164 "GET /static/drf-yasg/redoc-init.js HTTP/1.1" 404 179
+WARNING 2025-03-17 17:15:34 log 18460 21164 Not Found: /static/drf-yasg/redoc/redoc.min.js
+WARNING 2025-03-17 17:15:34 basehttp 18460 21164 "GET /static/drf-yasg/redoc/redoc.min.js HTTP/1.1" 404 179
+INFO 2025-03-17 17:15:45 autoreload 18460 21912 E:\Digital_people\openpose\app\pose\pose\urls.py changed, reloading.
+INFO 2025-03-17 17:15:46 autoreload 20544 5716 Watching for file changes with StatReloader
+INFO 2025-03-17 17:15:50 basehttp 20544 6560 "GET /api-docs/redoc/ HTTP/1.1" 200 935
+WARNING 2025-03-17 17:15:50 log 20544 6560 Not Found: /static/drf-yasg/style.css
+WARNING 2025-03-17 17:15:50 basehttp 20544 6560 "GET /static/drf-yasg/style.css HTTP/1.1" 404 179
+WARNING 2025-03-17 17:15:50 log 20544 6560 Not Found: /static/drf-yasg/insQ.min.js
+WARNING 2025-03-17 17:15:50 basehttp 20544 6560 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 404 179
+WARNING 2025-03-17 17:15:50 log 20544 6560 Not Found: /static/drf-yasg/redoc-init.js
+WARNING 2025-03-17 17:15:50 basehttp 20544 6560 "GET /static/drf-yasg/redoc-init.js HTTP/1.1" 404 179
+WARNING 2025-03-17 17:15:50 log 20544 6560 Not Found: /static/drf-yasg/redoc/redoc.min.js
+WARNING 2025-03-17 17:15:50 basehttp 20544 6560 "GET /static/drf-yasg/redoc/redoc.min.js HTTP/1.1" 404 179
+INFO 2025-03-17 17:17:33 autoreload 20544 5716 E:\Digital_people\openpose\app\pose\pose\urls.py changed, reloading.
+INFO 2025-03-17 17:17:34 autoreload 9492 19004 Watching for file changes with StatReloader
+INFO 2025-03-17 17:17:40 basehttp 9492 22456 "GET /api-docs/redoc/ HTTP/1.1" 200 935
+WARNING 2025-03-17 17:17:40 log 9492 22456 Not Found: /static/drf-yasg/style.css
+WARNING 2025-03-17 17:17:40 basehttp 9492 22456 "GET /static/drf-yasg/style.css HTTP/1.1" 404 179
+WARNING 2025-03-17 17:17:40 log 9492 22456 Not Found: /static/drf-yasg/insQ.min.js
+WARNING 2025-03-17 17:17:40 basehttp 9492 22456 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 404 179
+WARNING 2025-03-17 17:17:40 log 9492 22456 Not Found: /static/drf-yasg/redoc-init.js
+WARNING 2025-03-17 17:17:40 basehttp 9492 22456 "GET /static/drf-yasg/redoc-init.js HTTP/1.1" 404 179
+WARNING 2025-03-17 17:17:40 log 9492 22456 Not Found: /static/drf-yasg/redoc/redoc.min.js
+WARNING 2025-03-17 17:17:40 basehttp 9492 22456 "GET /static/drf-yasg/redoc/redoc.min.js HTTP/1.1" 404 179
+INFO 2025-03-17 17:19:26 autoreload 9492 19004 E:\Digital_people\openpose\app\pose\pose\settings.py changed, reloading.
+INFO 2025-03-17 17:19:27 autoreload 19572 20620 Watching for file changes with StatReloader
+INFO 2025-03-17 17:19:34 basehttp 19572 3816 "GET /api-docs/redoc/ HTTP/1.1" 200 935
+INFO 2025-03-17 17:19:34 basehttp 19572 3816 "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2025-03-17 17:19:34 basehttp 19572 3816 "GET /static/drf-yasg/redoc-init.js HTTP/1.1" 200 2566
+INFO 2025-03-17 17:19:34 basehttp 19572 3816 "GET /static/drf-yasg/redoc/redoc.min.js HTTP/1.1" 200 1042511
+INFO 2025-03-17 17:19:34 basehttp 19572 14772 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2025-03-17 17:19:34 basehttp 19572 14772 "GET /api-docs/redoc/?format=openapi HTTP/1.1" 200 2473
+INFO 2025-03-17 17:19:56 basehttp 19572 14772 "GET /api-docs/swagger/ HTTP/1.1" 200 2230
+INFO 2025-03-17 17:19:56 basehttp 19572 21860 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2025-03-17 17:19:56 basehttp 19572 14772 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2025-03-17 17:19:56 basehttp 19572 7116 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2025-03-17 17:19:56 basehttp 19572 21496 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2025-03-17 17:19:56 basehttp 19572 3816 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2025-03-17 17:19:56 basehttp 19572 3816 "GET /api-docs/swagger/?format=openapi HTTP/1.1" 200 2473
+INFO 2025-03-17 17:36:57 autoreload 19572 20620 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 17:36:58 autoreload 3416 16356 Watching for file changes with StatReloader
+INFO 2025-03-17 17:37:42 autoreload 3416 16356 E:\Digital_people\openpose\app\pose\video_manager\urls.py changed, reloading.
+INFO 2025-03-17 17:37:43 autoreload 21116 11100 Watching for file changes with StatReloader
+INFO 2025-03-17 17:37:49 autoreload 21116 11100 E:\Digital_people\openpose\app\pose\video_manager\urls.py changed, reloading.
+INFO 2025-03-17 17:37:50 autoreload 21140 2320 Watching for file changes with StatReloader
+INFO 2025-03-17 17:37:58 autoreload 21140 2320 E:\Digital_people\openpose\app\pose\video_manager\urls.py changed, reloading.
+INFO 2025-03-17 17:37:59 autoreload 18912 21060 Watching for file changes with StatReloader
+INFO 2025-03-17 17:38:09 autoreload 18912 21060 E:\Digital_people\openpose\app\pose\video_manager\urls.py changed, reloading.
+INFO 2025-03-17 17:38:10 autoreload 17520 13528 Watching for file changes with StatReloader
+INFO 2025-03-17 17:38:16 basehttp 17520 8052 "GET /api-docs/swagger/ HTTP/1.1" 200 2230
+INFO 2025-03-17 17:38:16 basehttp 17520 8052 "GET /api-docs/swagger/?format=openapi HTTP/1.1" 200 5064
+INFO 2025-03-17 17:39:39 basehttp 17520 8052 "GET /standard/all/ HTTP/1.1" 200 25660
+WARNING 2025-03-17 17:40:03 log 17520 8052 Not Found: /standard/video/id/02_12/
+WARNING 2025-03-17 17:40:03 basehttp 17520 8052 "GET /standard/video/id/02_12/ HTTP/1.1" 404 37
+INFO 2025-03-17 17:40:10 basehttp 17520 8052 "GET /standard/video/id/02_04/ HTTP/1.1" 200 102926
+INFO 2025-03-17 17:40:54 basehttp 17520 8052 "GET /api-docs/redoc/ HTTP/1.1" 200 935
+INFO 2025-03-17 17:40:54 basehttp 17520 8052 "GET /api-docs/redoc/?format=openapi HTTP/1.1" 200 5064

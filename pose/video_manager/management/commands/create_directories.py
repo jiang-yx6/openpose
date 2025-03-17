@@ -8,8 +8,8 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         # Define directories to create
         directories = [
-            os.path.join(settings.BASE_DIR, 'static', 'standard', 'video'),
-            os.path.join(settings.BASE_DIR, 'static', 'standard', 'cover'),
+            os.path.join(settings.BASE_DIR, 'standard', 'video'),
+            os.path.join(settings.BASE_DIR, 'standard', 'cover'),
         ]
         
         # Create directories
