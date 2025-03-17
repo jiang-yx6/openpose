@@ -10,6 +10,8 @@ from drf_yasg import openapi
 import re
 import logging
 
+logger = logging.getLogger(__name__)
+
 class VideoByTagsView(APIView):
     @swagger_auto_schema(
         operation_description="Get a video by its tag string",
@@ -29,7 +31,13 @@ class VideoByTagsView(APIView):
     )
     def get(self, request, tag_string):
         """Return a video by its tag string"""
+
+        logger.info(f"Received request for video with tag string: {tag_string}")
+
         video_asset = get_object_or_404(VideoAsset, tag_string=tag_string)
+
+        if not video_asset:
+            logger.warning(f"Video with tag string {tag_string} not found")
         
         file_path = os.path.join(settings.BASE_DIR, video_asset.original_mp4_path)
         
@@ -58,7 +66,13 @@ class CoverByTagsView(APIView):
     )
     def get(self, request, tag_string):
         """Return a cover image by its tag string"""
+
+        logger.info(f"Received request for cover image with tag string: {tag_string}")
+
         video_asset = get_object_or_404(VideoAsset, tag_string=tag_string)
+
+        if not video_asset:
+            logger.warning(f"Cover image with tag string {tag_string} not found")
         
         file_path = os.path.join(settings.BASE_DIR, video_asset.original_cover_path)
         
@@ -89,24 +103,29 @@ class VideoByIdView(APIView):
         """Return a video by its numeric ID (format: XX_YY)"""
         parts = video_id.split('_')
         if len(parts) != 2:
+            logger.warning(f"Invalid video ID format: {video_id}")
             return HttpResponseNotFound("Invalid video ID format")
         
         try:
-            folder_id, file_id = parts
+            logger.info(f"Received request for video with ID: {video_id}")
             video_asset = VideoAsset.objects.filter(
                 numeric_id=video_id
             ).first()
             
             if not video_asset:
+                logger.warning(f"Video with ID {video_id} not found")
                 return HttpResponseNotFound("Video not found with the specified ID")
                 
             file_path = os.path.join(settings.BASE_DIR, video_asset.original_mp4_path)
             
             if os.path.exists(file_path):
+                logger.info(f"Returning video file: {file_path}")
                 return FileResponse(open(file_path, 'rb'), content_type='video/mp4')
             else:
+                logger.warning(f"Video file not found: {file_path}")
                 return HttpResponseNotFound("Video file not found")
         except Exception as e:
+            logger.error(f"Error retrieving video: {str(e)}", exc_info=True)
             return HttpResponseNotFound(f"Error retrieving video: {str(e)}")
 
 
@@ -131,15 +150,17 @@ class CoverByIdView(APIView):
         """Return a cover by its numeric ID (format: XX_YY)"""
         parts = cover_id.split('_')
         if len(parts) != 2:
+            logger.warning(f"Invalid cover ID format: {cover_id}")
             return HttpResponseNotFound("Invalid cover ID format")
         
         try:
-            folder_id, file_id = parts
+            logger.info(f"Received request for cover with ID: {cover_id}")
             video_asset = VideoAsset.objects.filter(
                 numeric_id=cover_id
             ).first()
             
             if not video_asset:
+                logger.warning(f"Cover with ID {cover_id} not found")
                 return HttpResponseNotFound("Cover not found with the specified ID")
                 
             cover_path = os.path.join(settings.BASE_DIR, video_asset.original_cover_path)
@@ -147,10 +168,13 @@ class CoverByIdView(APIView):
             file_path = os.path.join(settings.BASE_DIR, cover_path)
             
             if os.path.exists(file_path):
+                logger.info(f"Returning cover file: {file_path}")
                 return FileResponse(open(file_path, 'rb'), content_type='image/webp')
             else:
+                logger.warning(f"Cover file not found: {file_path}")
                 return HttpResponseNotFound("Cover file not found")
         except Exception as e:
+            logger.error(f"Error retrieving cover: {str(e)}", exc_info=True)
             return HttpResponseNotFound(f"Error retrieving cover: {str(e)}")
 
 
@@ -201,7 +225,7 @@ class AllVideosView(APIView):
                 'cover_paths': video.cover_path,
             }
             video_list.append(video_data)
-        
+        logger.info(f"Returning {len(video_list)} video assets")
         return JsonResponse({'videos': video_list})
 
 

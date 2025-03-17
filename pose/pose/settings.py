@@ -188,6 +188,11 @@ LOGGING = {
             'level': 'INFO',
             'propagate': True,
         },
+        'video_manager': {
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        }
     },
 }
 
