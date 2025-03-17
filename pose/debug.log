@@ -5173,3 +5173,334 @@ INFO 2025-03-11 20:55:20 basehttp 16752 10488 "GET /media/hls/d7e3e2a6-2acf-441d
 INFO 2025-03-11 20:55:20 basehttp 16752 26144 "GET /media/hls/d7e3e2a6-2acf-441d-a917-6e9b72764aff/exercise_000.ts HTTP/1.1" 200 417924
 INFO 2025-03-11 20:55:20 basehttp 16752 3832 "GET /media/hls/d7e3e2a6-2acf-441d-a917-6e9b72764aff/overlap_000.ts HTTP/1.1" 200 427136
 INFO 2025-03-11 20:55:20 basehttp 16752 10488 "GET /media/hls/d7e3e2a6-2acf-441d-a917-6e9b72764aff/standard_000.ts HTTP/1.1" 200 693908
+INFO 2025-03-16 21:14:11 autoreload 25964 25648 Watching for file changes with StatReloader
+WARNING 2025-03-16 21:14:28 log 25964 28048 Not Found: /01_02.mp4
+WARNING 2025-03-16 21:14:28 basehttp 25964 28048 "GET /01_02.mp4 HTTP/1.1" 404 179
+WARNING 2025-03-16 21:14:28 log 25964 28048 Not Found: /favicon.ico
+WARNING 2025-03-16 21:14:28 basehttp 25964 28048 "GET /favicon.ico HTTP/1.1" 404 179
+WARNING 2025-03-16 21:14:41 log 25964 28048 Not Found: /static/standard/video/01_02.mp4
+WARNING 2025-03-16 21:14:41 basehttp 25964 28048 "GET /static/standard/video/01_02.mp4 HTTP/1.1" 404 179
+INFO 2025-03-16 21:16:24 autoreload 27840 26216 Watching for file changes with StatReloader
+WARNING 2025-03-16 21:16:28 log 27840 12244 Not Found: /static/standard/video/01_02.mp4
+WARNING 2025-03-16 21:16:28 basehttp 27840 12244 "GET /static/standard/video/01_02.mp4 HTTP/1.1" 404 179
+WARNING 2025-03-16 21:16:29 log 27840 12244 Not Found: /static/standard/video/01_02.mp4
+WARNING 2025-03-16 21:16:29 basehttp 27840 12244 "GET /static/standard/video/01_02.mp4 HTTP/1.1" 404 179
+WARNING 2025-03-16 21:17:55 log 27840 28472 Not Found: /push.services.mozilla.com:443
+WARNING 2025-03-16 21:17:55 basehttp 27840 28472 "CONNECT push.services.mozilla.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 21:18:35 log 27840 12244 Not Found: /static/standard/video/ids/01_02.mp4
+WARNING 2025-03-16 21:18:35 basehttp 27840 12244 "GET /static/standard/video/ids/01_02.mp4 HTTP/1.1" 404 37
+INFO 2025-03-16 21:39:23 autoreload 27840 26216 E:\Digital_people\openpose\app\pose\video_manager\urls.py changed, reloading.
+INFO 2025-03-16 21:39:24 autoreload 22588 26168 Watching for file changes with StatReloader
+INFO 2025-03-16 21:46:29 autoreload 22588 26168 E:\Digital_people\openpose\app\pose\video_manager\urls.py changed, reloading.
+INFO 2025-03-16 21:46:30 autoreload 9852 28436 Watching for file changes with StatReloader
+WARNING 2025-03-16 21:47:55 log 9852 11664 Not Found: /push.services.mozilla.com:443
+WARNING 2025-03-16 21:47:55 basehttp 9852 11664 "CONNECT push.services.mozilla.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 22:08:13 log 9852 18704 Not Found: /cdn.jsdelivr.net:443
+WARNING 2025-03-16 22:08:13 basehttp 9852 18704 "CONNECT cdn.jsdelivr.net:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 22:08:13 log 9852 6164 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-16 22:08:13 basehttp 9852 6164 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 22:08:13 log 9852 21464 Not Found: /cdn.statically.io:443
+WARNING 2025-03-16 22:08:13 basehttp 9852 21464 "CONNECT cdn.statically.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 22:08:13 log 9852 16924 Not Found: /ublockorigin.pages.dev:443
+WARNING 2025-03-16 22:08:13 basehttp 9852 16924 "CONNECT ublockorigin.pages.dev:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 22:08:13 log 9852 9848 Not Found: /raw.githubusercontent.com:443
+WARNING 2025-03-16 22:08:13 basehttp 9852 9848 "CONNECT raw.githubusercontent.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 22:08:18 log 9852 28332 Not Found: /cdn.statically.io:443
+WARNING 2025-03-16 22:08:18 basehttp 9852 28332 "CONNECT cdn.statically.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 22:08:18 log 9852 15416 Not Found: /ublockorigin.pages.dev:443
+WARNING 2025-03-16 22:08:18 basehttp 9852 15416 "CONNECT ublockorigin.pages.dev:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 22:08:18 log 9852 27824 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-16 22:08:18 basehttp 9852 27824 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 22:08:18 log 9852 27736 Not Found: /cdn.jsdelivr.net:443
+WARNING 2025-03-16 22:08:18 basehttp 9852 27736 "CONNECT cdn.jsdelivr.net:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 22:08:18 log 9852 6416 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-16 22:08:18 basehttp 9852 6416 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 22:08:23 log 9852 11672 Not Found: /filters.adtidy.org:443
+WARNING 2025-03-16 22:08:23 basehttp 9852 11672 "CONNECT filters.adtidy.org:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 22:17:55 log 9852 20856 Not Found: /push.services.mozilla.com:443
+WARNING 2025-03-16 22:17:55 basehttp 9852 20856 "CONNECT push.services.mozilla.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 22:40:24 log 9852 22908 Not Found: /shavar.services.mozilla.com:443
+WARNING 2025-03-16 22:40:24 basehttp 9852 22908 "CONNECT shavar.services.mozilla.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 22:47:55 log 9852 27584 Not Found: /push.services.mozilla.com:443
+WARNING 2025-03-16 22:47:55 basehttp 9852 27584 "CONNECT push.services.mozilla.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 23:08:28 log 9852 5948 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-16 23:08:28 basehttp 9852 5948 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 23:08:28 log 9852 10024 Not Found: /cdn.statically.io:443
+WARNING 2025-03-16 23:08:28 basehttp 9852 10024 "CONNECT cdn.statically.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 23:08:28 log 9852 23692 Not Found: /ublockorigin.pages.dev:443
+WARNING 2025-03-16 23:08:28 basehttp 9852 23692 "CONNECT ublockorigin.pages.dev:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 23:08:28 log 9852 14996 Not Found: /cdn.jsdelivr.net:443
+WARNING 2025-03-16 23:08:28 basehttp 9852 14996 "CONNECT cdn.jsdelivr.net:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 23:08:28 log 9852 20588 Not Found: /raw.githubusercontent.com:443
+WARNING 2025-03-16 23:08:28 basehttp 9852 20588 "CONNECT raw.githubusercontent.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 23:08:33 log 9852 11736 Not Found: /cdn.jsdelivr.net:443
+WARNING 2025-03-16 23:08:33 basehttp 9852 11736 "CONNECT cdn.jsdelivr.net:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 23:08:33 log 9852 3556 Not Found: /cdn.statically.io:443
+WARNING 2025-03-16 23:08:33 basehttp 9852 3556 "CONNECT cdn.statically.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 23:08:33 log 9852 12052 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-16 23:08:33 basehttp 9852 12052 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 23:08:33 log 9852 23020 Not Found: /ublockorigin.pages.dev:443
+WARNING 2025-03-16 23:08:33 basehttp 9852 23020 "CONNECT ublockorigin.pages.dev:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 23:08:33 log 9852 25824 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-16 23:08:33 basehttp 9852 25824 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 23:08:38 log 9852 22468 Not Found: /filters.adtidy.org:443
+WARNING 2025-03-16 23:08:38 basehttp 9852 22468 "CONNECT filters.adtidy.org:443 HTTP/1.1" 404 179
+WARNING 2025-03-16 23:17:55 log 9852 9748 Not Found: /push.services.mozilla.com:443
+WARNING 2025-03-16 23:17:55 basehttp 9852 9748 "CONNECT push.services.mozilla.com:443 HTTP/1.1" 404 179
+INFO 2025-03-16 23:23:14 autoreload 29420 2376 Watching for file changes with StatReloader
+WARNING 2025-03-16 23:23:22 log 29420 30812 Not Found: /static/standard/video/ids/01_02.mp4
+WARNING 2025-03-16 23:23:22 basehttp 29420 30812 "GET /static/standard/video/ids/01_02.mp4 HTTP/1.1" 404 179
+WARNING 2025-03-16 23:23:29 log 29420 30812 Not Found: /static/standard/video/id/01_02.mp4
+WARNING 2025-03-16 23:23:29 basehttp 29420 30812 "GET /static/standard/video/id/01_02.mp4 HTTP/1.1" 404 37
+INFO 2025-03-16 23:27:28 autoreload 31984 31364 Watching for file changes with StatReloader
+WARNING 2025-03-16 23:27:34 log 31984 30876 Not Found: /static/standard/video/id/01_02.mp4
+WARNING 2025-03-16 23:27:34 basehttp 31984 30876 "GET /static/standard/video/id/01_02.mp4 HTTP/1.1" 404 37
+WARNING 2025-03-16 23:27:36 log 31984 30876 Not Found: /static/standard/video/id/01_02.mp4
+WARNING 2025-03-16 23:27:36 basehttp 31984 30876 "GET /static/standard/video/id/01_02.mp4 HTTP/1.1" 404 37
+WARNING 2025-03-16 23:28:29 log 31984 30876 Not Found: /static/standard/video/id/137.mp4
+WARNING 2025-03-16 23:28:29 basehttp 31984 30876 "GET /static/standard/video/id/137.mp4 HTTP/1.1" 404 23
+WARNING 2025-03-16 23:28:49 log 31984 30876 Not Found: /static/standard/video/id/01_16.mp4
+WARNING 2025-03-16 23:28:49 basehttp 31984 30876 "GET /static/standard/video/id/01_16.mp4 HTTP/1.1" 404 37
+INFO 2025-03-16 23:29:50 autoreload 31984 31364 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-16 23:29:50 autoreload 17144 19416 Watching for file changes with StatReloader
+INFO 2025-03-16 23:30:05 autoreload 17144 19416 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-16 23:30:05 autoreload 4308 20932 Watching for file changes with StatReloader
+INFO 2025-03-16 23:30:12 basehttp 4308 28272 "GET /static/standard/video/id/01_16.mp4 HTTP/1.1" 200 1682804
+INFO 2025-03-16 23:30:12 basehttp 4308 28272 "GET /static/standard/video/id/01_16.mp4 HTTP/1.1" 200 1682804
+INFO 2025-03-16 23:33:11 autoreload 20892 15668 Watching for file changes with StatReloader
+INFO 2025-03-16 23:33:21 basehttp 20892 15724 "GET /static/standard/video/id/01_16.mp4 HTTP/1.1" 200 1682804
+INFO 2025-03-16 23:33:21 basehttp 20892 15724 "GET /static/standard/video/id/01_16.mp4 HTTP/1.1" 200 1682804
+INFO 2025-03-16 23:33:59 basehttp 20892 15724 "GET /static/standard/video/id/01_16.mp4 HTTP/1.1" 200 1682804
+INFO 2025-03-16 23:33:59 basehttp 20892 15724 "GET /static/standard/video/id/01_16.mp4 HTTP/1.1" 200 1682804
+WARNING 2025-03-16 23:34:05 log 20892 15724 Not Found: /static/standard/cover/tag/踝_踝背屈_俯卧位家属辅助踝背屈-无垫.webp
+WARNING 2025-03-16 23:34:05 basehttp 20892 15724 "GET /static/standard/cover/tag/%E8%B8%9D_%E8%B8%9D%E8%83%8C%E5%B1%88_%E4%BF%AF%E5%8D%A7%E4%BD%8D%E5%AE%B6%E5%B1%9E%E8%BE%85%E5%8A%A9%E8%B8%9D%E8%83%8C%E5%B1%88-%E6%97%A0%E5%9E%AB.webp HTTP/1.1" 404 21
+WARNING 2025-03-16 23:34:21 log 20892 15724 Not Found: /static/standard/video/tag/踝_踝背屈_俯卧位家属辅助踝背屈-无垫.mp4
+WARNING 2025-03-16 23:34:21 basehttp 20892 15724 "GET /static/standard/video/tag/%E8%B8%9D_%E8%B8%9D%E8%83%8C%E5%B1%88_%E4%BF%AF%E5%8D%A7%E4%BD%8D%E5%AE%B6%E5%B1%9E%E8%BE%85%E5%8A%A9%E8%B8%9D%E8%83%8C%E5%B1%88-%E6%97%A0%E5%9E%AB.mp4 HTTP/1.1" 404 20
+WARNING 2025-03-16 23:34:23 log 20892 15724 Not Found: /static/standard/video/tag/踝_踝背屈_俯卧位家属辅助踝背屈-无垫.mp4
+WARNING 2025-03-16 23:34:23 basehttp 20892 15724 "GET /static/standard/video/tag/%E8%B8%9D_%E8%B8%9D%E8%83%8C%E5%B1%88_%E4%BF%AF%E5%8D%A7%E4%BD%8D%E5%AE%B6%E5%B1%9E%E8%BE%85%E5%8A%A9%E8%B8%9D%E8%83%8C%E5%B1%88-%E6%97%A0%E5%9E%AB.mp4 HTTP/1.1" 404 20
+WARNING 2025-03-16 23:47:55 log 20892 27524 Not Found: /push.services.mozilla.com:443
+WARNING 2025-03-16 23:47:55 basehttp 20892 27524 "CONNECT push.services.mozilla.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 00:08:43 log 20892 20828 Not Found: /cdn.jsdelivr.net:443
+WARNING 2025-03-17 00:08:43 basehttp 20892 20828 "CONNECT cdn.jsdelivr.net:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 00:08:43 log 20892 12156 Not Found: /cdn.statically.io:443
+WARNING 2025-03-17 00:08:43 basehttp 20892 12156 "CONNECT cdn.statically.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 00:08:43 log 20892 31504 Not Found: /ublockorigin.pages.dev:443
+WARNING 2025-03-17 00:08:43 basehttp 20892 31504 "CONNECT ublockorigin.pages.dev:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 00:08:43 log 20892 4484 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-17 00:08:43 basehttp 20892 4484 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 00:08:43 log 20892 4380 Not Found: /raw.githubusercontent.com:443
+WARNING 2025-03-17 00:08:43 basehttp 20892 4380 "CONNECT raw.githubusercontent.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 00:08:48 log 20892 29864 Not Found: /ublockorigin.pages.dev:443
+WARNING 2025-03-17 00:08:48 basehttp 20892 29864 "CONNECT ublockorigin.pages.dev:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 00:08:48 log 20892 3252 Not Found: /cdn.statically.io:443
+WARNING 2025-03-17 00:08:48 basehttp 20892 3252 "CONNECT cdn.statically.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 00:08:48 log 20892 31304 Not Found: /cdn.jsdelivr.net:443
+WARNING 2025-03-17 00:08:48 basehttp 20892 31304 "CONNECT cdn.jsdelivr.net:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 00:08:48 log 20892 32420 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-17 00:08:48 basehttp 20892 32420 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 00:08:48 log 20892 13044 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-17 00:08:48 basehttp 20892 13044 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 00:08:53 log 20892 32604 Not Found: /filters.adtidy.org:443
+WARNING 2025-03-17 00:08:53 basehttp 20892 32604 "CONNECT filters.adtidy.org:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 00:17:55 log 20892 19984 Not Found: /push.services.mozilla.com:443
+WARNING 2025-03-17 00:17:55 basehttp 20892 19984 "CONNECT push.services.mozilla.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 00:47:55 log 20892 13112 Not Found: /push.services.mozilla.com:443
+WARNING 2025-03-17 00:47:55 basehttp 20892 13112 "CONNECT push.services.mozilla.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 01:08:58 log 20892 30864 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-17 01:08:58 basehttp 20892 30864 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 01:08:58 log 20892 21828 Not Found: /cdn.statically.io:443
+WARNING 2025-03-17 01:08:58 basehttp 20892 21828 "CONNECT cdn.statically.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 01:08:58 log 20892 18792 Not Found: /cdn.jsdelivr.net:443
+WARNING 2025-03-17 01:08:58 basehttp 20892 18792 "CONNECT cdn.jsdelivr.net:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 01:08:58 log 20892 29096 Not Found: /ublockorigin.pages.dev:443
+WARNING 2025-03-17 01:08:58 basehttp 20892 29096 "CONNECT ublockorigin.pages.dev:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 01:08:58 log 20892 20620 Not Found: /raw.githubusercontent.com:443
+WARNING 2025-03-17 01:08:58 basehttp 20892 20620 "CONNECT raw.githubusercontent.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 01:09:03 log 20892 29520 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-17 01:09:03 basehttp 20892 29520 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 01:09:03 log 20892 28416 Not Found: /ublockorigin.pages.dev:443
+WARNING 2025-03-17 01:09:03 basehttp 20892 28416 "CONNECT ublockorigin.pages.dev:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 01:09:03 log 20892 7184 Not Found: /cdn.jsdelivr.net:443
+WARNING 2025-03-17 01:09:03 basehttp 20892 7184 "CONNECT cdn.jsdelivr.net:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 01:09:03 log 20892 11964 Not Found: /cdn.statically.io:443
+WARNING 2025-03-17 01:09:03 basehttp 20892 11964 "CONNECT cdn.statically.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 01:09:03 log 20892 14908 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-17 01:09:03 basehttp 20892 14908 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 01:09:08 log 20892 29856 Not Found: /filters.adtidy.org:443
+WARNING 2025-03-17 01:09:08 basehttp 20892 29856 "CONNECT filters.adtidy.org:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 01:17:55 log 20892 1136 Not Found: /push.services.mozilla.com:443
+WARNING 2025-03-17 01:17:55 basehttp 20892 1136 "CONNECT push.services.mozilla.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 01:47:55 log 20892 31248 Not Found: /push.services.mozilla.com:443
+WARNING 2025-03-17 01:47:55 basehttp 20892 31248 "CONNECT push.services.mozilla.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 02:09:13 log 20892 31132 Not Found: /cdn.statically.io:443
+WARNING 2025-03-17 02:09:13 basehttp 20892 31132 "CONNECT cdn.statically.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 02:09:13 log 20892 17144 Not Found: /cdn.jsdelivr.net:443
+WARNING 2025-03-17 02:09:13 basehttp 20892 17144 "CONNECT cdn.jsdelivr.net:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 02:09:13 log 20892 30984 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-17 02:09:13 basehttp 20892 30984 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 02:09:13 log 20892 18924 Not Found: /ublockorigin.pages.dev:443
+WARNING 2025-03-17 02:09:13 basehttp 20892 18924 "CONNECT ublockorigin.pages.dev:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 02:09:13 log 20892 29608 Not Found: /raw.githubusercontent.com:443
+WARNING 2025-03-17 02:09:13 basehttp 20892 29608 "CONNECT raw.githubusercontent.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 02:09:18 log 20892 26584 Not Found: /cdn.jsdelivr.net:443
+WARNING 2025-03-17 02:09:18 basehttp 20892 26584 "CONNECT cdn.jsdelivr.net:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 02:09:18 log 20892 27876 Not Found: /cdn.statically.io:443
+WARNING 2025-03-17 02:09:18 basehttp 20892 27876 "CONNECT cdn.statically.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 02:09:18 log 20892 29548 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-17 02:09:18 basehttp 20892 29548 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 02:09:18 log 20892 12064 Not Found: /ublockorigin.pages.dev:443
+WARNING 2025-03-17 02:09:18 basehttp 20892 12064 "CONNECT ublockorigin.pages.dev:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 02:09:18 log 20892 32300 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-17 02:09:18 basehttp 20892 32300 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 02:09:23 log 20892 30348 Not Found: /filters.adtidy.org:443
+WARNING 2025-03-17 02:09:23 basehttp 20892 30348 "CONNECT filters.adtidy.org:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 02:17:55 log 20892 29664 Not Found: /push.services.mozilla.com:443
+WARNING 2025-03-17 02:17:55 basehttp 20892 29664 "CONNECT push.services.mozilla.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 02:47:55 log 20892 12176 Not Found: /push.services.mozilla.com:443
+WARNING 2025-03-17 02:47:55 basehttp 20892 12176 "CONNECT push.services.mozilla.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 02:53:32 log 20892 26752 Not Found: /static/standard/video/tag/膝_膝关节屈膝活动度_活动度训练_仰卧位垂腿.mp4
+WARNING 2025-03-17 02:53:32 basehttp 20892 26752 "GET /static/standard/video/tag/%E8%86%9D_%E8%86%9D%E5%85%B3%E8%8A%82%E5%B1%88%E8%86%9D%E6%B4%BB%E5%8A%A8%E5%BA%A6_%E6%B4%BB%E5%8A%A8%E5%BA%A6%E8%AE%AD%E7%BB%83_%E4%BB%B0%E5%8D%A7%E4%BD%8D%E5%9E%82%E8%85%BF.mp4 HTTP/1.1" 404 20
+WARNING 2025-03-17 02:53:34 log 20892 26752 Not Found: /static/standard/video/tag/膝_膝关节屈膝活动度_活动度训练_仰卧位垂腿.mp4
+WARNING 2025-03-17 02:53:34 basehttp 20892 26752 "GET /static/standard/video/tag/%E8%86%9D_%E8%86%9D%E5%85%B3%E8%8A%82%E5%B1%88%E8%86%9D%E6%B4%BB%E5%8A%A8%E5%BA%A6_%E6%B4%BB%E5%8A%A8%E5%BA%A6%E8%AE%AD%E7%BB%83_%E4%BB%B0%E5%8D%A7%E4%BD%8D%E5%9E%82%E8%85%BF.mp4 HTTP/1.1" 404 20
+INFO 2025-03-17 02:54:46 autoreload 20892 15668 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 02:54:46 autoreload 15324 31028 Watching for file changes with StatReloader
+INFO 2025-03-17 02:55:05 autoreload 15324 31028 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 02:55:05 autoreload 28788 25548 Watching for file changes with StatReloader
+INFO 2025-03-17 02:55:16 autoreload 28788 25548 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 02:55:16 autoreload 20660 18504 Watching for file changes with StatReloader
+INFO 2025-03-17 02:55:21 autoreload 20660 18504 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 02:55:21 autoreload 24120 28992 Watching for file changes with StatReloader
+INFO 2025-03-17 02:55:27 autoreload 24120 28992 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 02:55:28 autoreload 31292 18288 Watching for file changes with StatReloader
+INFO 2025-03-17 02:55:30 autoreload 31292 18288 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 02:55:31 autoreload 31496 30472 Watching for file changes with StatReloader
+INFO 2025-03-17 02:55:51 autoreload 31496 30472 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 02:55:52 autoreload 28148 21996 Watching for file changes with StatReloader
+INFO 2025-03-17 02:55:55 autoreload 28148 21996 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 02:55:55 autoreload 22196 24140 Watching for file changes with StatReloader
+WARNING 2025-03-17 02:56:02 log 22196 31488 Not Found: /static/standard/video/tag/膝_膝关节屈膝活动度_活动度训练_仰卧位垂腿.mp4
+WARNING 2025-03-17 02:56:02 basehttp 22196 31488 "GET /static/standard/video/tag/%E8%86%9D_%E8%86%9D%E5%85%B3%E8%8A%82%E5%B1%88%E8%86%9D%E6%B4%BB%E5%8A%A8%E5%BA%A6_%E6%B4%BB%E5%8A%A8%E5%BA%A6%E8%AE%AD%E7%BB%83_%E4%BB%B0%E5%8D%A7%E4%BD%8D%E5%9E%82%E8%85%BF.mp4 HTTP/1.1" 404 20
+INFO 2025-03-17 02:56:42 autoreload 22196 24140 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 02:56:42 autoreload 29612 23768 Watching for file changes with StatReloader
+WARNING 2025-03-17 02:56:46 log 29612 23696 Not Found: /static/standard/video/tag/膝_膝关节屈膝活动度_活动度训练_仰卧位垂腿.mp4
+WARNING 2025-03-17 02:56:46 basehttp 29612 23696 "GET /static/standard/video/tag/%E8%86%9D_%E8%86%9D%E5%85%B3%E8%8A%82%E5%B1%88%E8%86%9D%E6%B4%BB%E5%8A%A8%E5%BA%A6_%E6%B4%BB%E5%8A%A8%E5%BA%A6%E8%AE%AD%E7%BB%83_%E4%BB%B0%E5%8D%A7%E4%BD%8D%E5%9E%82%E8%85%BF.mp4 HTTP/1.1" 404 207
+INFO 2025-03-17 02:57:58 autoreload 29612 23768 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 02:57:59 autoreload 19228 14216 Watching for file changes with StatReloader
+INFO 2025-03-17 02:59:30 autoreload 19228 14216 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 02:59:30 autoreload 27904 10092 Watching for file changes with StatReloader
+INFO 2025-03-17 03:00:30 autoreload 27904 10092 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 03:00:31 autoreload 28992 31296 Watching for file changes with StatReloader
+INFO 2025-03-17 03:00:41 autoreload 28992 31296 E:\Digital_people\openpose\app\pose\video_manager\models.py changed, reloading.
+INFO 2025-03-17 03:00:41 autoreload 28000 12044 Watching for file changes with StatReloader
+INFO 2025-03-17 03:01:24 autoreload 28000 12044 E:\Digital_people\openpose\app\pose\video_manager\models.py changed, reloading.
+INFO 2025-03-17 03:01:24 autoreload 28016 28852 Watching for file changes with StatReloader
+INFO 2025-03-17 03:01:37 autoreload 28016 28852 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 03:01:38 autoreload 1672 32540 Watching for file changes with StatReloader
+INFO 2025-03-17 03:02:17 autoreload 1672 32540 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 03:02:18 autoreload 10416 12728 Watching for file changes with StatReloader
+INFO 2025-03-17 03:02:42 autoreload 10416 12728 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 03:02:43 autoreload 30348 30504 Watching for file changes with StatReloader
+INFO 2025-03-17 03:03:01 autoreload 30348 30504 E:\Digital_people\openpose\app\pose\video_manager\migrations\0001_initial.py changed, reloading.
+INFO 2025-03-17 03:03:02 autoreload 14376 11616 Watching for file changes with StatReloader
+INFO 2025-03-17 03:05:35 autoreload 27364 27516 Watching for file changes with StatReloader
+WARNING 2025-03-17 03:05:40 log 27364 29308 Not Found: /static/standard/video/tag/膝_膝关节屈膝活动度_活动度训练_仰卧位垂腿.mp4
+WARNING 2025-03-17 03:05:40 basehttp 27364 29308 "GET /static/standard/video/tag/%E8%86%9D_%E8%86%9D%E5%85%B3%E8%8A%82%E5%B1%88%E8%86%9D%E6%B4%BB%E5%8A%A8%E5%BA%A6_%E6%B4%BB%E5%8A%A8%E5%BA%A6%E8%AE%AD%E7%BB%83_%E4%BB%B0%E5%8D%A7%E4%BD%8D%E5%9E%82%E8%85%BF.mp4 HTTP/1.1" 404 20
+WARNING 2025-03-17 03:05:41 log 27364 29308 Not Found: /static/standard/video/tag/膝_膝关节屈膝活动度_活动度训练_仰卧位垂腿.mp4
+WARNING 2025-03-17 03:05:41 basehttp 27364 29308 "GET /static/standard/video/tag/%E8%86%9D_%E8%86%9D%E5%85%B3%E8%8A%82%E5%B1%88%E8%86%9D%E6%B4%BB%E5%8A%A8%E5%BA%A6_%E6%B4%BB%E5%8A%A8%E5%BA%A6%E8%AE%AD%E7%BB%83_%E4%BB%B0%E5%8D%A7%E4%BD%8D%E5%9E%82%E8%85%BF.mp4 HTTP/1.1" 404 20
+INFO 2025-03-17 03:05:44 basehttp 27364 31476 "GET /static/standard/video/id/01_16.mp4 HTTP/1.1" 200 1682804
+INFO 2025-03-17 03:05:44 basehttp 27364 31476 "GET /static/standard/video/id/01_16.mp4 HTTP/1.1" 200 1682804
+INFO 2025-03-17 03:05:51 basehttp 27364 31476 "GET /static/standard/video/id/01_16.mp4 HTTP/1.1" 200 1682804
+INFO 2025-03-17 03:05:51 basehttp 27364 31476 "GET /static/standard/video/id/01_16.mp4 HTTP/1.1" 200 1682804
+WARNING 2025-03-17 03:05:58 log 27364 7320 Not Found: /static/standard/cover/id/01_16.webp
+WARNING 2025-03-17 03:05:58 basehttp 27364 7320 "GET /static/standard/cover/id/01_16.webp HTTP/1.1" 404 54
+INFO 2025-03-17 03:06:22 autoreload 27364 27516 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 03:06:22 autoreload 23124 12992 Watching for file changes with StatReloader
+INFO 2025-03-17 03:06:24 basehttp 23124 15452 "GET /static/standard/cover/id/01_16.webp HTTP/1.1" 200 25258
+WARNING 2025-03-17 03:06:27 log 23124 15452 Not Found: /static/standard/video/tag/膝_膝关节屈膝活动度_活动度训练_仰卧位垂腿.mp4
+WARNING 2025-03-17 03:06:27 basehttp 23124 15452 "GET /static/standard/video/tag/%E8%86%9D_%E8%86%9D%E5%85%B3%E8%8A%82%E5%B1%88%E8%86%9D%E6%B4%BB%E5%8A%A8%E5%BA%A6_%E6%B4%BB%E5%8A%A8%E5%BA%A6%E8%AE%AD%E7%BB%83_%E4%BB%B0%E5%8D%A7%E4%BD%8D%E5%9E%82%E8%85%BF.mp4 HTTP/1.1" 404 20
+WARNING 2025-03-17 03:07:34 log 23124 15452 Not Found: /static/standard/video/tag/膝_膝关节屈膝活动度_活动度训练_仰卧位垂腿.mp4
+WARNING 2025-03-17 03:07:34 basehttp 23124 15452 "GET /static/standard/video/tag/%E8%86%9D_%E8%86%9D%E5%85%B3%E8%8A%82%E5%B1%88%E8%86%9D%E6%B4%BB%E5%8A%A8%E5%BA%A6_%E6%B4%BB%E5%8A%A8%E5%BA%A6%E8%AE%AD%E7%BB%83_%E4%BB%B0%E5%8D%A7%E4%BD%8D%E5%9E%82%E8%85%BF.mp4 HTTP/1.1" 404 20
+WARNING 2025-03-17 03:07:37 log 23124 15452 Not Found: /static/standard/video/tag/膝_膝关节屈膝活动度_活动度训练_仰卧位垂腿.mp4
+WARNING 2025-03-17 03:07:37 basehttp 23124 15452 "GET /static/standard/video/tag/%E8%86%9D_%E8%86%9D%E5%85%B3%E8%8A%82%E5%B1%88%E8%86%9D%E6%B4%BB%E5%8A%A8%E5%BA%A6_%E6%B4%BB%E5%8A%A8%E5%BA%A6%E8%AE%AD%E7%BB%83_%E4%BB%B0%E5%8D%A7%E4%BD%8D%E5%9E%82%E8%85%BF.mp4 HTTP/1.1" 404 20
+INFO 2025-03-17 03:07:52 autoreload 23124 12992 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 03:07:52 autoreload 4240 24252 Watching for file changes with StatReloader
+WARNING 2025-03-17 03:07:55 log 4240 32184 Not Found: /static/standard/video/tag/膝_膝关节屈膝活动度_活动度训练_仰卧位垂腿.mp4
+WARNING 2025-03-17 03:07:55 basehttp 4240 32184 "GET /static/standard/video/tag/%E8%86%9D_%E8%86%9D%E5%85%B3%E8%8A%82%E5%B1%88%E8%86%9D%E6%B4%BB%E5%8A%A8%E5%BA%A6_%E6%B4%BB%E5%8A%A8%E5%BA%A6%E8%AE%AD%E7%BB%83_%E4%BB%B0%E5%8D%A7%E4%BD%8D%E5%9E%82%E8%85%BF.mp4 HTTP/1.1" 404 217
+INFO 2025-03-17 03:08:14 autoreload 4240 24252 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 03:08:14 autoreload 31236 23224 Watching for file changes with StatReloader
+INFO 2025-03-17 03:08:23 autoreload 31236 23224 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 03:08:24 autoreload 28052 12048 Watching for file changes with StatReloader
+INFO 2025-03-17 03:08:25 basehttp 28052 15588 "GET /static/standard/video/tag/%E8%86%9D_%E8%86%9D%E5%85%B3%E8%8A%82%E5%B1%88%E8%86%9D%E6%B4%BB%E5%8A%A8%E5%BA%A6_%E6%B4%BB%E5%8A%A8%E5%BA%A6%E8%AE%AD%E7%BB%83_%E4%BB%B0%E5%8D%A7%E4%BD%8D%E5%9E%82%E8%85%BF.mp4 HTTP/1.1" 200 215566
+INFO 2025-03-17 03:08:25 basehttp 28052 15588 "GET /static/standard/video/tag/%E8%86%9D_%E8%86%9D%E5%85%B3%E8%8A%82%E5%B1%88%E8%86%9D%E6%B4%BB%E5%8A%A8%E5%BA%A6_%E6%B4%BB%E5%8A%A8%E5%BA%A6%E8%AE%AD%E7%BB%83_%E4%BB%B0%E5%8D%A7%E4%BD%8D%E5%9E%82%E8%85%BF.mp4 HTTP/1.1" 200 215566
+INFO 2025-03-17 03:08:31 basehttp 28052 15588 "GET /static/standard/video/tag/%E8%86%9D_%E8%86%9D%E5%85%B3%E8%8A%82%E5%B1%88%E8%86%9D%E6%B4%BB%E5%8A%A8%E5%BA%A6_%E6%B4%BB%E5%8A%A8%E5%BA%A6%E8%AE%AD%E7%BB%83_%E4%BB%B0%E5%8D%A7%E4%BD%8D%E5%9E%82%E8%85%BF.mp4 HTTP/1.1" 200 215566
+INFO 2025-03-17 03:08:31 basehttp 28052 15588 "GET /static/standard/video/tag/%E8%86%9D_%E8%86%9D%E5%85%B3%E8%8A%82%E5%B1%88%E8%86%9D%E6%B4%BB%E5%8A%A8%E5%BA%A6_%E6%B4%BB%E5%8A%A8%E5%BA%A6%E8%AE%AD%E7%BB%83_%E4%BB%B0%E5%8D%A7%E4%BD%8D%E5%9E%82%E8%85%BF.mp4 HTTP/1.1" 200 215566
+WARNING 2025-03-17 03:09:28 log 28052 28084 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-17 03:09:28 basehttp 28052 28084 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 03:09:28 log 28052 30188 Not Found: /ublockorigin.pages.dev:443
+WARNING 2025-03-17 03:09:28 basehttp 28052 30188 "CONNECT ublockorigin.pages.dev:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 03:09:28 log 28052 27180 Not Found: /cdn.statically.io:443
+WARNING 2025-03-17 03:09:28 basehttp 28052 27180 "CONNECT cdn.statically.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 03:09:29 log 28052 13200 Not Found: /cdn.jsdelivr.net:443
+WARNING 2025-03-17 03:09:29 basehttp 28052 13200 "CONNECT cdn.jsdelivr.net:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 03:09:29 log 28052 28396 Not Found: /raw.githubusercontent.com:443
+WARNING 2025-03-17 03:09:29 basehttp 28052 28396 "CONNECT raw.githubusercontent.com:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 03:09:34 log 28052 31856 Not Found: /cdn.jsdelivr.net:443
+WARNING 2025-03-17 03:09:34 basehttp 28052 31856 "CONNECT cdn.jsdelivr.net:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 03:09:34 log 28052 23040 Not Found: /ublockorigin.pages.dev:443
+WARNING 2025-03-17 03:09:34 basehttp 28052 23040 "CONNECT ublockorigin.pages.dev:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 03:09:34 log 28052 5420 Not Found: /cdn.statically.io:443
+WARNING 2025-03-17 03:09:34 basehttp 28052 5420 "CONNECT cdn.statically.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 03:09:34 log 28052 5736 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-17 03:09:34 basehttp 28052 5736 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 03:09:34 log 28052 28876 Not Found: /ublockorigin.github.io:443
+WARNING 2025-03-17 03:09:34 basehttp 28052 28876 "CONNECT ublockorigin.github.io:443 HTTP/1.1" 404 179
+WARNING 2025-03-17 03:09:39 log 28052 19072 Not Found: /filters.adtidy.org:443
+WARNING 2025-03-17 03:09:39 basehttp 28052 19072 "CONNECT filters.adtidy.org:443 HTTP/1.1" 404 179
+INFO 2025-03-17 03:12:33 autoreload 28052 12048 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 03:12:34 autoreload 32068 29636 Watching for file changes with StatReloader
+INFO 2025-03-17 03:12:44 autoreload 32068 29636 E:\Digital_people\openpose\app\pose\video_manager\views.py changed, reloading.
+INFO 2025-03-17 03:12:44 autoreload 25036 12128 Watching for file changes with StatReloader
+INFO 2025-03-17 03:13:31 autoreload 25036 12128 E:\Digital_people\openpose\app\pose\video_manager\urls.py changed, reloading.
+INFO 2025-03-17 03:13:31 autoreload 29736 11380 Watching for file changes with StatReloader
+WARNING 2025-03-17 03:13:51 log 29736 27692 Not Found: /static/standard/video
+WARNING 2025-03-17 03:13:51 basehttp 29736 27692 "GET /static/standard/video HTTP/1.1" 404 179
+INFO 2025-03-17 03:14:05 basehttp 29736 27692 "GET /static/api/videos/ HTTP/1.1" 200 40044
+WARNING 2025-03-17 03:17:55 log 29736 22240 Not Found: /push.services.mozilla.com:443
+WARNING 2025-03-17 03:17:55 basehttp 29736 22240 "CONNECT push.services.mozilla.com:443 HTTP/1.1" 404 179
+INFO 2025-03-17 03:27:01 autoreload 34976 34980 Watching for file changes with StatReloader
+INFO 2025-03-17 03:27:11 basehttp 34976 18808 "GET /static/api/videos/ HTTP/1.1" 200 40044
+WARNING 2025-03-17 03:27:15 log 34976 18808 Not Found: /swagger
+WARNING 2025-03-17 03:27:15 basehttp 34976 18808 "GET /swagger HTTP/1.1" 404 179
+INFO 2025-03-17 03:27:28 basehttp 34976 18808 "GET /api-docs/swagger HTTP/1.1" 301 0
+INFO 2025-03-17 03:27:28 basehttp 34976 30676 "GET /api-docs/swagger/ HTTP/1.1" 200 2230
+WARNING 2025-03-17 03:27:28 log 34976 30676 Not Found: /static/drf-yasg/style.css
+WARNING 2025-03-17 03:27:28 basehttp 34976 30676 "GET /static/drf-yasg/style.css HTTP/1.1" 404 179
+WARNING 2025-03-17 03:27:28 log 34976 35364 Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui.css
+WARNING 2025-03-17 03:27:28 log 34976 30676 Not Found: /static/drf-yasg/swagger-ui-init.js
+WARNING 2025-03-17 03:27:28 basehttp 34976 35364 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 404 179
+WARNING 2025-03-17 03:27:28 log 34976 33644 Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js
+WARNING 2025-03-17 03:27:28 basehttp 34976 30676 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 404 179
+WARNING 2025-03-17 03:27:28 basehttp 34976 33644 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 404 179
+WARNING 2025-03-17 03:27:28 log 34976 27212 Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js
+WARNING 2025-03-17 03:27:28 log 34976 32828 Not Found: /static/drf-yasg/insQ.min.js
+WARNING 2025-03-17 03:27:28 basehttp 34976 27212 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 404 179
+WARNING 2025-03-17 03:27:28 log 34976 35124 Not Found: /static/drf-yasg/immutable.min.js
+WARNING 2025-03-17 03:27:28 basehttp 34976 32828 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 404 179
+WARNING 2025-03-17 03:27:28 basehttp 34976 35124 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 404 179
+WARNING 2025-03-17 03:27:28 log 34976 35124 Not Found: /static/drf-yasg/swagger-ui-dist/favicon-32x32.png
+WARNING 2025-03-17 03:27:28 basehttp 34976 35124 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 404 179
+WARNING 2025-03-17 03:27:30 log 34976 35124 Not Found: /accounts/login/
+WARNING 2025-03-17 03:27:30 basehttp 34976 35124 "GET /accounts/login/?next=/api-docs/swagger/ HTTP/1.1" 404 179
+INFO 2025-03-17 03:36:13 basehttp 34976 17656 "GET /api-docs/redoc/ HTTP/1.1" 200 935
+WARNING 2025-03-17 03:36:13 log 34976 17656 Not Found: /static/drf-yasg/style.css
+WARNING 2025-03-17 03:36:13 basehttp 34976 17656 "GET /static/drf-yasg/style.css HTTP/1.1" 404 179
+WARNING 2025-03-17 03:36:13 log 34976 22280 Not Found: /static/drf-yasg/insQ.min.js
+WARNING 2025-03-17 03:36:13 log 34976 21896 Not Found: /static/drf-yasg/redoc-init.js
+WARNING 2025-03-17 03:36:13 log 34976 16668 Not Found: /static/drf-yasg/redoc/redoc.min.js
+WARNING 2025-03-17 03:36:13 basehttp 34976 21896 "GET /static/drf-yasg/redoc-init.js HTTP/1.1" 404 179
+WARNING 2025-03-17 03:36:13 basehttp 34976 22280 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 404 179
+WARNING 2025-03-17 03:36:13 basehttp 34976 16668 "GET /static/drf-yasg/redoc/redoc.min.js HTTP/1.1" 404 179
+WARNING 2025-03-17 03:36:13 log 34976 16668 Not Found: /static/drf-yasg/redoc/redoc-logo.png
+WARNING 2025-03-17 03:36:13 basehttp 34976 16668 "GET /static/drf-yasg/redoc/redoc-logo.png HTTP/1.1" 404 179
+INFO 2025-03-17 03:36:40 autoreload 34976 34980 E:\Digital_people\openpose\app\pose\pose\api_docs.py changed, reloading.
+INFO 2025-03-17 03:36:41 autoreload 31260 3988 Watching for file changes with StatReloader

@@ -16,12 +16,13 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from evalpose.views import VideoUploadView,TestUploadView,FrameScoresView
 from django.views.static import serve
 from django.urls import re_path
+from .api_docs import urlpatterns as doc_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -32,6 +33,10 @@ urlpatterns = [
     re_path(r'^media/hls/(?P<path>.*)$', serve, {
         'document_root': settings.MEDIA_ROOT + '/hls/',
     }),
+    # 添加标准视频文件服务路由
+    path('static/', include('video_manager.urls')),
+    # 添加 API 文档路由
+    path('api-docs/', include(doc_urls)),
 ]
 
 # 添加媒体文件的URL配置
