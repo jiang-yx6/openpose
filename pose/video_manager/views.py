@@ -3,7 +3,7 @@ from django.shortcuts import get_object_or_404
 from django.http import FileResponse, HttpResponseNotFound, JsonResponse
 from django.conf import settings
 from rest_framework.views import APIView
-import os
+from pathlib import Path
 from .models import VideoAsset
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
@@ -39,10 +39,10 @@ class VideoByTagsView(APIView):
         if not video_asset:
             logger.warning(f"Video with tag string {tag_string} not found")
         
-        file_path = os.path.join(settings.BASE_DIR, video_asset.original_mp4_path)
+        file_path = Path(settings.BASE_DIR) / video_asset.original_mp4_path
         
-        if os.path.exists(file_path):
-            return FileResponse(open(file_path, 'rb'), content_type='video/mp4')
+        if file_path.exists():
+            return FileResponse(file_path.open('rb'), content_type='video/mp4')
         else:
             return HttpResponseNotFound("Video file not found")
 
@@ -74,10 +74,10 @@ class CoverByTagsView(APIView):
         if not video_asset:
             logger.warning(f"Cover image with tag string {tag_string} not found")
         
-        file_path = os.path.join(settings.BASE_DIR, video_asset.original_cover_path)
+        file_path = Path(settings.BASE_DIR) / video_asset.original_cover_path
         
-        if os.path.exists(file_path):
-            return FileResponse(open(file_path, 'rb'), content_type='image/webp')
+        if file_path.exists():
+            return FileResponse(file_path.open('rb'), content_type='image/webp')
         else:
             return HttpResponseNotFound("Cover image not found")
 
@@ -116,11 +116,11 @@ class VideoByIdView(APIView):
                 logger.warning(f"Video with ID {video_id} not found")
                 return HttpResponseNotFound("Video not found with the specified ID")
                 
-            file_path = os.path.join(settings.BASE_DIR, video_asset.original_mp4_path)
+            file_path = Path(settings.BASE_DIR) / video_asset.original_mp4_path
             
-            if os.path.exists(file_path):
+            if file_path.exists():
                 logger.info(f"Returning video file: {file_path}")
-                return FileResponse(open(file_path, 'rb'), content_type='video/mp4')
+                return FileResponse(file_path.open('rb'), content_type='video/mp4')
             else:
                 logger.warning(f"Video file not found: {file_path}")
                 return HttpResponseNotFound("Video file not found")
@@ -163,13 +163,11 @@ class CoverByIdView(APIView):
                 logger.warning(f"Cover with ID {cover_id} not found")
                 return HttpResponseNotFound("Cover not found with the specified ID")
                 
-            cover_path = os.path.join(settings.BASE_DIR, video_asset.original_cover_path)
+            file_path = Path(settings.BASE_DIR) / video_asset.original_cover_path
             
-            file_path = os.path.join(settings.BASE_DIR, cover_path)
-            
-            if os.path.exists(file_path):
+            if file_path.exists():
                 logger.info(f"Returning cover file: {file_path}")
-                return FileResponse(open(file_path, 'rb'), content_type='image/webp')
+                return FileResponse(file_path.open('rb'), content_type='image/webp')
             else:
                 logger.warning(f"Cover file not found: {file_path}")
                 return HttpResponseNotFound("Cover file not found")
