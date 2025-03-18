@@ -34,10 +34,14 @@ urlpatterns = [
         'document_root': settings.MEDIA_ROOT + '/hls/',
     }),
     # 添加标准视频文件服务路由
-    path('static/', include('video_manager.urls')),
+    path('standard/', include('video_manager.urls')),
     # 添加 API 文档路由
     path('api-docs/', include(doc_urls)),
 ]
 
 # 添加媒体文件的URL配置
-# urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# Uncomment this line to serve static files in development
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+# Keep the media URL configuration too
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

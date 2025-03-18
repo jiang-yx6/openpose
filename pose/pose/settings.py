@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-lx20l=wrl3wcjl)od56^zz7%0ffrwm-9-5o5@je(f_(ovd@utu"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -141,6 +141,10 @@ REST_FRAMEWORK = {
         'rest_framework.parsers.FormParser',
         'rest_framework.parsers.JSONParser',
     ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [],  # Empty list means no authentication required
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',  # Allow any access temporarily
+    ],
 }
 
 # 在文件末尾添加日志配置
@@ -184,6 +188,11 @@ LOGGING = {
             'level': 'INFO',
             'propagate': True,
         },
+        'video_manager': {
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        }
     },
 }
 
