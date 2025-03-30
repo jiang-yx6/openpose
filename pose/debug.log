@@ -5637,3 +5637,56 @@ INFO 2025-03-18 20:32:00 basehttp 32628 29680 "GET /standard/cover/tags/%E8%B8%9
 INFO 2025-03-18 20:32:20 views 32628 29680 Received request for video with ID: 01_02
 INFO 2025-03-18 20:32:20 views 32628 29680 Returning video file: E:\Digital_people\openpose\app\pose\standard\example_videos\01_踝\02_总_踝内翻-踝外翻.mp4
 INFO 2025-03-18 20:32:20 basehttp 32628 29680 "GET /standard/video/id/01_02/ HTTP/1.1" 200 1192390
+INFO 2025-03-30 21:49:20 autoreload 23712 24256 Watching for file changes with StatReloader
+WARNING 2025-03-30 21:49:37 log 23712 13508 Not Found: /
+WARNING 2025-03-30 21:49:37 basehttp 23712 13508 "GET / HTTP/1.1" 404 3525
+WARNING 2025-03-30 21:49:37 log 23712 13508 Not Found: /favicon.ico
+WARNING 2025-03-30 21:49:37 basehttp 23712 13508 "GET /favicon.ico HTTP/1.1" 404 3576
+INFO 2025-03-30 21:49:54 basehttp 23712 13508 "GET /api-docs/swagger HTTP/1.1" 301 0
+INFO 2025-03-30 21:49:54 basehttp 23712 9660 "GET /api-docs/swagger/ HTTP/1.1" 200 2230
+INFO 2025-03-30 21:49:54 basehttp 23712 9660 "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2025-03-30 21:49:54 basehttp 23712 9660 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2025-03-30 21:49:55 basehttp 23712 9660 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2025-03-30 21:49:55 basehttp 23712 9660 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2025-03-30 21:49:55 basehttp 23712 9660 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2025-03-30 21:49:55 basehttp 23712 9660 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2025-03-30 21:49:55 basehttp 23712 9660 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2025-03-30 21:49:55 basehttp 23712 9660 "GET /api-docs/swagger/?format=openapi HTTP/1.1" 200 4922
+INFO 2025-03-30 21:49:55 basehttp 23712 9660 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2025-03-30 21:50:42 views 23712 9660 Returning 46 video assets
+INFO 2025-03-30 21:50:42 basehttp 23712 9660 "GET /standard/all/ HTTP/1.1" 200 25660
+INFO 2025-03-30 21:51:15 autoreload 10360 17224 Watching for file changes with StatReloader
+INFO 2025-03-30 21:51:28 views 10360 20384 Returning 46 video assets
+INFO 2025-03-30 21:51:28 basehttp 10360 20384 "GET /standard/all/ HTTP/1.1" 200 25752
+INFO 2025-03-30 21:51:41 basehttp 10360 20384 "GET /standard/cover/tags/%E8%B8%9D_%E8%B8%9D%E5%86%85%E7%BF%BB_%E8%87%AA%E6%88%91%E8%B8%9D%E5%86%85%E7%BF%BB%E7%89%B5%E4%BC%B8.webp HTTP/1.1" 301 0
+INFO 2025-03-30 21:51:41 views 10360 22948 Received request for cover image with tag string: 踝_踝内翻_自我踝内翻牵伸.webp
+WARNING 2025-03-30 21:51:41 log 10360 22948 Not Found: /standard/cover/tags/踝_踝内翻_自我踝内翻牵伸.webp/
+WARNING 2025-03-30 21:51:41 basehttp 10360 22948 "GET /standard/cover/tags/%E8%B8%9D_%E8%B8%9D%E5%86%85%E7%BF%BB_%E8%87%AA%E6%88%91%E8%B8%9D%E5%86%85%E7%BF%BB%E7%89%B5%E4%BC%B8.webp/ HTTP/1.1" 404 5872
+INFO 2025-03-30 21:51:41 basehttp 10360 22948 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-03-30 21:51:41 basehttp 10360 22948 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-03-30 21:51:41 basehttp 10360 22948 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-03-30 21:51:41 basehttp 10360 22948 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-03-30 21:51:41 basehttp 10360 22948 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-03-30 21:51:41 basehttp 10360 22948 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-03-30 21:51:41 basehttp 10360 22948 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-03-30 21:51:41 basehttp 10360 22948 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-03-30 21:51:41 basehttp 10360 22948 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-03-30 21:51:41 basehttp 10360 22948 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-03-30 21:51:41 basehttp 10360 22948 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-03-30 21:51:41 basehttp 10360 22948 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-03-30 21:51:52 views 10360 22948 Received request for cover image with tag string: 踝_踝内翻_自我踝内翻牵伸.webp
+WARNING 2025-03-30 21:51:52 log 10360 22948 Not Found: /standard/cover/tags/踝_踝内翻_自我踝内翻牵伸.webp/
+WARNING 2025-03-30 21:51:52 basehttp 10360 22948 "GET /standard/cover/tags/%E8%B8%9D_%E8%B8%9D%E5%86%85%E7%BF%BB_%E8%87%AA%E6%88%91%E8%B8%9D%E5%86%85%E7%BF%BB%E7%89%B5%E4%BC%B8.webp/ HTTP/1.1" 404 5872
+INFO 2025-03-30 21:52:02 basehttp 10360 22948 "GET /api-docs/swagger/ HTTP/1.1" 200 2230
+INFO 2025-03-30 21:52:02 basehttp 10360 22948 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+INFO 2025-03-30 21:52:08 views 10360 22948 Returning 46 video assets
+INFO 2025-03-30 21:52:08 basehttp 10360 22948 "GET /standard/all/ HTTP/1.1" 200 25752
+INFO 2025-03-30 21:52:32 views 10360 22948 Received request for cover image with tag string: 踝_踝内翻_自我踝内翻牵伸
+INFO 2025-03-30 21:52:32 basehttp 10360 22948 "GET /standard/cover/tags/%E8%B8%9D_%E8%B8%9D%E5%86%85%E7%BF%BB_%E8%87%AA%E6%88%91%E8%B8%9D%E5%86%85%E7%BF%BB%E7%89%B5%E4%BC%B8/ HTTP/1.1" 200 25240
+INFO 2025-03-30 21:53:12 autoreload 22984 6068 Watching for file changes with StatReloader
+INFO 2025-03-30 21:53:17 views 22984 7156 Returning 46 video assets
+INFO 2025-03-30 21:53:17 basehttp 22984 7156 "GET /standard/all/ HTTP/1.1" 200 25338
+INFO 2025-03-30 21:53:43 basehttp 22984 7156 "GET /standard/cover/tags/%E8%B8%9D_%E8%B8%9D%E8%83%8C%E5%B1%88_%E4%BB%B0%E5%8D%A7%E4%BD%8D%E4%BC%B8%EF%BC%88%E5%B1%88%EF%BC%89%E8%86%9D%E4%BD%8D%E5%AE%B6%E5%B1%9E%E8%BE%85%E5%8A%A9%E8%B8%9D%E8%83%8C%E5%B1%88-%E6%9C%89%E5%9E%AB HTTP/1.1" 301 0
+INFO 2025-03-30 21:53:43 views 22984 24388 Received request for cover image with tag string: 踝_踝背屈_仰卧位伸（屈）膝位家属辅助踝背屈-有垫
+INFO 2025-03-30 21:53:43 basehttp 22984 24388 "GET /standard/cover/tags/%E8%B8%9D_%E8%B8%9D%E8%83%8C%E5%B1%88_%E4%BB%B0%E5%8D%A7%E4%BD%8D%E4%BC%B8%EF%BC%88%E5%B1%88%EF%BC%89%E8%86%9D%E4%BD%8D%E5%AE%B6%E5%B1%9E%E8%BE%85%E5%8A%A9%E8%B8%9D%E8%83%8C%E5%B1%88-%E6%9C%89%E5%9E%AB/ HTTP/1.1" 200 21040
+INFO 2025-03-30 21:53:45 basehttp 22984 24388 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0

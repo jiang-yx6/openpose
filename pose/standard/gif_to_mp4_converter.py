@@ -1,7 +1,5 @@
 import os
-import glob
 import subprocess
-from pathlib import Path
 from PIL import Image
 import imageio
 
@@ -32,6 +30,32 @@ def extract_middle_frame_from_gif(gif_path, output_path):
     img = Image.fromarray(middle_frame)
     img.save(output_path, 'WEBP')
     print(f"Extracted middle frame ({middle_index+1}/{frame_count}) from {gif_path} as cover")
+
+def extract_middle_frame_from_mp4(mp4_path, output_path):
+    """Extract a frame from the middle of an MP4 and save as WEBP"""
+    # First get the duration of the video
+    probe_cmd = [
+        'ffprobe', 
+        '-v', 'error',
+        '-show_entries', 'format=duration',
+        '-of', 'default=noprint_wrappers=1:nokey=1',
+        mp4_path
+    ]
+    duration = float(subprocess.run(probe_cmd, check=True, capture_output=True, text=True).stdout.strip())
+    
+    # Extract frame from the middle of the video
+    middle_time = duration / 2
+    cmd = [
+        'ffmpeg',
+        '-ss', str(middle_time),
+        '-i', mp4_path,
+        '-vframes', '1',
+        '-f', 'image2',
+        '-y',
+        output_path
+    ]
+    subprocess.run(cmd, check=True, capture_output=True)
+    print(f"Extracted middle frame from {mp4_path} as cover")
 
 def create_mp4_from_webp(webp_path, output_path, duration=10, fps=30):
     """Create an MP4 video from a WEBP image with specified duration and fps"""
@@ -76,21 +100,23 @@ def process_directory(root_dir):
         file_groups = {}
         
         for file in files:
-            if file.endswith(('.gif', '.webp')):
+            if file.endswith(('.gif', '.webp', '.mp4')):
                 base_name = os.path.splitext(file)[0]
                 if base_name not in file_groups:
-                    file_groups[base_name] = {'gif': None, 'webp': None}
+                    file_groups[base_name] = {'gif': None, 'webp': None, 'mp4': None}
                 
                 if file.endswith('.gif'):
                     file_groups[base_name]['gif'] = os.path.join(folder_path, file)
                 elif file.endswith('.webp'):
                     file_groups[base_name]['webp'] = os.path.join(folder_path, file)
+                elif file.endswith('.mp4'):
+                    file_groups[base_name]['mp4'] = os.path.join(folder_path, file)
         
         # Process each group
         for base_name, files in file_groups.items():
             gif_path = files['gif']
             webp_path = files['webp']
-            mp4_path = os.path.join(folder_path, f"{base_name}.mp4")
+            mp4_path = os.path.join(folder_path, f"{base_name}.mp4") if files['mp4'] is None else files['mp4']
             
             # Case 1: Only GIF exists
             if gif_path and not webp_path:
@@ -106,8 +132,18 @@ def process_directory(root_dir):
             
             # Case 3: Both GIF and WEBP exist
             elif gif_path and webp_path:
+                # if mp4 exists, skip conversion
+                if os.path.exists(mp4_path):
+                    print(f"MP4 already exists for {base_name}, skipping conversion")
+                    continue
                 print(f"Converting {gif_path} to MP4 (using existing {webp_path} as cover)")
                 convert_gif_to_mp4(gif_path, mp4_path)
+            
+            # Case 4: only mp4 exists, just need to extract the cover
+            elif os.path.exists(mp4_path) and not gif_path and not webp_path:
+                print(f"Extracting middle frame from {mp4_path} as cover")
+                webp_cover_path = os.path.join(folder_path, f"{base_name}.webp")
+                extract_middle_frame_from_mp4(mp4_path, webp_cover_path)
 
 if __name__ == "__main__":
     # Replace with your actual root directory

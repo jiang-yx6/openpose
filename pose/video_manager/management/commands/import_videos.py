@@ -102,8 +102,8 @@ class Command(BaseCommand):
                     tag_string = "_".join([t for t in all_tags if t])
                     
                     # Create standard paths with Unix format
-                    standard_mp4_path = f"standard/video/tag/{tag_string}.mp4"
-                    standard_webp_path = f"standard/cover/tag/{tag_string}.webp"
+                    standard_mp4_path = f"standard/video/tags/{tag_string}"
+                    standard_webp_path = f"standard/cover/tags/{tag_string}"
                     
                     # Create or update database entry
                     VideoAsset.objects.create(
