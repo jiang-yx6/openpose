@@ -5690,3 +5690,333 @@ INFO 2025-03-30 21:53:43 basehttp 22984 7156 "GET /standard/cover/tags/%E8%B8%9D
 INFO 2025-03-30 21:53:43 views 22984 24388 Received request for cover image with tag string: 踝_踝背屈_仰卧位伸（屈）膝位家属辅助踝背屈-有垫
 INFO 2025-03-30 21:53:43 basehttp 22984 24388 "GET /standard/cover/tags/%E8%B8%9D_%E8%B8%9D%E8%83%8C%E5%B1%88_%E4%BB%B0%E5%8D%A7%E4%BD%8D%E4%BC%B8%EF%BC%88%E5%B1%88%EF%BC%89%E8%86%9D%E4%BD%8D%E5%AE%B6%E5%B1%9E%E8%BE%85%E5%8A%A9%E8%B8%9D%E8%83%8C%E5%B1%88-%E6%9C%89%E5%9E%AB/ HTTP/1.1" 200 21040
 INFO 2025-03-30 21:53:45 basehttp 22984 24388 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+INFO 2025-03-31 00:55:26 autoreload 22552 25196 Watching for file changes with StatReloader
+WARNING 2025-03-31 00:55:34 log 22552 12892 Not Found: /
+WARNING 2025-03-31 00:55:34 basehttp 22552 12892 "GET / HTTP/1.1" 404 3717
+WARNING 2025-03-31 00:55:34 log 22552 12892 Not Found: /favicon.ico
+WARNING 2025-03-31 00:55:34 basehttp 22552 12892 "GET /favicon.ico HTTP/1.1" 404 3768
+INFO 2025-03-31 00:55:42 basehttp 22552 12892 "GET /api-docs/swagger HTTP/1.1" 301 0
+INFO 2025-03-31 00:55:42 basehttp 22552 25904 "GET /api-docs/swagger/ HTTP/1.1" 200 2230
+INFO 2025-03-31 00:55:43 basehttp 22552 25904 "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2025-03-31 00:55:43 basehttp 22552 25904 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2025-03-31 00:55:43 basehttp 22552 25204 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2025-03-31 00:55:43 basehttp 22552 25756 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2025-03-31 00:55:43 basehttp 22552 16880 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2025-03-31 00:55:43 basehttp 22552 16460 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2025-03-31 00:55:43 basehttp 22552 10856 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2025-03-31 00:55:43 basehttp 22552 10856 "GET /api-docs/swagger/?format=openapi HTTP/1.1" 200 6025
+INFO 2025-03-31 00:55:43 basehttp 22552 10856 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2025-03-31 00:57:00 views 22552 10856 收到带参考视频ID的请求: http://127.0.0.1:8000
+ERROR 2025-03-31 00:57:00 log 22552 10856 Internal Server Error: /upload-video/
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\views.py", line 219, in post
+    standard_video = VideoAsset.objects.filter(numeric_id=standard_numeric_id).first()
+                     ^^^^^^^^^^
+NameError: name 'VideoAsset' is not defined
+ERROR 2025-03-31 00:57:00 basehttp 22552 10856 "POST /upload-video/ HTTP/1.1" 500 23749
+INFO 2025-03-31 00:57:50 autoreload 22552 25196 E:\Digital_people\openpose\app\pose\evalpose\views.py changed, reloading.
+INFO 2025-03-31 00:57:50 autoreload 26280 26588 Watching for file changes with StatReloader
+INFO 2025-03-31 00:58:16 autoreload 26280 26588 E:\Digital_people\openpose\app\pose\evalpose\views.py changed, reloading.
+INFO 2025-03-31 00:58:16 autoreload 11964 2080 Watching for file changes with StatReloader
+INFO 2025-03-31 00:58:22 views 11964 20400 收到带参考视频ID的请求: http://127.0.0.1:8000
+ERROR 2025-03-31 00:58:22 log 11964 20400 Internal Server Error: /upload-video/
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\views.py", line 228, in post
+    standard_video_path = Path(settings.BASE_DIR) / standard_video.original_mp4_path
+                               ^^^^^^^^
+NameError: name 'settings' is not defined. Did you mean: 'self.settings'?
+ERROR 2025-03-31 00:58:22 basehttp 11964 20400 "POST /upload-video/ HTTP/1.1" 500 23751
+INFO 2025-03-31 00:58:50 autoreload 11964 2080 E:\Digital_people\openpose\app\pose\evalpose\views.py changed, reloading.
+INFO 2025-03-31 00:58:50 autoreload 9228 21640 Watching for file changes with StatReloader
+INFO 2025-03-31 00:59:00 views 9228 22708 收到带参考视频ID的请求: http://127.0.0.1:8000
+INFO 2025-03-31 00:59:00 views 9228 22708 创建会话成功: 1e5d564e-5bc6-4cfe-87bb-4c90da386f5b
+INFO 2025-03-31 00:59:00 services 9228 22708 初始化视频处理服务
+INFO 2025-03-31 00:59:00 services 9228 22708 开始处理视频: session_id=1e5d564e-5bc6-4cfe-87bb-4c90da386f5b
+INFO 2025-03-31 00:59:03 services 9228 22708 DTW分析完成: 0.13950413365361838
+ERROR 2025-03-31 00:59:04 services 9228 22708 视频处理失败: list index out of range
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\services.py", line 126, in process_videos
+    future.result()
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py", line 428, in _process_overlap_video
+    std_frame = std_video[std_frame_idx]
+                ~~~~~~~~~^^^^^^^^^^^^^^^
+IndexError: list index out of range
+ERROR 2025-03-31 00:59:04 views 9228 22708 处理上传失败: list index out of range
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\views.py", line 259, in post
+    process_result = video_service.process_videos(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\services.py", line 126, in process_videos
+    future.result()
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py", line 428, in _process_overlap_video
+    std_frame = std_video[std_frame_idx]
+                ~~~~~~~~~^^^^^^^^^^^^^^^
+IndexError: list index out of range
+ERROR 2025-03-31 00:59:04 log 9228 22708 Internal Server Error: /upload-video/
+ERROR 2025-03-31 00:59:04 basehttp 9228 22708 "POST /upload-video/ HTTP/1.1" 500 53
+INFO 2025-03-31 01:00:47 views 9228 22708 收到带参考视频ID的请求: http://127.0.0.1:8000
+INFO 2025-03-31 01:00:47 views 9228 22708 创建会话成功: 727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875
+INFO 2025-03-31 01:00:47 services 9228 22708 初始化视频处理服务
+INFO 2025-03-31 01:00:47 services 9228 22708 开始处理视频: session_id=727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875
+INFO 2025-03-31 01:00:52 services 9228 22708 DTW分析完成: 0.22437294571075161
+INFO 2025-03-31 01:00:52 services 9228 22708 开始生成overlap视频的HLS流: ffmpeg -i E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\overlap_annotated.mp4 -hls_time 2 -hls_list_size 0 -hls_segment_filename E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\overlap_%03d.ts -f hls E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\overlap.m3u8
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: ffmpeg version N-109920-gac6eec1fc2-20230224 Copyright (c) 2000-2023 the FFmpeg developers
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: built with gcc 12.2.0 (crosstool-NG 1.25.0.90_cf9beb1)
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --disable-libmfx --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --disable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp --extra-version=20230224
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: libavutil      58.  3.100 / 58.  3.100
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: libavcodec     60.  4.100 / 60.  4.100
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: libavformat    60.  4.100 / 60.  4.100
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: libavdevice    60.  2.100 / 60.  2.100
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: libavfilter     9.  4.100 /  9.  4.100
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: libswscale      7.  2.100 /  7.  2.100
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: libswresample   4. 11.100 /  4. 11.100
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: libpostproc    57.  2.100 / 57.  2.100
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\overlap_annotated.mp4':
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: Metadata:
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: encoder         : Lavf58.76.100
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: Duration: 00:00:01.77, start: 0.000000, bitrate: 4417 kb/s
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: Stream #0:0[0x1](und): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 4412 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: Metadata:
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: Stream mapping:
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: Stream #0:0 -> #0:0 (mpeg4 (native) -> h264 (libx264))
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: Press [q] to stop, [?] for help
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] using SAR=1/1
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] profile High, level 3.1, 4:2:0, 8-bit
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] 264 - core 164 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=22 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: Output #0, hls, to 'E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\overlap.m3u8':
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: Metadata:
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: encoder         : Lavf60.4.100
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: Stream #0:0(und): Video: h264, yuv420p(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 90k tbn (default)
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: Metadata:
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: encoder         : Lavc60.4.100 libx264
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: Side data:
+DEBUG 2025-03-31 01:00:52 services 9228 22708 FFmpeg 输出: cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: frame=    0 fps=0.0 q=0.0 size=       0kB time=-577014:32:22.77 bitrate=  -0.0kbits/s speed=N/A
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [hls @ 000001ea3db2d640] Opening 'E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\overlap_000.ts' for writing
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [hls @ 000001ea3db2d640] Opening 'E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\overlap.m3u8.tmp' for writing
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: frame=   53 fps=0.0 q=-1.0 Lsize=N/A time=00:00:01.66 bitrate=N/A speed=5.16x
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: video:403kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] frame I:1     Avg QP:18.78  size: 18398
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] frame P:42    Avg QP:21.79  size:  8422
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] frame B:10    Avg QP:24.22  size:  3959
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] consecutive B-frames: 67.9% 15.1% 17.0%  0.0%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] mb I  I16..4: 53.0% 43.0%  4.0%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] mb P  I16..4:  3.2%  8.2%  0.3%  P16..4: 32.0%  5.2%  2.7%  0.0%  0.0%    skip:48.4%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] mb B  I16..4:  0.4%  1.0%  0.0%  B16..8: 42.0%  2.7%  0.5%  direct: 1.1%  skip:52.2%  L0:59.0% L1:37.7% BI: 3.3%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] 8x8 transform intra:65.6% inter:83.3%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] coded y,uvDC,uvAC intra: 30.5% 30.8% 2.8% inter: 8.3% 7.9% 1.3%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] i16 v,h,dc,p: 42% 40% 15%  3%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 27% 27% 40%  1%  1%  1%  1%  1%  1%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 36% 30% 18%  3%  2%  4%  2%  2%  4%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] i8c dc,h,v,p: 51% 26% 21%  2%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] Weighted P-Frames: Y:0.0% UV:0.0%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] ref P L0: 73.5% 10.8% 11.9%  3.8%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] ref B L0: 83.6% 15.5%  0.9%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000001ea3db28840] kb/s:1864.39
+INFO 2025-03-31 01:00:53 services 9228 22708 HLS 流处理完成: E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875/overlap.m3u8
+INFO 2025-03-31 01:00:53 services 9228 22708 开始生成standard视频的HLS流: ffmpeg -i E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\standard_annotated.mp4 -hls_time 2 -hls_list_size 0 -hls_segment_filename E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\standard_%03d.ts -f hls E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\standard.m3u8
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: ffmpeg version N-109920-gac6eec1fc2-20230224 Copyright (c) 2000-2023 the FFmpeg developers
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: built with gcc 12.2.0 (crosstool-NG 1.25.0.90_cf9beb1)
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --disable-libmfx --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --disable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp --extra-version=20230224
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: libavutil      58.  3.100 / 58.  3.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: libavcodec     60.  4.100 / 60.  4.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: libavformat    60.  4.100 / 60.  4.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: libavdevice    60.  2.100 / 60.  2.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: libavfilter     9.  4.100 /  9.  4.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: libswscale      7.  2.100 /  7.  2.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: libswresample   4. 11.100 /  4. 11.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: libpostproc    57.  2.100 / 57.  2.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\standard_annotated.mp4':
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Metadata:
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: encoder         : Lavf58.76.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Duration: 00:00:01.77, start: 0.000000, bitrate: 4495 kb/s
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Stream #0:0[0x1](und): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 4490 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Metadata:
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Stream mapping:
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Stream #0:0 -> #0:0 (mpeg4 (native) -> h264 (libx264))
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Press [q] to stop, [?] for help
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] using SAR=1/1
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] profile High, level 3.1, 4:2:0, 8-bit
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] 264 - core 164 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=22 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Output #0, hls, to 'E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\standard.m3u8':
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Metadata:
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: encoder         : Lavf60.4.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Stream #0:0(und): Video: h264, yuv420p(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 90k tbn (default)
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Metadata:
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: encoder         : Lavc60.4.100 libx264
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Side data:
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: frame=    0 fps=0.0 q=0.0 size=       0kB time=-577014:32:22.77 bitrate=  -0.0kbits/s speed=N/A
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [hls @ 0000026ff0ded640] Opening 'E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\standard_000.ts' for writing
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [hls @ 0000026ff0ded640] Opening 'E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\standard.m3u8.tmp' for writing
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: frame=   53 fps=0.0 q=-1.0 Lsize=N/A time=00:00:01.66 bitrate=N/A speed= 5.1x
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: video:397kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] frame I:1     Avg QP:18.55  size: 18918
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] frame P:42    Avg QP:21.81  size:  8329
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] frame B:10    Avg QP:23.86  size:  3763
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] consecutive B-frames: 66.0% 26.4%  0.0%  7.5%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] mb I  I16..4: 52.7% 42.9%  4.4%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] mb P  I16..4:  3.1%  7.6%  0.2%  P16..4: 32.2%  5.4%  3.0%  0.0%  0.0%    skip:48.4%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] mb B  I16..4:  0.7%  1.6%  0.0%  B16..8: 41.0%  2.7%  0.4%  direct: 1.3%  skip:52.2%  L0:55.2% L1:41.9% BI: 2.9%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] 8x8 transform intra:65.0% inter:82.5%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] coded y,uvDC,uvAC intra: 29.0% 30.3% 2.2% inter: 8.4% 8.5% 1.6%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] i16 v,h,dc,p: 42% 40% 15%  4%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 27% 27% 41%  1%  1%  0%  1%  1%  1%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 36% 30% 22%  2%  2%  2%  2%  1%  3%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] i8c dc,h,v,p: 51% 25% 22%  2%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] Weighted P-Frames: Y:0.0% UV:0.0%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] ref P L0: 73.8% 10.7% 11.9%  3.6%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] ref B L0: 87.0% 12.0%  1.0%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] ref B L1: 98.8%  1.2%
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 0000026ff0de8840] kb/s:1840.08
+INFO 2025-03-31 01:00:53 services 9228 22708 HLS 流处理完成: E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875/standard.m3u8
+INFO 2025-03-31 01:00:53 services 9228 22708 开始生成exercise视频的HLS流: ffmpeg -i E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\exercise_annotated.mp4 -hls_time 2 -hls_list_size 0 -hls_segment_filename E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\exercise_%03d.ts -f hls E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\exercise.m3u8
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: ffmpeg version N-109920-gac6eec1fc2-20230224 Copyright (c) 2000-2023 the FFmpeg developers
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: built with gcc 12.2.0 (crosstool-NG 1.25.0.90_cf9beb1)
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --disable-libmfx --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --disable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp --extra-version=20230224
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: libavutil      58.  3.100 / 58.  3.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: libavcodec     60.  4.100 / 60.  4.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: libavformat    60.  4.100 / 60.  4.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: libavdevice    60.  2.100 / 60.  2.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: libavfilter     9.  4.100 /  9.  4.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: libswscale      7.  2.100 /  7.  2.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: libswresample   4. 11.100 /  4. 11.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: libpostproc    57.  2.100 / 57.  2.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\exercise_annotated.mp4':
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Metadata:
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: encoder         : Lavf58.76.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Duration: 00:00:01.77, start: 0.000000, bitrate: 4401 kb/s
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Stream #0:0[0x1](und): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 4396 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Metadata:
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Stream mapping:
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Stream #0:0 -> #0:0 (mpeg4 (native) -> h264 (libx264))
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Press [q] to stop, [?] for help
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] using SAR=1/1
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] profile High, level 3.1, 4:2:0, 8-bit
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] 264 - core 164 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=22 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Output #0, hls, to 'E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\exercise.m3u8':
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Metadata:
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: encoder         : Lavf60.4.100
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Stream #0:0(und): Video: h264, yuv420p(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 90k tbn (default)
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Metadata:
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: encoder         : Lavc60.4.100 libx264
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: Side data:
+DEBUG 2025-03-31 01:00:53 services 9228 22708 FFmpeg 输出: cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: frame=    0 fps=0.0 q=0.0 size=       0kB time=-577014:32:22.77 bitrate=  -0.0kbits/s speed=N/A
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [hls @ 000002cd45c3d640] Opening 'E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\exercise_000.ts' for writing
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [hls @ 000002cd45c3d640] Opening 'E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875\exercise.m3u8.tmp' for writing
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: frame=   53 fps=0.0 q=-1.0 Lsize=N/A time=00:00:01.66 bitrate=N/A speed=5.17x
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: video:395kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] frame I:1     Avg QP:19.06  size: 19820
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] frame P:44    Avg QP:21.82  size:  8116
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] frame B:8     Avg QP:23.88  size:  3384
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] consecutive B-frames: 71.7% 22.6%  5.7%  0.0%
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] mb I  I16..4: 50.7% 45.1%  4.2%
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] mb P  I16..4:  3.1%  7.4%  0.2%  P16..4: 31.9%  5.3%  3.0%  0.0%  0.0%    skip:49.1%
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] mb B  I16..4:  0.6%  1.0%  0.0%  B16..8: 39.4%  2.3%  0.4%  direct: 1.4%  skip:54.8%  L0:55.6% L1:40.9% BI: 3.5%
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] 8x8 transform intra:64.7% inter:82.5%
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] coded y,uvDC,uvAC intra: 29.2% 29.9% 2.4% inter: 8.5% 8.7% 1.9%
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] i16 v,h,dc,p: 42% 40% 15%  3%
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 27% 27% 41%  1%  1%  1%  1%  1%  1%
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 39% 29% 19%  2%  2%  2%  2%  2%  2%
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] i8c dc,h,v,p: 51% 26% 22%  2%
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] Weighted P-Frames: Y:0.0% UV:0.0%
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] ref P L0: 73.7% 10.6% 12.1%  3.6%
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] ref B L0: 83.1% 16.1%  0.8%
+DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd45c38840] kb/s:1829.40
+INFO 2025-03-31 01:00:54 services 9228 22708 HLS 流处理完成: E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875/exercise.m3u8
+INFO 2025-03-31 01:00:54 services 9228 22708 视频处理完成，HLS转换状态: {'dtw_success': True, 'hls_success': True, 'standard_hls': True, 'exercise_hls': True, 'overlap_hls': True, 'frame_scores': {'0': 92.47640107902973, '1': 96.44308626626861, '2': 98.04109352449535, '3': 98.45892704839007, '4': 98.78739011503326, '5': 98.05912444604203, '6': 94.87357514654069, '7': 93.87534551002236, '8': 97.13932524534843, '9': 97.53557359018309, '10': 98.01976212694524, '11': 99.00767806239334, '12': 92.72174192538603, '13': 93.510403635598, '14': 95.31495245708136, '15': 91.9171023388264, '16': 96.41869468099034, '17': 90.66328686263455, '18': 93.7408123437922, '19': 97.76670757267928, '20': 99.09021512892076, '21': 98.02897826264982, '22': 99.02257435782043, '23': 99.18996769971476, '24': 97.61075268965043, '25': 95.29306801145134, '26': 92.76612601260672, '27': 99.5850386115236, '28': 98.3885029051188, '29': 97.46310965047654, '30': 95.89296062378847, '31': 99.670346663981, '32': 99.88993886418332, '33': 99.87973304298495, '34': 99.65036117688277, '35': 99.70307263389441, '36': 99.9600467294804, '37': 99.41161609449692, '38': 99.02006113223817, '39': 99.40914961984436, '40': 100.0, '41': 99.70536328628896, '42': 99.15628634580082, '43': 99.87969202332005, '44': 99.3728214593828, '45': 98.64182366428338, '46': 98.8835024396244, '47': 99.47669464956128, '48': 95.30898095171283, '49': 87.33958226863581, '50': 93.50883498198085, '51': 97.43036297315858, '52': 0.0}}
+INFO 2025-03-31 01:00:54 basehttp 9228 22708 "POST /upload-video/ HTTP/1.1" 201 2119

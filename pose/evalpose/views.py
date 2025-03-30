@@ -7,8 +7,11 @@ from .models import EvalSession, VideoFile
 import logging
 import time
 from django.http import JsonResponse
+from django.conf import settings
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
+from pathlib import Path
+from video_manager.models import VideoAsset
 
 logger = logging.getLogger(__name__)
 
@@ -165,6 +168,139 @@ class FrameScoresView(APIView):
             "frame_scores": frame_scores
         }
         return Response(response_data, status=status.HTTP_200_OK)        
+
+class VideoUploadWithReferenceView(APIView):
+    @swagger_auto_schema(
+        operation_description="Upload exercise video and reference a standard video by its numeric_id",
+        request_body=openapi.Schema(
+            type=openapi.TYPE_OBJECT,
+            required=['exercise', 'standard_numeric_id'],
+            properties={
+                'exercise': openapi.Schema(
+                    type=openapi.TYPE_STRING, 
+                    description='Base64 encoded exercise video'
+                ),
+                'standard_numeric_id': openapi.Schema(
+                    type=openapi.TYPE_STRING, 
+                    description='Numeric ID of the standard video to reference'
+                ),
+            }
+        ),
+        responses={
+            201: openapi.Response(
+                description="Successfully processed videos",
+                schema=openapi.Schema(
+                    type=openapi.TYPE_OBJECT,
+                    properties={
+                        'session_id': openapi.Schema(type=openapi.TYPE_STRING),
+                        'standard_video_hls': openapi.Schema(type=openapi.TYPE_STRING),
+                        'exercise_video_hls': openapi.Schema(type=openapi.TYPE_STRING),
+                        'overlap_video_hls': openapi.Schema(type=openapi.TYPE_STRING),
+                        'exercise_worst_frames': openapi.Schema(type=openapi.TYPE_ARRAY, items=openapi.Schema(type=openapi.TYPE_STRING)),
+                        'frame_scores': openapi.Schema(type=openapi.TYPE_OBJECT),
+                        'processing_status': openapi.Schema(type=openapi.TYPE_OBJECT),
+                    }
+                )
+            ),
+            400: "Invalid input or standard video not found",
+            500: "Server error during processing"
+        }
+    )
+    def post(self, request):
+        logger.info(f"收到带参考视频ID的请求: {request.META.get('HTTP_ORIGIN')}")
+        
+        # Validate input data
+        if 'exercise' not in request.data:
+            return Response({'error': 'Missing exercise video'}, status=status.HTTP_400_BAD_REQUEST)
+            
+        if 'standard_numeric_id' not in request.data:
+            return Response({'error': 'Missing standard_numeric_id'}, status=status.HTTP_400_BAD_REQUEST)
+        
+        standard_numeric_id = request.data['standard_numeric_id']
+        
+        # Look up the standard video by numeric_id
+        standard_video = VideoAsset.objects.filter(numeric_id=standard_numeric_id).first()
+        if not standard_video:
+            logger.warning(f"找不到指定ID的标准视频: {standard_numeric_id}")
+            return Response({'error': f'Standard video with ID {standard_numeric_id} not found'}, 
+                          status=status.HTTP_400_BAD_REQUEST)
+        
+        # Get path to the standard video file
+        standard_video_path = Path(settings.BASE_DIR) / standard_video.original_mp4_path
+        if not standard_video_path.exists():
+            logger.warning(f"标准视频文件不存在: {standard_video_path}")
+            return Response({'error': 'Standard video file not found on server'}, 
+                          status=status.HTTP_400_BAD_REQUEST)
+            
+        try:
+            # Create session
+            session = EvalSession.objects.create(status='pending')
+            logger.info(f"创建会话成功: {session.session_id}")
+
+            # Create exercise file from base64 data
+            exercise_filename = f"exercise_{session.session_id}.mp4"
+            
+            # Convert base64 to file
+            serializer = VideoUploadSerializer()  # Create serializer instance for helper methods
+            exercise_file_obj = serializer.base64_to_file(request.data['exercise'], exercise_filename)
+
+            # Create video file record for exercise
+            exercise_file = VideoFile.objects.create(
+                session=session,
+                file=exercise_file_obj,
+                video_type='exercise'
+            )
+
+            # Ensure file is saved
+            exercise_file.file.close()
+
+            # Start video analysis and processing with referenced standard video
+            video_service = VideoProcessingService()
+            process_result = video_service.process_videos(
+                session.session_id, 
+                str(standard_video_path),  # Use the path to the referenced standard video
+                exercise_file.file.path
+            )
+            
+            # Check processing results
+            if not process_result['hls_success']:
+                logger.warning(f"HLS 转换未完全成功: standard={process_result['standard_hls']}, exercise={process_result['exercise_hls']}")
+            
+            # Return session ID and video URLs
+            response_data = {
+                'session_id': session.session_id,
+                'standard_video_hls': f'/media/hls/{session.session_id}/standard.m3u8',
+                'exercise_video_hls': f'/media/hls/{session.session_id}/exercise.m3u8',
+                'overlap_video_hls': f'/media/hls/{session.session_id}/overlap.m3u8',
+                'exercise_worst_frames': [f'/media/hls/{session.session_id}/patient_frame_1.jpg',
+                                          f'/media/hls/{session.session_id}/patient_frame_2.jpg',
+                                          f'/media/hls/{session.session_id}/patient_frame_3.jpg'],
+                'frame_scores': process_result['frame_scores'],
+                'standard_video_info': {
+                    'numeric_id': standard_video.numeric_id,
+                    'tag_string': standard_video.tag_string,
+                },
+                'processing_status': {
+                    'dtw_success': process_result['dtw_success'],
+                    'hls_success': process_result['hls_success'],
+                    'standard_hls': process_result['standard_hls'],
+                    'exercise_hls': process_result['exercise_hls'],
+                    'overlap_hls': process_result['overlap_hls']
+                }
+            }
+            
+            return JsonResponse(response_data, status=status.HTTP_201_CREATED)
+
+        except Exception as e:
+            logger.error(f"处理上传失败: {str(e)}", exc_info=True)
+            if 'session' in locals():
+                session.status = 'failed'
+                session.error_message = str(e)
+                session.save()
+            return Response({
+                'error': str(e),
+                'status': 'failed'
+            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
 class TestUploadView(APIView):
