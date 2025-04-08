@@ -6020,3 +6020,191 @@ DEBUG 2025-03-31 01:00:54 services 9228 22708 FFmpeg 输出: [libx264 @ 000002cd
 INFO 2025-03-31 01:00:54 services 9228 22708 HLS 流处理完成: E:\Digital_people\openpose\app\pose\media\hls\727cf6ee-7ef1-4ebb-9ad0-3caaf8a43875/exercise.m3u8
 INFO 2025-03-31 01:00:54 services 9228 22708 视频处理完成，HLS转换状态: {'dtw_success': True, 'hls_success': True, 'standard_hls': True, 'exercise_hls': True, 'overlap_hls': True, 'frame_scores': {'0': 92.47640107902973, '1': 96.44308626626861, '2': 98.04109352449535, '3': 98.45892704839007, '4': 98.78739011503326, '5': 98.05912444604203, '6': 94.87357514654069, '7': 93.87534551002236, '8': 97.13932524534843, '9': 97.53557359018309, '10': 98.01976212694524, '11': 99.00767806239334, '12': 92.72174192538603, '13': 93.510403635598, '14': 95.31495245708136, '15': 91.9171023388264, '16': 96.41869468099034, '17': 90.66328686263455, '18': 93.7408123437922, '19': 97.76670757267928, '20': 99.09021512892076, '21': 98.02897826264982, '22': 99.02257435782043, '23': 99.18996769971476, '24': 97.61075268965043, '25': 95.29306801145134, '26': 92.76612601260672, '27': 99.5850386115236, '28': 98.3885029051188, '29': 97.46310965047654, '30': 95.89296062378847, '31': 99.670346663981, '32': 99.88993886418332, '33': 99.87973304298495, '34': 99.65036117688277, '35': 99.70307263389441, '36': 99.9600467294804, '37': 99.41161609449692, '38': 99.02006113223817, '39': 99.40914961984436, '40': 100.0, '41': 99.70536328628896, '42': 99.15628634580082, '43': 99.87969202332005, '44': 99.3728214593828, '45': 98.64182366428338, '46': 98.8835024396244, '47': 99.47669464956128, '48': 95.30898095171283, '49': 87.33958226863581, '50': 93.50883498198085, '51': 97.43036297315858, '52': 0.0}}
 INFO 2025-03-31 01:00:54 basehttp 9228 22708 "POST /upload-video/ HTTP/1.1" 201 2119
+INFO 2025-04-08 16:38:40 autoreload 18052 21476 Watching for file changes with StatReloader
+WARNING 2025-04-08 16:39:05 log 18052 17868 Not Found: /
+WARNING 2025-04-08 16:39:05 basehttp 18052 17868 "GET / HTTP/1.1" 404 3717
+WARNING 2025-04-08 16:39:05 log 18052 17868 Not Found: /favicon.ico
+WARNING 2025-04-08 16:39:05 basehttp 18052 17868 "GET /favicon.ico HTTP/1.1" 404 3768
+INFO 2025-04-08 16:39:18 basehttp 18052 17868 "GET /api-docs/swagger HTTP/1.1" 301 0
+INFO 2025-04-08 16:39:18 basehttp 18052 14736 "GET /api-docs/swagger/ HTTP/1.1" 200 2230
+INFO 2025-04-08 16:39:19 basehttp 18052 14736 "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2025-04-08 16:39:19 basehttp 18052 14736 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2025-04-08 16:39:19 basehttp 18052 14736 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2025-04-08 16:39:19 basehttp 18052 14736 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2025-04-08 16:39:19 basehttp 18052 14736 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2025-04-08 16:39:19 basehttp 18052 14736 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2025-04-08 16:39:19 basehttp 18052 14736 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2025-04-08 16:39:19 basehttp 18052 14736 "GET /api-docs/swagger/?format=openapi HTTP/1.1" 200 6025
+INFO 2025-04-08 16:39:19 basehttp 18052 14736 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+WARNING 2025-04-08 16:39:57 log 18052 22024 Not Found: /
+WARNING 2025-04-08 16:39:57 basehttp 18052 22024 "GET / HTTP/1.1" 404 3718
+WARNING 2025-04-08 16:39:57 log 18052 22024 Not Found: /favicon.ico
+WARNING 2025-04-08 16:39:57 basehttp 18052 22024 "GET /favicon.ico HTTP/1.1" 404 3769
+ERROR 2025-04-08 16:41:31 log 18052 20832 Internal Server Error: /upload-video
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 10.29.79.2:8000/upload-video/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-04-08 16:41:32 basehttp 18052 20832 "POST /upload-video HTTP/1.1" 500 76774
+INFO 2025-04-08 16:43:10 views 18052 21728 收到带参考视频ID的请求: None
+INFO 2025-04-08 16:43:11 views 18052 21728 创建会话成功: 6dea3b36-9512-4737-8f77-cebbed2aee72
+INFO 2025-04-08 16:43:11 services 18052 21728 初始化视频处理服务
+INFO 2025-04-08 16:43:11 services 18052 21728 开始处理视频: session_id=6dea3b36-9512-4737-8f77-cebbed2aee72
+ERROR 2025-04-08 16:43:15 services 18052 21728 视频处理失败: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (64,) + inhomogeneous part.
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\services.py", line 95, in process_videos
+    dtw_result = comparator.compare_sequences()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py", line 527, in compare_sequences
+    pat_features = self._extract_features(self.pat_seq)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py", line 572, in _extract_features
+    return np.array(features)
+           ^^^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (64,) + inhomogeneous part.
+ERROR 2025-04-08 16:43:15 views 18052 21728 处理上传失败: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (64,) + inhomogeneous part.
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\views.py", line 259, in post
+    process_result = video_service.process_videos(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\services.py", line 95, in process_videos
+    dtw_result = comparator.compare_sequences()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py", line 527, in compare_sequences
+    pat_features = self._extract_features(self.pat_seq)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py", line 572, in _extract_features
+    return np.array(features)
+           ^^^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (64,) + inhomogeneous part.
+ERROR 2025-04-08 16:43:15 log 18052 21728 Internal Server Error: /upload-video/
+ERROR 2025-04-08 16:43:15 basehttp 18052 21728 "POST /upload-video/ HTTP/1.1" 500 189
+INFO 2025-04-08 16:43:31 views 18052 21728 收到带参考视频ID的请求: None
+INFO 2025-04-08 16:43:31 views 18052 21728 创建会话成功: 80c4aef3-5afa-4ec8-b60d-c840a3bced6a
+INFO 2025-04-08 16:43:32 services 18052 21728 初始化视频处理服务
+INFO 2025-04-08 16:43:32 services 18052 21728 开始处理视频: session_id=80c4aef3-5afa-4ec8-b60d-c840a3bced6a
+ERROR 2025-04-08 16:43:36 services 18052 21728 视频处理失败: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (64,) + inhomogeneous part.
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\services.py", line 95, in process_videos
+    dtw_result = comparator.compare_sequences()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py", line 527, in compare_sequences
+    pat_features = self._extract_features(self.pat_seq)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py", line 572, in _extract_features
+    return np.array(features)
+           ^^^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (64,) + inhomogeneous part.
+ERROR 2025-04-08 16:43:36 views 18052 21728 处理上传失败: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (64,) + inhomogeneous part.
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\views.py", line 259, in post
+    process_result = video_service.process_videos(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\services.py", line 95, in process_videos
+    dtw_result = comparator.compare_sequences()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py", line 527, in compare_sequences
+    pat_features = self._extract_features(self.pat_seq)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py", line 572, in _extract_features
+    return np.array(features)
+           ^^^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (64,) + inhomogeneous part.
+ERROR 2025-04-08 16:43:36 log 18052 21728 Internal Server Error: /upload-video/
+ERROR 2025-04-08 16:43:36 basehttp 18052 21728 "POST /upload-video/ HTTP/1.1" 500 189
+INFO 2025-04-08 16:44:04 views 18052 21728 收到带参考视频ID的请求: None
+INFO 2025-04-08 16:44:05 views 18052 21728 创建会话成功: f6f07ba0-fd5f-4d37-a2a4-a923a5212e2d
+INFO 2025-04-08 16:44:05 services 18052 21728 初始化视频处理服务
+INFO 2025-04-08 16:44:05 services 18052 21728 开始处理视频: session_id=f6f07ba0-fd5f-4d37-a2a4-a923a5212e2d
+ERROR 2025-04-08 16:44:08 services 18052 21728 视频处理失败: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (64,) + inhomogeneous part.
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\services.py", line 95, in process_videos
+    dtw_result = comparator.compare_sequences()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py", line 527, in compare_sequences
+    pat_features = self._extract_features(self.pat_seq)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py", line 572, in _extract_features
+    return np.array(features)
+           ^^^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (64,) + inhomogeneous part.
+ERROR 2025-04-08 16:44:08 views 18052 21728 处理上传失败: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (64,) + inhomogeneous part.
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\views.py", line 259, in post
+    process_result = video_service.process_videos(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\services.py", line 95, in process_videos
+    dtw_result = comparator.compare_sequences()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py", line 527, in compare_sequences
+    pat_features = self._extract_features(self.pat_seq)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py", line 572, in _extract_features
+    return np.array(features)
+           ^^^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (64,) + inhomogeneous part.
+ERROR 2025-04-08 16:44:08 log 18052 21728 Internal Server Error: /upload-video/
+ERROR 2025-04-08 16:44:08 basehttp 18052 21728 "POST /upload-video/ HTTP/1.1" 500 189
+INFO 2025-04-08 16:44:23 basehttp 18052 21728 - Broken pipe from ('10.29.51.85', 42332)
+INFO 2025-04-08 17:38:34 autoreload 18052 21476 E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py changed, reloading.
+INFO 2025-04-08 17:38:35 autoreload 1984 20056 Watching for file changes with StatReloader
+INFO 2025-04-08 17:42:28 autoreload 1984 20056 E:\Digital_people\openpose\app\pose\evalpose\services.py changed, reloading.
+INFO 2025-04-08 17:42:29 autoreload 21968 7324 Watching for file changes with StatReloader
+INFO 2025-04-08 17:44:41 autoreload 21968 7324 E:\Digital_people\openpose\app\pose\evalpose\views.py changed, reloading.
+INFO 2025-04-08 17:44:41 autoreload 23536 23276 Watching for file changes with StatReloader
+INFO 2025-04-08 17:50:21 autoreload 23536 23276 E:\Digital_people\openpose\app\pose\evalpose\exceptions.py changed, reloading.
+INFO 2025-04-08 17:50:22 autoreload 22872 23012 Watching for file changes with StatReloader
+WARNING 2025-04-08 17:50:58 log 22872 22564 Not Found: /
+WARNING 2025-04-08 17:50:58 basehttp 22872 22564 "GET / HTTP/1.1" 404 3718
+INFO 2025-04-08 17:51:04 autoreload 21628 20404 Watching for file changes with StatReloader
+INFO 2025-04-08 17:52:08 views 21628 10368 收到带参考视频ID的请求: http://localhost:8000
+INFO 2025-04-08 17:52:08 views 21628 10368 创建会话成功: cb75c026-d6b4-463b-a587-763f5d76c8d7
+INFO 2025-04-08 17:52:08 services 21628 10368 初始化视频处理服务
+INFO 2025-04-08 17:52:08 services 21628 10368 开始处理视频: session_id=cb75c026-d6b4-463b-a587-763f5d76c8d7
+INFO 2025-04-08 17:52:14 services 21628 10368 DTW分析完成: 0.13950413365361838
+ERROR 2025-04-08 17:52:15 services 21628 10368 视频处理失败: list index out of range
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\services.py", line 127, in process_videos
+    future.result()
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py", line 430, in _process_overlap_video
+    std_frame = std_video[std_frame_idx]
+                ~~~~~~~~~^^^^^^^^^^^^^^^
+IndexError: list index out of range
+WARNING 2025-04-08 17:52:15 exceptions 21628 10368 视频处理失败: list index out of range
+ERROR 2025-04-08 17:52:15 log 21628 10368 Internal Server Error: /upload-video/
+ERROR 2025-04-08 17:52:15 basehttp 21628 10368 "POST /upload-video/ HTTP/1.1" 500 99
+INFO 2025-04-08 18:01:23 autoreload 21628 20404 E:\Digital_people\openpose\app\pose\evalpose\exceptions.py changed, reloading.
+INFO 2025-04-08 18:01:24 autoreload 21752 20140 Watching for file changes with StatReloader
+INFO 2025-04-08 18:01:26 autoreload 21752 20140 E:\Digital_people\openpose\app\pose\evalpose\exceptions.py changed, reloading.
+INFO 2025-04-08 18:01:27 autoreload 13396 15568 Watching for file changes with StatReloader
+INFO 2025-04-08 18:14:23 autoreload 13396 15568 E:\Digital_people\openpose\app\pose\evalpose\exceptions.py changed, reloading.
+INFO 2025-04-08 18:14:23 autoreload 21856 9632 Watching for file changes with StatReloader
+INFO 2025-04-08 18:16:41 autoreload 21856 9632 E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py changed, reloading.
+INFO 2025-04-08 18:16:41 autoreload 11484 19976 Watching for file changes with StatReloader
+INFO 2025-04-08 18:19:29 autoreload 11484 19976 E:\Digital_people\openpose\app\pose\evalpose\services.py changed, reloading.
+INFO 2025-04-08 18:19:30 autoreload 20884 11852 Watching for file changes with StatReloader
+INFO 2025-04-08 18:19:36 views 20884 16500 收到带参考视频ID的请求: http://localhost:8000
+INFO 2025-04-08 18:19:36 views 20884 16500 创建会话成功: 96d8d2e8-bfdf-4d01-8fc1-02ef458fdb43
+INFO 2025-04-08 18:19:37 services 20884 16500 初始化视频处理服务
+INFO 2025-04-08 18:19:37 services 20884 16500 开始处理视频: session_id=96d8d2e8-bfdf-4d01-8fc1-02ef458fdb43
+INFO 2025-04-08 18:19:43 services 20884 16500 DTW分析完成: 0.13950413365361838
+WARNING 2025-04-08 18:19:44 exceptions 20884 16500 视频处理失败: 用户上传视频非全身，请录制全身视频
+WARNING 2025-04-08 18:19:44 log 20884 16500 Bad Request: /upload-video/
+WARNING 2025-04-08 18:19:44 basehttp 20884 16500 "POST /upload-video/ HTTP/1.1" 400 178
