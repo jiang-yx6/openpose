@@ -125,8 +125,8 @@ def process_directory(root_dir):
                 convert_gif_to_mp4(gif_path, mp4_path)
                 extract_middle_frame_from_gif(gif_path, webp_cover_path)
             
-            # Case 2: Only WEBP exists
-            elif webp_path and not gif_path:
+            # Case 2: Only WEBP exists, mp4 doesn't exist
+            elif webp_path and not gif_path and not os.path.exists(mp4_path):
                 print(f"Creating MP4 from {webp_path}")
                 create_mp4_from_webp(webp_path, mp4_path)
             
