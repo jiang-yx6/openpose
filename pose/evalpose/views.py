@@ -2,7 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .serializers import VideoUploadSerializer
-from .services import VideoProcessingService
+# from .services import VideoProcessingService
 from .models import EvalSession, VideoFile
 import logging
 import time
@@ -12,6 +12,7 @@ from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 from pathlib import Path
 from video_manager.models import VideoAsset
+from .service_factory import get_video_processing_service
 
 logger = logging.getLogger(__name__)
 
@@ -82,7 +83,7 @@ class VideoUploadView(APIView):
                 exercise_file.file.close()
 
                 # 启动视频分析和处理
-                video_service = VideoProcessingService()
+                video_service = get_video_processing_service()
                 process_result = video_service.process_videos(
                     session.session_id, 
                     standard_file.file.path, 
@@ -255,7 +256,7 @@ class VideoUploadWithReferenceView(APIView):
             exercise_file.file.close()
 
             # Start video analysis and processing with referenced standard video
-            video_service = VideoProcessingService()
+            video_service = get_video_processing_service()
             process_result = video_service.process_videos(
                 session.session_id, 
                 str(standard_video_path),  # Use the path to the referenced standard video
