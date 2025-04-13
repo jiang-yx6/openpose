@@ -18,6 +18,7 @@ logger = logging.getLogger(__name__)
 # Create your views here.
 
 class VideoUploadView(APIView):
+    # Decrepated: This view is now replaced by VideoUploadWithReferenceView and may cause incorrect results and confusive errors.
     @swagger_auto_schema(
         operation_description="Upload standard and exercise videos for analysis",
         request_body=openapi.Schema(
@@ -52,7 +53,8 @@ class VideoUploadView(APIView):
             ),
             400: "Invalid input data",
             500: "Server error during processing"
-        }
+        },
+        deprecated=True
     )
     def post(self, request):
         logger.info(f"收到请求: {request.META.get('HTTP_ORIGIN')}")
