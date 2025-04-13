@@ -13,6 +13,8 @@ from drf_yasg import openapi
 from pathlib import Path
 from video_manager.models import VideoAsset
 from .service_factory import get_video_processing_service
+from django.utils.deprecation import RemovedInNextVersionWarning
+import warnings
 
 logger = logging.getLogger(__name__)
 
@@ -105,13 +107,20 @@ class VideoUploadView(APIView):
                     'exercise_worst_frames': [f'/media/hls/{session.session_id}/patient_frame_1.jpg',
                                               f'/media/hls/{session.session_id}/patient_frame_2.jpg',
                                               f'/media/hls/{session.session_id}/patient_frame_3.jpg'],
-                    'frame_scores': process_result['frame_scores'],
                     'processing_status': {
                         'dtw_success': process_result['dtw_success'],
                         'hls_success': process_result['hls_success'],
                         'standard_hls': process_result['standard_hls'],
                         'exercise_hls': process_result['exercise_hls'],
                         'overlap_hls': process_result['overlap_hls']
+                    },
+                    'frame_scores': process_result['frame_scores'],
+                    'advanced_metrics': process_result.get('advanced_metrics', {}),
+                    'action_stages': process_result.get('action_stages', []),
+                    'lowest_score_frames': process_result.get('lowest_score_frames', []),
+                    'standard_video_info': {
+                        'numeric_id': standard_file.numeric_id,
+                        'tag_string': standard_file.tag_string,
                     }
                 }
                 
@@ -338,3 +347,220 @@ class TestUploadView(APIView):
         # }
         response_data = {}
         return JsonResponse(response_data, status=status.HTTP_201_CREATED)
+
+class AdvancedMetricsView(APIView):
+    @swagger_auto_schema(
+        operation_description="Get advanced metrics for a session",
+        manual_parameters=[
+            openapi.Parameter(
+                name='session_id',
+                in_=openapi.IN_PATH,
+                type=openapi.TYPE_STRING,
+                description='Session ID to get advanced metrics for',
+                required=True
+            )
+        ],
+        responses={
+            200: openapi.Response(
+                description="Advanced metrics data",
+                schema=openapi.Schema(
+                    type=openapi.TYPE_OBJECT,
+                    properties={
+                        'alignment_angle': openapi.Schema(type=openapi.TYPE_OBJECT),
+                        'time_variance': openapi.Schema(type=openapi.TYPE_OBJECT),
+                        'alignment_ratio': openapi.Schema(type=openapi.TYPE_NUMBER),
+                        'speed_variation': openapi.Schema(type=openapi.TYPE_OBJECT),
+                        'overall_scores': openapi.Schema(type=openapi.TYPE_OBJECT),
+                    }
+                )
+            ),
+            404: "Session not found",
+            500: "Server error"
+        }
+    )
+    def get(self, request, session_id):
+        service = get_video_processing_service(use_modern=True)
+        try:
+            # Add debug logging
+            from .models import EvalSession
+            session = EvalSession.objects.get(pk=session_id)
+            logger.info(f"Session {session_id} frame_data keys: {list(session.frame_data.keys() if session.frame_data else [])}")
+            
+            metrics = service.get_advanced_metrics(session_id)
+            logger.info(f"Advanced metrics for session {session_id}: {metrics}")
+            return Response(metrics, status=status.HTTP_200_OK)
+        except Exception as e:
+            logger.error(f"Error fetching advanced metrics: {str(e)}")
+            return Response({
+                'error': str(e)
+            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class ExerciseStagesView(APIView):
+    @swagger_auto_schema(
+        operation_description="Get exercise stages for a session",
+        manual_parameters=[
+            openapi.Parameter(
+                name='session_id',
+                in_=openapi.IN_PATH,
+                type=openapi.TYPE_STRING,
+                description='Session ID',
+                required=True
+            )
+        ],
+        responses={
+            200: openapi.Response(
+                description="Exercise stages data",
+                schema=openapi.Schema(
+                    type=openapi.TYPE_ARRAY,
+                    items=openapi.Schema(
+                        type=openapi.TYPE_ARRAY,
+                        items=openapi.Schema(type=openapi.TYPE_INTEGER)
+                    )
+                )
+            ),
+            404: "Session not found",
+            500: "Server error"
+        }
+    )
+    def get(self, request, session_id):
+        service = get_video_processing_service(use_modern=True)
+        try:
+            stages = service.detect_exercise_stages(session_id)
+            return Response(stages, status=status.HTTP_200_OK)
+        except Exception as e:
+            return Response({
+                'error': str(e)
+            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class SpeedAnalysisView(APIView):
+    @swagger_auto_schema(
+        operation_description="Get speed analysis for a session",
+        manual_parameters=[
+            openapi.Parameter(
+                name='session_id',
+                in_=openapi.IN_PATH,
+                type=openapi.TYPE_STRING,
+                description='Session ID',
+                required=True
+            )
+        ],
+        responses={
+            200: openapi.Response(
+                description="Speed analysis data",
+                schema=openapi.Schema(
+                    type=openapi.TYPE_OBJECT,
+                    properties={
+                        'slow_segments': openapi.Schema(
+                            type=openapi.TYPE_ARRAY,
+                            items=openapi.Schema(
+                                type=openapi.TYPE_ARRAY,
+                                items=openapi.Schema(type=openapi.TYPE_INTEGER)
+                            )
+                        ),
+                        'fast_segments': openapi.Schema(
+                            type=openapi.TYPE_ARRAY,
+                            items=openapi.Schema(
+                                type=openapi.TYPE_ARRAY,
+                                items=openapi.Schema(type=openapi.TYPE_INTEGER)
+                            )
+                        ),
+                    }
+                )
+            ),
+            404: "Session not found",
+            500: "Server error"
+        }
+    )
+    def get(self, request, session_id):
+        service = get_video_processing_service(use_modern=True)
+        try:
+            analysis = service.get_speed_analysis(session_id)
+            return Response(analysis, status=status.HTTP_200_OK)
+        except Exception as e:
+            return Response({
+                'error': str(e)
+            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class WorstFramesView(APIView):
+    @swagger_auto_schema(
+        operation_description="Get worst performing frames for a session",
+        manual_parameters=[
+            openapi.Parameter(
+                name='session_id',
+                in_=openapi.IN_PATH,
+                type=openapi.TYPE_STRING,
+                description='Session ID',
+                required=True
+            ),
+            openapi.Parameter(
+                name='max_frames',
+                in_=openapi.IN_QUERY,
+                type=openapi.TYPE_INTEGER,
+                description='Maximum number of frames to return',
+                required=False,
+                default=3
+            )
+        ],
+        responses={
+            200: openapi.Response(
+                description="Worst frames data",
+                schema=openapi.Schema(
+                    type=openapi.TYPE_ARRAY,
+                    items=openapi.Schema(
+                        type=openapi.TYPE_ARRAY,
+                        items=openapi.Schema(type=openapi.TYPE_NUMBER)
+                    )
+                )
+            ),
+            404: "Session not found",
+            500: "Server error"
+        }
+    )
+    def get(self, request, session_id):
+        max_frames = int(request.query_params.get('max_frames', 3))
+        service = get_video_processing_service(use_modern=True)
+        
+        try:
+            worst_frames = service.get_worst_frames(session_id, max_frames)
+            return Response(worst_frames, status=status.HTTP_200_OK)
+        except Exception as e:
+            return Response({
+                'error': str(e)
+            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class DeprecatedFrameScoresView(FrameScoresView):
+    @swagger_auto_schema(
+        operation_description="Get frame scores for a session (DEPRECATED: Use /scores/frame-scores/ instead)",
+        manual_parameters=[
+            openapi.Parameter(
+                name='session_id',
+                in_=openapi.IN_PATH,
+                type=openapi.TYPE_STRING,
+                description='Session ID to get frame scores for',
+                required=True
+            )
+        ],
+        responses={
+            200: openapi.Response(
+                description="Frame scores data",
+                schema=openapi.Schema(
+                    type=openapi.TYPE_OBJECT,
+                    properties={
+                        'status': openapi.Schema(type=openapi.TYPE_STRING),
+                        'session_id': openapi.Schema(type=openapi.TYPE_STRING),
+                        'frame_scores': openapi.Schema(type=openapi.TYPE_OBJECT),
+                    }
+                )
+            ),
+            400: "Session not completed or not found"
+        },
+        deprecated=True
+    )
+    def get(self, request, session_id):
+        # You can optionally add a warning in the response
+        warnings.warn(
+            "The /frame-scores/ endpoint is deprecated. Please use /scores/frame-scores/ instead.",
+            RemovedInNextVersionWarning,
+            stacklevel=2
+        )
+        return super().get(request, session_id)
