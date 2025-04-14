@@ -43,6 +43,12 @@ class VideoLengthMismatchError(PoseAnalysisError):
         message = "用户上传视频非全身，请录制全身视频"  # Same message as FullBodyNotVisible for user simplicity
         super().__init__(message, code=400, ui_error_code=ErrorCodes.VIDEO_LENGTH_MISMATCH)
 
+class InvalidNumericIdFormatError(PoseAnalysisError):
+    """Exception raised when numeric_id format is invalid"""
+    def __init__(self):
+        message = "Invalid numeric ID format. Expected format: XX_XX (e.g. 02_01)"
+        super().__init__(message, code=400, ui_error_code=10001)
+
 class ApiErrorHandler:
     """Centralized error handling for API endpoints"""
     

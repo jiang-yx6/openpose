@@ -16,6 +16,8 @@ from .exceptions import ApiErrorHandler
 from .service_factory import get_video_processing_service
 from django.utils.deprecation import RemovedInNextVersionWarning
 import warnings
+import re
+from .exceptions import ApiErrorHandler, InvalidNumericIdFormatError
 
 logger = logging.getLogger(__name__)
 
@@ -222,6 +224,11 @@ class VideoUploadWithReferenceView(APIView):
             return Response({'error': 'Missing standard_numeric_id'}, status=status.HTTP_400_BAD_REQUEST)
         
         standard_numeric_id = request.data['standard_numeric_id']
+        
+        # Validate numeric_id format (XX_XX where X is a digit)
+        if not re.match(r'^\d{2}_\d{2}$', standard_numeric_id):
+            logger.warning(f"无效的标准视频ID格式: {standard_numeric_id}, 应为XX_XX格式")
+            raise InvalidNumericIdFormatError()
         
         # Look up the standard video by numeric_id
         standard_video = VideoAsset.objects.filter(numeric_id=standard_numeric_id).first()
