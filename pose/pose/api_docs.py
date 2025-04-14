@@ -8,9 +8,6 @@ schema_view = get_schema_view(
         title="Digital People API",
         default_version='v1',
         description="API documentation for Digital People OpenPose project",
-        terms_of_service="https://www.example.com/policies/terms/",
-        contact=openapi.Contact(email="contact@example.com"),
-        license=openapi.License(name="BSD License"),
     ),
     public=True,
     permission_classes=[permissions.AllowAny],  # Explicitly allow public access

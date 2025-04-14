@@ -2,3 +2,6 @@ __pycache__
 
 # Stop tracking debug uploads
 media
+
+# idea
+pose/evalpose/pose_analyze/.idea
