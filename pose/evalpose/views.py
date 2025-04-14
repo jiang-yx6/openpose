@@ -12,6 +12,7 @@ from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 from pathlib import Path
 from video_manager.models import VideoAsset
+from .exceptions import ApiErrorHandler
 from .service_factory import get_video_processing_service
 
 logger = logging.getLogger(__name__)
@@ -118,15 +119,7 @@ class VideoUploadView(APIView):
                 return JsonResponse(response_data, status=status.HTTP_201_CREATED)
 
             except Exception as e:
-                logger.error(f"处理上传失败: {str(e)}", exc_info=True)
-                if 'session' in locals():
-                    session.status = 'failed'
-                    session.error_message = str(e)
-                    session.save()
-                return Response({
-                    'error': str(e),
-                    'status': 'failed'
-                }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+                return ApiErrorHandler.handle_exception(e, session)
         
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -295,17 +288,8 @@ class VideoUploadWithReferenceView(APIView):
             return JsonResponse(response_data, status=status.HTTP_201_CREATED)
 
         except Exception as e:
-            logger.error(f"处理上传失败: {str(e)}", exc_info=True)
-            if 'session' in locals():
-                session.status = 'failed'
-                session.error_message = str(e)
-                session.save()
-            return Response({
-                'error': str(e),
-                'status': 'failed'
-            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-
+            return ApiErrorHandler.handle_exception(e, session)
+    
 class TestUploadView(APIView):
     @swagger_auto_schema(
         operation_description="Test endpoint for video upload",

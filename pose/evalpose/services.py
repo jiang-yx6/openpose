@@ -8,6 +8,7 @@ import subprocess
 from .pose_analyzer import VideoAnalyzer, ActionComparator
 from django.conf import settings
 from concurrent.futures import ThreadPoolExecutor
+from .exceptions import ApiErrorHandler, FullBodyNotVisibleError
 
 logger = logging.getLogger(__name__)
 mp_drawing = mp.solutions.drawing_utils
@@ -158,12 +159,15 @@ class VideoProcessingService:
             logger.info(f"视频处理完成，HLS转换状态: {result}")
             return result
 
-        except Exception as e:
-            logger.error(f"视频处理失败: {str(e)}", exc_info=True)
-            if 'session' in locals():
-                session.status = 'failed'
-                session.error_message = str(e)
-                session.save()
+        except ValueError as e:
+            # Check if this is the inhomogeneous shape error
+            if ApiErrorHandler.is_inhomogeneous_shape_error(e):
+                raise FullBodyNotVisibleError() from e
+            raise
+        except IndexError as e:
+            # Check if this is a list index out of range error
+            if "list index out of range" in str(e):
+                raise VideoLengthMismatchError() from e
             raise
 
     def _process_video_with_annotations(self, input_path, output_path, sequence_data, 
@@ -311,4 +315,3 @@ class VideoProcessingService:
         except Exception as e:
             logger.error(f"启动 HLS 流处理失败: {str(e)}")
 
-    
