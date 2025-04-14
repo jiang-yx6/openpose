@@ -19,7 +19,8 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from evalpose.views import VideoUploadView,TestUploadView,FrameScoresView,VideoUploadWithReferenceView
+from evalpose.views import VideoUploadView,TestUploadView,VideoUploadWithReferenceView,FrameScoresView,DeprecatedFrameScoresView
+from evalpose import views
 from django.views.static import serve
 from django.urls import re_path
 from .api_docs import urlpatterns as doc_urls
@@ -30,7 +31,13 @@ urlpatterns = [
     path('upload-video/', VideoUploadWithReferenceView.as_view(), name='upload_video_with_reference'),
     # 添加专门的 HLS 文件服务路由
     path('test-upload/', TestUploadView.as_view(), name='test_upload'),
-    path('frame-scores/<str:session_id>/', FrameScoresView.as_view(), name='frame_scores'),
+    path('frame-scores/<str:session_id>/', DeprecatedFrameScoresView.as_view(), name='frame_scores'),
+    # New URLs for enhanced functionality
+    path('scores/frame-scores/<str:session_id>/', views.FrameScoresView.as_view(), name='frame_scores'),
+    path('scores/advanced-metrics/<str:session_id>/', views.AdvancedMetricsView.as_view(), name='advanced-metrics'),
+    path('scores/exercise-stages/<str:session_id>/', views.ExerciseStagesView.as_view(), name='exercise-stages'),
+    path('scores/speed-analysis/<str:session_id>/', views.SpeedAnalysisView.as_view(), name='speed-analysis'),
+    path('scores/worst-frames/<str:session_id>/', views.WorstFramesView.as_view(), name='worst-frames'),
     re_path(r'^media/hls/(?P<path>.*)$', serve, {
         'document_root': settings.MEDIA_ROOT + '/hls/',
     }),
