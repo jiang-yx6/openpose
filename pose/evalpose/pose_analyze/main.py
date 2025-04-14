@@ -1,14 +1,23 @@
 # main.py
 import numpy as np
 import json
-from pose_detector import VideoAnalyzer
-from action_comparator import ActionComparator
-from evaluation import detect_action_stages
-from visualization import generate_video_with_selected_frames
-from video_stretch import stretch_videos_to_same_length
+from .pose_detector import VideoAnalyzer
+from .action_comparator import ActionComparator
+from .evaluation import detect_action_stages
+from .visualization import generate_video_with_selected_frames
+from .video_stretch import stretch_videos_to_same_length
+from .config_service import get_config_class
 
 def main():
-    analyzer = VideoAnalyzer()
+    # Get dynamic config using numeric_id 02_01
+    numeric_id = "02_01"
+    Config = get_config_class(numeric_id)
+    print(f"Using configuration for {numeric_id}: {Config.DESCRIPTION if hasattr(Config, 'DESCRIPTION') else 'Default'}")
+    print(f"Key angles: {Config.KEY_ANGLES}")
+    print(f"Normalization joints: {Config.NORMALIZATION_JOINTS}")
+    
+    # Initialize analyzer with the dynamic config
+    analyzer = VideoAnalyzer(config=Config)
 
     # 假设原视频路径如下，输出视频路径如下：
     video1 = "PoseVideos/standard.mp4"
@@ -22,8 +31,6 @@ def main():
     # 处理标准视频与患者视频（路径保持原有）
     std_video = analyzer.process_video("PoseVideos/standard.mp4")
     pat_video = analyzer.process_video("PoseVideos/demo2.mp4")
-
-
 
     # 使用 ActionComparator 进行动作比较（DTW 对齐及帧匹配评分）
     comparator = ActionComparator(std_video, pat_video)
@@ -48,9 +55,10 @@ def main():
     # 动作阶段识别（如有需要，可用于视频分段）
     stages = detect_action_stages(pat_video)
 
-    # 生成对齐对比视频，输出路径保持不变
+    # 生成对齐对比视频，输出路径保持不变，传递动态配置
     output_video_path = "PoseVideos/aligned_comparison_video.avi"
-    generate_video_with_selected_frames(std_video, pat_video, result, output_video_path, "PoseVideos/demo2.mp4", stages)
+    generate_video_with_selected_frames(std_video, pat_video, result, output_video_path, 
+                                       "PoseVideos/demo2.mp4", stages, Config)
     print(f"视频已保存：{output_video_path}")
 
     # 使用原有 DTW 结果计算自定义相似度评分（公式保持不变）

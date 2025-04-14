@@ -4,22 +4,32 @@ from django.conf import settings
 from .services import VideoProcessingService
 from .modern_pose_analyzer import ModernPoseAnalyzer
 from .pose_analyze.evaluation import detect_action_stages, select_lowest_score_frames
+from .pose_analyze.config_service import get_config_class
 
 logger = logging.getLogger(__name__)
 
-def get_video_processing_service(use_modern=True):
+def get_video_processing_service(use_modern=True, numeric_id=None, config=None):
     """
     Factory function to get either the modern or legacy video processing service.
     
     Args:
         use_modern (bool): Whether to use the modern implementation
+        numeric_id (str, optional): Numeric ID to configure the service with
+        config (object, optional): Direct configuration object to use
         
     Returns:
         Object: Video processing service instance
     """
     if use_modern:
-        logger.info("Using modern pose analyzer implementation")
-        return ModernPoseAnalyzerService()
+        if config:
+            logger.info(f"Using modern pose analyzer implementation with provided config")
+            return ModernPoseAnalyzerService(config=config)
+        elif numeric_id:
+            logger.info(f"Using modern pose analyzer implementation with config for {numeric_id}")
+            return ModernPoseAnalyzerService(numeric_id=numeric_id)
+        else:
+            logger.info("Using modern pose analyzer implementation with default config")
+            return ModernPoseAnalyzerService()
     else:
         logger.info("Using legacy pose analyzer implementation")
         return VideoProcessingService()
@@ -30,12 +40,21 @@ class ModernPoseAnalyzerService(VideoProcessingService):
     while maintaining compatibility with existing code.
     """
     
-    def __init__(self):
+    def __init__(self, numeric_id=None, config=None):
         super().__init__()
-        self.modern_analyzer = ModernPoseAnalyzer()
-        logger.info("Initialized Modern Pose Analyzer Service")
+        # Initialize with dynamic configuration
+        if config:
+            self.modern_analyzer = ModernPoseAnalyzer(config=config)
+            logger.info(f"Initialized Modern Pose Analyzer Service with provided configuration")
+        elif numeric_id:
+            config_class = get_config_class(numeric_id)
+            self.modern_analyzer = ModernPoseAnalyzer(numeric_id=numeric_id, config=config_class)
+            logger.info(f"Initialized Modern Pose Analyzer Service with configuration for {numeric_id}")
+        else:
+            self.modern_analyzer = ModernPoseAnalyzer()
+            logger.info("Initialized Modern Pose Analyzer Service with default configuration")
         
-    def process_videos(self, session_id, standard_video_path, exercise_video_path):
+    def process_videos(self, session_id, standard_video_path, exercise_video_path, standard_numeric_id=None, config=None):
         """
         Process videos using the enhanced implementation.
         
@@ -43,16 +62,31 @@ class ModernPoseAnalyzerService(VideoProcessingService):
             session_id: Session identifier
             standard_video_path: Path to standard video file
             exercise_video_path: Path to exercise video file
+            standard_numeric_id: Optional numeric ID for standard video configuration
+            config: Optional configuration object
             
         Returns:
             dict: Processing results
         """
         try:
+            # If config is provided and analyzer wasn't initialized with it,
+            # update the analyzer with the new config
+            if config and not hasattr(self.modern_analyzer.config, 'KEY_ANGLES'):
+                logger.info(f"Updating analyzer with provided configuration")
+                self.modern_analyzer = ModernPoseAnalyzer(config=config)
+            # If numeric_id is provided and analyzer wasn't initialized with it,
+            # update configuration
+            elif standard_numeric_id and not hasattr(self.modern_analyzer.config, 'NUMERIC_ID'):
+                logger.info(f"Updating analyzer configuration to {standard_numeric_id}")
+                self.modern_analyzer = ModernPoseAnalyzer(numeric_id=standard_numeric_id)
+                
             # Process videos with enhanced analysis
             modern_result = self.modern_analyzer.process_videos(
                 session_id, 
                 standard_video_path, 
-                exercise_video_path
+                exercise_video_path,
+                standard_numeric_id=standard_numeric_id,
+                config=config
             )
             
             if not modern_result['dtw_success']:
@@ -66,16 +100,22 @@ class ModernPoseAnalyzerService(VideoProcessingService):
                 session_id,
                 modern_result['std_sequence'],
                 modern_result['exe_sequence'],
-                modern_result['dtw_result']
+                modern_result['dtw_result'],
+                standard_numeric_id=standard_numeric_id,
+                config=config
             )
             
             # Continue with HLS conversion using parent class
-            result = super().process_videos(session_id, standard_video_path, exercise_video_path)
+            result = super().process_videos(session_id, standard_video_path, exercise_video_path,config=config)
             
             # Add enhanced metrics to result
             result['advanced_metrics'] = modern_result.get('additional_metrics', {})
             result['action_stages'] = modern_result.get('action_stages', [])
             result['lowest_score_frames'] = modern_result.get('lowest_score_frames', [])
+            
+            # Include configuration info if available
+            if 'config_info' in modern_result:
+                result['config_info'] = modern_result['config_info']
             
             return result
             
@@ -97,12 +137,19 @@ class ModernPoseAnalyzerService(VideoProcessingService):
             # Store metrics with consistent key name
             advanced_metrics = analysis_result.get('additional_metrics', {})
             
-            session.frame_data = {
+            # Create frame data object
+            frame_data = {
                 'std_frame_data': analysis_result['std_sequence'], 
                 'exercise_frame_data': analysis_result['exe_sequence'],
                 'advanced_metrics': advanced_metrics,  # Use consistent key name
                 'additional_metrics': advanced_metrics  # Keep both for backward compatibility
             }
+            
+            # Include configuration info if available
+            if 'config_info' in analysis_result:
+                frame_data['config_info'] = analysis_result['config_info']
+                
+            session.frame_data = frame_data
             session.status = 'completed'
             session.save()
             logger.info(f"Updated session {session_id} with modern analysis results")

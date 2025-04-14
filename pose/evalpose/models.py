@@ -45,3 +45,19 @@ class VideoFile(models.Model):
     def __str__(self):
         return f"{self.video_type} - {self.session.session_id}"
 
+class VideoConfig(models.Model):
+    """Standard video configuration model"""
+    numeric_id = models.CharField(max_length=10, unique=True)
+    key_angles = models.JSONField()
+    normalization_joints = models.JSONField()
+    description = models.TextField(null=True, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"Config for {self.numeric_id}: {self.description}"
+
+    class Meta:
+        verbose_name = "Video Configuration"
+        verbose_name_plural = "Video Configurations"
+

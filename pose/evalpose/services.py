@@ -5,7 +5,7 @@ import logging
 from .models import EvalSession, VideoFile
 import os
 import subprocess
-from .pose_analyzer import VideoAnalyzer, ActionComparator
+from .modern_pose_analyzer import VideoAnalyzer, ActionComparator
 from django.conf import settings
 from concurrent.futures import ThreadPoolExecutor
 from .exceptions import ApiErrorHandler, FullBodyNotVisibleError
@@ -69,7 +69,7 @@ class VideoProcessingService:
         self.hls_ouput_path = None
         logger.info("初始化视频处理服务")
 
-    def process_videos(self, session_id, standard_video_path, exercise_video_path):
+    def process_videos(self, session_id, standard_video_path, exercise_video_path, config=None):
         """使用 DTW 处理视频对比并生成标注后的视频"""
         result = {
             'dtw_success': False,
@@ -85,7 +85,10 @@ class VideoProcessingService:
             logger.info(f"开始处理视频: session_id={session_id}")
             
             # 1. DTW 分析
-            analyzer = VideoAnalyzer()
+            if config:
+                analyzer = VideoAnalyzer(config=config)
+            else:
+                analyzer = VideoAnalyzer()
             
             # 获取所有帧数据
             std_sequence = analyzer.process_video(standard_video_path, skip_frames=2) 
@@ -118,11 +121,18 @@ class VideoProcessingService:
 
 
             with ThreadPoolExecutor(max_workers=3) as executor:
-                futures = [
-                    executor.submit(self._process_video_with_annotations, standard_video_path, std_output_path, std_sequence, color=(0, 255, 0), is_standard=True),
-                    executor.submit(self._process_video_with_annotations, exercise_video_path, ex_output_path, exe_sequence, frame_scores=dtw_result['frame_scores'], color=(0, 0, 255)),
-                    executor.submit(analyzer._process_overlap_video, std_sequence, exe_sequence, dtw_result, overlap_output_path, exercise_video_path)
-                ]
+                if config:
+                    futures = [
+                        executor.submit(self._process_video_with_annotations, standard_video_path, std_output_path, std_sequence, color=(0, 255, 0), is_standard=True),
+                        executor.submit(self._process_video_with_annotations, exercise_video_path, ex_output_path, exe_sequence, frame_scores=dtw_result['frame_scores'], color=(0, 0, 255)),
+                        executor.submit(analyzer._process_overlap_video, std_sequence, exe_sequence, dtw_result, overlap_output_path, exercise_video_path, config=config)
+                    ]
+                else:
+                    futures = [
+                        executor.submit(self._process_video_with_annotations, standard_video_path, std_output_path, std_sequence, color=(0, 255, 0), is_standard=True),
+                        executor.submit(self._process_video_with_annotations, exercise_video_path, ex_output_path, exe_sequence, frame_scores=dtw_result['frame_scores'], color=(0, 0, 255)),
+                        executor.submit(analyzer._process_overlap_video, std_sequence, exe_sequence, dtw_result, overlap_output_path, exercise_video_path)
+                    ]
                 for future in futures:
                     future.result()
             # 处理标准视频

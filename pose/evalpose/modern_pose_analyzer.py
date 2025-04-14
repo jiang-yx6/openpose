@@ -11,6 +11,8 @@ from .pose_analyze.evaluation import detect_action_stages, select_lowest_score_f
 from .pose_analyze.visualization import generate_video_with_selected_frames, draw_bone
 from .pose_analyze.video_stretch import stretch_videos_to_same_length
 from .pose_analyze.pose_comparison import dtw_compare, score_cos_sim, weight_match_l1, weight_match_l2
+from .pose_analyze.config_service import get_config_class, get_config_instance
+from .models import VideoConfig
 
 logger = logging.getLogger(__name__)
 
@@ -18,11 +20,30 @@ class ModernPoseAnalyzer:
     """
     Enhanced pose analyzer that integrates all new capabilities from the pose_analyze module
     while maintaining compatibility with the Django project structure.
+    Uses dynamic configuration based on numeric_id.
     """
     
-    def __init__(self):
-        """Initialize the modern pose analyzer with the new implementation."""
-        self.analyzer = VideoAnalyzer()
+    def __init__(self, numeric_id=None, config=None):
+        """
+        Initialize the modern pose analyzer with the new implementation.
+        
+        Args:
+            numeric_id (str, optional): The numeric ID to load configuration from database
+            config (object, optional): Direct config object if already available
+        """
+        if config:
+            self.config = config
+        elif numeric_id:
+            self.config = get_config_class(numeric_id)
+            logger.info(f"Loaded configuration for {numeric_id}")
+        else:
+            # Use default config
+            from .pose_analyze.config import Config
+            self.config = Config
+            logger.info("Using default configuration")
+            
+        # Initialize analyzer with the selected config
+        self.analyzer = VideoAnalyzer(config=self.config)
         logger.info("Initialized Modern Pose Analyzer")
     
     def process_video(self, video_path, skip_frames=2):
@@ -43,7 +64,7 @@ class ModernPoseAnalyzer:
             logger.error(f"Error processing video {video_path}: {str(e)}")
             raise
     
-    def process_videos(self, session_id, standard_video_path, exercise_video_path):
+    def process_videos(self, session_id, standard_video_path, exercise_video_path, standard_numeric_id=None, config=None):
         """
         Process standard and exercise videos and perform comparison analysis.
         
@@ -51,6 +72,8 @@ class ModernPoseAnalyzer:
             session_id: Session identifier
             standard_video_path: Path to standard/reference video
             exercise_video_path: Path to exercise/patient video
+            standard_numeric_id: Numeric ID of standard video for configuration
+            config: Direct configuration object to use
             
         Returns:
             dict: Complete analysis results
@@ -65,6 +88,16 @@ class ModernPoseAnalyzer:
         }
         
         try:
+            # Update configuration if needed
+            if config and not self.config == config:
+                self.config = config
+                self.analyzer = VideoAnalyzer(config=self.config)
+                logger.info(f"Updated analyzer with provided configuration")
+            elif standard_numeric_id and not hasattr(self.config, 'NUMERIC_ID'):
+                self.config = get_config_class(standard_numeric_id)
+                self.analyzer = VideoAnalyzer(config=self.config)
+                logger.info(f"Updated configuration for {standard_numeric_id}")
+                
             # Process videos
             std_sequence = self.process_video(standard_video_path)
             exe_sequence = self.process_video(exercise_video_path)
@@ -85,11 +118,11 @@ class ModernPoseAnalyzer:
             result['similarity_score'] = float(dtw_result['similarity_score'] * 100)
             result['dtw_success'] = True
             
-            # Action stages detection
+            # Action stages detection using the new implementation from pose_detector.py
             stages = detect_action_stages(exe_sequence)
             result['action_stages'] = stages
             
-            # Get worst performance frames
+            # Get worst performance frames using the new implementation
             lowest_score_frames = select_lowest_score_frames(dtw_result, stages)
             result['lowest_score_frames'] = lowest_score_frames
             
@@ -97,6 +130,13 @@ class ModernPoseAnalyzer:
             result['std_sequence'] = std_sequence
             result['exe_sequence'] = exe_sequence
             result['dtw_result'] = dtw_result
+            
+            # Include configuration information in the result
+            if hasattr(self.config, 'NUMERIC_ID') and hasattr(self.config, 'DESCRIPTION'):
+                result['config_info'] = {
+                    'numeric_id': self.config.NUMERIC_ID,
+                    'description': self.config.DESCRIPTION
+                }
             
             logger.info(f"Modern pose analysis complete: similarity={result['similarity_score']:.2f}%")
             return result
@@ -139,7 +179,7 @@ class ModernPoseAnalyzer:
             logger.error(f"Error calculating advanced metrics: {str(e)}")
             return {}
     
-    def generate_visualization_videos(self, session_id, std_sequence, exe_sequence, dtw_result):
+    def generate_visualization_videos(self, session_id, std_sequence, exe_sequence, dtw_result, standard_numeric_id=None, config=None):
         """
         Generate all visualization videos for a session using new implementation.
         
@@ -148,6 +188,8 @@ class ModernPoseAnalyzer:
             std_sequence: Standard sequence data
             exe_sequence: Exercise sequence data  
             dtw_result: DTW comparison result
+            standard_numeric_id: Optional numeric_id to get configuration
+            config: Direct configuration object to use
             
         Returns:
             dict: Paths to generated videos and success status
@@ -160,25 +202,38 @@ class ModernPoseAnalyzer:
         }
         
         try:
+            # Determine which configuration to use
+            if config and not self.config == config:
+                use_config = config
+                logger.info("Using provided configuration for visualization")
+            elif standard_numeric_id and (not hasattr(self.config, 'NUMERIC_ID') or 
+                                         self.config.NUMERIC_ID != standard_numeric_id):
+                use_config = get_config_class(standard_numeric_id)
+                logger.info(f"Using configuration from numeric_id {standard_numeric_id} for visualization")
+            else:
+                use_config = self.config
+                logger.info("Using analyzer's current configuration for visualization")
+                
             # Create output directory
             output_dir = os.path.join(settings.MEDIA_ROOT, 'analysis', str(session_id))
             os.makedirs(output_dir, exist_ok=True)
             
-            # Detect action stages
+            # Detect action stages using the function from pose_detector.py
             stages = detect_action_stages(exe_sequence)
             
             # Generate overlap comparison video
             overlap_path = os.path.join(output_dir, 'overlap_video.mp4')
             exercise_video_path = self._get_video_path_for_sequence(session_id, 'exercise')
             
-            # Use the new implementation to generate comparison video
-            generate_video_with_selected_frames(
+            # Use the enhanced implementation from pose_detector.py to generate comparison video with config
+            self.analyzer.generate_video_with_selected_frames(
                 std_sequence,
                 exe_sequence,
                 dtw_result,
                 overlap_path,
                 exercise_video_path,
-                stages
+                stages,
+                config=use_config  # Pass the config here
             )
             
             result['overlap_video_success'] = True
@@ -214,7 +269,6 @@ class ModernPoseAnalyzer:
     def stretch_videos(self, video_path1, video_path2, output_path1, output_path2):
         """
         Stretch or compress two videos to have the same number of frames.
-        New functionality from video_stretch module.
         
         Args:
             video_path1: Path to first video
@@ -236,7 +290,7 @@ class ModernPoseAnalyzer:
     
     def compare_poses(self, pose1, pose2, method='dtw'):
         """
-        Compare two poses using various comparison methods from pose_comparison.
+        Compare two poses using various comparison methods.
         
         Args:
             pose1: First pose frame data
@@ -263,3 +317,43 @@ class ModernPoseAnalyzer:
         except Exception as e:
             logger.error(f"Error comparing poses: {str(e)}")
             return 0.0
+    
+    def detect_action_stages(self, sequence, angle_threshold=5):
+        """
+        Detect action stages in the given sequence using the implementation from pose_detector.py.
+        
+        Args:
+            sequence: Sequence of pose frames
+            angle_threshold: Threshold for angle changes to detect stage boundaries
+            
+        Returns:
+            list: List of (start_frame, end_frame) tuples representing stages
+        """
+        return detect_action_stages(sequence, angle_threshold)
+    
+    def select_lowest_score_frames(self, dtw_result, stages, max_frames=3):
+        """
+        Select frames with the lowest scores from each detected stage.
+        
+        Args:
+            dtw_result: Result from DTW comparison
+            stages: List of (start_frame, end_frame) tuples representing stages
+            max_frames: Maximum number of frames to return
+            
+        Returns:
+            list: List of (frame_idx, score) tuples for lowest scoring frames
+        """
+        return select_lowest_score_frames(dtw_result, stages, max_frames)
+    
+    @staticmethod
+    def get_config_from_numeric_id(numeric_id):
+        """
+        Static helper method to get configuration class from numeric_id
+        
+        Args:
+            numeric_id: The standard video numeric ID (e.g. "01_01")
+            
+        Returns:
+            Config class with dynamic configuration
+        """
+        return get_config_class(numeric_id)

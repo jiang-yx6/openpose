@@ -18,6 +18,7 @@ from django.utils.deprecation import RemovedInNextVersionWarning
 import warnings
 import re
 from .exceptions import ApiErrorHandler, InvalidNumericIdFormatError
+from .pose_analyze.config_service import get_video_config, create_dynamic_config_from_dict
 
 logger = logging.getLogger(__name__)
 
@@ -230,6 +231,14 @@ class VideoUploadWithReferenceView(APIView):
             logger.warning(f"无效的标准视频ID格式: {standard_numeric_id}, 应为XX_XX格式")
             raise InvalidNumericIdFormatError()
         
+        # Get the video configuration from database
+        config_dict = get_video_config(standard_numeric_id)
+        logger.info(f"Loaded configuration for {standard_numeric_id}: {config_dict['Describe']}")
+        
+        # Create a dynamic configuration object that can be used by the components
+        dynamic_config = create_dynamic_config_from_dict(config_dict, numeric_id=standard_numeric_id)
+        logger.info(f"Created dynamic config object with KEY_ANGLES: {len(dynamic_config.KEY_ANGLES)} angles")
+        
         # Look up the standard video by numeric_id
         standard_video = VideoAsset.objects.filter(numeric_id=standard_numeric_id).first()
         if not standard_video:
@@ -267,11 +276,16 @@ class VideoUploadWithReferenceView(APIView):
             exercise_file.file.close()
 
             # Start video analysis and processing with referenced standard video
-            video_service = get_video_processing_service()
+            # Pass the dynamic_config to the video service factory
+            video_service = get_video_processing_service(use_modern=True, config=dynamic_config)
+            
+            # Process videos with both numeric_id and config
             process_result = video_service.process_videos(
                 session.session_id, 
                 str(standard_video_path),  # Use the path to the referenced standard video
-                exercise_file.file.path
+                exercise_file.file.path,
+                standard_numeric_id=standard_numeric_id,  # Keep this for reference
+                config=dynamic_config  # Pass the dynamic config object
             )
             
             # Check processing results
@@ -299,6 +313,25 @@ class VideoUploadWithReferenceView(APIView):
                     'exercise_hls': process_result['exercise_hls'],
                     'overlap_hls': process_result['overlap_hls']
                 }
+            }
+            
+            # Add advanced metrics to response if available
+            if 'advanced_metrics' in process_result:
+                response_data['advanced_metrics'] = process_result['advanced_metrics']
+            
+            # Add action stages to response if available  
+            if 'action_stages' in process_result:
+                response_data['action_stages'] = process_result['action_stages']
+                
+            # Add lowest score frames to response if available
+            if 'lowest_score_frames' in process_result:
+                response_data['lowest_score_frames'] = process_result['lowest_score_frames']
+                
+            # Add configuration info to response
+            response_data['config_info'] = {
+                'numeric_id': standard_numeric_id,
+                'description': config_dict['Describe'],
+                'key_angles_count': len(config_dict['KEY_ANGLES'])
             }
             
             return JsonResponse(response_data, status=status.HTTP_201_CREATED)

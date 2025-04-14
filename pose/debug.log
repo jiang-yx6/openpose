@@ -6720,3 +6720,563 @@ INFO 2025-04-14 03:03:45 service_factory 27468 12796 Initialized Modern Pose Ana
 INFO 2025-04-14 03:03:45 basehttp 27468 12796 "GET /scores/speed-analysis/f5f7b44f-ac8f-48d6-9bb9-7b04bc7e03e5/ HTTP/1.1" 200 39
 INFO 2025-04-14 03:16:05 autoreload 27468 17020 E:\Digital_people\openpose\app\pose\evalpose\views.py changed, reloading.
 INFO 2025-04-14 03:16:06 autoreload 25488 5516 Watching for file changes with StatReloader
+INFO 2025-04-15 03:02:57 autoreload 32996 28464 Watching for file changes with StatReloader
+INFO 2025-04-15 03:03:04 basehttp 32996 4480 "GET /api-docs/swagger/ HTTP/1.1" 200 2230
+INFO 2025-04-15 03:03:04 basehttp 32996 4480 "GET /api-docs/swagger/?format=openapi HTTP/1.1" 200 9699
+INFO 2025-04-15 03:03:08 views 32996 4480 Returning 62 video assets
+INFO 2025-04-15 03:03:08 basehttp 32996 4480 "GET /standard/all/ HTTP/1.1" 200 31922
+INFO 2025-04-15 03:04:01 views 32996 4480 Received request for cover with ID: 02_01
+INFO 2025-04-15 03:04:01 views 32996 4480 Returning cover file: E:\Digital_people\openpose\app\pose\standard\example_videos\02_俯卧撑示例\01_俯卧撑_示例动作.webp
+INFO 2025-04-15 03:04:01 basehttp 32996 4480 "GET /standard/cover/id/02_01/ HTTP/1.1" 200 21146
+INFO 2025-04-15 03:04:12 views 32996 4480 Received request for video with ID: 02_01
+INFO 2025-04-15 03:04:12 views 32996 4480 Returning video file: E:\Digital_people\openpose\app\pose\standard\example_videos\02_俯卧撑示例\01_俯卧撑_示例动作.mp4
+INFO 2025-04-15 03:04:12 basehttp 32996 4480 "GET /standard/video/id/02_01/ HTTP/1.1" 200 348923
+INFO 2025-04-15 03:10:24 views 32996 26772 收到带参考视频ID的请求: http://localhost:8000
+INFO 2025-04-15 03:10:24 views 32996 26772 Loaded configuration for 02_01: Default Configuration
+INFO 2025-04-15 03:10:24 views 32996 26772 Created dynamic config object with KEY_ANGLES: 3 angles
+INFO 2025-04-15 03:10:24 views 32996 26772 创建会话成功: 36c3ab41-080e-4da4-ad78-e66ec2098b7c
+WARNING 2025-04-15 03:10:24 exceptions 32996 26772 视频处理失败: get_video_processing_service() got an unexpected keyword argument 'config'
+ERROR 2025-04-15 03:10:24 log 32996 26772 Internal Server Error: /upload-video/
+ERROR 2025-04-15 03:10:24 basehttp 32996 26772 "POST /upload-video/ HTTP/1.1" 500 150
+INFO 2025-04-15 03:10:58 autoreload 32996 28464 E:\Digital_people\openpose\app\pose\evalpose\service_factory.py changed, reloading.
+INFO 2025-04-15 03:10:58 autoreload 20992 15640 Watching for file changes with StatReloader
+INFO 2025-04-15 03:11:03 views 20992 30176 收到带参考视频ID的请求: http://localhost:8000
+INFO 2025-04-15 03:11:03 views 20992 30176 Loaded configuration for 02_01: Default Configuration
+INFO 2025-04-15 03:11:03 views 20992 30176 Created dynamic config object with KEY_ANGLES: 3 angles
+INFO 2025-04-15 03:11:03 views 20992 30176 创建会话成功: 7de7320e-466d-4146-9acb-146bc07f8d16
+INFO 2025-04-15 03:11:03 service_factory 20992 30176 Using modern pose analyzer implementation with provided config
+INFO 2025-04-15 03:11:03 services 20992 30176 初始化视频处理服务
+INFO 2025-04-15 03:11:03 modern_pose_analyzer 20992 30176 Initialized Modern Pose Analyzer
+INFO 2025-04-15 03:11:03 service_factory 20992 30176 Initialized Modern Pose Analyzer Service with provided configuration
+INFO 2025-04-15 03:11:03 modern_pose_analyzer 20992 30176 Processing video: E:\Digital_people\openpose\app\pose\standard\example_videos\02_俯卧撑示例\01_俯卧撑_示例动作.mp4
+INFO 2025-04-15 03:11:04 modern_pose_analyzer 20992 30176 Processing video: E:\Digital_people\openpose\app\pose\media\videos\exercise_7de7320e-466d-4146-9acb-146bc07f8d16.mp4
+INFO 2025-04-15 03:11:09 modern_pose_analyzer 20992 30176 Modern pose analysis complete: similarity=10.26%
+INFO 2025-04-15 03:11:09 service_factory 20992 30176 Updated session 7de7320e-466d-4146-9acb-146bc07f8d16 with modern analysis results
+INFO 2025-04-15 03:11:09 modern_pose_analyzer 20992 30176 Using analyzer's current configuration for visualization
+INFO 2025-04-15 03:11:10 modern_pose_analyzer 20992 30176 Generated visualization videos for session 7de7320e-466d-4146-9acb-146bc07f8d16
+INFO 2025-04-15 03:11:10 services 20992 30176 开始处理视频: session_id=7de7320e-466d-4146-9acb-146bc07f8d16
+INFO 2025-04-15 03:11:13 services 20992 30176 DTW分析完成: 0.12309596294518127
+ERROR 2025-04-15 03:11:13 service_factory 20992 30176 Modern video processing failed: 用户上传视频非全身，请录制全身视频
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\service_factory.py", line 109, in process_videos
+    result = super().process_videos(session_id, standard_video_path, exercise_video_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\services.py", line 127, in process_videos
+    future.result()
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py", line 428, in _process_overlap_video
+    raise VideoLengthMismatchError()
+evalpose.exceptions.VideoLengthMismatchError: 用户上传视频非全身，请录制全身视频
+WARNING 2025-04-15 03:11:13 exceptions 20992 30176 视频处理失败: 用户上传视频非全身，请录制全身视频
+WARNING 2025-04-15 03:11:13 log 20992 30176 Bad Request: /upload-video/
+WARNING 2025-04-15 03:11:13 basehttp 20992 30176 "POST /upload-video/ HTTP/1.1" 400 178
+INFO 2025-04-15 03:12:41 views 20992 31016 收到带参考视频ID的请求: http://localhost:8000
+INFO 2025-04-15 03:12:41 views 20992 31016 Loaded configuration for 02_01: Default Configuration
+INFO 2025-04-15 03:12:41 views 20992 31016 Created dynamic config object with KEY_ANGLES: 3 angles
+INFO 2025-04-15 03:12:41 views 20992 31016 创建会话成功: ba980d14-65a9-467c-a71f-079bccff3cbb
+INFO 2025-04-15 03:12:41 service_factory 20992 31016 Using modern pose analyzer implementation with provided config
+INFO 2025-04-15 03:12:41 services 20992 31016 初始化视频处理服务
+INFO 2025-04-15 03:12:41 modern_pose_analyzer 20992 31016 Initialized Modern Pose Analyzer
+INFO 2025-04-15 03:12:41 service_factory 20992 31016 Initialized Modern Pose Analyzer Service with provided configuration
+INFO 2025-04-15 03:12:41 modern_pose_analyzer 20992 31016 Processing video: E:\Digital_people\openpose\app\pose\standard\example_videos\02_俯卧撑示例\01_俯卧撑_示例动作.mp4
+INFO 2025-04-15 03:12:44 modern_pose_analyzer 20992 31016 Processing video: E:\Digital_people\openpose\app\pose\media\videos\exercise_ba980d14-65a9-467c-a71f-079bccff3cbb.mp4
+INFO 2025-04-15 03:12:48 modern_pose_analyzer 20992 31016 Modern pose analysis complete: similarity=11.26%
+INFO 2025-04-15 03:12:48 service_factory 20992 31016 Updated session ba980d14-65a9-467c-a71f-079bccff3cbb with modern analysis results
+INFO 2025-04-15 03:12:48 modern_pose_analyzer 20992 31016 Using analyzer's current configuration for visualization
+INFO 2025-04-15 03:12:49 modern_pose_analyzer 20992 31016 Generated visualization videos for session ba980d14-65a9-467c-a71f-079bccff3cbb
+INFO 2025-04-15 03:12:49 services 20992 31016 开始处理视频: session_id=ba980d14-65a9-467c-a71f-079bccff3cbb
+INFO 2025-04-15 03:12:55 services 20992 31016 DTW分析完成: 0.1438130066635206
+ERROR 2025-04-15 03:12:56 service_factory 20992 31016 Modern video processing failed: 用户上传视频非全身，请录制全身视频
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\service_factory.py", line 109, in process_videos
+    result = super().process_videos(session_id, standard_video_path, exercise_video_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\services.py", line 127, in process_videos
+    future.result()
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyzer.py", line 428, in _process_overlap_video
+    raise VideoLengthMismatchError()
+evalpose.exceptions.VideoLengthMismatchError: 用户上传视频非全身，请录制全身视频
+WARNING 2025-04-15 03:12:56 exceptions 20992 31016 视频处理失败: 用户上传视频非全身，请录制全身视频
+WARNING 2025-04-15 03:12:56 log 20992 31016 Bad Request: /upload-video/
+WARNING 2025-04-15 03:12:56 basehttp 20992 31016 "POST /upload-video/ HTTP/1.1" 400 178
+INFO 2025-04-15 03:18:41 autoreload 20992 15640 E:\Digital_people\openpose\app\pose\evalpose\services.py changed, reloading.
+INFO 2025-04-15 03:18:41 autoreload 24652 31056 Watching for file changes with StatReloader
+INFO 2025-04-15 03:19:44 autoreload 24652 31056 E:\Digital_people\openpose\app\pose\evalpose\services.py changed, reloading.
+INFO 2025-04-15 03:19:44 autoreload 32660 32304 Watching for file changes with StatReloader
+INFO 2025-04-15 03:20:15 autoreload 32660 32304 E:\Digital_people\openpose\app\pose\evalpose\services.py changed, reloading.
+INFO 2025-04-15 03:20:16 autoreload 23304 23032 Watching for file changes with StatReloader
+INFO 2025-04-15 03:20:51 autoreload 23304 23032 E:\Digital_people\openpose\app\pose\evalpose\services.py changed, reloading.
+INFO 2025-04-15 03:20:51 autoreload 32500 21968 Watching for file changes with StatReloader
+INFO 2025-04-15 03:20:59 views 32500 27944 收到带参考视频ID的请求: http://localhost:8000
+INFO 2025-04-15 03:20:59 views 32500 27944 Loaded configuration for 02_01: Default Configuration
+INFO 2025-04-15 03:20:59 views 32500 27944 Created dynamic config object with KEY_ANGLES: 3 angles
+INFO 2025-04-15 03:20:59 views 32500 27944 创建会话成功: ac7b950b-f5be-4671-8445-5844cc9264ad
+INFO 2025-04-15 03:20:59 service_factory 32500 27944 Using modern pose analyzer implementation with provided config
+INFO 2025-04-15 03:20:59 services 32500 27944 初始化视频处理服务
+INFO 2025-04-15 03:20:59 modern_pose_analyzer 32500 27944 Initialized Modern Pose Analyzer
+INFO 2025-04-15 03:20:59 service_factory 32500 27944 Initialized Modern Pose Analyzer Service with provided configuration
+INFO 2025-04-15 03:20:59 modern_pose_analyzer 32500 27944 Processing video: E:\Digital_people\openpose\app\pose\standard\example_videos\02_俯卧撑示例\01_俯卧撑_示例动作.mp4
+INFO 2025-04-15 03:21:00 modern_pose_analyzer 32500 27944 Processing video: E:\Digital_people\openpose\app\pose\media\videos\exercise_ac7b950b-f5be-4671-8445-5844cc9264ad.mp4
+INFO 2025-04-15 03:21:02 modern_pose_analyzer 32500 27944 Modern pose analysis complete: similarity=11.26%
+INFO 2025-04-15 03:21:02 service_factory 32500 27944 Updated session ac7b950b-f5be-4671-8445-5844cc9264ad with modern analysis results
+INFO 2025-04-15 03:21:02 modern_pose_analyzer 32500 27944 Using analyzer's current configuration for visualization
+INFO 2025-04-15 03:21:03 modern_pose_analyzer 32500 27944 Generated visualization videos for session ac7b950b-f5be-4671-8445-5844cc9264ad
+INFO 2025-04-15 03:21:03 services 32500 27944 开始处理视频: session_id=ac7b950b-f5be-4671-8445-5844cc9264ad
+INFO 2025-04-15 03:21:06 services 32500 27944 DTW分析完成: 0.1126443011657564
+ERROR 2025-04-15 03:21:07 service_factory 32500 27944 Modern video processing failed: 'VideoAnalyzer' object has no attribute '_process_overlap_video'
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\service_factory.py", line 109, in process_videos
+    result = super().process_videos(session_id, standard_video_path, exercise_video_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\services.py", line 127, in process_videos
+    executor.submit(analyzer._process_overlap_video, std_sequence, exe_sequence, dtw_result, overlap_output_path, exercise_video_path)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'VideoAnalyzer' object has no attribute '_process_overlap_video'
+WARNING 2025-04-15 03:21:07 exceptions 32500 27944 视频处理失败: 'VideoAnalyzer' object has no attribute '_process_overlap_video'
+ERROR 2025-04-15 03:21:07 log 32500 27944 Internal Server Error: /upload-video/
+ERROR 2025-04-15 03:21:07 basehttp 32500 27944 "POST /upload-video/ HTTP/1.1" 500 140
+INFO 2025-04-15 03:27:34 autoreload 32500 21968 E:\Digital_people\openpose\app\pose\evalpose\pose_analyze\pose_detector.py changed, reloading.
+INFO 2025-04-15 03:27:35 autoreload 33364 23200 Watching for file changes with StatReloader
+INFO 2025-04-15 03:27:54 autoreload 33364 23200 E:\Digital_people\openpose\app\pose\evalpose\pose_analyze\pose_detector.py changed, reloading.
+INFO 2025-04-15 03:27:55 autoreload 6072 28812 Watching for file changes with StatReloader
+INFO 2025-04-15 03:27:58 views 6072 5336 收到带参考视频ID的请求: http://localhost:8000
+INFO 2025-04-15 03:27:58 views 6072 5336 Loaded configuration for 02_01: Default Configuration
+INFO 2025-04-15 03:27:58 views 6072 5336 Created dynamic config object with KEY_ANGLES: 3 angles
+INFO 2025-04-15 03:27:58 views 6072 5336 创建会话成功: c11c84ba-917a-4317-a5a6-12c7d506a9f5
+INFO 2025-04-15 03:27:58 service_factory 6072 5336 Using modern pose analyzer implementation with provided config
+INFO 2025-04-15 03:27:58 services 6072 5336 初始化视频处理服务
+INFO 2025-04-15 03:27:58 modern_pose_analyzer 6072 5336 Initialized Modern Pose Analyzer
+INFO 2025-04-15 03:27:58 service_factory 6072 5336 Initialized Modern Pose Analyzer Service with provided configuration
+INFO 2025-04-15 03:27:58 modern_pose_analyzer 6072 5336 Processing video: E:\Digital_people\openpose\app\pose\standard\example_videos\02_俯卧撑示例\01_俯卧撑_示例动作.mp4
+INFO 2025-04-15 03:27:59 modern_pose_analyzer 6072 5336 Processing video: E:\Digital_people\openpose\app\pose\media\videos\exercise_c11c84ba-917a-4317-a5a6-12c7d506a9f5.mp4
+INFO 2025-04-15 03:28:02 modern_pose_analyzer 6072 5336 Modern pose analysis complete: similarity=11.26%
+INFO 2025-04-15 03:28:02 service_factory 6072 5336 Updated session c11c84ba-917a-4317-a5a6-12c7d506a9f5 with modern analysis results
+INFO 2025-04-15 03:28:02 modern_pose_analyzer 6072 5336 Using analyzer's current configuration for visualization
+INFO 2025-04-15 03:28:02 modern_pose_analyzer 6072 5336 Generated visualization videos for session c11c84ba-917a-4317-a5a6-12c7d506a9f5
+INFO 2025-04-15 03:28:02 services 6072 5336 开始处理视频: session_id=c11c84ba-917a-4317-a5a6-12c7d506a9f5
+INFO 2025-04-15 03:28:05 services 6072 5336 DTW分析完成: 0.1126443011657564
+ERROR 2025-04-15 03:28:06 service_factory 6072 5336 Modern video processing failed: name 'Config' is not defined
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\service_factory.py", line 109, in process_videos
+    result = super().process_videos(session_id, standard_video_path, exercise_video_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\services.py", line 130, in process_videos
+    future.result()
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyze\pose_detector.py", line 450, in _process_overlap_video
+    for angle_name, joints in Config.KEY_ANGLES.items():
+                              ^^^^^^
+NameError: name 'Config' is not defined
+WARNING 2025-04-15 03:28:06 exceptions 6072 5336 视频处理失败: name 'Config' is not defined
+ERROR 2025-04-15 03:28:06 log 6072 5336 Internal Server Error: /upload-video/
+ERROR 2025-04-15 03:28:06 basehttp 6072 5336 "POST /upload-video/ HTTP/1.1" 500 104
+INFO 2025-04-15 03:28:30 autoreload 6072 28812 E:\Digital_people\openpose\app\pose\evalpose\service_factory.py changed, reloading.
+INFO 2025-04-15 03:28:31 autoreload 9656 6964 Watching for file changes with StatReloader
+INFO 2025-04-15 03:28:34 autoreload 9656 6964 E:\Digital_people\openpose\app\pose\evalpose\service_factory.py changed, reloading.
+INFO 2025-04-15 03:28:35 autoreload 28284 26760 Watching for file changes with StatReloader
+INFO 2025-04-15 03:28:40 views 28284 33220 收到带参考视频ID的请求: http://localhost:8000
+INFO 2025-04-15 03:28:40 views 28284 33220 Loaded configuration for 02_01: Default Configuration
+INFO 2025-04-15 03:28:40 views 28284 33220 Created dynamic config object with KEY_ANGLES: 3 angles
+INFO 2025-04-15 03:28:40 views 28284 33220 创建会话成功: e8a3fb7e-4a75-4289-9cc9-c63eb20df6d2
+INFO 2025-04-15 03:28:40 service_factory 28284 33220 Using modern pose analyzer implementation with provided config
+INFO 2025-04-15 03:28:41 services 28284 33220 初始化视频处理服务
+INFO 2025-04-15 03:28:41 modern_pose_analyzer 28284 33220 Initialized Modern Pose Analyzer
+INFO 2025-04-15 03:28:41 service_factory 28284 33220 Initialized Modern Pose Analyzer Service with provided configuration
+INFO 2025-04-15 03:28:41 modern_pose_analyzer 28284 33220 Processing video: E:\Digital_people\openpose\app\pose\standard\example_videos\02_俯卧撑示例\01_俯卧撑_示例动作.mp4
+INFO 2025-04-15 03:28:43 modern_pose_analyzer 28284 33220 Processing video: E:\Digital_people\openpose\app\pose\media\videos\exercise_e8a3fb7e-4a75-4289-9cc9-c63eb20df6d2.mp4
+INFO 2025-04-15 03:28:47 modern_pose_analyzer 28284 33220 Modern pose analysis complete: similarity=11.26%
+INFO 2025-04-15 03:28:47 service_factory 28284 33220 Updated session e8a3fb7e-4a75-4289-9cc9-c63eb20df6d2 with modern analysis results
+INFO 2025-04-15 03:28:47 modern_pose_analyzer 28284 33220 Using analyzer's current configuration for visualization
+INFO 2025-04-15 03:28:47 modern_pose_analyzer 28284 33220 Generated visualization videos for session e8a3fb7e-4a75-4289-9cc9-c63eb20df6d2
+ERROR 2025-04-15 03:28:47 service_factory 28284 33220 Modern video processing failed: 'ModernPoseAnalyzerService' object has no attribute 'config'
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\service_factory.py", line 109, in process_videos
+    result = super().process_videos(session_id, standard_video_path, exercise_video_path,config=self.config)
+                                                                                                ^^^^^^^^^^^
+AttributeError: 'ModernPoseAnalyzerService' object has no attribute 'config'
+WARNING 2025-04-15 03:28:47 exceptions 28284 33220 视频处理失败: 'ModernPoseAnalyzerService' object has no attribute 'config'
+ERROR 2025-04-15 03:28:47 log 28284 33220 Internal Server Error: /upload-video/
+ERROR 2025-04-15 03:28:47 basehttp 28284 33220 "POST /upload-video/ HTTP/1.1" 500 136
+INFO 2025-04-15 03:29:13 autoreload 28284 26760 E:\Digital_people\openpose\app\pose\evalpose\pose_analyze\pose_detector.py changed, reloading.
+INFO 2025-04-15 03:29:14 autoreload 22108 25496 Watching for file changes with StatReloader
+INFO 2025-04-15 03:29:49 autoreload 22108 25496 E:\Digital_people\openpose\app\pose\evalpose\services.py changed, reloading.
+INFO 2025-04-15 03:29:49 autoreload 33220 11920 Watching for file changes with StatReloader
+INFO 2025-04-15 03:30:11 autoreload 33220 11920 E:\Digital_people\openpose\app\pose\evalpose\pose_analyze\pose_detector.py changed, reloading.
+INFO 2025-04-15 03:30:11 autoreload 2516 32688 Watching for file changes with StatReloader
+INFO 2025-04-15 03:31:25 autoreload 2516 32688 E:\Digital_people\openpose\app\pose\evalpose\modern_pose_analyzer.py changed, reloading.
+INFO 2025-04-15 03:31:26 autoreload 6248 31068 Watching for file changes with StatReloader
+INFO 2025-04-15 03:31:50 autoreload 6248 31068 E:\Digital_people\openpose\app\pose\evalpose\pose_analyze\pose_detector.py changed, reloading.
+INFO 2025-04-15 03:31:51 autoreload 20960 19580 Watching for file changes with StatReloader
+INFO 2025-04-15 03:39:04 autoreload 20960 19580 E:\Digital_people\openpose\app\pose\evalpose\pose_analyze\pose_detector.py changed, reloading.
+INFO 2025-04-15 03:39:05 autoreload 10924 10096 Watching for file changes with StatReloader
+INFO 2025-04-15 03:41:13 autoreload 10924 10096 E:\Digital_people\openpose\app\pose\evalpose\pose_analyze\visualization.py changed, reloading.
+INFO 2025-04-15 03:41:13 autoreload 28076 33520 Watching for file changes with StatReloader
+INFO 2025-04-15 03:41:40 autoreload 28076 33520 E:\Digital_people\openpose\app\pose\evalpose\modern_pose_analyzer.py changed, reloading.
+INFO 2025-04-15 03:41:40 autoreload 13544 24088 Watching for file changes with StatReloader
+INFO 2025-04-15 03:43:11 autoreload 13544 24088 E:\Digital_people\openpose\app\pose\evalpose\modern_pose_analyzer.py changed, reloading.
+INFO 2025-04-15 03:43:11 autoreload 29336 33800 Watching for file changes with StatReloader
+INFO 2025-04-15 03:50:48 autoreload 29336 33800 E:\Digital_people\openpose\app\pose\evalpose\modern_pose_analyzer.py changed, reloading.
+INFO 2025-04-15 03:50:49 autoreload 28088 12508 Watching for file changes with StatReloader
+INFO 2025-04-15 03:51:04 views 28088 34536 收到带参考视频ID的请求: http://localhost:8000
+INFO 2025-04-15 03:51:04 views 28088 34536 Loaded configuration for 02_01: Default Configuration
+INFO 2025-04-15 03:51:04 views 28088 34536 Created dynamic config object with KEY_ANGLES: 3 angles
+INFO 2025-04-15 03:51:04 views 28088 34536 创建会话成功: ef984046-ee13-46e1-b690-69a9cba371cd
+INFO 2025-04-15 03:51:04 service_factory 28088 34536 Using modern pose analyzer implementation with provided config
+INFO 2025-04-15 03:51:04 services 28088 34536 初始化视频处理服务
+INFO 2025-04-15 03:51:04 modern_pose_analyzer 28088 34536 Initialized Modern Pose Analyzer
+INFO 2025-04-15 03:51:04 service_factory 28088 34536 Initialized Modern Pose Analyzer Service with provided configuration
+INFO 2025-04-15 03:51:04 modern_pose_analyzer 28088 34536 Processing video: E:\Digital_people\openpose\app\pose\standard\example_videos\02_俯卧撑示例\01_俯卧撑_示例动作.mp4
+INFO 2025-04-15 03:51:06 modern_pose_analyzer 28088 34536 Processing video: E:\Digital_people\openpose\app\pose\media\videos\exercise_ef984046-ee13-46e1-b690-69a9cba371cd.mp4
+INFO 2025-04-15 03:51:11 modern_pose_analyzer 28088 34536 Modern pose analysis complete: similarity=11.26%
+INFO 2025-04-15 03:51:11 service_factory 28088 34536 Updated session ef984046-ee13-46e1-b690-69a9cba371cd with modern analysis results
+INFO 2025-04-15 03:51:11 modern_pose_analyzer 28088 34536 Using analyzer's current configuration for visualization
+INFO 2025-04-15 03:51:12 modern_pose_analyzer 28088 34536 Generated visualization videos for session ef984046-ee13-46e1-b690-69a9cba371cd
+ERROR 2025-04-15 03:51:12 service_factory 28088 34536 Modern video processing failed: 'ModernPoseAnalyzerService' object has no attribute 'config'
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\service_factory.py", line 109, in process_videos
+    result = super().process_videos(session_id, standard_video_path, exercise_video_path,config=self.config)
+                                                                                                ^^^^^^^^^^^
+AttributeError: 'ModernPoseAnalyzerService' object has no attribute 'config'
+WARNING 2025-04-15 03:51:12 exceptions 28088 34536 视频处理失败: 'ModernPoseAnalyzerService' object has no attribute 'config'
+ERROR 2025-04-15 03:51:12 log 28088 34536 Internal Server Error: /upload-video/
+ERROR 2025-04-15 03:51:12 basehttp 28088 34536 "POST /upload-video/ HTTP/1.1" 500 136
+INFO 2025-04-15 03:51:38 autoreload 28088 12508 E:\Digital_people\openpose\app\pose\evalpose\service_factory.py changed, reloading.
+INFO 2025-04-15 03:51:38 autoreload 29220 27524 Watching for file changes with StatReloader
+INFO 2025-04-15 03:51:51 views 29220 18160 收到带参考视频ID的请求: http://localhost:8000
+INFO 2025-04-15 03:51:51 views 29220 18160 Loaded configuration for 02_01: Default Configuration
+INFO 2025-04-15 03:51:51 views 29220 18160 Created dynamic config object with KEY_ANGLES: 3 angles
+INFO 2025-04-15 03:51:51 views 29220 18160 创建会话成功: 552d5c14-ce6b-4ce7-8d1e-88d4dade84d4
+INFO 2025-04-15 03:51:51 service_factory 29220 18160 Using modern pose analyzer implementation with provided config
+INFO 2025-04-15 03:51:51 services 29220 18160 初始化视频处理服务
+INFO 2025-04-15 03:51:51 modern_pose_analyzer 29220 18160 Initialized Modern Pose Analyzer
+INFO 2025-04-15 03:51:51 service_factory 29220 18160 Initialized Modern Pose Analyzer Service with provided configuration
+INFO 2025-04-15 03:51:51 modern_pose_analyzer 29220 18160 Processing video: E:\Digital_people\openpose\app\pose\standard\example_videos\02_俯卧撑示例\01_俯卧撑_示例动作.mp4
+INFO 2025-04-15 03:51:52 modern_pose_analyzer 29220 18160 Processing video: E:\Digital_people\openpose\app\pose\media\videos\exercise_552d5c14-ce6b-4ce7-8d1e-88d4dade84d4.mp4
+INFO 2025-04-15 03:51:54 modern_pose_analyzer 29220 18160 Modern pose analysis complete: similarity=11.26%
+INFO 2025-04-15 03:51:54 service_factory 29220 18160 Updated session 552d5c14-ce6b-4ce7-8d1e-88d4dade84d4 with modern analysis results
+INFO 2025-04-15 03:51:54 modern_pose_analyzer 29220 18160 Using analyzer's current configuration for visualization
+INFO 2025-04-15 03:51:55 modern_pose_analyzer 29220 18160 Generated visualization videos for session 552d5c14-ce6b-4ce7-8d1e-88d4dade84d4
+INFO 2025-04-15 03:51:55 services 29220 18160 开始处理视频: session_id=552d5c14-ce6b-4ce7-8d1e-88d4dade84d4
+INFO 2025-04-15 03:51:58 services 29220 18160 DTW分析完成: 0.1126443011657564
+ERROR 2025-04-15 03:51:59 service_factory 29220 18160 Modern video processing failed: 'ModernPoseAnalyzerService' object has no attribute 'config'
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\service_factory.py", line 109, in process_videos
+    result = super().process_videos(session_id, standard_video_path, exercise_video_path,config=config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\services.py", line 127, in process_videos
+    executor.submit(analyzer._process_overlap_video, std_sequence, exe_sequence, dtw_result, overlap_output_path, exercise_video_path, config=self.config)
+                                                                                                                                              ^^^^^^^^^^^
+AttributeError: 'ModernPoseAnalyzerService' object has no attribute 'config'
+WARNING 2025-04-15 03:51:59 exceptions 29220 18160 视频处理失败: 'ModernPoseAnalyzerService' object has no attribute 'config'
+ERROR 2025-04-15 03:51:59 log 29220 18160 Internal Server Error: /upload-video/
+ERROR 2025-04-15 03:51:59 basehttp 29220 18160 "POST /upload-video/ HTTP/1.1" 500 136
+INFO 2025-04-15 03:52:15 autoreload 29220 27524 E:\Digital_people\openpose\app\pose\evalpose\services.py changed, reloading.
+INFO 2025-04-15 03:52:16 autoreload 20768 33604 Watching for file changes with StatReloader
+INFO 2025-04-15 03:53:33 autoreload 20768 33604 E:\Digital_people\openpose\app\pose\evalpose\services.py changed, reloading.
+INFO 2025-04-15 03:53:33 autoreload 25564 33308 Watching for file changes with StatReloader
+INFO 2025-04-15 03:53:39 views 25564 34024 收到带参考视频ID的请求: http://localhost:8000
+INFO 2025-04-15 03:53:39 views 25564 34024 Loaded configuration for 02_01: Default Configuration
+INFO 2025-04-15 03:53:39 views 25564 34024 Created dynamic config object with KEY_ANGLES: 3 angles
+INFO 2025-04-15 03:53:39 views 25564 34024 创建会话成功: 284419b8-0eeb-462a-a341-391e05e0f3c5
+INFO 2025-04-15 03:53:39 service_factory 25564 34024 Using modern pose analyzer implementation with provided config
+INFO 2025-04-15 03:53:39 services 25564 34024 初始化视频处理服务
+INFO 2025-04-15 03:53:39 modern_pose_analyzer 25564 34024 Initialized Modern Pose Analyzer
+INFO 2025-04-15 03:53:39 service_factory 25564 34024 Initialized Modern Pose Analyzer Service with provided configuration
+INFO 2025-04-15 03:53:39 modern_pose_analyzer 25564 34024 Processing video: E:\Digital_people\openpose\app\pose\standard\example_videos\02_俯卧撑示例\01_俯卧撑_示例动作.mp4
+INFO 2025-04-15 03:53:41 modern_pose_analyzer 25564 34024 Processing video: E:\Digital_people\openpose\app\pose\media\videos\exercise_284419b8-0eeb-462a-a341-391e05e0f3c5.mp4
+INFO 2025-04-15 03:53:45 modern_pose_analyzer 25564 34024 Modern pose analysis complete: similarity=11.26%
+INFO 2025-04-15 03:53:46 service_factory 25564 34024 Updated session 284419b8-0eeb-462a-a341-391e05e0f3c5 with modern analysis results
+INFO 2025-04-15 03:53:46 modern_pose_analyzer 25564 34024 Using analyzer's current configuration for visualization
+INFO 2025-04-15 03:53:46 modern_pose_analyzer 25564 34024 Generated visualization videos for session 284419b8-0eeb-462a-a341-391e05e0f3c5
+INFO 2025-04-15 03:53:46 services 25564 34024 开始处理视频: session_id=284419b8-0eeb-462a-a341-391e05e0f3c5
+INFO 2025-04-15 03:53:53 services 25564 34024 DTW分析完成: 0.1126443011657564
+ERROR 2025-04-15 03:53:54 service_factory 25564 34024 Modern video processing failed: VideoAnalyzer._process_overlap_video() got an unexpected keyword argument 'config'
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\service_factory.py", line 109, in process_videos
+    result = super().process_videos(session_id, standard_video_path, exercise_video_path,config=config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\services.py", line 137, in process_videos
+    future.result()
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\222\AppData\Roaming\uv\python\cpython-3.12.5-windows-x86_64-none\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VideoAnalyzer._process_overlap_video() got an unexpected keyword argument 'config'
+WARNING 2025-04-15 03:53:54 exceptions 25564 34024 视频处理失败: VideoAnalyzer._process_overlap_video() got an unexpected keyword argument 'config'
+ERROR 2025-04-15 03:53:54 log 25564 34024 Internal Server Error: /upload-video/
+ERROR 2025-04-15 03:53:54 basehttp 25564 34024 "POST /upload-video/ HTTP/1.1" 500 158
+INFO 2025-04-15 03:54:47 autoreload 25564 33308 E:\Digital_people\openpose\app\pose\evalpose\pose_analyze\pose_detector.py changed, reloading.
+INFO 2025-04-15 03:54:47 autoreload 31600 9516 Watching for file changes with StatReloader
+INFO 2025-04-15 03:54:52 views 31600 13440 收到带参考视频ID的请求: http://localhost:8000
+INFO 2025-04-15 03:54:52 views 31600 13440 Loaded configuration for 02_01: Default Configuration
+INFO 2025-04-15 03:54:52 views 31600 13440 Created dynamic config object with KEY_ANGLES: 3 angles
+INFO 2025-04-15 03:54:52 views 31600 13440 创建会话成功: 0150f45d-abc0-499f-b70f-af324bb340c3
+INFO 2025-04-15 03:54:52 service_factory 31600 13440 Using modern pose analyzer implementation with provided config
+INFO 2025-04-15 03:54:52 services 31600 13440 初始化视频处理服务
+INFO 2025-04-15 03:54:52 modern_pose_analyzer 31600 13440 Initialized Modern Pose Analyzer
+INFO 2025-04-15 03:54:52 service_factory 31600 13440 Initialized Modern Pose Analyzer Service with provided configuration
+INFO 2025-04-15 03:54:52 modern_pose_analyzer 31600 13440 Processing video: E:\Digital_people\openpose\app\pose\standard\example_videos\02_俯卧撑示例\01_俯卧撑_示例动作.mp4
+INFO 2025-04-15 03:54:53 modern_pose_analyzer 31600 13440 Processing video: E:\Digital_people\openpose\app\pose\media\videos\exercise_0150f45d-abc0-499f-b70f-af324bb340c3.mp4
+INFO 2025-04-15 03:54:55 modern_pose_analyzer 31600 13440 Modern pose analysis complete: similarity=11.26%
+INFO 2025-04-15 03:54:56 service_factory 31600 13440 Updated session 0150f45d-abc0-499f-b70f-af324bb340c3 with modern analysis results
+INFO 2025-04-15 03:54:56 modern_pose_analyzer 31600 13440 Using analyzer's current configuration for visualization
+INFO 2025-04-15 03:54:56 modern_pose_analyzer 31600 13440 Generated visualization videos for session 0150f45d-abc0-499f-b70f-af324bb340c3
+INFO 2025-04-15 03:54:56 services 31600 13440 开始处理视频: session_id=0150f45d-abc0-499f-b70f-af324bb340c3
+INFO 2025-04-15 03:54:59 services 31600 13440 DTW分析完成: 0.1126443011657564
+INFO 2025-04-15 03:55:00 services 31600 13440 开始生成overlap视频的HLS流: ffmpeg -i E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\overlap_annotated.mp4 -hls_time 2 -hls_list_size 0 -hls_segment_filename E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\overlap_%03d.ts -f hls E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\overlap.m3u8
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: ffmpeg version N-109920-gac6eec1fc2-20230224 Copyright (c) 2000-2023 the FFmpeg developers
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: built with gcc 12.2.0 (crosstool-NG 1.25.0.90_cf9beb1)
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --disable-libmfx --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --disable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp --extra-version=20230224
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: libavutil      58.  3.100 / 58.  3.100
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: libavcodec     60.  4.100 / 60.  4.100
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: libavformat    60.  4.100 / 60.  4.100
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: libavdevice    60.  2.100 / 60.  2.100
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: libavfilter     9.  4.100 /  9.  4.100
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: libswscale      7.  2.100 /  7.  2.100
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: libswresample   4. 11.100 /  4. 11.100
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: libpostproc    57.  2.100 / 57.  2.100
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\overlap_annotated.mp4':
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: Metadata:
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: encoder         : Lavf58.76.100
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: Duration: 00:00:03.20, start: 0.000000, bitrate: 3476 kb/s
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: Stream #0:0[0x1](und): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 3473 kb/s, 30 fps, 30 tbr, 30003 tbn (default)
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: Metadata:
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: Stream mapping:
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: Stream #0:0 -> #0:0 (mpeg4 (native) -> h264 (libx264))
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: Press [q] to stop, [?] for help
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] using SAR=1/1
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] profile High, level 3.2, 4:2:0, 8-bit
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] 264 - core 164 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=22 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: Output #0, hls, to 'E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\overlap.m3u8':
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: Metadata:
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: encoder         : Lavf60.4.100
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: Stream #0:0(und): Video: h264, yuv420p(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 90k tbn (default)
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: Metadata:
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: encoder         : Lavc60.4.100 libx264
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: Side data:
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: frame=    0 fps=0.0 q=0.0 size=       0kB time=-577014:32:22.77 bitrate=  -0.0kbits/s speed=N/A
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [hls @ 000002797ac2ed00] Opening 'E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\overlap_000.ts' for writing
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [hls @ 000002797ac2ed00] Opening 'E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\overlap.m3u8.tmp' for writing
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: frame=   96 fps=0.0 q=-1.0 Lsize=N/A time=00:00:03.09 bitrate=N/A speed=6.59x
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: video:597kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] frame I:1     Avg QP:19.32  size: 17038
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] frame P:55    Avg QP:21.26  size:  8982
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] frame B:40    Avg QP:23.06  size:  2497
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] consecutive B-frames: 30.2% 37.5% 15.6% 16.7%
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] mb I  I16..4: 44.8% 48.8%  6.4%
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] mb P  I16..4:  3.3%  8.9%  0.2%  P16..4: 31.4%  6.4%  3.2%  0.0%  0.0%    skip:46.6%
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] mb B  I16..4:  0.4%  0.9%  0.0%  B16..8: 37.9%  1.6%  0.2%  direct: 1.4%  skip:57.6%  L0:53.5% L1:43.7% BI: 2.8%
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] 8x8 transform intra:68.6% inter:82.2%
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] coded y,uvDC,uvAC intra: 29.5% 31.9% 2.0% inter: 7.2% 7.7% 1.0%
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] i16 v,h,dc,p: 40% 42% 14%  4%
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 25% 43%  1%  1%  1%  1%  1%  1%
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 40% 31% 19%  2%  1%  2%  2%  1%  3%
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] i8c dc,h,v,p: 50% 26% 22%  1%
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] Weighted P-Frames: Y:0.0% UV:0.0%
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] ref P L0: 76.3%  6.4% 12.8%  4.4%
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] ref B L0: 81.6% 16.6%  1.8%
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] ref B L1: 98.8%  1.2%
+DEBUG 2025-04-15 03:55:01 services 31600 13440 FFmpeg 输出: [libx264 @ 000002797c9c09c0] kb/s:1527.48
+INFO 2025-04-15 03:55:01 services 31600 13440 HLS 流处理完成: E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3/overlap.m3u8
+INFO 2025-04-15 03:55:01 services 31600 13440 开始生成standard视频的HLS流: ffmpeg -i E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\standard_annotated.mp4 -hls_time 2 -hls_list_size 0 -hls_segment_filename E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\standard_%03d.ts -f hls E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\standard.m3u8
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: ffmpeg version N-109920-gac6eec1fc2-20230224 Copyright (c) 2000-2023 the FFmpeg developers
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: built with gcc 12.2.0 (crosstool-NG 1.25.0.90_cf9beb1)
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --disable-libmfx --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --disable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp --extra-version=20230224
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: libavutil      58.  3.100 / 58.  3.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: libavcodec     60.  4.100 / 60.  4.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: libavformat    60.  4.100 / 60.  4.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: libavdevice    60.  2.100 / 60.  2.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: libavfilter     9.  4.100 /  9.  4.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: libswscale      7.  2.100 /  7.  2.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: libswresample   4. 11.100 /  4. 11.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: libpostproc    57.  2.100 / 57.  2.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\standard_annotated.mp4':
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Metadata:
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: encoder         : Lavf58.76.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Duration: 00:00:01.77, start: 0.000000, bitrate: 4516 kb/s
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Stream #0:0[0x1](und): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 4511 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Metadata:
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Stream mapping:
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Stream #0:0 -> #0:0 (mpeg4 (native) -> h264 (libx264))
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Press [q] to stop, [?] for help
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] using SAR=1/1
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] profile High, level 3.1, 4:2:0, 8-bit
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] 264 - core 164 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=22 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Output #0, hls, to 'E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\standard.m3u8':
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Metadata:
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: encoder         : Lavf60.4.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Stream #0:0(und): Video: h264, yuv420p(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 90k tbn (default)
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Metadata:
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: encoder         : Lavc60.4.100 libx264
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Side data:
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: frame=    0 fps=0.0 q=0.0 size=       0kB time=-577014:32:22.77 bitrate=  -0.0kbits/s speed=N/A
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [hls @ 000002306fd7d840] Opening 'E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\standard_000.ts' for writing
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [hls @ 000002306fd7d840] Opening 'E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\standard.m3u8.tmp' for writing
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: frame=   53 fps=0.0 q=-1.0 Lsize=N/A time=00:00:01.66 bitrate=N/A speed=5.05x
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: video:396kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] frame I:1     Avg QP:18.56  size: 19133
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] frame P:36    Avg QP:21.65  size:  9143
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] frame B:16    Avg QP:23.70  size:  3537
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] consecutive B-frames: 49.1% 26.4% 17.0%  7.5%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] mb I  I16..4: 52.8% 43.1%  4.2%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] mb P  I16..4:  3.6%  9.0%  0.3%  P16..4: 33.5%  5.9%  3.1%  0.0%  0.0%    skip:44.7%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] mb B  I16..4:  0.5%  1.0%  0.0%  B16..8: 39.6%  2.5%  0.5%  direct: 1.8%  skip:54.2%  L0:53.3% L1:43.8% BI: 3.0%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] 8x8 transform intra:65.4% inter:83.1%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] coded y,uvDC,uvAC intra: 29.4% 29.9% 2.3% inter: 8.1% 8.6% 1.5%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] i16 v,h,dc,p: 42% 40% 15%  4%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 28% 39%  1%  1%  1%  1%  1%  1%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 37% 30% 20%  3%  2%  2%  2%  1%  4%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] i8c dc,h,v,p: 52% 25% 21%  2%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] Weighted P-Frames: Y:0.0% UV:0.0%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] ref P L0: 73.2% 11.3% 12.0%  3.4%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] ref B L0: 81.1% 17.4%  1.5%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] ref B L1: 99.0%  1.0%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 000002306fd78a80] kb/s:1833.38
+INFO 2025-04-15 03:55:02 services 31600 13440 HLS 流处理完成: E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3/standard.m3u8
+INFO 2025-04-15 03:55:02 services 31600 13440 开始生成exercise视频的HLS流: ffmpeg -i E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\exercise_annotated.mp4 -hls_time 2 -hls_list_size 0 -hls_segment_filename E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\exercise_%03d.ts -f hls E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\exercise.m3u8
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: ffmpeg version N-109920-gac6eec1fc2-20230224 Copyright (c) 2000-2023 the FFmpeg developers
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: built with gcc 12.2.0 (crosstool-NG 1.25.0.90_cf9beb1)
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --disable-libmfx --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --disable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp --extra-version=20230224
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: libavutil      58.  3.100 / 58.  3.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: libavcodec     60.  4.100 / 60.  4.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: libavformat    60.  4.100 / 60.  4.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: libavdevice    60.  2.100 / 60.  2.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: libavfilter     9.  4.100 /  9.  4.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: libswscale      7.  2.100 /  7.  2.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: libswresample   4. 11.100 /  4. 11.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: libpostproc    57.  2.100 / 57.  2.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\exercise_annotated.mp4':
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Metadata:
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: encoder         : Lavf58.76.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Duration: 00:00:03.20, start: 0.000000, bitrate: 3855 kb/s
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Stream #0:0[0x1](und): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 3851 kb/s, 30 fps, 30 tbr, 30003 tbn (default)
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Metadata:
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Stream mapping:
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Stream #0:0 -> #0:0 (mpeg4 (native) -> h264 (libx264))
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Press [q] to stop, [?] for help
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] using SAR=1/1
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] profile High, level 3.2, 4:2:0, 8-bit
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] 264 - core 164 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=22 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Output #0, hls, to 'E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\exercise.m3u8':
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Metadata:
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: major_brand     : isom
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: minor_version   : 512
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: compatible_brands: isomiso2mp41
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: encoder         : Lavf60.4.100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Stream #0:0(und): Video: h264, yuv420p(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 90k tbn (default)
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Metadata:
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: handler_name    : VideoHandler
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: vendor_id       : [0][0][0][0]
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: encoder         : Lavc60.4.100 libx264
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: Side data:
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: frame=    0 fps=0.0 q=0.0 size=       0kB time=-577014:32:22.77 bitrate=  -0.0kbits/s speed=N/A
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [hls @ 0000021c55daed00] Opening 'E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\exercise_000.ts' for writing
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [hls @ 0000021c55daed00] Opening 'E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3\exercise.m3u8.tmp' for writing
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: frame=   96 fps=0.0 q=-1.0 Lsize=N/A time=00:00:03.09 bitrate=N/A speed=6.26x
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: video:630kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] frame I:1     Avg QP:19.17  size: 19100
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] frame P:61    Avg QP:21.46  size:  8735
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] frame B:34    Avg QP:23.75  size:  2722
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] consecutive B-frames: 45.8% 18.8%  6.2% 29.2%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] mb I  I16..4: 46.6% 48.1%  5.4%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] mb P  I16..4:  3.0%  7.9%  0.2%  P16..4: 30.5%  6.1%  3.3%  0.0%  0.0%    skip:48.9%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] mb B  I16..4:  0.4%  0.9%  0.0%  B16..8: 37.9%  1.7%  0.2%  direct: 1.4%  skip:57.4%  L0:51.8% L1:45.2% BI: 3.1%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] 8x8 transform intra:68.3% inter:82.1%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] coded y,uvDC,uvAC intra: 29.3% 31.8% 2.4% inter: 7.4% 8.6% 2.0%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] i16 v,h,dc,p: 41% 41% 14%  4%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 27% 25% 43%  1%  1%  0%  1%  1%  1%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 39% 32% 20%  2%  1%  2%  2%  2%  2%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] i8c dc,h,v,p: 50% 26% 22%  1%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] Weighted P-Frames: Y:0.0% UV:0.0%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] ref P L0: 75.0%  6.6% 13.5%  4.9%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] ref B L0: 85.2% 12.8%  1.9%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] ref B L1: 97.0%  3.0%
+DEBUG 2025-04-15 03:55:02 services 31600 13440 FFmpeg 输出: [libx264 @ 0000021c57a610c0] kb/s:1611.34
+INFO 2025-04-15 03:55:03 services 31600 13440 HLS 流处理完成: E:\Digital_people\openpose\app\pose\media\hls\0150f45d-abc0-499f-b70f-af324bb340c3/exercise.m3u8
+INFO 2025-04-15 03:55:03 services 31600 13440 视频处理完成，HLS转换状态: {'dtw_success': True, 'hls_success': True, 'standard_hls': True, 'exercise_hls': True, 'overlap_hls': True, 'frame_scores': {'0': 27.83235010202551, '1': 41.04590814537482, '2': 41.51478532445167, '3': 41.958495170807794, '4': 48.80630097190147, '5': 45.09260926176457, '6': 54.07873583556223, '7': 50.16171844275987, '8': 60.69287184723122, '9': 65.93521439359981, '10': 57.71881755960906, '11': 44.5306103368052, '12': 46.31566717457749, '13': 59.74038536494611, '14': 70.61380995417261, '15': 79.65278514237802, '16': 80.1041875992902, '17': 88.60309614217711, '18': 92.31400947726695, '19': 92.99724143093624, '20': 89.56715054098764, '21': 82.31677984617752, '22': 64.6261215308699, '23': 78.03925699063484, '24': 74.53391224284658, '25': 79.46016058532578, '26': 91.7411572074321, '27': 93.07727134009794, '28': 96.81807948944632, '29': 79.8816310595752, '30': 72.19608086176682, '31': 66.47187335302146, '32': 63.76700476148861, '33': 60.73932338152621, '34': 67.18850162539654, '35': 60.9831381417077, '36': 53.92934808328431, '37': 42.90837146805769, '38': 40.54606889087368, '39': 38.60795585049196, '40': 35.32630532359874, '41': 37.14619498568496, '42': 21.121197523621696, '43': 22.161880884366596, '44': 23.61656647076621, '45': 23.58999596206102, '46': 26.821816659478074, '47': 25.162984627056893, '48': 27.149714481523603, '49': 29.837074379691717, '50': 27.794598830049075, '51': 27.75684315972396, '52': 30.523031312937217, '53': 14.156420963699103, '54': 3.314409649906245, '55': 0.0, '56': 3.9100875245058564, '57': 13.472866276934855, '58': 31.602033964844686, '59': 47.5686780013618, '60': 58.98280601343378, '61': 64.2108760362672, '62': 56.16111859889337, '63': 70.55499401529998, '64': 83.47134595324393, '65': 75.90720669235122, '66': 80.2506879239904, '67': 86.93567062062455, '68': 100.0, '69': 89.28254739476202, '70': 68.6567996870451, '71': 91.09595164268208, '72': 94.95339255267872, '73': 94.30815413058176, '74': 96.64412705201177, '75': 89.15474905647213, '76': 75.80263567034552, '77': 62.25992455720153, '78': 57.258329117940846, '79': 52.28075462635294, '80': 57.72095025378695, '81': 59.264240530570085, '82': 59.461878616615806, '83': 68.67000825109717, '84': 65.8200856830783, '85': 60.529957012816, '86': 60.54846140487923, '87': 64.46757774387325, '88': 65.0881773865043, '89': 66.14783994367487, '90': 66.42960047799006, '91': 64.63276551206484, '92': 62.62663307261387, '93': 64.60437871997232, '94': 62.91476408108108, '95': 66.00438700596554}}
+INFO 2025-04-15 03:55:03 basehttp 31600 13440 "POST /upload-video/ HTTP/1.1" 201 4393
+INFO 2025-04-15 03:55:22 service_factory 31600 13440 Using modern pose analyzer implementation with default config
+INFO 2025-04-15 03:55:22 services 31600 13440 初始化视频处理服务
+INFO 2025-04-15 03:55:22 modern_pose_analyzer 31600 13440 Using default configuration
+INFO 2025-04-15 03:55:22 modern_pose_analyzer 31600 13440 Initialized Modern Pose Analyzer
+INFO 2025-04-15 03:55:22 service_factory 31600 13440 Initialized Modern Pose Analyzer Service with default configuration
+INFO 2025-04-15 03:55:22 basehttp 31600 13440 "GET /scores/worst-frames/0150f45d-abc0-499f-b70f-af324bb340c3/?max_frames=3 HTTP/1.1" 200 54
+INFO 2025-04-15 03:55:29 service_factory 31600 13440 Using modern pose analyzer implementation with default config
+INFO 2025-04-15 03:55:29 services 31600 13440 初始化视频处理服务
+INFO 2025-04-15 03:55:29 modern_pose_analyzer 31600 13440 Using default configuration
+INFO 2025-04-15 03:55:29 modern_pose_analyzer 31600 13440 Initialized Modern Pose Analyzer
+INFO 2025-04-15 03:55:29 service_factory 31600 13440 Initialized Modern Pose Analyzer Service with default configuration
+INFO 2025-04-15 03:55:29 basehttp 31600 13440 "GET /scores/speed-analysis/0150f45d-abc0-499f-b70f-af324bb340c3/ HTTP/1.1" 200 39
+INFO 2025-04-15 03:55:35 basehttp 31600 13440 "GET /scores/frame-scores/0150f45d-abc0-499f-b70f-af324bb340c3/ HTTP/1.1" 200 2263
+INFO 2025-04-15 03:55:45 service_factory 31600 13440 Using modern pose analyzer implementation with default config
+INFO 2025-04-15 03:55:45 services 31600 13440 初始化视频处理服务
+INFO 2025-04-15 03:55:45 modern_pose_analyzer 31600 13440 Using default configuration
+INFO 2025-04-15 03:55:45 modern_pose_analyzer 31600 13440 Initialized Modern Pose Analyzer
+INFO 2025-04-15 03:55:45 service_factory 31600 13440 Initialized Modern Pose Analyzer Service with default configuration
+INFO 2025-04-15 03:55:45 basehttp 31600 13440 "GET /scores/exercise-stages/0150f45d-abc0-499f-b70f-af324bb340c3/ HTTP/1.1" 200 94
+INFO 2025-04-15 03:55:56 service_factory 31600 13440 Using modern pose analyzer implementation with default config
+INFO 2025-04-15 03:55:56 services 31600 13440 初始化视频处理服务
+INFO 2025-04-15 03:55:56 modern_pose_analyzer 31600 13440 Using default configuration
+INFO 2025-04-15 03:55:56 modern_pose_analyzer 31600 13440 Initialized Modern Pose Analyzer
+INFO 2025-04-15 03:55:56 service_factory 31600 13440 Initialized Modern Pose Analyzer Service with default configuration
+INFO 2025-04-15 03:55:56 views 31600 13440 Session 0150f45d-abc0-499f-b70f-af324bb340c3 frame_data keys: ['std_frame_data', 'exercise_frame_data']
+INFO 2025-04-15 03:55:56 views 31600 13440 Advanced metrics for session 0150f45d-abc0-499f-b70f-af324bb340c3: {}
+INFO 2025-04-15 03:55:56 basehttp 31600 13440 "GET /scores/advanced-metrics/0150f45d-abc0-499f-b70f-af324bb340c3/ HTTP/1.1" 200 2
+INFO 2025-04-15 03:56:03 basehttp 31600 35208 "GET /frame-scores/0150f45d-abc0-499f-b70f-af324bb340c3/ HTTP/1.1" 200 2263
