@@ -1,18 +1,17 @@
 # main.py
 import numpy as np
 import json
-from .pose_detector import VideoAnalyzer
-from .action_comparator import ActionComparator
-from .evaluation import detect_action_stages
-from .visualization import generate_video_with_selected_frames
-from .video_stretch import stretch_videos_to_same_length
-from .config_service import get_config_class
+from pose_detector import VideoAnalyzer
+from action_comparator import ActionComparator
+from evaluation import detect_action_stages
+from visualization import generate_video_with_selected_frames
+from video_stretch import stretch_videos_to_same_length
+from config_service import get_config_class
 
 def main():
-    # Get dynamic config using numeric_id 02_01
-    numeric_id = "02_01"
-    Config = get_config_class(numeric_id)
-    print(f"Using configuration for {numeric_id}: {Config.DESCRIPTION if hasattr(Config, 'DESCRIPTION') else 'Default'}")
+    # Use default config
+    Config = get_config_class(None)
+    print(f"Using configuration: {Config.DESCRIPTION if hasattr(Config, 'DESCRIPTION') else 'Default'}")
     print(f"Key angles: {Config.KEY_ANGLES}")
     print(f"Normalization joints: {Config.NORMALIZATION_JOINTS}")
     

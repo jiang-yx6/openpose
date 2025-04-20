@@ -1,6 +1,12 @@
-from evalpose.models import VideoConfig
-from evalpose.models import VideoConfig
-from .config import Config as DefaultConfig
+try:
+    from evalpose.models import VideoConfig
+    from evalpose.models import VideoConfig
+except ImportError:
+    print("Warining: Running without backend.")
+try:
+    from .config import Config as DefaultConfig
+except ImportError:
+    from config import Config as DefaultConfig
 import types
 
 def get_config_class(numeric_id):
@@ -13,6 +19,10 @@ def get_config_class(numeric_id):
     Returns:
         type: A dynamically created Config class with attributes from database
     """
+    if numeric_id is None:
+        # Return default Config class if numeric_id is None
+        return DefaultConfig
+    
     try:
         # Get configuration from database
         db_config = VideoConfig.objects.get(numeric_id=numeric_id)

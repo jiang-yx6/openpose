@@ -28,7 +28,10 @@ def generate_video_with_selected_frames(std_video, pat_video, dtw_result, output
     :param config: 配置对象，包含KEY_ANGLES等参数
     :param save_lowest_scores: 是否保存最低得分帧
     """
-    from .evaluation import select_lowest_score_frames
+    try:
+        from .evaluation import select_lowest_score_frames
+    except ImportError:
+        from evaluation import select_lowest_score_frames
     lowest_score_frames = select_lowest_score_frames(dtw_result, stages)
 
     cap_pat = cv2.VideoCapture(video_path_pat)
