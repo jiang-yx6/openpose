@@ -1,0 +1,409 @@
+2025-04-18 16:28:05,590 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-18 16:30:20,033 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-18 16:30:42,850 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-18 16:30:49,690 [INFO] evalpose.views: 收到带参考视频ID的请求: None
+2025-04-18 16:30:51,499 [INFO] evalpose.views: Loaded configuration for 01_01: 含胸
+2025-04-18 16:30:51,500 [INFO] evalpose.views: Created dynamic config object with KEY_ANGLES: 1 angles
+2025-04-18 16:30:51,528 [INFO] evalpose.views: 创建会话成功: e1523042-1065-4921-bd11-fce52478e2e7
+2025-04-18 16:30:51,589 [INFO] evalpose.service_factory: Using modern pose analyzer implementation with provided config
+2025-04-18 16:30:51,665 [INFO] evalpose.services: 初始化视频处理服务
+2025-04-18 16:30:51,673 [INFO] evalpose.modern_pose_analyzer: Initialized Modern Pose Analyzer
+2025-04-18 16:30:51,673 [INFO] evalpose.service_factory: Initialized Modern Pose Analyzer Service with provided configuration
+2025-04-18 16:30:51,673 [INFO] evalpose.modern_pose_analyzer: Processing video: E:\Digital_people\openpose\app\pose\standard\example_videos\01_康复操\01_胸_含胸.mp4
+2025-04-18 16:30:55,960 [INFO] evalpose.modern_pose_analyzer: Processing video: E:\Digital_people\openpose\app\pose\media\videos\exercise_e1523042-1065-4921-bd11-fce52478e2e7.mp4
+2025-04-18 16:30:59,266 [ERROR] evalpose.modern_pose_analyzer: Error in modern pose analysis: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (101,) + inhomogeneous part.
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\modern_pose_analyzer.py", line 119, in process_videos
+    raise e
+  File "E:\Digital_people\openpose\app\pose\evalpose\modern_pose_analyzer.py", line 110, in process_videos
+    dtw_result = comparator.compare_sequences()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyze\action_comparator.py", line 22, in compare_sequences
+    pat_features = self._extract_features(self.pat_seq)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyze\action_comparator.py", line 54, in _extract_features
+    return np.array(features)
+           ^^^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (101,) + inhomogeneous part.
+2025-04-18 16:30:59,268 [ERROR] evalpose.service_factory: Modern video processing failed: Modern pose analysis failed: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (101,) + inhomogeneous part.
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\service_factory.py", line 93, in process_videos
+    raise Exception(f"Modern pose analysis failed: {modern_result.get('error', 'Unknown error')}")
+Exception: Modern pose analysis failed: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (101,) + inhomogeneous part.
+2025-04-18 16:30:59,294 [WARNING] evalpose.exceptions: 视频处理失败: Modern pose analysis failed: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (101,) + inhomogeneous part.
+2025-04-18 16:30:59,296 [ERROR] django.request: Internal Server Error: /upload-video/
+2025-04-18 16:30:59,296 [ERROR] django.server: "POST /upload-video/ HTTP/1.1" 500 265
+2025-04-18 16:31:34,306 [INFO] evalpose.views: 收到带参考视频ID的请求: None
+2025-04-18 16:31:36,755 [INFO] evalpose.views: Loaded configuration for 01_01: 含胸
+2025-04-18 16:31:36,756 [INFO] evalpose.views: Created dynamic config object with KEY_ANGLES: 1 angles
+2025-04-18 16:31:36,782 [INFO] evalpose.views: 创建会话成功: 9204edad-31ee-4369-8d4f-709b69340e44
+2025-04-18 16:31:36,862 [INFO] evalpose.service_factory: Using modern pose analyzer implementation with provided config
+2025-04-18 16:31:36,871 [INFO] evalpose.services: 初始化视频处理服务
+2025-04-18 16:31:36,880 [INFO] evalpose.modern_pose_analyzer: Initialized Modern Pose Analyzer
+2025-04-18 16:31:36,881 [INFO] evalpose.service_factory: Initialized Modern Pose Analyzer Service with provided configuration
+2025-04-18 16:31:36,881 [INFO] evalpose.modern_pose_analyzer: Processing video: E:\Digital_people\openpose\app\pose\standard\example_videos\01_康复操\01_胸_含胸.mp4
+2025-04-18 16:31:41,568 [INFO] evalpose.modern_pose_analyzer: Processing video: E:\Digital_people\openpose\app\pose\media\videos\exercise_9204edad-31ee-4369-8d4f-709b69340e44.mp4
+2025-04-18 16:31:45,654 [ERROR] evalpose.modern_pose_analyzer: Error in modern pose analysis: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (133,) + inhomogeneous part.
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\modern_pose_analyzer.py", line 119, in process_videos
+    raise e
+  File "E:\Digital_people\openpose\app\pose\evalpose\modern_pose_analyzer.py", line 110, in process_videos
+    dtw_result = comparator.compare_sequences()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyze\action_comparator.py", line 22, in compare_sequences
+    pat_features = self._extract_features(self.pat_seq)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyze\action_comparator.py", line 54, in _extract_features
+    return np.array(features)
+           ^^^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (133,) + inhomogeneous part.
+2025-04-18 16:31:45,655 [ERROR] evalpose.service_factory: Modern video processing failed: Modern pose analysis failed: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (133,) + inhomogeneous part.
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\service_factory.py", line 93, in process_videos
+    raise Exception(f"Modern pose analysis failed: {modern_result.get('error', 'Unknown error')}")
+Exception: Modern pose analysis failed: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (133,) + inhomogeneous part.
+2025-04-18 16:31:45,680 [WARNING] evalpose.exceptions: 视频处理失败: Modern pose analysis failed: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (133,) + inhomogeneous part.
+2025-04-18 16:31:45,681 [ERROR] django.request: Internal Server Error: /upload-video/
+2025-04-18 16:31:45,681 [ERROR] django.server: "POST /upload-video/ HTTP/1.1" 500 265
+2025-04-18 16:31:55,892 [INFO] evalpose.views: 收到带参考视频ID的请求: None
+2025-04-18 16:31:57,908 [INFO] evalpose.views: Loaded configuration for 01_14: 耸肩
+2025-04-18 16:31:57,909 [INFO] evalpose.views: Created dynamic config object with KEY_ANGLES: 1 angles
+2025-04-18 16:31:57,936 [INFO] evalpose.views: 创建会话成功: 4de01509-534e-495a-b2e1-7bdb9b1771b8
+2025-04-18 16:31:58,035 [INFO] evalpose.service_factory: Using modern pose analyzer implementation with provided config
+2025-04-18 16:31:58,044 [INFO] evalpose.services: 初始化视频处理服务
+2025-04-18 16:31:58,055 [INFO] evalpose.modern_pose_analyzer: Initialized Modern Pose Analyzer
+2025-04-18 16:31:58,055 [INFO] evalpose.service_factory: Initialized Modern Pose Analyzer Service with provided configuration
+2025-04-18 16:31:58,056 [INFO] evalpose.modern_pose_analyzer: Processing video: E:\Digital_people\openpose\app\pose\standard\example_videos\01_康复操\14_肩_耸肩.mp4
+2025-04-18 16:32:02,201 [INFO] evalpose.modern_pose_analyzer: Processing video: E:\Digital_people\openpose\app\pose\media\videos\exercise_4de01509-534e-495a-b2e1-7bdb9b1771b8.mp4
+2025-04-18 16:32:07,037 [ERROR] evalpose.modern_pose_analyzer: Error in modern pose analysis: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (133,) + inhomogeneous part.
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\modern_pose_analyzer.py", line 119, in process_videos
+    raise e
+  File "E:\Digital_people\openpose\app\pose\evalpose\modern_pose_analyzer.py", line 110, in process_videos
+    dtw_result = comparator.compare_sequences()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyze\action_comparator.py", line 22, in compare_sequences
+    pat_features = self._extract_features(self.pat_seq)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\app\pose\evalpose\pose_analyze\action_comparator.py", line 54, in _extract_features
+    return np.array(features)
+           ^^^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (133,) + inhomogeneous part.
+2025-04-18 16:32:07,039 [ERROR] evalpose.service_factory: Modern video processing failed: Modern pose analysis failed: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (133,) + inhomogeneous part.
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\app\pose\evalpose\service_factory.py", line 93, in process_videos
+    raise Exception(f"Modern pose analysis failed: {modern_result.get('error', 'Unknown error')}")
+Exception: Modern pose analysis failed: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (133,) + inhomogeneous part.
+2025-04-18 16:32:07,065 [WARNING] evalpose.exceptions: 视频处理失败: Modern pose analysis failed: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (133,) + inhomogeneous part.
+2025-04-18 16:32:07,066 [ERROR] django.request: Internal Server Error: /upload-video/
+2025-04-18 16:32:07,067 [ERROR] django.server: "POST /upload-video/ HTTP/1.1" 500 265
+2025-04-18 16:32:17,772 [INFO] evalpose.views: 收到带参考视频ID的请求: None
+2025-04-18 16:32:18,791 [INFO] evalpose.views: Loaded configuration for 01_14: 耸肩
+2025-04-18 16:32:18,792 [INFO] evalpose.views: Created dynamic config object with KEY_ANGLES: 1 angles
+2025-04-18 16:32:18,819 [INFO] evalpose.views: 创建会话成功: e190900b-3b14-4aa8-a829-16dae8495297
+2025-04-18 16:32:18,869 [INFO] evalpose.service_factory: Using modern pose analyzer implementation with provided config
+2025-04-18 16:32:18,878 [INFO] evalpose.services: 初始化视频处理服务
+2025-04-18 16:32:18,894 [INFO] evalpose.modern_pose_analyzer: Initialized Modern Pose Analyzer
+2025-04-18 16:32:18,894 [INFO] evalpose.service_factory: Initialized Modern Pose Analyzer Service with provided configuration
+2025-04-18 16:32:18,895 [INFO] evalpose.modern_pose_analyzer: Processing video: E:\Digital_people\openpose\app\pose\standard\example_videos\01_康复操\14_肩_耸肩.mp4
+2025-04-18 16:32:23,047 [INFO] evalpose.modern_pose_analyzer: Processing video: E:\Digital_people\openpose\app\pose\media\videos\exercise_e190900b-3b14-4aa8-a829-16dae8495297.mp4
+2025-04-18 16:32:25,713 [INFO] evalpose.modern_pose_analyzer: Modern pose analysis complete: similarity=2.61%
+2025-04-18 16:32:25,740 [INFO] evalpose.service_factory: Updated session e190900b-3b14-4aa8-a829-16dae8495297 with modern analysis results
+2025-04-18 16:32:25,740 [INFO] evalpose.modern_pose_analyzer: Using analyzer's current configuration for visualization
+2025-04-18 16:32:27,440 [INFO] evalpose.modern_pose_analyzer: Generated visualization videos for session e190900b-3b14-4aa8-a829-16dae8495297
+2025-04-18 16:32:27,440 [INFO] evalpose.services: 开始处理视频: session_id=e190900b-3b14-4aa8-a829-16dae8495297
+2025-04-18 16:32:34,351 [INFO] evalpose.services: DTW分析完成: 0.026085018869999057
+2025-04-18 16:32:35,463 [INFO] evalpose.services: 处理视频进度: 100/133 帧
+2025-04-18 16:32:36,266 [INFO] evalpose.services: 开始生成overlap视频的HLS流: ffmpeg -i E:\Digital_people\openpose\app\pose\media\hls\e190900b-3b14-4aa8-a829-16dae8495297\overlap_annotated.mp4 -hls_time 2 -hls_list_size 0 -hls_segment_filename E:\Digital_people\openpose\app\pose\media\hls\e190900b-3b14-4aa8-a829-16dae8495297\overlap_%03d.ts -f hls E:\Digital_people\openpose\app\pose\media\hls\e190900b-3b14-4aa8-a829-16dae8495297\overlap.m3u8
+2025-04-18 16:32:37,604 [INFO] evalpose.services: HLS 流处理完成: E:\Digital_people\openpose\app\pose\media\hls\e190900b-3b14-4aa8-a829-16dae8495297/overlap.m3u8
+2025-04-18 16:32:37,604 [INFO] evalpose.services: 开始生成standard视频的HLS流: ffmpeg -i E:\Digital_people\openpose\app\pose\media\hls\e190900b-3b14-4aa8-a829-16dae8495297\standard_annotated.mp4 -hls_time 2 -hls_list_size 0 -hls_segment_filename E:\Digital_people\openpose\app\pose\media\hls\e190900b-3b14-4aa8-a829-16dae8495297\standard_%03d.ts -f hls E:\Digital_people\openpose\app\pose\media\hls\e190900b-3b14-4aa8-a829-16dae8495297\standard.m3u8
+2025-04-18 16:32:38,495 [INFO] evalpose.services: HLS 流处理完成: E:\Digital_people\openpose\app\pose\media\hls\e190900b-3b14-4aa8-a829-16dae8495297/standard.m3u8
+2025-04-18 16:32:38,497 [INFO] evalpose.services: 开始生成exercise视频的HLS流: ffmpeg -i E:\Digital_people\openpose\app\pose\media\hls\e190900b-3b14-4aa8-a829-16dae8495297\exercise_annotated.mp4 -hls_time 2 -hls_list_size 0 -hls_segment_filename E:\Digital_people\openpose\app\pose\media\hls\e190900b-3b14-4aa8-a829-16dae8495297\exercise_%03d.ts -f hls E:\Digital_people\openpose\app\pose\media\hls\e190900b-3b14-4aa8-a829-16dae8495297\exercise.m3u8
+2025-04-18 16:32:39,662 [INFO] evalpose.services: HLS 流处理完成: E:\Digital_people\openpose\app\pose\media\hls\e190900b-3b14-4aa8-a829-16dae8495297/exercise.m3u8
+2025-04-18 16:32:39,662 [INFO] evalpose.services: 视频处理完成，HLS转换状态: {'dtw_success': True, 'hls_success': True, 'standard_hls': True, 'exercise_hls': True, 'overlap_hls': True, 'frame_scores': {'0': 45.147100061358906, '1': 45.42711621272785, '2': 12.930738028549184, '3': 0.0, '4': 75.10945386664515, '5': 86.60253441073644, '6': 99.99999999999999, '7': 78.31541317494548, '8': 85.14557627999551, '9': 86.68256754878722, '10': 78.04013557770497, '11': 75.04373379038667, '12': 87.20122395662067, '13': 87.55742541391275, '14': 89.06820507592124, '15': 93.6350927976234, '16': 95.191166353791, '17': 85.40577918873647, '18': 92.00907136395148, '19': 92.02637683540819, '20': 94.68755398343932, '21': 92.32797301954157, '22': 92.89948812722712, '23': 96.31949513080328, '24': 93.14898398540271, '25': 94.52966878315125, '26': 90.89456457739851, '27': 94.49879082461904, '28': 95.23997111070632, '29': 92.06605037888382, '30': 91.12324724584725, '31': 92.274574646592, '32': 90.39937566936842, '33': 90.46929176744561, '34': 91.41767148135844, '35': 94.6918508143371, '36': 98.24649628503775, '37': 96.27574636694058, '38': 93.69932763353353, '39': 94.0052890299895, '40': 85.91364893785027, '41': 85.10357719480776, '42': 81.40601148972434, '43': 83.47097012123695, '44': 86.49577185416419, '45': 92.08681832159354, '46': 92.14014556440384, '47': 94.74763344789018, '48': 93.75089547472749, '49': 95.65100526728229, '50': 95.63864086376391, '51': 93.81331044415566, '52': 94.59778466293943, '53': 95.6390508042181, '54': 95.53838465800848, '55': 93.91371178985128, '56': 53.43209252054138, '57': 79.18029223558597, '58': 91.18080846476967, '59': 92.64019127891522, '60': 98.38418023423064, '61': 95.52448992169198, '62': 94.04118296541121, '63': 92.62312716872108, '64': 91.31300875216257, '65': 90.30887491591768, '66': 92.55989768286098, '67': 93.47551225733753, '68': 91.29361332057938, '69': 91.60270718213928}}
+2025-04-18 16:32:39,666 [INFO] django.server: "POST /upload-video/ HTTP/1.1" 201 3847
+2025-04-18 16:32:47,337 [INFO] django.server: - Broken pipe from ('10.29.35.102', 37956)
+2025-04-18 16:35:39,396 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-18 16:36:07,287 [WARNING] django.request: Not Found: /
+2025-04-18 16:36:07,287 [WARNING] django.server: "GET / HTTP/1.1" 404 4941
+2025-04-18 16:36:07,451 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-18 16:36:07,451 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 4992
+2025-04-18 16:36:42,593 [INFO] django.server: "GET /api-docs/swagger HTTP/1.1" 301 0
+2025-04-18 16:36:42,876 [INFO] django.server: "GET /api-docs/swagger/ HTTP/1.1" 200 2230
+2025-04-18 16:36:43,205 [INFO] django.server: "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+2025-04-18 16:36:43,211 [INFO] django.server: "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+2025-04-18 16:36:43,219 [INFO] django.server: "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+2025-04-18 16:36:43,222 [INFO] django.server: "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+2025-04-18 16:36:43,226 [INFO] django.server: "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+2025-04-18 16:36:43,230 [INFO] django.server: "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+2025-04-18 16:36:43,237 [INFO] django.server: "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+2025-04-18 16:36:43,373 [INFO] django.server: "GET /api-docs/swagger/?format=openapi HTTP/1.1" 200 9699
+2025-04-18 16:36:43,397 [INFO] django.server: "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+2025-04-18 16:37:07,557 [INFO] django.server: "GET /admin HTTP/1.1" 301 0
+2025-04-18 16:37:07,573 [INFO] django.server: "GET /admin/ HTTP/1.1" 302 0
+2025-04-18 16:37:07,648 [INFO] django.server: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+2025-04-18 16:37:07,701 [INFO] django.server: "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+2025-04-18 16:37:07,704 [INFO] django.server: "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+2025-04-18 16:37:07,704 [INFO] django.server: "GET /static/admin/css/login.css HTTP/1.1" 200 951
+2025-04-18 16:37:07,706 [INFO] django.server: "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+2025-04-18 16:37:07,706 [INFO] django.server: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+2025-04-18 16:37:07,710 [INFO] django.server: "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+2025-04-18 16:37:07,719 [INFO] django.server: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2025-04-18 16:42:31,324 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-18 16:42:36,621 [INFO] django.server: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2025-04-18 16:42:36,662 [INFO] django.server: "GET /admin/ HTTP/1.1" 200 8883
+2025-04-18 16:42:36,797 [INFO] django.server: "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+2025-04-18 16:42:36,807 [INFO] django.server: "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2025-04-18 16:42:36,862 [INFO] django.server: "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2025-04-18 16:42:39,584 [INFO] django.server: "GET /admin/auth/user/ HTTP/1.1" 200 13368
+2025-04-18 16:42:39,651 [INFO] django.server: "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+2025-04-18 16:42:39,663 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-18 16:42:39,664 [INFO] django.server: "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2025-04-18 16:42:39,672 [INFO] django.server: "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+2025-04-18 16:42:39,673 [INFO] django.server: "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+2025-04-18 16:42:39,682 [INFO] django.server: "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+2025-04-18 16:42:39,685 [INFO] django.server: "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2025-04-18 16:42:39,689 [INFO] django.server: "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+2025-04-18 16:42:39,692 [INFO] django.server: "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2025-04-18 16:42:39,700 [INFO] django.server: "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2025-04-18 16:42:39,700 [INFO] django.server: "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+2025-04-18 16:42:39,707 [INFO] django.server: "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+2025-04-18 16:42:39,715 [INFO] django.server: "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2025-04-18 16:42:39,733 [INFO] django.server: "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2025-04-18 16:42:39,733 [INFO] django.server: "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+2025-04-18 16:42:39,734 [INFO] django.server: "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+2025-04-18 16:42:41,687 [INFO] django.server: "GET /admin/ HTTP/1.1" 200 8883
+2025-04-18 16:42:42,637 [INFO] django.server: "GET /admin/auth/group/ HTTP/1.1" 200 9783
+2025-04-18 16:42:42,682 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-18 16:42:45,455 [INFO] django.server: "GET /admin/evalpose/evalsession/ HTTP/1.1" 200 34955
+2025-04-18 16:42:45,497 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-18 16:42:49,288 [INFO] django.server: "GET /admin/evalpose/evalsession/4de01509-534e-495a-b2e1-7bdb9b1771b8/change/ HTTP/1.1" 200 15411
+2025-04-18 16:42:49,337 [INFO] django.server: "GET /static/admin/css/forms.css HTTP/1.1" 200 8794
+2025-04-18 16:42:49,339 [INFO] django.server: "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+2025-04-18 16:42:49,343 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-18 16:42:49,366 [INFO] django.server: "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+2025-04-18 16:42:49,367 [INFO] django.server: "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+2025-04-18 16:42:56,510 [INFO] django.server: "GET /admin/evalpose/videoconfig/ HTTP/1.1" 200 17358
+2025-04-18 16:42:56,558 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-18 16:42:59,058 [INFO] django.server: "GET /admin/evalpose/videofile/ HTTP/1.1" 200 38837
+2025-04-18 16:42:59,109 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-18 16:43:01,408 [INFO] django.server: "GET /admin/evalpose/evalsession/ HTTP/1.1" 200 34955
+2025-04-18 16:43:01,469 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-18 16:43:03,425 [INFO] django.server: "GET /admin/evalpose/evalsession/4de01509-534e-495a-b2e1-7bdb9b1771b8/change/ HTTP/1.1" 200 15411
+2025-04-18 16:43:03,481 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-18 16:44:23,746 [INFO] django.utils.autoreload: E:\Digital_people\openpose\app\pose\evalpose\modern_pose_analyzer.py changed, reloading.
+2025-04-18 16:44:24,793 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-18 16:45:05,192 [INFO] django.utils.autoreload: E:\Digital_people\openpose\app\pose\evalpose\modern_pose_analyzer.py changed, reloading.
+2025-04-18 16:45:05,916 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-19 23:03:39,245 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-19 23:04:10,142 [WARNING] django.request: Not Found: /
+2025-04-19 23:04:10,142 [WARNING] django.server: "GET / HTTP/1.1" 404 4943
+2025-04-19 23:04:10,300 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-19 23:04:10,301 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 4994
+2025-04-19 23:04:17,926 [INFO] django.server: "GET /admin HTTP/1.1" 301 0
+2025-04-19 23:04:17,936 [INFO] django.server: "GET /admin/ HTTP/1.1" 302 0
+2025-04-19 23:04:17,980 [INFO] django.server: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+2025-04-19 23:04:18,233 [INFO] django.server: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+2025-04-19 23:04:18,233 [INFO] django.server: "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+2025-04-19 23:04:18,233 [INFO] django.server: "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+2025-04-19 23:04:18,234 [INFO] django.server: "GET /static/admin/css/login.css HTTP/1.1" 200 951
+2025-04-19 23:04:18,234 [INFO] django.server: "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+2025-04-19 23:04:18,234 [INFO] django.server: "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+2025-04-19 23:04:18,238 [INFO] django.server: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2025-04-19 23:04:54,186 [INFO] django.server: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2025-04-19 23:04:54,199 [INFO] django.server: "GET /admin/ HTTP/1.1" 200 8883
+2025-04-19 23:04:54,228 [INFO] django.server: "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+2025-04-19 23:04:54,241 [INFO] django.server: "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2025-04-19 23:04:54,242 [INFO] django.server: "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2025-04-19 23:05:00,230 [INFO] django.server: "GET /admin/evalpose/videofile/ HTTP/1.1" 200 38837
+2025-04-19 23:05:00,261 [INFO] django.server: "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2025-04-19 23:05:00,261 [INFO] django.server: "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+2025-04-19 23:05:00,262 [INFO] django.server: "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+2025-04-19 23:05:00,262 [INFO] django.server: "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+2025-04-19 23:05:00,266 [INFO] django.server: "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+2025-04-19 23:05:00,266 [INFO] django.server: "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2025-04-19 23:05:00,267 [INFO] django.server: "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2025-04-19 23:05:00,270 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-19 23:05:00,271 [INFO] django.server: "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+2025-04-19 23:05:00,272 [INFO] django.server: "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+2025-04-19 23:05:00,276 [INFO] django.server: "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2025-04-19 23:05:00,293 [INFO] django.server: "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2025-04-19 23:05:01,732 [INFO] django.server: "GET /admin/evalpose/videoconfig/ HTTP/1.1" 200 17358
+2025-04-19 23:05:01,760 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-19 23:05:01,761 [INFO] django.server: "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+2025-04-19 23:05:03,671 [INFO] django.server: "GET /admin/evalpose/videofile/ HTTP/1.1" 200 38837
+2025-04-19 23:05:03,693 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-19 23:05:04,595 [INFO] django.server: "GET /admin/evalpose/videoconfig/ HTTP/1.1" 200 17358
+2025-04-19 23:05:04,618 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-19 23:05:07,090 [INFO] django.server: "GET /admin/evalpose/evalsession/ HTTP/1.1" 200 34955
+2025-04-19 23:05:07,115 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-19 23:05:07,706 [INFO] django.server: "GET /admin/auth/group/ HTTP/1.1" 200 9783
+2025-04-19 23:05:07,730 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-19 23:05:08,473 [INFO] django.server: "GET /admin/auth/user/ HTTP/1.1" 200 13368
+2025-04-19 23:05:08,495 [INFO] django.server: "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2025-04-19 23:05:08,496 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-19 23:05:08,516 [INFO] django.server: "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+2025-04-19 23:05:08,516 [INFO] django.server: "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+2025-04-19 23:05:10,636 [INFO] django.server: "GET /admin/evalpose/evalsession/ HTTP/1.1" 200 34955
+2025-04-19 23:05:10,656 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-19 23:05:12,882 [INFO] django.server: "GET /admin/log_viewer/logentry/ HTTP/1.1" 200 11315
+2025-04-19 23:05:12,910 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-19 23:05:15,068 [INFO] django.server: "GET /admin/evalpose/videofile/ HTTP/1.1" 200 38837
+2025-04-19 23:05:15,093 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-19 23:05:15,833 [INFO] django.server: "GET /admin/evalpose/videoconfig/ HTTP/1.1" 200 17358
+2025-04-19 23:05:15,856 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-19 23:05:33,530 [INFO] django.server: "GET /admin/log_viewer/logentry/ HTTP/1.1" 200 11315
+2025-04-19 23:05:33,556 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-19 23:05:36,489 [INFO] django.server: "GET /admin/evalpose/evalsession/ HTTP/1.1" 200 34955
+2025-04-19 23:05:36,512 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-19 23:05:38,314 [INFO] django.server: - Broken pipe from ('127.0.0.1', 55642)
+2025-04-19 23:05:38,326 [INFO] django.server: "GET /admin/log_viewer/logentry/ HTTP/1.1" 200 11315
+2025-04-19 23:05:38,351 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-19 23:06:01,112 [WARNING] django.request: Not Found: /
+2025-04-19 23:06:01,112 [WARNING] django.server: "GET / HTTP/1.1" 404 4943
+2025-04-19 23:06:13,819 [INFO] django.server: "GET /api-docs/swagger HTTP/1.1" 301 0
+2025-04-19 23:06:13,836 [INFO] django.server: "GET /api-docs/swagger/ HTTP/1.1" 200 2230
+2025-04-19 23:06:13,868 [INFO] django.server: "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+2025-04-19 23:06:13,871 [INFO] django.server: "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+2025-04-19 23:06:13,872 [INFO] django.server: "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+2025-04-19 23:06:13,873 [INFO] django.server: "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+2025-04-19 23:06:13,875 [INFO] django.server: "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+2025-04-19 23:06:13,878 [INFO] django.server: "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+2025-04-19 23:06:13,883 [INFO] django.server: "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+2025-04-19 23:06:13,986 [INFO] django.server: "GET /api-docs/swagger/?format=openapi HTTP/1.1" 200 9699
+2025-04-19 23:06:13,987 [INFO] django.server: "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+2025-04-19 23:06:21,077 [INFO] video_manager.views: Returning 62 video assets
+2025-04-19 23:06:21,077 [INFO] django.server: "GET /standard/all/ HTTP/1.1" 200 31922
+2025-04-19 23:06:41,156 [INFO] django.server: "GET /admin/evalpose/videofile/ HTTP/1.1" 200 38837
+2025-04-19 23:06:41,187 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-19 23:06:41,753 [INFO] django.server: "GET /admin/log_viewer/logentry/ HTTP/1.1" 200 11315
+2025-04-19 23:06:41,781 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-19 23:08:15,690 [INFO] django.server: "GET /admin/log_viewer/ HTTP/1.1" 200 5284
+2025-04-19 23:08:17,476 [INFO] django.server: "GET /admin/log_viewer/logentry/ HTTP/1.1" 200 11315
+2025-04-19 23:08:17,503 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-19 23:08:18,987 [INFO] django.server: "GET /admin/ HTTP/1.1" 200 8883
+2025-04-19 23:08:21,121 [INFO] django.server: "GET /admin/log_viewer/logentry/ HTTP/1.1" 200 11315
+2025-04-19 23:08:21,148 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-20 01:24:33,161 [INFO] django.utils.autoreload: E:\Digital_people\openpose\app\pose\log_viewer\admin.py changed, reloading.
+2025-04-20 01:24:34,960 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-20 01:25:23,096 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-20 01:27:28,762 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-20 01:27:35,411 [INFO] django.server: "GET /admin/log_viewer/logentry/ HTTP/1.1" 200 11767
+2025-04-20 01:27:35,785 [INFO] django.server: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+2025-04-20 01:27:35,792 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-20 01:27:35,801 [INFO] django.server: "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+2025-04-20 01:27:35,803 [INFO] django.server: "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2025-04-20 01:27:35,805 [INFO] django.server: "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+2025-04-20 01:27:35,807 [INFO] django.server: "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+2025-04-20 01:27:35,808 [INFO] django.server: "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+2025-04-20 01:27:35,810 [INFO] django.server: "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2025-04-20 01:27:35,811 [INFO] django.server: "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2025-04-20 01:27:35,820 [INFO] django.server: "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+2025-04-20 01:27:35,876 [INFO] django.server: "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+2025-04-20 01:27:35,919 [INFO] django.server: "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+2025-04-20 01:27:35,922 [INFO] django.server: "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+2025-04-20 01:27:35,924 [INFO] django.server: "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+2025-04-20 01:27:35,927 [INFO] django.server: "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+2025-04-20 01:27:35,930 [INFO] django.server: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2025-04-20 01:27:35,933 [INFO] django.server: "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2025-04-20 01:27:35,936 [INFO] django.server: "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+2025-04-20 01:27:35,957 [INFO] django.server: "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+2025-04-20 01:27:35,958 [INFO] django.server: "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2025-04-20 01:27:35,958 [INFO] django.server: "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2025-04-20 01:27:38,706 [ERROR] django.request: Internal Server Error: /admin/log_viewer/logviewer/
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: log_viewer_logviewer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1999, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\contrib\admin\options.py", line 866, in get_changelist_instance
+    return ChangeList(
+           ^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\contrib\admin\views\main.py", line 146, in __init__
+    self.get_results(request)
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\contrib\admin\views\main.py", line 313, in get_results
+    result_count = paginator.count
+                   ^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+           ^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\db\models\sql\query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\db\models\sql\query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Digital_people\openpose\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: log_viewer_logviewer
+2025-04-20 01:27:38,716 [ERROR] django.server: "GET /admin/log_viewer/logviewer/ HTTP/1.1" 500 205308
+2025-04-20 01:30:38,329 [INFO] django.utils.autoreload: E:\Digital_people\openpose\app\pose\log_viewer\admin.py changed, reloading.
+2025-04-20 01:30:38,827 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-20 01:30:43,434 [INFO] django.utils.autoreload: E:\Digital_people\openpose\app\pose\log_viewer\models.py changed, reloading.
+2025-04-20 01:30:43,876 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-20 23:42:57,157 [INFO] django.utils.autoreload: Watching for file changes with StatReloader

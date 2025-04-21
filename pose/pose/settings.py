@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'video_manager',
     'corsheaders',
     'drf_yasg',  # Api docs
+    'log_viewer',
 ]
 
 MIDDLEWARE = [
@@ -229,3 +230,49 @@ os.makedirs(os.path.join(MEDIA_ROOT, 'hls'), exist_ok=True)
 
 # 如果您希望允许所有来源，可以使用以下配置（不推荐用于生产环境）
 CORS_ALLOW_ALL_ORIGINS = True
+
+# Add log directory setting
+LOG_DIR = os.path.join(BASE_DIR, 'logs')
+os.makedirs(LOG_DIR, exist_ok=True)
+
+# Configure logging to write to files
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{asctime} [{levelname}] {name}: {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(LOG_DIR, 'django.log'),
+            'formatter': 'verbose',
+        },
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file', 'console'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'evalpose': {
+            'handlers': ['file', 'console'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+        'video_manager': {
+            'handlers': ['file', 'console'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+    },
+}
