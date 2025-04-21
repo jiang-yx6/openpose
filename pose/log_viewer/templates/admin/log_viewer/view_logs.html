@@ -1,0 +1,140 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block extrastyle %}
+<style>
+    .log-filters {
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .log-filters form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: flex-end;
+    }
+    .filter-group {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+    .log-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .log-table th, .log-table td {
+        padding: 8px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+    .log-table th {
+        background-color: #f2f2f2;
+    }
+    .log-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    .log-level-INFO { color: #2c7be5; }
+    .log-level-WARNING { color: #f6c343; }
+    .log-level-ERROR, .log-level-CRITICAL { color: #e63757; }
+    .log-level-DEBUG { color: #00d97e; }
+    .pagination {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .pagination a {
+        margin: 0 5px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <h1>Log Viewer</h1>
+    
+    <div class="log-filters">
+        <form method="get">
+            <div class="filter-group">
+                <label for="log_file">Log File:</label>
+                <select name="log_file" id="log_file" onchange="this.form.submit()">
+                    <option value="">Select a log file</option>
+                    {% for file in log_files %}
+                    <option value="{{ file }}" {% if file == selected_log %}selected{% endif %}>{{ file }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="level">Log Level:</label>
+                <select name="level" id="level">
+                    <option value="">All Levels</option>
+                    {% for level in levels %}
+                    <option value="{{ level }}" {% if level == level_filter %}selected{% endif %}>{{ level }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="search">Search:</label>
+                <input type="text" name="search" id="search" value="{{ search_term }}">
+            </div>
+            
+            <div class="filter-group">
+                <button type="submit">Filter</button>
+                <a href="?log_file={{ selected_log }}">Clear Filters</a>
+            </div>
+        </form>
+    </div>
+    
+    {% if not log_files %}
+    <div class="empty-state">
+        <p>No log files found. Check your log directory configuration.</p>
+    </div>
+    {% else %}
+        {% if not selected_log %}
+        <div class="empty-state">
+            <p>Please select a log file to view.</p>
+        </div>
+        {% else %}
+            {% if not log_content %}
+            <div class="empty-state">
+                <p>No log entries found{% if level_filter or search_term %} with the current filters{% endif %}.</p>
+            </div>
+            {% else %}
+            <table class="log-table">
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>Level</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for entry in log_content %}
+                    <tr>
+                        <td>{{ entry.timestamp }}</td>
+                        <td class="log-level-{{ entry.level }}">{{ entry.level }}</td>
+                        <td>{{ entry.message }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            
+            <div class="pagination">
+                {% if has_prev %}
+                <a href="?log_file={{ selected_log }}&level={{ level_filter }}&search={{ search_term }}&page={{ prev_page }}">&laquo; Previous</a>
+                {% endif %}
+                
+                <span>Page {{ page }} of {{ total_pages }}</span>
+                
+                {% if has_next %}
+                <a href="?log_file={{ selected_log }}&level={{ level_filter }}&search={{ search_term }}&page={{ next_page }}">Next &raquo;</a>
+                {% endif %}
+            </div>
+            {% endif %}
+        {% endif %}
+    {% endif %}
+</div>
+{% endblock %}

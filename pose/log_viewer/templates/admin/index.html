@@ -1,0 +1,11 @@
+{% extends "admin/index.html" %}
+
+{% block sidebar %}
+{{ block.super }}
+<div class="module" style="margin-top: 20px;">
+    <h2>Log Management</h2>
+    <ul>
+        <li><a href="{% url 'admin:view_logs' %}">View Application Logs</a></li>
+    </ul>
+</div>
+{% endblock %}

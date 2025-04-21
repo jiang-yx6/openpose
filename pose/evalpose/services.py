@@ -8,7 +8,7 @@ import subprocess
 from .modern_pose_analyzer import VideoAnalyzer, ActionComparator
 from django.conf import settings
 from concurrent.futures import ThreadPoolExecutor
-from .exceptions import ApiErrorHandler, FullBodyNotVisibleError
+from .exceptions import ApiErrorHandler, FullBodyNotVisibleError, VideoLengthMismatchError
 
 logger = logging.getLogger(__name__)
 mp_drawing = mp.solutions.drawing_utils

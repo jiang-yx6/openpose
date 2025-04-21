@@ -13,6 +13,7 @@ from .pose_analyze.video_stretch import stretch_videos_to_same_length
 from .pose_analyze.pose_comparison import dtw_compare, score_cos_sim, weight_match_l1, weight_match_l2
 from .pose_analyze.config_service import get_config_class, get_config_instance
 from .models import VideoConfig
+from .exceptions import PoseAnalysisError, FullBodyNotVisibleError, VideoLengthMismatchError, ErrorCodes
 
 logger = logging.getLogger(__name__)
 
@@ -77,6 +78,11 @@ class ModernPoseAnalyzer:
             
         Returns:
             dict: Complete analysis results
+            
+        Raises:
+            FullBodyNotVisibleError: When full body is not visible or pose data is inconsistent
+            VideoLengthMismatchError: When there's an issue with video length or alignment
+            PoseAnalysisError: For other pose analysis specific errors
         """
         result = {
             'dtw_success': False,
@@ -103,9 +109,27 @@ class ModernPoseAnalyzer:
             exe_sequence = self.process_video(exercise_video_path)
             
             # Compare sequences 
-            comparator = ActionComparator(std_sequence, exe_sequence)
-            dtw_result = comparator.compare_sequences()
-            
+            try:
+                comparator = ActionComparator(std_sequence, exe_sequence)
+                dtw_result = comparator.compare_sequences()
+            except ValueError as e:
+                if 'X has 4 features, but StandardScaler is expecting 70 features as input' in str(e):
+                    logger.error("Mismatch in feature dimensions during DTW comparison")
+                    raise FullBodyNotVisibleError()
+                elif 'setting an array element with a sequence' in str(e) or 'inhomogeneous shape' in str(e):
+                    logger.error("Inhomogeneous shape detected in input sequences")
+                    raise FullBodyNotVisibleError()
+                else:
+                    raise PoseAnalysisError(f"DTW comparison error: {str(e)}", 
+                                          code=400, 
+                                          ui_error_code=ErrorCodes.PROCESSING_ERROR)
+            except IndexError as e:
+                if "list index out of range" in str(e):
+                    logger.error("Index error in DTW comparison, likely due to video length issues")
+                    raise VideoLengthMismatchError()
+                else:
+                    raise
+
             # Format frame scores to match expected format
             frame_scores = {str(idx): float(score) for idx, score in dtw_result['frame_scores']}
             result['frame_scores'] = frame_scores
@@ -141,12 +165,16 @@ class ModernPoseAnalyzer:
             logger.info(f"Modern pose analysis complete: similarity={result['similarity_score']:.2f}%")
             return result
             
+        except PoseAnalysisError as e:
+            # Re-raise the exception to be handled by the API error handler
+            raise  
         except Exception as e:
             logger.error(f"Error in modern pose analysis: {str(e)}", exc_info=True)
-            return {
-                'dtw_success': False,
-                'error': str(e)
-            }
+            raise PoseAnalysisError(
+                f"Unexpected error during pose analysis: {str(e)}", 
+                code=500, 
+                ui_error_code=ErrorCodes.UNKNOWN_ERROR
+            )
     
     def get_advanced_metrics(self, dtw_result, comparator=None):
         """

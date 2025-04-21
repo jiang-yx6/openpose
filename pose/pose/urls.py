@@ -48,8 +48,5 @@ urlpatterns = [
 ]
 
 # 添加媒体文件的URL配置
-# Uncomment this line to serve static files in development
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
-# Keep the media URL configuration too
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

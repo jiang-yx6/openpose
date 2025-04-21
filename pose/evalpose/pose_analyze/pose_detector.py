@@ -130,6 +130,11 @@ class VideoAnalyzer(PoseDetector):
         """
         if len(lm_list) == 0:
             return []
+        
+        # 对于并非所有关键点存在的情况，返回空列表
+        if not all(k in [lm[0] for lm in lm_list] for k in self.normalization_joints):
+            return []
+
         # 计算包围盒
         xs = [lm[1] for lm in lm_list]
         ys = [lm[2] for lm in lm_list]
